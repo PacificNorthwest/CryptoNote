@@ -1,0 +1,1 @@
+<GridLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android"><TextView android:text="Scan fingerprint" android:textSize="25" android:layout_gravity="center" android:layout_marginTop="350" /></GridLayout>

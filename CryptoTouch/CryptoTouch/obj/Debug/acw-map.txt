@@ -1,0 +1,4 @@
+CryptoTouch.MainActivity, CryptoTouch;md566b2d93a77be766efbb5e3ed69fead76.MainActivity
+CryptoTouch.MainActivity, CryptoTouch, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md566b2d93a77be766efbb5e3ed69fead76.MainActivity
+CryptoTouch.MainActivity;md566b2d93a77be766efbb5e3ed69fead76.MainActivity
+cryptotouch.MainActivity;md566b2d93a77be766efbb5e3ed69fead76.MainActivity
