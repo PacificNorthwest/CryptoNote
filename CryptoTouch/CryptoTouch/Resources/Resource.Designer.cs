@@ -45,7 +45,16 @@ namespace CryptoTouch
 		{
 			
 			// aapt resource value: 0x7f020000
-			public const int Icon = 2130837504;
+			public const int fingerprint = 2130837504;
+			
+			// aapt resource value: 0x7f020001
+			public const int fingerprint_icon = 2130837505;
+			
+			// aapt resource value: 0x7f020002
+			public const int ic_fp_40px = 2130837506;
+			
+			// aapt resource value: 0x7f020003
+			public const int Icon = 2130837507;
 			
 			static Drawable()
 			{
@@ -53,6 +62,25 @@ namespace CryptoTouch
 			}
 			
 			private Drawable()
+			{
+			}
+		}
+		
+		public partial class Id
+		{
+			
+			// aapt resource value: 0x7f050000
+			public const int fingerprintIcon = 2131034112;
+			
+			// aapt resource value: 0x7f050001
+			public const int textView = 2131034113;
+			
+			static Id()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Id()
 			{
 			}
 		}

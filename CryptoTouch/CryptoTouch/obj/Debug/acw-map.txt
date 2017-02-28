@@ -1,3 +1,7 @@
+CryptoTouch.AuthCallback, CryptoTouch;md566b2d93a77be766efbb5e3ed69fead76.AuthCallback
+CryptoTouch.AuthCallback, CryptoTouch, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md566b2d93a77be766efbb5e3ed69fead76.AuthCallback
+CryptoTouch.AuthCallback;md566b2d93a77be766efbb5e3ed69fead76.AuthCallback
+cryptotouch.AuthCallback;md566b2d93a77be766efbb5e3ed69fead76.AuthCallback
 CryptoTouch.MainActivity, CryptoTouch;md566b2d93a77be766efbb5e3ed69fead76.MainActivity
 CryptoTouch.MainActivity, CryptoTouch, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md566b2d93a77be766efbb5e3ed69fead76.MainActivity
 CryptoTouch.MainActivity;md566b2d93a77be766efbb5e3ed69fead76.MainActivity
