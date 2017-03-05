@@ -4,15 +4,15 @@ using Android.OS;
 using Android.Hardware.Fingerprints;
 using Android.Content;
 
-namespace CryptoTouch
+namespace CryptoTouch.Activities
 {
-    [Activity(Label = "CryptoTouch", MainLauncher = true, Icon = "@drawable/icon")]
-    public class MainActivity : Activity
+    [Activity(Label = "CryptoTouch", MainLauncher = true, Icon = "@drawable/fingerprint")]
+    public class LoginActivity : Activity
     {
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
-            SetContentView (Resource.Layout.Main);
+            SetContentView (Resource.Layout.LoginPage);
             Authenticate();
         }
 
@@ -36,22 +36,14 @@ namespace CryptoTouch
 
         public void OnAuthenticationSucceeded()
         {
-            AlertDialog.Builder dlgAlert = new AlertDialog.Builder(this);
-            dlgAlert.SetMessage("Scan succeeded");
-            dlgAlert.SetTitle("CryptoTouch");
-            dlgAlert.SetPositiveButton("OK", (senderAlert, args) => { dlgAlert.Dispose(); });
-            dlgAlert.SetCancelable(true);
-            dlgAlert.Create().Show();
+            Intent intent = new Intent(this, typeof(MainPageActivity));
+            StartActivity(intent);
         }
 
         public void OnAuthenticationFailed()
         {
-            AlertDialog.Builder dlgAlert = new AlertDialog.Builder(this);
-            dlgAlert.SetMessage("Scan failed");
-            dlgAlert.SetTitle("CryptoTouch");
-            dlgAlert.SetPositiveButton("OK", (senderAlert, args) => { dlgAlert.Dispose(); });
-            dlgAlert.SetCancelable(true);
-            dlgAlert.Create().Show();
+            Toast.MakeText(this, "Fingerprint scan failed", ToastLength.Long).Show();
+            Authenticate();
         }
     }
 }

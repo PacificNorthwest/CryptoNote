@@ -14,17 +14,19 @@ using Javax.Crypto;
 using Android.Util;
 using Java.Lang;
 
+using CryptoTouch.Activities;
+
 namespace CryptoTouch
 {
     class AuthCallback : FingerprintManager.AuthenticationCallback
     {
         private static readonly byte[] SECRET_BYTES = { 1, 2, 3, 4, 5, 6, 7, 8, 9};
         private static readonly string TAG = "CryptoTouch";
-        private readonly MainActivity _currentActivity;
+        private readonly LoginActivity _currentActivity;
 
         public AuthCallback() { }
 
-        public AuthCallback(MainActivity activity)
+        public AuthCallback(LoginActivity activity)
         {
             _currentActivity = activity;
         }

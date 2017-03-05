@@ -24,11 +24,11 @@ public class AuthCallback
 			mono.android.TypeManager.Activate ("CryptoTouch.AuthCallback, CryptoTouch, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
 	}
 
-	public AuthCallback (md566b2d93a77be766efbb5e3ed69fead76.MainActivity p0) throws java.lang.Throwable
+	public AuthCallback (md5d619d79349270a1d3e86c8aac97c2862.LoginActivity p0) throws java.lang.Throwable
 	{
 		super ();
 		if (getClass () == AuthCallback.class)
-			mono.android.TypeManager.Activate ("CryptoTouch.AuthCallback, CryptoTouch, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "CryptoTouch.MainActivity, CryptoTouch, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", this, new java.lang.Object[] { p0 });
+			mono.android.TypeManager.Activate ("CryptoTouch.AuthCallback, CryptoTouch, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "CryptoTouch.Activities.LoginActivity, CryptoTouch, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", this, new java.lang.Object[] { p0 });
 	}
 
 

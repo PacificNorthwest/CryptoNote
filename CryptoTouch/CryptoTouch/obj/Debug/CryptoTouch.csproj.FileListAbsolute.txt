@@ -5,7 +5,6 @@ E:\Git\CryptoTouch\CryptoTouch\CryptoTouch\bin\Debug\CryptoTouch.CryptoTouch-Sig
 E:\Git\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\CryptoTouch.dll
 E:\Git\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\CryptoTouch.pdb
 E:\Git\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\android\bin\CryptoTouch.CryptoTouch.apk
-E:\Git\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\res\layout\main.xml
 E:\Git\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\res\values\strings.xml
 E:\Git\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\res\drawable\icon.png
 E:\Git\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\R.cs.flag
@@ -36,7 +35,11 @@ E:\Git\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\android\assets\System.Servi
 E:\Git\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\android\assets\System.Xml.dll.mdb
 E:\Git\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\android\assets\System.Xml.Linq.dll.mdb
 E:\Git\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\CryptoTouch.csprojResolveAssemblyReference.cache
-E:\Git\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\res\drawable\ic_fp_40px.png
 E:\Git\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\res\drawable\fingerprint.png
+E:\Git\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\res\layout\mainpage.xml
+E:\Git\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\res\layout\loginpage.xml
+E:\Git\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\res\drawable\plus.png
+E:\Git\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\res\layout\notepage.xml
+E:\Git\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\res\drawable\save.png
 E:\Git\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\CryptoTouch.dll.mdb
 E:\Git\CryptoTouch\CryptoTouch\CryptoTouch\bin\Debug\CryptoTouch.dll.mdb
