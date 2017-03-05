@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <style name ="CryptoTouch.NoOrange" parent ="android:style/Theme.NoTitleBar.Fullscreen">
+    <item name ="android:colorPressedHighlight">@color/ButtonHighlight</item>
+    <item name ="android:colorFocusedHighlight">@color/ButtonHighlight</item>
+    <item name ="android:colorActivatedHighlight">@color/ButtonHighlight</item>
+    <item name ="android:activatedBackgroundIndicator">@color/ButtonHighlight</item>
+    <item name ="android:colorLongPressedHighlight">@color/ButtonHighlight</item>
+  </style>
+</resources>

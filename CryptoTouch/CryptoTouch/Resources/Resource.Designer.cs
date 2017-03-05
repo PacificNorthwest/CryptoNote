@@ -41,6 +41,22 @@ namespace CryptoTouch
 			}
 		}
 		
+		public partial class Color
+		{
+			
+			// aapt resource value: 0x7f040000
+			public const int ButtonHighlight = 2130968576;
+			
+			static Color()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Color()
+			{
+			}
+		}
+		
 		public partial class Drawable
 		{
 			
@@ -57,7 +73,10 @@ namespace CryptoTouch
 			public const int plus = 2130837507;
 			
 			// aapt resource value: 0x7f020004
-			public const int save = 2130837508;
+			public const int rcButton = 2130837508;
+			
+			// aapt resource value: 0x7f020005
+			public const int save = 2130837509;
 			
 			static Drawable()
 			{
@@ -72,26 +91,29 @@ namespace CryptoTouch
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f050005
-			public const int editText = 2131034117;
+			// aapt resource value: 0x7f070006
+			public const int editText = 2131165190;
 			
-			// aapt resource value: 0x7f050000
-			public const int fingerprintIcon = 2131034112;
+			// aapt resource value: 0x7f070000
+			public const int fingerprintIcon = 2131165184;
 			
-			// aapt resource value: 0x7f050002
-			public const int layout = 2131034114;
+			// aapt resource value: 0x7f070002
+			public const int layout = 2131165186;
 			
-			// aapt resource value: 0x7f050004
-			public const int newNoteButton = 2131034116;
+			// aapt resource value: 0x7f070003
+			public const int leftColumn = 2131165187;
 			
-			// aapt resource value: 0x7f050003
-			public const int notesContainer = 2131034115;
+			// aapt resource value: 0x7f070005
+			public const int newNoteButton = 2131165189;
 			
-			// aapt resource value: 0x7f050006
-			public const int saveNoteButton = 2131034118;
+			// aapt resource value: 0x7f070004
+			public const int rightColumn = 2131165188;
 			
-			// aapt resource value: 0x7f050001
-			public const int textView = 2131034113;
+			// aapt resource value: 0x7f070007
+			public const int saveNoteButton = 2131165191;
+			
+			// aapt resource value: 0x7f070001
+			public const int textView = 2131165185;
 			
 			static Id()
 			{
@@ -128,11 +150,11 @@ namespace CryptoTouch
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f040001
-			public const int ApplicationName = 2130968577;
+			// aapt resource value: 0x7f050001
+			public const int ApplicationName = 2131034113;
 			
-			// aapt resource value: 0x7f040000
-			public const int Hello = 2130968576;
+			// aapt resource value: 0x7f050000
+			public const int Hello = 2131034112;
 			
 			static String()
 			{
@@ -140,6 +162,22 @@ namespace CryptoTouch
 			}
 			
 			private String()
+			{
+			}
+		}
+		
+		public partial class Style
+		{
+			
+			// aapt resource value: 0x7f060000
+			public const int CryptoTouch_NoOrange = 2131099648;
+			
+			static Style()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Style()
 			{
 			}
 		}
