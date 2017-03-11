@@ -11,6 +11,8 @@ namespace CryptoTouch.Activities
     {
         protected override void OnCreate(Bundle bundle)
         {
+            Window.RequestFeature(Android.Views.WindowFeatures.ActivityTransitions);
+            Window.RequestFeature(Android.Views.WindowFeatures.ContentTransitions);
             base.OnCreate(bundle);
             SetContentView (Resource.Layout.LoginPage);
             Authenticate();
@@ -36,8 +38,9 @@ namespace CryptoTouch.Activities
 
         public void OnAuthenticationSucceeded()
         {
+            ActivityOptions options = ActivityOptions.MakeSceneTransitionAnimation(this);
             Intent intent = new Intent(this, typeof(MainPageActivity));
-            StartActivity(intent);
+            StartActivity(intent, options.ToBundle());
         }
 
         public void OnAuthenticationFailed()

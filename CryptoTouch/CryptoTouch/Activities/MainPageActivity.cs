@@ -10,6 +10,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.Graphics;
+using Android.Transitions;
 
 namespace CryptoTouch.Activities
 {
@@ -22,6 +23,8 @@ namespace CryptoTouch.Activities
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
+            Window.RequestFeature(WindowFeatures.ActivityTransitions);
+            Window.RequestFeature(WindowFeatures.ContentTransitions);
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.MainPage);
             
@@ -32,7 +35,15 @@ namespace CryptoTouch.Activities
             
             NoteStorage.Notes = XmlManager.Load(NoteStorage.Notes.GetType()) as List<string>;
             InitializeUI();
+            Animate();
+        }
 
+        private void Animate()
+        {
+            TransitionSet set = new TransitionSet();
+            set.AddTransition(new Fade());
+            set.AddTransition(new Explode());
+            Window.ExitTransition = set;
         }
 
         private void InitializeUI()
@@ -48,8 +59,8 @@ namespace CryptoTouch.Activities
                                                                                              LinearLayout.LayoutParams.MatchParent);
                 linearLayoutParams.Weight = new Random().Next(2, 4);
                 button.LayoutParameters = linearLayoutParams;
-                button.SetBackgroundResource(Resource.Drawable.rcButton);
-                button.SetTextColor(Color.White);
+                button.SetBackgroundResource(Resource.Drawable.rcPannel);
+                button.SetTextColor(Color.Black);
                 button.Click += EditNote;
                 button.LongClick += DeleteNote;
                 if (isLeftColumn)
@@ -70,9 +81,11 @@ namespace CryptoTouch.Activities
 
         private void EditNote(object sender, EventArgs e)
         {
+            (sender as Button).TransitionName = "Note";
+            ActivityOptions options = ActivityOptions.MakeSceneTransitionAnimation(this, sender as View, "Note");
             Intent intent = new Intent(this, typeof(NoteActivity));
             intent.PutExtra("NoteToEdit", (sender as Button).Text);
-            StartActivity(intent);
+            StartActivity(intent, options.ToBundle());
         }
 
         private void NewNoteButton_Click(object sender, EventArgs e)

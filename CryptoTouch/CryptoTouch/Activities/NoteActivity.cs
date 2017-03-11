@@ -9,6 +9,7 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using Android.Transitions;
 
 namespace CryptoTouch.Activities
 {
@@ -22,17 +23,18 @@ namespace CryptoTouch.Activities
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
+            Window.RequestFeature(WindowFeatures.ActivityTransitions);
+            Window.RequestFeature(WindowFeatures.ContentTransitions);
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.NotePage);
 
             _editText = FindViewById<EditText>(Resource.Id.editText);
             _saveButton = FindViewById<Button>(Resource.Id.saveNoteButton);
             _saveButton.Click += SaveButton_Click;
-
-            Intent intent = Intent;
-            if (intent.Extras != null)
+            
+            if (Intent.Extras != null)
             {
-                _originalNote = intent.GetStringExtra("NoteToEdit");
+                _originalNote = Intent.GetStringExtra("NoteToEdit");
                 _editText.Text = _originalNote;
                 _isNewNote = false;
             }
