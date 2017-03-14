@@ -61,19 +61,19 @@ namespace CryptoTouch
 		{
 			
 			// aapt resource value: 0x7f020000
-			public const int fingerprint = 2130837504;
+			public const int error = 2130837504;
 			
 			// aapt resource value: 0x7f020001
-			public const int fingerprint_icon = 2130837505;
+			public const int fingerprint = 2130837505;
 			
 			// aapt resource value: 0x7f020002
-			public const int Icon = 2130837506;
+			public const int fingerprint_icon = 2130837506;
 			
 			// aapt resource value: 0x7f020003
-			public const int plus = 2130837507;
+			public const int Icon = 2130837507;
 			
 			// aapt resource value: 0x7f020004
-			public const int rcButton = 2130837508;
+			public const int plus = 2130837508;
 			
 			// aapt resource value: 0x7f020005
 			public const int rcPannel = 2130837509;
@@ -95,7 +95,10 @@ namespace CryptoTouch
 		{
 			
 			// aapt resource value: 0x7f070006
-			public const int editText = 2131165190;
+			public const int deleteButton = 2131165190;
+			
+			// aapt resource value: 0x7f070007
+			public const int editText = 2131165191;
 			
 			// aapt resource value: 0x7f070000
 			public const int fingerprintIcon = 2131165184;
@@ -112,8 +115,8 @@ namespace CryptoTouch
 			// aapt resource value: 0x7f070004
 			public const int rightColumn = 2131165188;
 			
-			// aapt resource value: 0x7f070007
-			public const int saveNoteButton = 2131165191;
+			// aapt resource value: 0x7f070008
+			public const int saveNoteButton = 2131165192;
 			
 			// aapt resource value: 0x7f070001
 			public const int textView = 2131165185;
