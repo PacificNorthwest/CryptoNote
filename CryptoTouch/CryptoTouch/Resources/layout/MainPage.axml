@@ -27,7 +27,17 @@
             android:layout_marginTop="10dp"
             android:layout_weight="1" />
     </LinearLayout>
-    <Button
+  <Button
+        android:id="@+id/deleteNoteButton"
+        android:background="@drawable/error"
+        android:layout_height="60dp"
+        android:layout_width="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:visibility="invisible"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp" />  
+  <Button
         android:id="@+id/newNoteButton"
         android:background="@drawable/plus"
         android:maxHeight="30dp"
@@ -38,13 +48,5 @@
         android:layout_width="60dp"
         android:layout_marginBottom="10dp"
         android:layout_marginRight="10dp" />
-    <Button
-        android:id="@+id/deleteButton"
-        android:background="@drawable/error"
-        android:layout_height="60dp"
-        android:layout_width="60dp"
-        android:layout_alignParentBottom="true"
-        android:layout_toLeftOf="@id/newNoteButton"
-        android:layout_marginBottom="10dp"
-        android:layout_marginRight="10dp" />
+    
 </RelativeLayout>

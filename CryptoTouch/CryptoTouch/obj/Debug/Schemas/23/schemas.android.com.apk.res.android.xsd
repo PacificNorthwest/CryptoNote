@@ -2,7 +2,7 @@
 <xs:schema xmlns:android="http://schemas.android.com/apk/res/android" attributeFormDefault="qualified" elementFormDefault="unqualified" targetNamespace="http://schemas.android.com/apk/res/android" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v23</xs:documentation>
-    <xs:documentation>14.03.2017 13:56:05</xs:documentation>
+    <xs:documentation>14.03.2017 15:45:33</xs:documentation>
   </xs:annotation>
   <xs:attribute name="accessibilityLiveRegion">
     <xs:annotation>
@@ -777,7 +777,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:color/background_dark" />
@@ -1417,7 +1416,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -2096,7 +2094,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -2468,7 +2465,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:color/background_dark" />
@@ -2789,7 +2785,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -3421,7 +3416,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -3748,7 +3742,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -4091,7 +4084,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -4377,7 +4369,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -4640,7 +4631,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -5221,7 +5211,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -5646,7 +5635,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -6038,7 +6026,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -6487,7 +6474,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:color/background_dark" />
@@ -6809,7 +6795,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:color/background_dark" />
@@ -7131,7 +7116,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:color/background_dark" />
@@ -7493,7 +7477,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:color/background_dark" />
@@ -7815,7 +7798,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:color/background_dark" />
@@ -8246,7 +8228,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:color/background_dark" />
@@ -8623,7 +8604,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -8911,7 +8891,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:color/background_dark" />
@@ -9354,7 +9333,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -9773,7 +9751,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -10310,7 +10287,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -10792,7 +10768,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:color/background_dark" />
@@ -11236,7 +11211,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:color/background_dark" />
@@ -11854,7 +11828,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -12099,7 +12072,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -12344,7 +12316,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -12589,7 +12560,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -12834,7 +12804,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -13079,7 +13048,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -13324,7 +13292,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -13569,7 +13536,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -14007,7 +13973,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -14279,7 +14244,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -14524,7 +14488,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -14769,7 +14732,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -15014,7 +14976,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -15299,7 +15260,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -15545,7 +15505,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:color/background_dark" />
@@ -15866,7 +15825,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -16151,7 +16109,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -16486,7 +16443,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -16731,7 +16687,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -17190,7 +17145,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@+id/" />
             <xs:enumeration value="@+id/toggleButton1" />
-            <xs:enumeration value="@id/deleteButton" />
+            <xs:enumeration value="@id/deleteNoteButton" />
             <xs:enumeration value="@id/editText" />
             <xs:enumeration value="@id/fingerprintIcon" />
             <xs:enumeration value="@id/layout" />
@@ -17278,7 +17233,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -17633,7 +17587,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -17973,7 +17926,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -18545,7 +18497,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -18876,7 +18827,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -19281,7 +19231,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -19646,7 +19595,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -19907,7 +19855,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -20147,7 +20094,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@id/deleteButton" />
+            <xs:enumeration value="@id/deleteNoteButton" />
             <xs:enumeration value="@id/editText" />
             <xs:enumeration value="@id/fingerprintIcon" />
             <xs:enumeration value="@id/layout" />
@@ -20230,7 +20177,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@id/deleteButton" />
+            <xs:enumeration value="@id/deleteNoteButton" />
             <xs:enumeration value="@id/editText" />
             <xs:enumeration value="@id/fingerprintIcon" />
             <xs:enumeration value="@id/layout" />
@@ -20313,7 +20260,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@id/deleteButton" />
+            <xs:enumeration value="@id/deleteNoteButton" />
             <xs:enumeration value="@id/editText" />
             <xs:enumeration value="@id/fingerprintIcon" />
             <xs:enumeration value="@id/layout" />
@@ -20396,7 +20343,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@id/deleteButton" />
+            <xs:enumeration value="@id/deleteNoteButton" />
             <xs:enumeration value="@id/editText" />
             <xs:enumeration value="@id/fingerprintIcon" />
             <xs:enumeration value="@id/layout" />
@@ -20479,7 +20426,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@id/deleteButton" />
+            <xs:enumeration value="@id/deleteNoteButton" />
             <xs:enumeration value="@id/editText" />
             <xs:enumeration value="@id/fingerprintIcon" />
             <xs:enumeration value="@id/layout" />
@@ -20802,7 +20749,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@id/deleteButton" />
+            <xs:enumeration value="@id/deleteNoteButton" />
             <xs:enumeration value="@id/editText" />
             <xs:enumeration value="@id/fingerprintIcon" />
             <xs:enumeration value="@id/layout" />
@@ -20885,7 +20832,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@id/deleteButton" />
+            <xs:enumeration value="@id/deleteNoteButton" />
             <xs:enumeration value="@id/editText" />
             <xs:enumeration value="@id/fingerprintIcon" />
             <xs:enumeration value="@id/layout" />
@@ -20968,7 +20915,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@id/deleteButton" />
+            <xs:enumeration value="@id/deleteNoteButton" />
             <xs:enumeration value="@id/editText" />
             <xs:enumeration value="@id/fingerprintIcon" />
             <xs:enumeration value="@id/layout" />
@@ -21091,7 +21038,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@id/deleteButton" />
+            <xs:enumeration value="@id/deleteNoteButton" />
             <xs:enumeration value="@id/editText" />
             <xs:enumeration value="@id/fingerprintIcon" />
             <xs:enumeration value="@id/layout" />
@@ -21616,7 +21563,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@id/deleteButton" />
+            <xs:enumeration value="@id/deleteNoteButton" />
             <xs:enumeration value="@id/editText" />
             <xs:enumeration value="@id/fingerprintIcon" />
             <xs:enumeration value="@id/layout" />
@@ -21699,7 +21646,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@id/deleteButton" />
+            <xs:enumeration value="@id/deleteNoteButton" />
             <xs:enumeration value="@id/editText" />
             <xs:enumeration value="@id/fingerprintIcon" />
             <xs:enumeration value="@id/layout" />
@@ -21782,7 +21729,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@id/deleteButton" />
+            <xs:enumeration value="@id/deleteNoteButton" />
             <xs:enumeration value="@id/editText" />
             <xs:enumeration value="@id/fingerprintIcon" />
             <xs:enumeration value="@id/layout" />
@@ -21865,7 +21812,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@id/deleteButton" />
+            <xs:enumeration value="@id/deleteNoteButton" />
             <xs:enumeration value="@id/editText" />
             <xs:enumeration value="@id/fingerprintIcon" />
             <xs:enumeration value="@id/layout" />
@@ -22053,7 +22000,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -22421,7 +22367,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:color/background_dark" />
@@ -23420,7 +23365,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -23677,7 +23621,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -23963,7 +23906,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -24248,7 +24190,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -24493,7 +24434,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -24738,7 +24678,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -24983,7 +24922,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -25228,7 +25166,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -25942,7 +25879,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -26205,7 +26141,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:color/background_dark" />
@@ -26527,7 +26462,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:color/background_dark" />
@@ -27242,7 +27176,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:color/background_dark" />
@@ -27603,7 +27536,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -28028,7 +27960,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -28382,7 +28313,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -28627,7 +28557,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -29415,7 +29344,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -29660,7 +29588,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -29905,7 +29832,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -30150,7 +30076,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -30575,7 +30500,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -30820,7 +30744,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -31232,7 +31155,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -31478,7 +31400,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:color/background_dark" />
@@ -31799,7 +31720,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -32487,7 +32407,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:color/background_dark" />
@@ -33024,7 +32943,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:color/background_dark" />
@@ -33403,7 +33321,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -34599,7 +34516,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -34885,7 +34801,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -35220,7 +35135,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -35545,7 +35459,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -35790,7 +35703,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -36075,7 +35987,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -36320,7 +36231,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -36712,7 +36622,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -36958,7 +36867,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:color/background_dark" />
@@ -37280,7 +37188,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:color/background_dark" />
@@ -37602,7 +37509,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:color/background_dark" />
@@ -37924,7 +37830,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:color/background_dark" />
@@ -38245,7 +38150,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -38516,7 +38420,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -38761,7 +38664,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -39006,7 +38908,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -39251,7 +39152,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -39496,7 +39396,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -39915,7 +39814,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -40160,7 +40058,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -40405,7 +40302,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -41587,7 +41483,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -42413,7 +42308,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -42828,7 +42722,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -43587,7 +43480,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:color/background_dark" />
@@ -44056,7 +43948,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -44317,7 +44208,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -44562,7 +44452,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -44808,7 +44697,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:color/background_dark" />
@@ -45130,7 +45018,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:color/background_dark" />
@@ -45503,7 +45390,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
@@ -45748,7 +45634,6 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/plus" />
-            <xs:enumeration value="@drawable/rcbutton" />
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/save" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />

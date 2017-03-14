@@ -17,7 +17,10 @@ namespace CryptoTouch.Activities
     [Activity(Label = "MainPageActivity")]
     public class MainPageActivity : Activity
     {
+        private object _noteToDelete;
         private Button _newNoteButton;
+        private Button _deleteNoteButton;
+        private RelativeLayout _sceneRoot;
         private LinearLayout _leftColumn;
         private LinearLayout _rightColumn;
 
@@ -29,9 +32,13 @@ namespace CryptoTouch.Activities
             SetContentView(Resource.Layout.MainPage);
             
             _newNoteButton = FindViewById<Button>(Resource.Id.newNoteButton);
+            _deleteNoteButton = FindViewById<Button>(Resource.Id.deleteNoteButton);
+            _sceneRoot = FindViewById<RelativeLayout>(Resource.Id.layout);
             _leftColumn = FindViewById<LinearLayout>(Resource.Id.leftColumn);
             _rightColumn = FindViewById<LinearLayout>(Resource.Id.rightColumn);
+            //_newNoteButton.BringToFront();
             _newNoteButton.Click += NewNoteButton_Click;
+            _deleteNoteButton.Click += DeleteNoteButton_Click;
             
             NoteStorage.Notes = XmlManager.Load(NoteStorage.Notes.GetType()) as List<string>;
             InitializeUI();
@@ -62,7 +69,7 @@ namespace CryptoTouch.Activities
                 button.SetBackgroundResource(Resource.Drawable.rcPannel);
                 button.SetTextColor(Color.Black);
                 button.Click += EditNote;
-                button.LongClick += DeleteNote;
+                button.LongClick += NoteLongClick;
                 if (isLeftColumn)
                     _leftColumn.AddView(button);
                 else
@@ -72,10 +79,46 @@ namespace CryptoTouch.Activities
             }
         }
 
-        private void DeleteNote(object sender, EventArgs e)
+        private void NoteLongClick(object sender, EventArgs e)
+        {
+            _noteToDelete = sender;
+            ShowDelteButton();
+        }
+
+        private void ShowDelteButton()
+        { 
+            _deleteNoteButton.Visibility = ViewStates.Visible;
+            TransitionManager.BeginDelayedTransition(_sceneRoot);
+            RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(180, 180);
+            layoutParams.AddRule(LayoutRules.LeftOf, Resource.Id.newNoteButton);
+            layoutParams.AddRule(LayoutRules.AlignParentBottom);
+            layoutParams.BottomMargin = 30;
+            layoutParams.RightMargin = 30;
+            _deleteNoteButton.LayoutParameters = layoutParams;
+        }
+
+        private void HideDelteButton()
+        {
+            _deleteNoteButton.Visibility = ViewStates.Invisible;
+            TransitionManager.BeginDelayedTransition(_sceneRoot);
+            RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(180, 180);
+            layoutParams.AddRule(LayoutRules.AlignParentRight);
+            layoutParams.AddRule(LayoutRules.AlignParentBottom);
+            layoutParams.BottomMargin = 30;
+            layoutParams.RightMargin = 30;
+            _deleteNoteButton.LayoutParameters = layoutParams;
+        }
+
+        private void DeleteNoteButton_Click(object sender, EventArgs e)
+        {
+            DeleteNote(_noteToDelete);
+        }
+
+        private void DeleteNote(object sender)
         {
             NoteStorage.Notes.Remove((sender as Button).Text);
             XmlManager.Save(NoteStorage.Notes);
+            HideDelteButton();
             InitializeUI();
         }
 
