@@ -61,25 +61,28 @@ namespace CryptoTouch
 		{
 			
 			// aapt resource value: 0x7f020000
-			public const int error = 2130837504;
+			public const int EdittextBG = 2130837504;
 			
 			// aapt resource value: 0x7f020001
-			public const int fingerprint = 2130837505;
+			public const int error = 2130837505;
 			
 			// aapt resource value: 0x7f020002
-			public const int fingerprint_icon = 2130837506;
+			public const int fingerprint = 2130837506;
 			
 			// aapt resource value: 0x7f020003
-			public const int Icon = 2130837507;
+			public const int fingerprint_icon = 2130837507;
 			
 			// aapt resource value: 0x7f020004
-			public const int plus = 2130837508;
+			public const int Icon = 2130837508;
 			
 			// aapt resource value: 0x7f020005
-			public const int rcPannel = 2130837509;
+			public const int plus = 2130837509;
 			
 			// aapt resource value: 0x7f020006
-			public const int save = 2130837510;
+			public const int rcPannel = 2130837510;
+			
+			// aapt resource value: 0x7f020007
+			public const int save = 2130837511;
 			
 			static Drawable()
 			{
@@ -93,6 +96,12 @@ namespace CryptoTouch
 		
 		public partial class Id
 		{
+			
+			// aapt resource value: 0x7f07000a
+			public const int ButtonSubmitPassword = 2131165194;
+			
+			// aapt resource value: 0x7f070009
+			public const int RegisterPassword = 2131165193;
 			
 			// aapt resource value: 0x7f070005
 			public const int deleteNoteButton = 2131165189;
@@ -142,6 +151,9 @@ namespace CryptoTouch
 			
 			// aapt resource value: 0x7f030002
 			public const int NotePage = 2130903042;
+			
+			// aapt resource value: 0x7f030003
+			public const int PasswordPage = 2130903043;
 			
 			static Layout()
 			{

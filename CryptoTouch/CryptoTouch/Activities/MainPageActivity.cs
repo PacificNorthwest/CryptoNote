@@ -30,7 +30,11 @@ namespace CryptoTouch.Activities
             Window.RequestFeature(WindowFeatures.ContentTransitions);
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.MainPage);
-            
+            //
+            Toast.MakeText(this, "Main menu loaded", ToastLength.Long).Show();
+            SecurityProvider.LoadNotes();
+            //
+
             _newNoteButton = FindViewById<Button>(Resource.Id.newNoteButton);
             _deleteNoteButton = FindViewById<Button>(Resource.Id.deleteNoteButton);
             _sceneRoot = FindViewById<RelativeLayout>(Resource.Id.layout);
@@ -40,7 +44,7 @@ namespace CryptoTouch.Activities
             _newNoteButton.Click += NewNoteButton_Click;
             _deleteNoteButton.Click += DeleteNoteButton_Click;
             
-            NoteStorage.Notes = XmlManager.Load(NoteStorage.Notes.GetType()) as List<string>;
+            //NoteStorage.Notes = XmlManager.Load(NoteStorage.Notes.GetType()) as List<string>;
             InitializeUI();
             Animate();
         }
@@ -55,28 +59,28 @@ namespace CryptoTouch.Activities
 
         private void InitializeUI()
         {
-            _leftColumn.RemoveAllViews();
-            _rightColumn.RemoveAllViews();
-            bool isLeftColumn = true;
-            foreach(string note in NoteStorage.Notes)
-            {
-                Button button = new Button(this);
-                button.Text = note;
-                LinearLayout.LayoutParams linearLayoutParams = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MatchParent,
-                                                                                             LinearLayout.LayoutParams.MatchParent);
-                linearLayoutParams.Weight = new Random().Next(2, 4);
-                button.LayoutParameters = linearLayoutParams;
-                button.SetBackgroundResource(Resource.Drawable.rcPannel);
-                button.SetTextColor(Color.Black);
-                button.Click += EditNote;
-                button.LongClick += NoteLongClick;
-                if (isLeftColumn)
-                    _leftColumn.AddView(button);
-                else
-                    _rightColumn.AddView(button);
-                isLeftColumn = !isLeftColumn;
+            //_leftColumn.RemoveAllViews();
+            //_rightColumn.RemoveAllViews();
+            //bool isLeftColumn = true;
+            //foreach(string note in NoteStorage.Notes)
+            //{
+            //    Button button = new Button(this);
+            //    button.Text = note;
+            //    LinearLayout.LayoutParams linearLayoutParams = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MatchParent,
+            //                                                                                 LinearLayout.LayoutParams.MatchParent);
+            //    linearLayoutParams.Weight = new Random().Next(2, 4);
+            //    button.LayoutParameters = linearLayoutParams;
+            //    button.SetBackgroundResource(Resource.Drawable.rcPannel);
+            //    button.SetTextColor(Color.Black);
+            //    button.Click += EditNote;
+            //    button.LongClick += NoteLongClick;
+            //    if (isLeftColumn)
+            //        _leftColumn.AddView(button);
+            //    else
+            //        _rightColumn.AddView(button);
+            //    isLeftColumn = !isLeftColumn;
                     
-            }
+            //}
         }
 
         private void NoteLongClick(object sender, EventArgs e)
@@ -116,7 +120,7 @@ namespace CryptoTouch.Activities
 
         private void DeleteNote(object sender)
         {
-            NoteStorage.Notes.Remove((sender as Button).Text);
+            //NoteStorage.Notes.Remove((sender as Button).Text);
             XmlManager.Save(NoteStorage.Notes);
             HideDelteButton();
             InitializeUI();

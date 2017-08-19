@@ -14,15 +14,18 @@ public final class R {
         public static final int ButtonHighlight=0x7f040000;
     }
     public static final class drawable {
-        public static final int error=0x7f020000;
-        public static final int fingerprint=0x7f020001;
-        public static final int fingerprint_icon=0x7f020002;
-        public static final int icon=0x7f020003;
-        public static final int plus=0x7f020004;
-        public static final int rcpannel=0x7f020005;
-        public static final int save=0x7f020006;
+        public static final int edittextbg=0x7f020000;
+        public static final int error=0x7f020001;
+        public static final int fingerprint=0x7f020002;
+        public static final int fingerprint_icon=0x7f020003;
+        public static final int icon=0x7f020004;
+        public static final int plus=0x7f020005;
+        public static final int rcpannel=0x7f020006;
+        public static final int save=0x7f020007;
     }
     public static final class id {
+        public static final int ButtonSubmitPassword=0x7f07000a;
+        public static final int RegisterPassword=0x7f070009;
         public static final int deleteNoteButton=0x7f070005;
         public static final int editText=0x7f070007;
         public static final int fingerprintIcon=0x7f070000;
@@ -37,6 +40,7 @@ public final class R {
         public static final int loginpage=0x7f030000;
         public static final int mainpage=0x7f030001;
         public static final int notepage=0x7f030002;
+        public static final int passwordpage=0x7f030003;
     }
     public static final class string {
         public static final int ApplicationName=0x7f050001;

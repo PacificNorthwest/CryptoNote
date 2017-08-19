@@ -14,6 +14,6 @@ namespace CryptoTouch
 {
     class NoteStorage
     {
-        public static List<string> Notes { get; set; } = new List<string>();
+        public static List<Note> Notes { get; set; } = new List<Note>();
     }
 }
