@@ -2,7 +2,7 @@
 <xs:schema xmlns:android="http://schemas.android.com/apk/res/android" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/apk/res/android" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v23</xs:documentation>
-    <xs:documentation>19.08.2017 18:10:32</xs:documentation>
+    <xs:documentation>20.08.2017 17:12:44</xs:documentation>
   </xs:annotation>
   <xs:attribute name="accessibilityLiveRegion">
     <xs:annotation>
@@ -17184,6 +17184,8 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@+id/" />
             <xs:enumeration value="@+id/checkBox1" />
+            <xs:enumeration value="@id/AuthorizationPassword" />
+            <xs:enumeration value="@id/ButtonSubmitAuthorization" />
             <xs:enumeration value="@id/ButtonSubmitPassword" />
             <xs:enumeration value="@id/deleteNoteButton" />
             <xs:enumeration value="@id/editText" />
@@ -17194,7 +17196,6 @@
             <xs:enumeration value="@id/RegisterPassword" />
             <xs:enumeration value="@id/rightColumn" />
             <xs:enumeration value="@id/saveNoteButton" />
-            <xs:enumeration value="@id/textView" />
             <xs:enumeration value="@android:id/accessibilityActionContextClick" />
             <xs:enumeration value="@android:id/accessibilityActionScrollDown" />
             <xs:enumeration value="@android:id/accessibilityActionScrollLeft" />

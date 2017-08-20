@@ -26,10 +26,10 @@ namespace CryptoTouch
     {
         private const string STORE_NAME = "AndroidKeyStore";
         private static KeyStore _keyStore;
+        private static KeyPair _keyPair;
         private static string _aliasPath;
         private static string _notesPath;
         private static string _alias;
-        private static KeyPair _keyPair;
         
         public static bool AliasExists() => System.IO.File.Exists(_aliasPath);
 
@@ -66,6 +66,18 @@ namespace CryptoTouch
                 NoteStorage.Notes = JsonConvert.DeserializeObject<List<Note>>(json);
             }
 
+        }
+
+        public static void SaveNotes()
+        {
+            string json = JsonConvert.SerializeObject(NoteStorage.Notes);
+            Cipher cipher = Cipher.GetInstance("RSA/ECB/PKCS1Padding", "AndroidOpenSSL");
+            cipher.Init(Javax.Crypto.CipherMode.EncryptMode, _keyPair.Public);
+            MemoryStream memoryStream = new MemoryStream();
+            CipherOutputStream cipherOutputStream = new CipherOutputStream(memoryStream, cipher);
+            cipherOutputStream.Write(Encoding.UTF8.GetBytes(json));
+            cipherOutputStream.Close();
+            System.IO.File.WriteAllText( _notesPath ,Base64.EncodeToString(memoryStream.ToArray(), Base64Flags.Default));
         }
 
         public static bool PasswordAuthenticate(string password)

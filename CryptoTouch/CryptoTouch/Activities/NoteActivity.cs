@@ -27,7 +27,15 @@ namespace CryptoTouch.Activities
             Window.RequestFeature(WindowFeatures.ContentTransitions);
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.NotePage);
+        }
 
+        private void UpdateNotes()
+        {
+            if (_isNewNote)
+                NoteStorage.Notes.Add(new Note("note text here"));
+            else
+                NoteStorage.Notes.Find(note => note == _originalNote).Text = "new note text here";
+            SecurityProvider.SaveNotes();
         }
     }
 }

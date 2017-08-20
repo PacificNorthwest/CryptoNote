@@ -15,7 +15,22 @@ namespace CryptoTouch.Activities
             Window.RequestFeature(Android.Views.WindowFeatures.ContentTransitions);
             base.OnCreate(bundle);
             SetContentView (Resource.Layout.LoginPage);
+            FindViewById<Button>(Resource.Id.ButtonSubmitAuthorization).Click += (object sender, System.EventArgs e) => PasswordAuthorization();
             SecurityProvider.FingerprintAuthenticate(this);
+        }
+
+        private void PasswordAuthorization()
+        {
+            if (SecurityProvider.PasswordAuthenticate(FindViewById<EditText>(Resource.Id.AuthorizationPassword).Text))
+            {
+                Intent intent = new Intent(this, typeof(MainPageActivity));
+                StartActivity(intent);
+            }
+            else
+            {
+                FindViewById<EditText>(Resource.Id.AuthorizationPassword).Text = string.Empty;
+                Toast.MakeText(this, "Incorrect password!", ToastLength.Long).Show();
+            }
         }
 
         public void OnAuthenticationSucceeded()
