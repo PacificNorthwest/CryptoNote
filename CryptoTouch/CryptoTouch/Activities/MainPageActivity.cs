@@ -11,6 +11,7 @@ using Android.Views;
 using Android.Widget;
 using Android.Graphics;
 using Android.Transitions;
+using Android.Support.V7.Widget;
 
 namespace CryptoTouch.Activities
 {
@@ -21,8 +22,7 @@ namespace CryptoTouch.Activities
         private Button _newNoteButton;
         private Button _deleteNoteButton;
         private RelativeLayout _sceneRoot;
-        private LinearLayout _leftColumn;
-        private LinearLayout _rightColumn;
+        private RecyclerView _notesGrid;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -34,17 +34,7 @@ namespace CryptoTouch.Activities
             Toast.MakeText(this, "Main menu loaded", ToastLength.Long).Show();
             SecurityProvider.LoadNotes();
             //
-
-            _newNoteButton = FindViewById<Button>(Resource.Id.newNoteButton);
-            _deleteNoteButton = FindViewById<Button>(Resource.Id.deleteNoteButton);
-            _sceneRoot = FindViewById<RelativeLayout>(Resource.Id.layout);
-            _leftColumn = FindViewById<LinearLayout>(Resource.Id.leftColumn);
-            _rightColumn = FindViewById<LinearLayout>(Resource.Id.rightColumn);
-            //_newNoteButton.BringToFront();
-            _newNoteButton.Click += NewNoteButton_Click;
-            _deleteNoteButton.Click += DeleteNoteButton_Click;
             
-            //NoteStorage.Notes = XmlManager.Load(NoteStorage.Notes.GetType()) as List<string>;
             InitializeUI();
             Animate();
         }
@@ -59,28 +49,20 @@ namespace CryptoTouch.Activities
 
         private void InitializeUI()
         {
-            //_leftColumn.RemoveAllViews();
-            //_rightColumn.RemoveAllViews();
-            //bool isLeftColumn = true;
-            //foreach(string note in NoteStorage.Notes)
-            //{
-            //    Button button = new Button(this);
-            //    button.Text = note;
-            //    LinearLayout.LayoutParams linearLayoutParams = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MatchParent,
-            //                                                                                 LinearLayout.LayoutParams.MatchParent);
-            //    linearLayoutParams.Weight = new Random().Next(2, 4);
-            //    button.LayoutParameters = linearLayoutParams;
-            //    button.SetBackgroundResource(Resource.Drawable.rcPannel);
-            //    button.SetTextColor(Color.Black);
-            //    button.Click += EditNote;
-            //    button.LongClick += NoteLongClick;
-            //    if (isLeftColumn)
-            //        _leftColumn.AddView(button);
-            //    else
-            //        _rightColumn.AddView(button);
-            //    isLeftColumn = !isLeftColumn;
-                    
-            //}
+            _newNoteButton = FindViewById<Button>(Resource.Id.newNoteButton);
+            _deleteNoteButton = FindViewById<Button>(Resource.Id.deleteNoteButton);
+            _sceneRoot = FindViewById<RelativeLayout>(Resource.Id.layout);
+            _notesGrid = FindViewById<RecyclerView>(Resource.Id.recyclerView);
+            _deleteNoteButton.Click += (object sender, EventArgs e) => DeleteNote(_noteToDelete);
+            _newNoteButton.Click += (object sender, EventArgs e) => {
+                Intent intent = new Intent(this, typeof(NoteActivity));
+                StartActivity(intent);
+            };
+
+            _notesGrid.HasFixedSize = true;
+            _notesGrid.SetLayoutManager(new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.Vertical));
+            _notesGrid.SetAdapter(new NotesListAdapter(new string[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" }));
+            
         }
 
         private void NoteLongClick(object sender, EventArgs e)
@@ -101,7 +83,7 @@ namespace CryptoTouch.Activities
             _deleteNoteButton.LayoutParameters = layoutParams;
         }
 
-        private void HideDelteButton()
+        private void HideDeleteButton()
         {
             _deleteNoteButton.Visibility = ViewStates.Invisible;
             TransitionManager.BeginDelayedTransition(_sceneRoot);
@@ -121,8 +103,8 @@ namespace CryptoTouch.Activities
         private void DeleteNote(object sender)
         {
             //NoteStorage.Notes.Remove((sender as Button).Text);
-            XmlManager.Save(NoteStorage.Notes);
-            HideDelteButton();
+            //XmlManager.Save(NoteStorage.Notes);
+            HideDeleteButton();
             InitializeUI();
         }
 
@@ -133,12 +115,6 @@ namespace CryptoTouch.Activities
             Intent intent = new Intent(this, typeof(NoteActivity));
             intent.PutExtra("NoteToEdit", (sender as Button).Text);
             StartActivity(intent, options.ToBundle());
-        }
-
-        private void NewNoteButton_Click(object sender, EventArgs e)
-        {
-            Intent intent = new Intent(this, typeof(NoteActivity));
-            StartActivity(intent);
         }
     }
 }

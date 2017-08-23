@@ -31,6 +31,18 @@ namespace CryptoTouch
 		public partial class Attribute
 		{
 			
+			// aapt resource value: 0x7f010000
+			public const int layoutManager = 2130771968;
+			
+			// aapt resource value: 0x7f010002
+			public const int reverseLayout = 2130771970;
+			
+			// aapt resource value: 0x7f010001
+			public const int spanCount = 2130771969;
+			
+			// aapt resource value: 0x7f010003
+			public const int stackFromEnd = 2130771971;
+			
 			static Attribute()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -44,8 +56,8 @@ namespace CryptoTouch
 		public partial class Color
 		{
 			
-			// aapt resource value: 0x7f040000
-			public const int ButtonHighlight = 2130968576;
+			// aapt resource value: 0x7f060000
+			public const int ButtonHighlight = 2131099648;
 			
 			static Color()
 			{
@@ -53,6 +65,22 @@ namespace CryptoTouch
 			}
 			
 			private Color()
+			{
+			}
+		}
+		
+		public partial class Dimension
+		{
+			
+			// aapt resource value: 0x7f040000
+			public const int item_touch_helper_max_drag_scroll_per_frame = 2130968576;
+			
+			static Dimension()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Dimension()
 			{
 			}
 		}
@@ -97,41 +125,41 @@ namespace CryptoTouch
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f070001
-			public const int AuthorizationPassword = 2131165185;
+			// aapt resource value: 0x7f050002
+			public const int AuthorizationPassword = 2131034114;
 			
-			// aapt resource value: 0x7f070002
-			public const int ButtonSubmitAuthorization = 2131165186;
+			// aapt resource value: 0x7f050003
+			public const int ButtonSubmitAuthorization = 2131034115;
 			
-			// aapt resource value: 0x7f07000b
-			public const int ButtonSubmitPassword = 2131165195;
+			// aapt resource value: 0x7f05000b
+			public const int ButtonSubmitPassword = 2131034123;
 			
-			// aapt resource value: 0x7f07000a
-			public const int RegisterPassword = 2131165194;
+			// aapt resource value: 0x7f05000a
+			public const int RegisterPassword = 2131034122;
 			
-			// aapt resource value: 0x7f070006
-			public const int deleteNoteButton = 2131165190;
+			// aapt resource value: 0x7f050006
+			public const int deleteNoteButton = 2131034118;
 			
-			// aapt resource value: 0x7f070008
-			public const int editText = 2131165192;
+			// aapt resource value: 0x7f050008
+			public const int editText = 2131034120;
 			
-			// aapt resource value: 0x7f070000
-			public const int fingerprintIcon = 2131165184;
+			// aapt resource value: 0x7f050001
+			public const int fingerprintIcon = 2131034113;
 			
-			// aapt resource value: 0x7f070003
-			public const int layout = 2131165187;
+			// aapt resource value: 0x7f050000
+			public const int item_touch_helper_previous_elevation = 2131034112;
 			
-			// aapt resource value: 0x7f070004
-			public const int leftColumn = 2131165188;
+			// aapt resource value: 0x7f050004
+			public const int layout = 2131034116;
 			
-			// aapt resource value: 0x7f070007
-			public const int newNoteButton = 2131165191;
+			// aapt resource value: 0x7f050007
+			public const int newNoteButton = 2131034119;
 			
-			// aapt resource value: 0x7f070005
-			public const int rightColumn = 2131165189;
+			// aapt resource value: 0x7f050005
+			public const int recyclerView = 2131034117;
 			
-			// aapt resource value: 0x7f070009
-			public const int saveNoteButton = 2131165193;
+			// aapt resource value: 0x7f050009
+			public const int saveNoteButton = 2131034121;
 			
 			static Id()
 			{
@@ -171,11 +199,11 @@ namespace CryptoTouch
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f050001
-			public const int ApplicationName = 2131034113;
+			// aapt resource value: 0x7f070001
+			public const int ApplicationName = 2131165185;
 			
-			// aapt resource value: 0x7f050000
-			public const int Hello = 2131034112;
+			// aapt resource value: 0x7f070000
+			public const int Hello = 2131165184;
 			
 			static String()
 			{
@@ -190,8 +218,8 @@ namespace CryptoTouch
 		public partial class Style
 		{
 			
-			// aapt resource value: 0x7f060000
-			public const int CryptoTouch_NoOrange = 2131099648;
+			// aapt resource value: 0x7f080000
+			public const int CryptoTouch_NoOrange = 2131230720;
 			
 			static Style()
 			{
@@ -199,6 +227,41 @@ namespace CryptoTouch
 			}
 			
 			private Style()
+			{
+			}
+		}
+		
+		public partial class Styleable
+		{
+			
+			public static int[] RecyclerView = new int[] {
+					16842948,
+					2130771968,
+					2130771969,
+					2130771970,
+					2130771971};
+			
+			// aapt resource value: 0
+			public const int RecyclerView_android_orientation = 0;
+			
+			// aapt resource value: 1
+			public const int RecyclerView_layoutManager = 1;
+			
+			// aapt resource value: 3
+			public const int RecyclerView_reverseLayout = 3;
+			
+			// aapt resource value: 2
+			public const int RecyclerView_spanCount = 2;
+			
+			// aapt resource value: 4
+			public const int RecyclerView_stackFromEnd = 4;
+			
+			static Styleable()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Styleable()
 			{
 			}
 		}

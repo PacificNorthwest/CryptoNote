@@ -10,6 +10,8 @@ E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\android\assets\System.
 E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\android\assets\System.Xml.dll
 E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\android\assets\System.Xml.Linq.dll
 E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\android\assets\Newtonsoft.Json.dll
+E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\android\assets\Xamarin.Android.Support.v4.dll
+E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\android\assets\Xamarin.Android.Support.v7.RecyclerView.dll
 E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\android\assets\System.Runtime.dll
 E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\android\assets\System.ComponentModel.Composition.dll
 E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\android\assets\System.Threading.dll
