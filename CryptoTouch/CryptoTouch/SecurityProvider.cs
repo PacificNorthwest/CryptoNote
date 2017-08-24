@@ -25,66 +25,84 @@ namespace CryptoTouch
     class SecurityProvider
     {
         private const string STORE_NAME = "AndroidKeyStore";
+        private const string ALIAS = "RSA_Keys";
+        private const string ASSYMETRIC_ALGORITHM = "RSA/ECB/PKCS1Padding";
+        
+        private static string _tDES_key_path;
+        private static string _notes_path;
+        private static byte[] _tDES_key;
         private static KeyStore _keyStore;
         private static KeyPair _keyPair;
-        private static string _aliasPath;
-        private static string _notesPath;
-        private static string _alias;
-        
-        public static bool AliasExists() => System.IO.File.Exists(_aliasPath);
+
+        public static bool KeyExists() => System.IO.File.Exists(_tDES_key_path);
 
         public static void InitializeSecuritySystem()
         {
             _keyStore = KeyStore.GetInstance(STORE_NAME);
             _keyStore.Load(null);
 
-            _notesPath = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "notes.dat");
-            _aliasPath = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "alias.dat");
-            
-            if (System.IO.File.Exists(_aliasPath))
-                using (StreamReader reader = new StreamReader(_aliasPath))
-                    _alias = reader.ReadLine();
-            
-        }
-
-        public static void LoadNotes()
-        {
-            if (_keyPair != null && System.IO.File.Exists(_notesPath))
-            {
-                
-                string buffer = System.IO.File.ReadAllText(_notesPath);
-                Cipher cipher = Cipher.GetInstance("RSA/ECB/PKCS1Padding", "AndroidOpenSSL");
-                cipher.Init(Javax.Crypto.CipherMode.DecryptMode, _keyPair.Private);
-                CipherInputStream cipherInputStream = new CipherInputStream(
-                    new MemoryStream(Base64.Decode(buffer, Base64Flags.Default)), cipher);
-                List<Byte> values = new List<Byte>();
-                int nextByte;
-                while ((nextByte = cipherInputStream.Read()) != -1)
-                    values.Add((byte)nextByte);
-
-                string json = Encoding.UTF8.GetString(values.ToArray());
-                NoteStorage.Notes = JsonConvert.DeserializeObject<List<Note>>(json);
-            }
-
+            _notes_path = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "notes.dat");
+            _tDES_key_path = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "key.dat");
         }
 
         public static void SaveNotes()
         {
             string json = JsonConvert.SerializeObject(NoteStorage.Notes);
-            Cipher cipher = Cipher.GetInstance("RSA/ECB/PKCS1Padding", "AndroidOpenSSL");
+            TripleDESCryptoServiceProvider tDES = new TripleDESCryptoServiceProvider
+            {
+                Key = _tDES_key,
+                Mode = System.Security.Cryptography.CipherMode.ECB,
+                Padding = PaddingMode.PKCS7
+            };
+
+            ICryptoTransform crypt = tDES.CreateEncryptor();
+            System.IO.File.WriteAllBytes(_notes_path, crypt.TransformFinalBlock(Encoding.UTF8.GetBytes(json), 0, Encoding.UTF8.GetByteCount(json)));
+        }
+
+        public static void LoadNotes()
+        {
+            if (_tDES_key != null && System.IO.File.Exists(_notes_path))
+            {
+                TripleDESCryptoServiceProvider tDES = new TripleDESCryptoServiceProvider
+                {
+                    Key = _tDES_key,
+                    Mode = System.Security.Cryptography.CipherMode.ECB,
+                    Padding = PaddingMode.PKCS7
+                };
+
+                ICryptoTransform crypt = tDES.CreateDecryptor();
+                byte[] buffer = System.IO.File.ReadAllBytes(_notes_path);
+                NoteStorage.Notes = JsonConvert.DeserializeObject<List<Note>>(Encoding.UTF8.GetString(crypt.TransformFinalBlock(buffer, 0, buffer.Length)));
+            }
+        }
+        
+        public static byte[] DecryptKey()
+        {
+            if (_keyPair != null && System.IO.File.Exists(_tDES_key_path))
+            {
+
+                byte[] buffer = System.IO.File.ReadAllBytes(_tDES_key_path);
+                Cipher cipher = Cipher.GetInstance(ASSYMETRIC_ALGORITHM, "AndroidKeyStoreBCWorkaround");
+                cipher.Init(Javax.Crypto.CipherMode.DecryptMode, _keyPair.Private);
+                return cipher.DoFinal(buffer);
+            }
+            return null;
+
+        }
+
+        public static byte[] EncryptKey(byte[] key)
+        {
+            Cipher cipher = Cipher.GetInstance(ASSYMETRIC_ALGORITHM, "AndroidKeyStoreBCWorkaround");
             cipher.Init(Javax.Crypto.CipherMode.EncryptMode, _keyPair.Public);
-            MemoryStream memoryStream = new MemoryStream();
-            CipherOutputStream cipherOutputStream = new CipherOutputStream(memoryStream, cipher);
-            cipherOutputStream.Write(Encoding.UTF8.GetBytes(json));
-            cipherOutputStream.Close();
-            System.IO.File.WriteAllText( _notesPath ,Base64.EncodeToString(memoryStream.ToArray(), Base64Flags.Default));
+            return cipher.DoFinal(key);
         }
 
         public static bool PasswordAuthenticate(string password)
         {
-            if (ComputeHash(password) == _alias)
+            AccessKeyStore();
+            if (EncryptKey(ComputeHash(password)) == System.IO.File.ReadAllBytes(_tDES_key_path))
             {
-                AccessKeyStore();
+                _tDES_key = ComputeHash(password);
                 return true;
             }
             return false;
@@ -111,30 +129,27 @@ namespace CryptoTouch
         public static void FingerprintAuthenticationSucceeded()
         {
             AccessKeyStore();
+            _tDES_key = DecryptKey();
         }
 
         private static void AccessKeyStore()
         {
-            if (_keyStore.ContainsAlias(_alias))
+            if (_keyStore.ContainsAlias(ALIAS))
             {
-                IPrivateKey privateKey = (_keyStore.GetEntry(_alias, null) as KeyStore.PrivateKeyEntry).PrivateKey;
-                IPublicKey publicKey = _keyStore.GetCertificate(_alias).PublicKey;
+                IPrivateKey privateKey = (_keyStore.GetEntry(ALIAS, null) as KeyStore.PrivateKeyEntry).PrivateKey;
+                IPublicKey publicKey = _keyStore.GetCertificate(ALIAS).PublicKey;
                 _keyPair = new KeyPair(publicKey, privateKey);
             }
         }
 
         public static void InitializeUser(string password, Context context)
         {
-            string alias = ComputeHash(password);
-            if (alias != _alias)
-                if (CreateNewKeyPair(alias, context))
-                {
-                    SaveAlias(alias);
-                    InitializeSecuritySystem();
-                }
+            _tDES_key = ComputeHash(password);
+            if (CreateNewRSAKeyPair(ALIAS, context))
+                System.IO.File.WriteAllBytes(_tDES_key_path, EncryptKey(_tDES_key));
         }
 
-        private static bool CreateNewKeyPair(string alias, Context context)
+        private static bool CreateNewRSAKeyPair(string alias, Context context)
         {
             try
             {
@@ -151,25 +166,14 @@ namespace CryptoTouch
                 KeyPairGenerator generator = KeyPairGenerator.GetInstance("RSA", STORE_NAME);
                 generator.Initialize(spec);
                 _keyPair = generator.GenerateKeyPair();
-                
+
                 return true;
             }
             catch (Exception ex)
             { Toast.MakeText(context, ex.Message, ToastLength.Long).Show(); return false; }
         }
 
-        private static void SaveAlias(string alias)
-        {
-            using (FileStream stream = new FileStream(_aliasPath, FileMode.Create, FileAccess.Write))
-            using (StreamWriter writer = new StreamWriter(stream))
-                writer.WriteLine(alias);
-        }
-
-        public static string ComputeHash(string data)
-        {
-            MD5CryptoServiceProvider md5 = new MD5CryptoServiceProvider();
-            byte[] hash = md5.ComputeHash(Encoding.UTF8.GetBytes(data));
-            return BitConverter.ToString(hash).Replace("-", string.Empty);
-        }
+        public static byte[] ComputeHash(string data)
+            => new MD5CryptoServiceProvider().ComputeHash(Encoding.UTF8.GetBytes(data));
     }
 }

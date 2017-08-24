@@ -18,7 +18,7 @@ namespace CryptoTouch.Activities
     [Activity(Label = "MainPageActivity")]
     public class MainPageActivity : Activity
     {
-        private object _noteToDelete;
+        private List<View> _selectedItems = new List<View>();
         private Button _newNoteButton;
         private Button _deleteNoteButton;
         private RelativeLayout _sceneRoot;
@@ -30,21 +30,9 @@ namespace CryptoTouch.Activities
             Window.RequestFeature(WindowFeatures.ContentTransitions);
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.MainPage);
-            //
-            Toast.MakeText(this, "Main menu loaded", ToastLength.Long).Show();
-            SecurityProvider.LoadNotes();
-            //
             
             InitializeUI();
             Animate();
-        }
-
-        private void Animate()
-        {
-            TransitionSet set = new TransitionSet();
-            set.AddTransition(new Fade());
-            set.AddTransition(new Explode());
-            Window.ExitTransition = set;
         }
 
         private void InitializeUI()
@@ -53,26 +41,51 @@ namespace CryptoTouch.Activities
             _deleteNoteButton = FindViewById<Button>(Resource.Id.deleteNoteButton);
             _sceneRoot = FindViewById<RelativeLayout>(Resource.Id.layout);
             _notesGrid = FindViewById<RecyclerView>(Resource.Id.recyclerView);
-            _deleteNoteButton.Click += (object sender, EventArgs e) => DeleteNote(_noteToDelete);
+            _deleteNoteButton.Click += (object sender, EventArgs e) => DeleteNotes();
             _newNoteButton.Click += (object sender, EventArgs e) => {
                 Intent intent = new Intent(this, typeof(NoteActivity));
                 StartActivity(intent);
-            };
+            };            
+        }
 
+        private void PopulateGrid()
+        {
             _notesGrid.HasFixedSize = true;
             _notesGrid.SetLayoutManager(new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.Vertical));
-            _notesGrid.SetAdapter(new NotesListAdapter(new string[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" }));
-            
+            _notesGrid.AddItemDecoration(new RecyclerViewItemSpacing(20));
+            _notesGrid.SetAdapter(new NotesListAdapter(this, NoteStorage.Notes));
         }
 
-        private void NoteLongClick(object sender, EventArgs e)
+        private void Animate()
         {
-            _noteToDelete = sender;
-            ShowDelteButton();
+            TransitionSet set = new TransitionSet();
+            set.AddTransition(new Fade());
+            set.AddTransition(new Explode());
+            set.ExcludeTarget(_notesGrid, true);
+            set.ExcludeTarget(_sceneRoot, true);
+            Window.EnterTransition = set;
         }
 
-        private void ShowDelteButton()
-        { 
+        public void SelectItem(View view)
+        {
+            if (!_selectedItems.Contains(view))
+            {
+                _selectedItems.Add(view);
+                view.SetBackgroundResource(Resource.Drawable.CardSelectionBG);
+                if (_deleteNoteButton.Visibility == ViewStates.Invisible)
+                    ShowDeleteButton();
+            }
+            else
+            {
+                _selectedItems.Remove(view);
+                view.SetBackgroundResource(Resource.Color.cardview_light_background);
+                if (_selectedItems.Count == 0)
+                    HideDeleteButton();
+            }
+        }
+
+        private void ShowDeleteButton()
+        {
             _deleteNoteButton.Visibility = ViewStates.Visible;
             TransitionManager.BeginDelayedTransition(_sceneRoot);
             RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(180, 180);
@@ -95,26 +108,14 @@ namespace CryptoTouch.Activities
             _deleteNoteButton.LayoutParameters = layoutParams;
         }
 
-        private void DeleteNoteButton_Click(object sender, EventArgs e)
+        private void DeleteNotes()
         {
-            DeleteNote(_noteToDelete);
-        }
-
-        private void DeleteNote(object sender)
-        {
-            //NoteStorage.Notes.Remove((sender as Button).Text);
-            //XmlManager.Save(NoteStorage.Notes);
+            foreach (View view in _selectedItems)
+                NoteStorage.Notes.Remove(NoteStorage.Notes.Find(note => note.GetHashCode() == (int)view.Tag));
+            _selectedItems.Clear();
+            SecurityProvider.SaveNotes();
             HideDeleteButton();
-            InitializeUI();
-        }
-
-        private void EditNote(object sender, EventArgs e)
-        {
-            (sender as Button).TransitionName = "Note";
-            ActivityOptions options = ActivityOptions.MakeSceneTransitionAnimation(this, sender as View, "Note");
-            Intent intent = new Intent(this, typeof(NoteActivity));
-            intent.PutExtra("NoteToEdit", (sender as Button).Text);
-            StartActivity(intent, options.ToBundle());
+            PopulateGrid();
         }
     }
 }

@@ -22,7 +22,7 @@ namespace CryptoTouch.Activities
         {
             base.OnCreate(savedInstanceState);
             SecurityProvider.InitializeSecuritySystem();
-            if (SecurityProvider.AliasExists())
+            if (SecurityProvider.KeyExists())
                 OpenAuthorizationPage();
             this.SetContentView(Resource.Layout.PasswordPage);
             InitializeViews();
@@ -32,7 +32,6 @@ namespace CryptoTouch.Activities
         {
             _submitButton = FindViewById<Button>(Resource.Id.ButtonSubmitPassword);
             _passwordEditText = FindViewById<EditText>(Resource.Id.RegisterPassword);
-
             _submitButton.Click += (object sender, EventArgs e) => SubmitPassword();
         }
 

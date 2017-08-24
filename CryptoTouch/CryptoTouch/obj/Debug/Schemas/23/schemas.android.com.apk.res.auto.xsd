@@ -2,8 +2,534 @@
 <xs:schema xmlns:app="http://schemas.android.com/apk/res-auto" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/apk/res-auto" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v23</xs:documentation>
-    <xs:documentation>23.08.2017 17:56:43</xs:documentation>
+    <xs:documentation>24.08.2017 14:20:40</xs:documentation>
   </xs:annotation>
+  <xs:attribute name="cardBackgroundColor">
+    <xs:annotation>
+      <xs:documentation></xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:union memberTypes="xs:string">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="@color/ButtonHighlight" />
+            <xs:enumeration value="@color/cardview_dark_background" />
+            <xs:enumeration value="@color/cardview_light_background" />
+            <xs:enumeration value="@color/cardview_shadow_end_color" />
+            <xs:enumeration value="@color/cardview_shadow_start_color" />
+            <xs:enumeration value="@android:color/background_dark" />
+            <xs:enumeration value="@android:color/background_light" />
+            <xs:enumeration value="@android:color/black" />
+            <xs:enumeration value="@android:color/darker_gray" />
+            <xs:enumeration value="@android:color/holo_blue_bright" />
+            <xs:enumeration value="@android:color/holo_blue_dark" />
+            <xs:enumeration value="@android:color/holo_blue_light" />
+            <xs:enumeration value="@android:color/holo_green_dark" />
+            <xs:enumeration value="@android:color/holo_green_light" />
+            <xs:enumeration value="@android:color/holo_orange_dark" />
+            <xs:enumeration value="@android:color/holo_orange_light" />
+            <xs:enumeration value="@android:color/holo_purple" />
+            <xs:enumeration value="@android:color/holo_red_dark" />
+            <xs:enumeration value="@android:color/holo_red_light" />
+            <xs:enumeration value="@android:color/primary_text_dark" />
+            <xs:enumeration value="@android:color/primary_text_dark_nodisable" />
+            <xs:enumeration value="@android:color/primary_text_light" />
+            <xs:enumeration value="@android:color/primary_text_light_nodisable" />
+            <xs:enumeration value="@android:color/secondary_text_dark" />
+            <xs:enumeration value="@android:color/secondary_text_dark_nodisable" />
+            <xs:enumeration value="@android:color/secondary_text_light" />
+            <xs:enumeration value="@android:color/secondary_text_light_nodisable" />
+            <xs:enumeration value="@android:color/tab_indicator_text" />
+            <xs:enumeration value="@android:color/tertiary_text_dark" />
+            <xs:enumeration value="@android:color/tertiary_text_light" />
+            <xs:enumeration value="@android:color/transparent" />
+            <xs:enumeration value="@android:color/white" />
+            <xs:enumeration value="@android:color/widget_edittext_dark" />
+            <xs:enumeration value="?android:attr/actionMenuTextColor" />
+            <xs:enumeration value="?android:attr/colorAccent" />
+            <xs:enumeration value="?android:attr/colorActivatedHighlight" />
+            <xs:enumeration value="?android:attr/colorBackground" />
+            <xs:enumeration value="?android:attr/colorBackgroundCacheHint" />
+            <xs:enumeration value="?android:attr/colorBackgroundFloating" />
+            <xs:enumeration value="?android:attr/colorButtonNormal" />
+            <xs:enumeration value="?android:attr/colorControlActivated" />
+            <xs:enumeration value="?android:attr/colorControlHighlight" />
+            <xs:enumeration value="?android:attr/colorControlNormal" />
+            <xs:enumeration value="?android:attr/colorEdgeEffect" />
+            <xs:enumeration value="?android:attr/colorFocusedHighlight" />
+            <xs:enumeration value="?android:attr/colorForeground" />
+            <xs:enumeration value="?android:attr/colorForegroundInverse" />
+            <xs:enumeration value="?android:attr/colorLongPressedHighlight" />
+            <xs:enumeration value="?android:attr/colorMultiSelectHighlight" />
+            <xs:enumeration value="?android:attr/colorPressedHighlight" />
+            <xs:enumeration value="?android:attr/colorPrimary" />
+            <xs:enumeration value="?android:attr/colorPrimaryDark" />
+            <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
+            <xs:enumeration value="?android:attr/editTextColor" />
+            <xs:enumeration value="?android:attr/fastScrollTextColor" />
+            <xs:enumeration value="?android:attr/floatingToolbarForegroundColor" />
+            <xs:enumeration value="?android:attr/panelBackground" />
+            <xs:enumeration value="?android:attr/panelColorBackground" />
+            <xs:enumeration value="?android:attr/panelColorForeground" />
+            <xs:enumeration value="?android:attr/panelFullBackground" />
+            <xs:enumeration value="?android:attr/searchWidgetCorpusItemBackground" />
+            <xs:enumeration value="?android:attr/textColorAlertDialogListItem" />
+            <xs:enumeration value="?android:attr/textColorHighlightInverse" />
+            <xs:enumeration value="?android:attr/textColorHintInverse" />
+            <xs:enumeration value="?android:attr/textColorLinkInverse" />
+            <xs:enumeration value="?android:attr/textColorPrimary" />
+            <xs:enumeration value="?android:attr/textColorPrimaryActivated" />
+            <xs:enumeration value="?android:attr/textColorPrimaryDisableOnly" />
+            <xs:enumeration value="?android:attr/textColorPrimaryInverse" />
+            <xs:enumeration value="?android:attr/textColorPrimaryInverseDisableOnly" />
+            <xs:enumeration value="?android:attr/textColorPrimaryInverseNoDisable" />
+            <xs:enumeration value="?android:attr/textColorPrimaryNoDisable" />
+            <xs:enumeration value="?android:attr/textColorSecondary" />
+            <xs:enumeration value="?android:attr/textColorSecondaryActivated" />
+            <xs:enumeration value="?android:attr/textColorSecondaryInverse" />
+            <xs:enumeration value="?android:attr/textColorSecondaryInverseNoDisable" />
+            <xs:enumeration value="?android:attr/textColorSecondaryNoDisable" />
+            <xs:enumeration value="?android:attr/textColorTertiary" />
+            <xs:enumeration value="?android:attr/textColorTertiaryInverse" />
+            <xs:enumeration value="?android:attr/textUnderlineColor" />
+            <xs:enumeration value="?android:attr/windowBackgroundFallback" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="cardCornerRadius">
+    <xs:annotation>
+      <xs:documentation></xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:union memberTypes="xs:string">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="@dimen/cardview_compat_inset_shadow" />
+            <xs:enumeration value="@dimen/cardview_default_elevation" />
+            <xs:enumeration value="@dimen/cardview_default_radius" />
+            <xs:enumeration value="@dimen/item_touch_helper_max_drag_scroll_per_frame" />
+            <xs:enumeration value="@android:dimen/app_icon_size" />
+            <xs:enumeration value="@android:dimen/dialog_min_width_major" />
+            <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
+            <xs:enumeration value="@android:dimen/notification_large_icon_height" />
+            <xs:enumeration value="@android:dimen/notification_large_icon_width" />
+            <xs:enumeration value="@android:dimen/thumbnail_height" />
+            <xs:enumeration value="@android:dimen/thumbnail_width" />
+            <xs:enumeration value="?android:attr/actionBarSize" />
+            <xs:enumeration value="?android:attr/dialogPreferredPadding" />
+            <xs:enumeration value="?android:attr/dropdownListPreferredItemHeight" />
+            <xs:enumeration value="?android:attr/expandableListPreferredChildIndicatorLeft" />
+            <xs:enumeration value="?android:attr/expandableListPreferredChildIndicatorRight" />
+            <xs:enumeration value="?android:attr/expandableListPreferredChildPaddingLeft" />
+            <xs:enumeration value="?android:attr/expandableListPreferredItemIndicatorLeft" />
+            <xs:enumeration value="?android:attr/expandableListPreferredItemIndicatorRight" />
+            <xs:enumeration value="?android:attr/expandableListPreferredItemPaddingLeft" />
+            <xs:enumeration value="?android:attr/listPreferredItemHeight" />
+            <xs:enumeration value="?android:attr/listPreferredItemHeightLarge" />
+            <xs:enumeration value="?android:attr/listPreferredItemHeightSmall" />
+            <xs:enumeration value="?android:attr/listPreferredItemPaddingEnd" />
+            <xs:enumeration value="?android:attr/listPreferredItemPaddingLeft" />
+            <xs:enumeration value="?android:attr/listPreferredItemPaddingRight" />
+            <xs:enumeration value="?android:attr/listPreferredItemPaddingStart" />
+            <xs:enumeration value="?android:attr/panelMenuListWidth" />
+            <xs:enumeration value="?android:attr/preferenceFragmentPaddingSide" />
+            <xs:enumeration value="?android:attr/textUnderlineThickness" />
+            <xs:enumeration value="?android:attr/windowTitleSize" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="cardElevation">
+    <xs:annotation>
+      <xs:documentation></xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:union memberTypes="xs:string">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="@dimen/cardview_compat_inset_shadow" />
+            <xs:enumeration value="@dimen/cardview_default_elevation" />
+            <xs:enumeration value="@dimen/cardview_default_radius" />
+            <xs:enumeration value="@dimen/item_touch_helper_max_drag_scroll_per_frame" />
+            <xs:enumeration value="@android:dimen/app_icon_size" />
+            <xs:enumeration value="@android:dimen/dialog_min_width_major" />
+            <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
+            <xs:enumeration value="@android:dimen/notification_large_icon_height" />
+            <xs:enumeration value="@android:dimen/notification_large_icon_width" />
+            <xs:enumeration value="@android:dimen/thumbnail_height" />
+            <xs:enumeration value="@android:dimen/thumbnail_width" />
+            <xs:enumeration value="?android:attr/actionBarSize" />
+            <xs:enumeration value="?android:attr/dialogPreferredPadding" />
+            <xs:enumeration value="?android:attr/dropdownListPreferredItemHeight" />
+            <xs:enumeration value="?android:attr/expandableListPreferredChildIndicatorLeft" />
+            <xs:enumeration value="?android:attr/expandableListPreferredChildIndicatorRight" />
+            <xs:enumeration value="?android:attr/expandableListPreferredChildPaddingLeft" />
+            <xs:enumeration value="?android:attr/expandableListPreferredItemIndicatorLeft" />
+            <xs:enumeration value="?android:attr/expandableListPreferredItemIndicatorRight" />
+            <xs:enumeration value="?android:attr/expandableListPreferredItemPaddingLeft" />
+            <xs:enumeration value="?android:attr/listPreferredItemHeight" />
+            <xs:enumeration value="?android:attr/listPreferredItemHeightLarge" />
+            <xs:enumeration value="?android:attr/listPreferredItemHeightSmall" />
+            <xs:enumeration value="?android:attr/listPreferredItemPaddingEnd" />
+            <xs:enumeration value="?android:attr/listPreferredItemPaddingLeft" />
+            <xs:enumeration value="?android:attr/listPreferredItemPaddingRight" />
+            <xs:enumeration value="?android:attr/listPreferredItemPaddingStart" />
+            <xs:enumeration value="?android:attr/panelMenuListWidth" />
+            <xs:enumeration value="?android:attr/preferenceFragmentPaddingSide" />
+            <xs:enumeration value="?android:attr/textUnderlineThickness" />
+            <xs:enumeration value="?android:attr/windowTitleSize" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="cardMaxElevation">
+    <xs:annotation>
+      <xs:documentation></xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:union memberTypes="xs:string">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="@dimen/cardview_compat_inset_shadow" />
+            <xs:enumeration value="@dimen/cardview_default_elevation" />
+            <xs:enumeration value="@dimen/cardview_default_radius" />
+            <xs:enumeration value="@dimen/item_touch_helper_max_drag_scroll_per_frame" />
+            <xs:enumeration value="@android:dimen/app_icon_size" />
+            <xs:enumeration value="@android:dimen/dialog_min_width_major" />
+            <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
+            <xs:enumeration value="@android:dimen/notification_large_icon_height" />
+            <xs:enumeration value="@android:dimen/notification_large_icon_width" />
+            <xs:enumeration value="@android:dimen/thumbnail_height" />
+            <xs:enumeration value="@android:dimen/thumbnail_width" />
+            <xs:enumeration value="?android:attr/actionBarSize" />
+            <xs:enumeration value="?android:attr/dialogPreferredPadding" />
+            <xs:enumeration value="?android:attr/dropdownListPreferredItemHeight" />
+            <xs:enumeration value="?android:attr/expandableListPreferredChildIndicatorLeft" />
+            <xs:enumeration value="?android:attr/expandableListPreferredChildIndicatorRight" />
+            <xs:enumeration value="?android:attr/expandableListPreferredChildPaddingLeft" />
+            <xs:enumeration value="?android:attr/expandableListPreferredItemIndicatorLeft" />
+            <xs:enumeration value="?android:attr/expandableListPreferredItemIndicatorRight" />
+            <xs:enumeration value="?android:attr/expandableListPreferredItemPaddingLeft" />
+            <xs:enumeration value="?android:attr/listPreferredItemHeight" />
+            <xs:enumeration value="?android:attr/listPreferredItemHeightLarge" />
+            <xs:enumeration value="?android:attr/listPreferredItemHeightSmall" />
+            <xs:enumeration value="?android:attr/listPreferredItemPaddingEnd" />
+            <xs:enumeration value="?android:attr/listPreferredItemPaddingLeft" />
+            <xs:enumeration value="?android:attr/listPreferredItemPaddingRight" />
+            <xs:enumeration value="?android:attr/listPreferredItemPaddingStart" />
+            <xs:enumeration value="?android:attr/panelMenuListWidth" />
+            <xs:enumeration value="?android:attr/preferenceFragmentPaddingSide" />
+            <xs:enumeration value="?android:attr/textUnderlineThickness" />
+            <xs:enumeration value="?android:attr/windowTitleSize" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="cardPreventCornerOverlap">
+    <xs:annotation>
+      <xs:documentation></xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:union memberTypes="xs:string">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="false" />
+            <xs:enumeration value="true" />
+            <xs:enumeration value="?android:attr/alertDialogCenterButtons" />
+            <xs:enumeration value="?android:attr/backgroundDimEnabled" />
+            <xs:enumeration value="?android:attr/isLightTheme" />
+            <xs:enumeration value="?android:attr/panelMenuIsCompact" />
+            <xs:enumeration value="?android:attr/windowActionBar" />
+            <xs:enumeration value="?android:attr/windowActionBarOverlay" />
+            <xs:enumeration value="?android:attr/windowActionModeOverlay" />
+            <xs:enumeration value="?android:attr/windowActivityTransitions" />
+            <xs:enumeration value="?android:attr/windowAllowEnterTransitionOverlap" />
+            <xs:enumeration value="?android:attr/windowAllowReturnTransitionOverlap" />
+            <xs:enumeration value="?android:attr/windowCloseOnTouchOutside" />
+            <xs:enumeration value="?android:attr/windowContentTransitions" />
+            <xs:enumeration value="?android:attr/windowDisablePreview" />
+            <xs:enumeration value="?android:attr/windowEnableSplitTouch" />
+            <xs:enumeration value="?android:attr/windowFullscreen" />
+            <xs:enumeration value="?android:attr/windowIsFloating" />
+            <xs:enumeration value="?android:attr/windowIsTranslucent" />
+            <xs:enumeration value="?android:attr/windowNoDisplay" />
+            <xs:enumeration value="?android:attr/windowNoTitle" />
+            <xs:enumeration value="?android:attr/windowOverscan" />
+            <xs:enumeration value="?android:attr/windowSharedElementsUseOverlay" />
+            <xs:enumeration value="?android:attr/windowShowWallpaper" />
+            <xs:enumeration value="?android:attr/windowSwipeToDismiss" />
+            <xs:enumeration value="?android:attr/windowTranslucentNavigation" />
+            <xs:enumeration value="?android:attr/windowTranslucentStatus" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="cardUseCompatPadding">
+    <xs:annotation>
+      <xs:documentation></xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:union memberTypes="xs:string">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="false" />
+            <xs:enumeration value="true" />
+            <xs:enumeration value="?android:attr/alertDialogCenterButtons" />
+            <xs:enumeration value="?android:attr/backgroundDimEnabled" />
+            <xs:enumeration value="?android:attr/isLightTheme" />
+            <xs:enumeration value="?android:attr/panelMenuIsCompact" />
+            <xs:enumeration value="?android:attr/windowActionBar" />
+            <xs:enumeration value="?android:attr/windowActionBarOverlay" />
+            <xs:enumeration value="?android:attr/windowActionModeOverlay" />
+            <xs:enumeration value="?android:attr/windowActivityTransitions" />
+            <xs:enumeration value="?android:attr/windowAllowEnterTransitionOverlap" />
+            <xs:enumeration value="?android:attr/windowAllowReturnTransitionOverlap" />
+            <xs:enumeration value="?android:attr/windowCloseOnTouchOutside" />
+            <xs:enumeration value="?android:attr/windowContentTransitions" />
+            <xs:enumeration value="?android:attr/windowDisablePreview" />
+            <xs:enumeration value="?android:attr/windowEnableSplitTouch" />
+            <xs:enumeration value="?android:attr/windowFullscreen" />
+            <xs:enumeration value="?android:attr/windowIsFloating" />
+            <xs:enumeration value="?android:attr/windowIsTranslucent" />
+            <xs:enumeration value="?android:attr/windowNoDisplay" />
+            <xs:enumeration value="?android:attr/windowNoTitle" />
+            <xs:enumeration value="?android:attr/windowOverscan" />
+            <xs:enumeration value="?android:attr/windowSharedElementsUseOverlay" />
+            <xs:enumeration value="?android:attr/windowShowWallpaper" />
+            <xs:enumeration value="?android:attr/windowSwipeToDismiss" />
+            <xs:enumeration value="?android:attr/windowTranslucentNavigation" />
+            <xs:enumeration value="?android:attr/windowTranslucentStatus" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="contentPadding">
+    <xs:annotation>
+      <xs:documentation></xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:union memberTypes="xs:string">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="@dimen/cardview_compat_inset_shadow" />
+            <xs:enumeration value="@dimen/cardview_default_elevation" />
+            <xs:enumeration value="@dimen/cardview_default_radius" />
+            <xs:enumeration value="@dimen/item_touch_helper_max_drag_scroll_per_frame" />
+            <xs:enumeration value="@android:dimen/app_icon_size" />
+            <xs:enumeration value="@android:dimen/dialog_min_width_major" />
+            <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
+            <xs:enumeration value="@android:dimen/notification_large_icon_height" />
+            <xs:enumeration value="@android:dimen/notification_large_icon_width" />
+            <xs:enumeration value="@android:dimen/thumbnail_height" />
+            <xs:enumeration value="@android:dimen/thumbnail_width" />
+            <xs:enumeration value="?android:attr/actionBarSize" />
+            <xs:enumeration value="?android:attr/dialogPreferredPadding" />
+            <xs:enumeration value="?android:attr/dropdownListPreferredItemHeight" />
+            <xs:enumeration value="?android:attr/expandableListPreferredChildIndicatorLeft" />
+            <xs:enumeration value="?android:attr/expandableListPreferredChildIndicatorRight" />
+            <xs:enumeration value="?android:attr/expandableListPreferredChildPaddingLeft" />
+            <xs:enumeration value="?android:attr/expandableListPreferredItemIndicatorLeft" />
+            <xs:enumeration value="?android:attr/expandableListPreferredItemIndicatorRight" />
+            <xs:enumeration value="?android:attr/expandableListPreferredItemPaddingLeft" />
+            <xs:enumeration value="?android:attr/listPreferredItemHeight" />
+            <xs:enumeration value="?android:attr/listPreferredItemHeightLarge" />
+            <xs:enumeration value="?android:attr/listPreferredItemHeightSmall" />
+            <xs:enumeration value="?android:attr/listPreferredItemPaddingEnd" />
+            <xs:enumeration value="?android:attr/listPreferredItemPaddingLeft" />
+            <xs:enumeration value="?android:attr/listPreferredItemPaddingRight" />
+            <xs:enumeration value="?android:attr/listPreferredItemPaddingStart" />
+            <xs:enumeration value="?android:attr/panelMenuListWidth" />
+            <xs:enumeration value="?android:attr/preferenceFragmentPaddingSide" />
+            <xs:enumeration value="?android:attr/textUnderlineThickness" />
+            <xs:enumeration value="?android:attr/windowTitleSize" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="contentPaddingBottom">
+    <xs:annotation>
+      <xs:documentation></xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:union memberTypes="xs:string">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="@dimen/cardview_compat_inset_shadow" />
+            <xs:enumeration value="@dimen/cardview_default_elevation" />
+            <xs:enumeration value="@dimen/cardview_default_radius" />
+            <xs:enumeration value="@dimen/item_touch_helper_max_drag_scroll_per_frame" />
+            <xs:enumeration value="@android:dimen/app_icon_size" />
+            <xs:enumeration value="@android:dimen/dialog_min_width_major" />
+            <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
+            <xs:enumeration value="@android:dimen/notification_large_icon_height" />
+            <xs:enumeration value="@android:dimen/notification_large_icon_width" />
+            <xs:enumeration value="@android:dimen/thumbnail_height" />
+            <xs:enumeration value="@android:dimen/thumbnail_width" />
+            <xs:enumeration value="?android:attr/actionBarSize" />
+            <xs:enumeration value="?android:attr/dialogPreferredPadding" />
+            <xs:enumeration value="?android:attr/dropdownListPreferredItemHeight" />
+            <xs:enumeration value="?android:attr/expandableListPreferredChildIndicatorLeft" />
+            <xs:enumeration value="?android:attr/expandableListPreferredChildIndicatorRight" />
+            <xs:enumeration value="?android:attr/expandableListPreferredChildPaddingLeft" />
+            <xs:enumeration value="?android:attr/expandableListPreferredItemIndicatorLeft" />
+            <xs:enumeration value="?android:attr/expandableListPreferredItemIndicatorRight" />
+            <xs:enumeration value="?android:attr/expandableListPreferredItemPaddingLeft" />
+            <xs:enumeration value="?android:attr/listPreferredItemHeight" />
+            <xs:enumeration value="?android:attr/listPreferredItemHeightLarge" />
+            <xs:enumeration value="?android:attr/listPreferredItemHeightSmall" />
+            <xs:enumeration value="?android:attr/listPreferredItemPaddingEnd" />
+            <xs:enumeration value="?android:attr/listPreferredItemPaddingLeft" />
+            <xs:enumeration value="?android:attr/listPreferredItemPaddingRight" />
+            <xs:enumeration value="?android:attr/listPreferredItemPaddingStart" />
+            <xs:enumeration value="?android:attr/panelMenuListWidth" />
+            <xs:enumeration value="?android:attr/preferenceFragmentPaddingSide" />
+            <xs:enumeration value="?android:attr/textUnderlineThickness" />
+            <xs:enumeration value="?android:attr/windowTitleSize" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="contentPaddingLeft">
+    <xs:annotation>
+      <xs:documentation></xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:union memberTypes="xs:string">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="@dimen/cardview_compat_inset_shadow" />
+            <xs:enumeration value="@dimen/cardview_default_elevation" />
+            <xs:enumeration value="@dimen/cardview_default_radius" />
+            <xs:enumeration value="@dimen/item_touch_helper_max_drag_scroll_per_frame" />
+            <xs:enumeration value="@android:dimen/app_icon_size" />
+            <xs:enumeration value="@android:dimen/dialog_min_width_major" />
+            <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
+            <xs:enumeration value="@android:dimen/notification_large_icon_height" />
+            <xs:enumeration value="@android:dimen/notification_large_icon_width" />
+            <xs:enumeration value="@android:dimen/thumbnail_height" />
+            <xs:enumeration value="@android:dimen/thumbnail_width" />
+            <xs:enumeration value="?android:attr/actionBarSize" />
+            <xs:enumeration value="?android:attr/dialogPreferredPadding" />
+            <xs:enumeration value="?android:attr/dropdownListPreferredItemHeight" />
+            <xs:enumeration value="?android:attr/expandableListPreferredChildIndicatorLeft" />
+            <xs:enumeration value="?android:attr/expandableListPreferredChildIndicatorRight" />
+            <xs:enumeration value="?android:attr/expandableListPreferredChildPaddingLeft" />
+            <xs:enumeration value="?android:attr/expandableListPreferredItemIndicatorLeft" />
+            <xs:enumeration value="?android:attr/expandableListPreferredItemIndicatorRight" />
+            <xs:enumeration value="?android:attr/expandableListPreferredItemPaddingLeft" />
+            <xs:enumeration value="?android:attr/listPreferredItemHeight" />
+            <xs:enumeration value="?android:attr/listPreferredItemHeightLarge" />
+            <xs:enumeration value="?android:attr/listPreferredItemHeightSmall" />
+            <xs:enumeration value="?android:attr/listPreferredItemPaddingEnd" />
+            <xs:enumeration value="?android:attr/listPreferredItemPaddingLeft" />
+            <xs:enumeration value="?android:attr/listPreferredItemPaddingRight" />
+            <xs:enumeration value="?android:attr/listPreferredItemPaddingStart" />
+            <xs:enumeration value="?android:attr/panelMenuListWidth" />
+            <xs:enumeration value="?android:attr/preferenceFragmentPaddingSide" />
+            <xs:enumeration value="?android:attr/textUnderlineThickness" />
+            <xs:enumeration value="?android:attr/windowTitleSize" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="contentPaddingRight">
+    <xs:annotation>
+      <xs:documentation></xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:union memberTypes="xs:string">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="@dimen/cardview_compat_inset_shadow" />
+            <xs:enumeration value="@dimen/cardview_default_elevation" />
+            <xs:enumeration value="@dimen/cardview_default_radius" />
+            <xs:enumeration value="@dimen/item_touch_helper_max_drag_scroll_per_frame" />
+            <xs:enumeration value="@android:dimen/app_icon_size" />
+            <xs:enumeration value="@android:dimen/dialog_min_width_major" />
+            <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
+            <xs:enumeration value="@android:dimen/notification_large_icon_height" />
+            <xs:enumeration value="@android:dimen/notification_large_icon_width" />
+            <xs:enumeration value="@android:dimen/thumbnail_height" />
+            <xs:enumeration value="@android:dimen/thumbnail_width" />
+            <xs:enumeration value="?android:attr/actionBarSize" />
+            <xs:enumeration value="?android:attr/dialogPreferredPadding" />
+            <xs:enumeration value="?android:attr/dropdownListPreferredItemHeight" />
+            <xs:enumeration value="?android:attr/expandableListPreferredChildIndicatorLeft" />
+            <xs:enumeration value="?android:attr/expandableListPreferredChildIndicatorRight" />
+            <xs:enumeration value="?android:attr/expandableListPreferredChildPaddingLeft" />
+            <xs:enumeration value="?android:attr/expandableListPreferredItemIndicatorLeft" />
+            <xs:enumeration value="?android:attr/expandableListPreferredItemIndicatorRight" />
+            <xs:enumeration value="?android:attr/expandableListPreferredItemPaddingLeft" />
+            <xs:enumeration value="?android:attr/listPreferredItemHeight" />
+            <xs:enumeration value="?android:attr/listPreferredItemHeightLarge" />
+            <xs:enumeration value="?android:attr/listPreferredItemHeightSmall" />
+            <xs:enumeration value="?android:attr/listPreferredItemPaddingEnd" />
+            <xs:enumeration value="?android:attr/listPreferredItemPaddingLeft" />
+            <xs:enumeration value="?android:attr/listPreferredItemPaddingRight" />
+            <xs:enumeration value="?android:attr/listPreferredItemPaddingStart" />
+            <xs:enumeration value="?android:attr/panelMenuListWidth" />
+            <xs:enumeration value="?android:attr/preferenceFragmentPaddingSide" />
+            <xs:enumeration value="?android:attr/textUnderlineThickness" />
+            <xs:enumeration value="?android:attr/windowTitleSize" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="contentPaddingTop">
+    <xs:annotation>
+      <xs:documentation></xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:union memberTypes="xs:string">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="@dimen/cardview_compat_inset_shadow" />
+            <xs:enumeration value="@dimen/cardview_default_elevation" />
+            <xs:enumeration value="@dimen/cardview_default_radius" />
+            <xs:enumeration value="@dimen/item_touch_helper_max_drag_scroll_per_frame" />
+            <xs:enumeration value="@android:dimen/app_icon_size" />
+            <xs:enumeration value="@android:dimen/dialog_min_width_major" />
+            <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
+            <xs:enumeration value="@android:dimen/notification_large_icon_height" />
+            <xs:enumeration value="@android:dimen/notification_large_icon_width" />
+            <xs:enumeration value="@android:dimen/thumbnail_height" />
+            <xs:enumeration value="@android:dimen/thumbnail_width" />
+            <xs:enumeration value="?android:attr/actionBarSize" />
+            <xs:enumeration value="?android:attr/dialogPreferredPadding" />
+            <xs:enumeration value="?android:attr/dropdownListPreferredItemHeight" />
+            <xs:enumeration value="?android:attr/expandableListPreferredChildIndicatorLeft" />
+            <xs:enumeration value="?android:attr/expandableListPreferredChildIndicatorRight" />
+            <xs:enumeration value="?android:attr/expandableListPreferredChildPaddingLeft" />
+            <xs:enumeration value="?android:attr/expandableListPreferredItemIndicatorLeft" />
+            <xs:enumeration value="?android:attr/expandableListPreferredItemIndicatorRight" />
+            <xs:enumeration value="?android:attr/expandableListPreferredItemPaddingLeft" />
+            <xs:enumeration value="?android:attr/listPreferredItemHeight" />
+            <xs:enumeration value="?android:attr/listPreferredItemHeightLarge" />
+            <xs:enumeration value="?android:attr/listPreferredItemHeightSmall" />
+            <xs:enumeration value="?android:attr/listPreferredItemPaddingEnd" />
+            <xs:enumeration value="?android:attr/listPreferredItemPaddingLeft" />
+            <xs:enumeration value="?android:attr/listPreferredItemPaddingRight" />
+            <xs:enumeration value="?android:attr/listPreferredItemPaddingStart" />
+            <xs:enumeration value="?android:attr/panelMenuListWidth" />
+            <xs:enumeration value="?android:attr/preferenceFragmentPaddingSide" />
+            <xs:enumeration value="?android:attr/textUnderlineThickness" />
+            <xs:enumeration value="?android:attr/windowTitleSize" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
   <xs:attribute name="layoutManager">
     <xs:annotation>
       <xs:documentation></xs:documentation>

@@ -23,6 +23,7 @@ namespace CryptoTouch.Activities
         {
             if (SecurityProvider.PasswordAuthenticate(FindViewById<EditText>(Resource.Id.AuthorizationPassword).Text))
             {
+                SecurityProvider.LoadNotes();
                 Intent intent = new Intent(this, typeof(MainPageActivity));
                 StartActivity(intent);
             }
@@ -36,6 +37,7 @@ namespace CryptoTouch.Activities
         public void OnAuthenticationSucceeded()
         {
             SecurityProvider.FingerprintAuthenticationSucceeded();
+            SecurityProvider.LoadNotes();
             ActivityOptions options = ActivityOptions.MakeSceneTransitionAnimation(this);
             Intent intent = new Intent(this, typeof(MainPageActivity));
             StartActivity(intent, options.ToBundle());

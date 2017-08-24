@@ -31,6 +31,39 @@ namespace CryptoTouch
 		public partial class Attribute
 		{
 			
+			// aapt resource value: 0x7f010004
+			public const int cardBackgroundColor = 2130771972;
+			
+			// aapt resource value: 0x7f010005
+			public const int cardCornerRadius = 2130771973;
+			
+			// aapt resource value: 0x7f010006
+			public const int cardElevation = 2130771974;
+			
+			// aapt resource value: 0x7f010007
+			public const int cardMaxElevation = 2130771975;
+			
+			// aapt resource value: 0x7f010009
+			public const int cardPreventCornerOverlap = 2130771977;
+			
+			// aapt resource value: 0x7f010008
+			public const int cardUseCompatPadding = 2130771976;
+			
+			// aapt resource value: 0x7f01000a
+			public const int contentPadding = 2130771978;
+			
+			// aapt resource value: 0x7f01000e
+			public const int contentPaddingBottom = 2130771982;
+			
+			// aapt resource value: 0x7f01000b
+			public const int contentPaddingLeft = 2130771979;
+			
+			// aapt resource value: 0x7f01000c
+			public const int contentPaddingRight = 2130771980;
+			
+			// aapt resource value: 0x7f01000d
+			public const int contentPaddingTop = 2130771981;
+			
 			// aapt resource value: 0x7f010000
 			public const int layoutManager = 2130771968;
 			
@@ -56,8 +89,20 @@ namespace CryptoTouch
 		public partial class Color
 		{
 			
+			// aapt resource value: 0x7f060004
+			public const int ButtonHighlight = 2131099652;
+			
 			// aapt resource value: 0x7f060000
-			public const int ButtonHighlight = 2131099648;
+			public const int cardview_dark_background = 2131099648;
+			
+			// aapt resource value: 0x7f060001
+			public const int cardview_light_background = 2131099649;
+			
+			// aapt resource value: 0x7f060002
+			public const int cardview_shadow_end_color = 2131099650;
+			
+			// aapt resource value: 0x7f060003
+			public const int cardview_shadow_start_color = 2131099651;
 			
 			static Color()
 			{
@@ -71,6 +116,15 @@ namespace CryptoTouch
 		
 		public partial class Dimension
 		{
+			
+			// aapt resource value: 0x7f040001
+			public const int cardview_compat_inset_shadow = 2130968577;
+			
+			// aapt resource value: 0x7f040002
+			public const int cardview_default_elevation = 2130968578;
+			
+			// aapt resource value: 0x7f040003
+			public const int cardview_default_radius = 2130968579;
 			
 			// aapt resource value: 0x7f040000
 			public const int item_touch_helper_max_drag_scroll_per_frame = 2130968576;
@@ -89,28 +143,31 @@ namespace CryptoTouch
 		{
 			
 			// aapt resource value: 0x7f020000
-			public const int EdittextBG = 2130837504;
+			public const int CardSelectionBG = 2130837504;
 			
 			// aapt resource value: 0x7f020001
-			public const int error = 2130837505;
+			public const int EdittextBG = 2130837505;
 			
 			// aapt resource value: 0x7f020002
-			public const int fingerprint = 2130837506;
+			public const int error = 2130837506;
 			
 			// aapt resource value: 0x7f020003
-			public const int fingerprint_icon = 2130837507;
+			public const int fingerprint = 2130837507;
 			
 			// aapt resource value: 0x7f020004
-			public const int Icon = 2130837508;
+			public const int fingerprint_icon = 2130837508;
 			
 			// aapt resource value: 0x7f020005
-			public const int plus = 2130837509;
+			public const int Icon = 2130837509;
 			
 			// aapt resource value: 0x7f020006
-			public const int rcPannel = 2130837510;
+			public const int plus = 2130837510;
 			
 			// aapt resource value: 0x7f020007
-			public const int save = 2130837511;
+			public const int rcPannel = 2130837511;
+			
+			// aapt resource value: 0x7f020008
+			public const int save = 2130837512;
 			
 			static Drawable()
 			{
@@ -131,17 +188,23 @@ namespace CryptoTouch
 			// aapt resource value: 0x7f050003
 			public const int ButtonSubmitAuthorization = 2131034115;
 			
-			// aapt resource value: 0x7f05000b
-			public const int ButtonSubmitPassword = 2131034123;
+			// aapt resource value: 0x7f05000e
+			public const int ButtonSubmitPassword = 2131034126;
+			
+			// aapt resource value: 0x7f05000d
+			public const int RegisterPassword = 2131034125;
 			
 			// aapt resource value: 0x7f05000a
-			public const int RegisterPassword = 2131034122;
+			public const int cardNoteDate = 2131034122;
+			
+			// aapt resource value: 0x7f050009
+			public const int cardNoteTextPreview = 2131034121;
+			
+			// aapt resource value: 0x7f050008
+			public const int cardView = 2131034120;
 			
 			// aapt resource value: 0x7f050006
 			public const int deleteNoteButton = 2131034118;
-			
-			// aapt resource value: 0x7f050008
-			public const int editText = 2131034120;
 			
 			// aapt resource value: 0x7f050001
 			public const int fingerprintIcon = 2131034113;
@@ -155,11 +218,14 @@ namespace CryptoTouch
 			// aapt resource value: 0x7f050007
 			public const int newNoteButton = 2131034119;
 			
+			// aapt resource value: 0x7f05000b
+			public const int noteText = 2131034123;
+			
 			// aapt resource value: 0x7f050005
 			public const int recyclerView = 2131034117;
 			
-			// aapt resource value: 0x7f050009
-			public const int saveNoteButton = 2131034121;
+			// aapt resource value: 0x7f05000c
+			public const int saveNoteButton = 2131034124;
 			
 			static Id()
 			{
@@ -181,10 +247,13 @@ namespace CryptoTouch
 			public const int MainPage = 2130903041;
 			
 			// aapt resource value: 0x7f030002
-			public const int NotePage = 2130903042;
+			public const int NoteItemLayout = 2130903042;
 			
 			// aapt resource value: 0x7f030003
-			public const int PasswordPage = 2130903043;
+			public const int NotePage = 2130903043;
+			
+			// aapt resource value: 0x7f030004
+			public const int PasswordPage = 2130903044;
 			
 			static Layout()
 			{
@@ -199,11 +268,11 @@ namespace CryptoTouch
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f070001
-			public const int ApplicationName = 2131165185;
+			// aapt resource value: 0x7f080001
+			public const int ApplicationName = 2131230721;
 			
-			// aapt resource value: 0x7f070000
-			public const int Hello = 2131165184;
+			// aapt resource value: 0x7f080000
+			public const int Hello = 2131230720;
 			
 			static String()
 			{
@@ -218,8 +287,17 @@ namespace CryptoTouch
 		public partial class Style
 		{
 			
-			// aapt resource value: 0x7f080000
-			public const int CryptoTouch_NoOrange = 2131230720;
+			// aapt resource value: 0x7f070000
+			public const int CardView = 2131165184;
+			
+			// aapt resource value: 0x7f070001
+			public const int CardView_Dark = 2131165185;
+			
+			// aapt resource value: 0x7f070002
+			public const int CardView_Light = 2131165186;
+			
+			// aapt resource value: 0x7f070003
+			public const int CryptoTouch_NoOrange = 2131165187;
 			
 			static Style()
 			{
@@ -233,6 +311,52 @@ namespace CryptoTouch
 		
 		public partial class Styleable
 		{
+			
+			public static int[] CardView = new int[] {
+					2130771972,
+					2130771973,
+					2130771974,
+					2130771975,
+					2130771976,
+					2130771977,
+					2130771978,
+					2130771979,
+					2130771980,
+					2130771981,
+					2130771982};
+			
+			// aapt resource value: 0
+			public const int CardView_cardBackgroundColor = 0;
+			
+			// aapt resource value: 1
+			public const int CardView_cardCornerRadius = 1;
+			
+			// aapt resource value: 2
+			public const int CardView_cardElevation = 2;
+			
+			// aapt resource value: 3
+			public const int CardView_cardMaxElevation = 3;
+			
+			// aapt resource value: 5
+			public const int CardView_cardPreventCornerOverlap = 5;
+			
+			// aapt resource value: 4
+			public const int CardView_cardUseCompatPadding = 4;
+			
+			// aapt resource value: 6
+			public const int CardView_contentPadding = 6;
+			
+			// aapt resource value: 10
+			public const int CardView_contentPaddingBottom = 10;
+			
+			// aapt resource value: 7
+			public const int CardView_contentPaddingLeft = 7;
+			
+			// aapt resource value: 8
+			public const int CardView_contentPaddingRight = 8;
+			
+			// aapt resource value: 9
+			public const int CardView_contentPaddingTop = 9;
 			
 			public static int[] RecyclerView = new int[] {
 					16842948,

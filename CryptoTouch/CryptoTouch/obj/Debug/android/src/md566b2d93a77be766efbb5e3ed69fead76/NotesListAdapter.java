@@ -25,13 +25,6 @@ public class NotesListAdapter
 			mono.android.TypeManager.Activate ("CryptoTouch.NotesListAdapter, CryptoTouch, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
 	}
 
-	public NotesListAdapter (java.lang.String[] p0) throws java.lang.Throwable
-	{
-		super ();
-		if (getClass () == NotesListAdapter.class)
-			mono.android.TypeManager.Activate ("CryptoTouch.NotesListAdapter, CryptoTouch, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "System.String[], mscorlib, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e", this, new java.lang.Object[] { p0 });
-	}
-
 
 	public int getItemCount ()
 	{
