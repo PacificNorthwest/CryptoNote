@@ -5,8 +5,9 @@
     android:background="@android:color/white"
     android:transitionName="Note"
     android:minWidth="25px"
-    android:minHeight="25px">
-    <EditText
+    android:minHeight="25px"
+    android:id="@+id/noteActivityRoot">
+    <cryptotouch.NoteEditText
         android:inputType="textCapSentences|textMultiLine"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

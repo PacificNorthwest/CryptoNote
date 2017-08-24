@@ -73,6 +73,7 @@
     <Compile Include="Activities\MainPageActivity.cs" />
     <Compile Include="Activities\NoteActivity.cs" />
     <Compile Include="Note.cs" />
+    <Compile Include="NoteEditText.cs" />
     <Compile Include="NotesListAdapter.cs" />
     <Compile Include="NoteStorage.cs" />
     <Compile Include="RecyclerViewItemSpacing.cs" />

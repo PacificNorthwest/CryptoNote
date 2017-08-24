@@ -174,8 +174,8 @@ containing a value of this type.
     public static final class id {
         public static final int AuthorizationPassword=0x7f050002;
         public static final int ButtonSubmitAuthorization=0x7f050003;
-        public static final int ButtonSubmitPassword=0x7f05000e;
-        public static final int RegisterPassword=0x7f05000d;
+        public static final int ButtonSubmitPassword=0x7f05000f;
+        public static final int RegisterPassword=0x7f05000e;
         public static final int cardNoteDate=0x7f05000a;
         public static final int cardNoteTextPreview=0x7f050009;
         public static final int cardView=0x7f050008;
@@ -184,9 +184,10 @@ containing a value of this type.
         public static final int item_touch_helper_previous_elevation=0x7f050000;
         public static final int layout=0x7f050004;
         public static final int newNoteButton=0x7f050007;
-        public static final int noteText=0x7f05000b;
+        public static final int noteActivityRoot=0x7f05000b;
+        public static final int noteText=0x7f05000c;
         public static final int recyclerView=0x7f050005;
-        public static final int saveNoteButton=0x7f05000c;
+        public static final int saveNoteButton=0x7f05000d;
     }
     public static final class layout {
         public static final int loginpage=0x7f030000;

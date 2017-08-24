@@ -2,6 +2,10 @@ CryptoTouch.AuthCallback, CryptoTouch;md566b2d93a77be766efbb5e3ed69fead76.AuthCa
 CryptoTouch.AuthCallback, CryptoTouch, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md566b2d93a77be766efbb5e3ed69fead76.AuthCallback
 CryptoTouch.AuthCallback;md566b2d93a77be766efbb5e3ed69fead76.AuthCallback
 cryptotouch.AuthCallback;md566b2d93a77be766efbb5e3ed69fead76.AuthCallback
+CryptoTouch.NoteEditText, CryptoTouch;md566b2d93a77be766efbb5e3ed69fead76.NoteEditText
+CryptoTouch.NoteEditText, CryptoTouch, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md566b2d93a77be766efbb5e3ed69fead76.NoteEditText
+CryptoTouch.NoteEditText;md566b2d93a77be766efbb5e3ed69fead76.NoteEditText
+cryptotouch.NoteEditText;md566b2d93a77be766efbb5e3ed69fead76.NoteEditText
 CryptoTouch.NotesListAdapter, CryptoTouch;md566b2d93a77be766efbb5e3ed69fead76.NotesListAdapter
 CryptoTouch.NotesListAdapter, CryptoTouch, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md566b2d93a77be766efbb5e3ed69fead76.NotesListAdapter
 CryptoTouch.NotesListAdapter;md566b2d93a77be766efbb5e3ed69fead76.NotesListAdapter

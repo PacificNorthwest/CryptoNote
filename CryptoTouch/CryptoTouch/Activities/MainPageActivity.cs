@@ -33,6 +33,7 @@ namespace CryptoTouch.Activities
             
             InitializeUI();
             Animate();
+            PopulateGrid();
         }
 
         private void InitializeUI()

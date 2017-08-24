@@ -100,7 +100,7 @@ namespace CryptoTouch
         public static bool PasswordAuthenticate(string password)
         {
             AccessKeyStore();
-            if (EncryptKey(ComputeHash(password)) == System.IO.File.ReadAllBytes(_tDES_key_path))
+            if (ComputeHash(password).SequenceEqual(DecryptKey()))
             {
                 _tDES_key = ComputeHash(password);
                 return true;
