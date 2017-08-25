@@ -79,3 +79,5 @@ E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\R.cs.flag
 E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\uploadflags.txt
 E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\bin\Debug\CryptoTouch.dll.mdb
 E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\android\assets\CryptoTouch.dll.mdb
+E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\CryptoTouch.csprojResolveAssemblyReference.cache
+E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\res\layout\spinneritem.xml

@@ -19,6 +19,7 @@ using Javax.Crypto;
 using Java.IO;
 using Android.Util;
 using Newtonsoft.Json;
+using System.Threading.Tasks;
 
 namespace CryptoTouch
 {
@@ -57,6 +58,11 @@ namespace CryptoTouch
 
             ICryptoTransform crypt = tDES.CreateEncryptor();
             System.IO.File.WriteAllBytes(_notes_path, crypt.TransformFinalBlock(Encoding.UTF8.GetBytes(json), 0, Encoding.UTF8.GetByteCount(json)));
+        }
+
+        public static async void SaveNotesAsync()
+        {
+            await Task.Factory.StartNew(SaveNotes);
         }
 
         public static void LoadNotes()

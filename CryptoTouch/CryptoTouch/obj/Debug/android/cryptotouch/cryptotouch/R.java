@@ -174,20 +174,22 @@ containing a value of this type.
     public static final class id {
         public static final int AuthorizationPassword=0x7f050002;
         public static final int ButtonSubmitAuthorization=0x7f050003;
-        public static final int ButtonSubmitPassword=0x7f05000f;
-        public static final int RegisterPassword=0x7f05000e;
+        public static final int ButtonSubmitPassword=0x7f050011;
+        public static final int RegisterPassword=0x7f050010;
         public static final int cardNoteDate=0x7f05000a;
         public static final int cardNoteTextPreview=0x7f050009;
         public static final int cardView=0x7f050008;
+        public static final int cathegoriesSpinner=0x7f05000d;
         public static final int deleteNoteButton=0x7f050006;
         public static final int fingerprintIcon=0x7f050001;
         public static final int item_touch_helper_previous_elevation=0x7f050000;
         public static final int layout=0x7f050004;
         public static final int newNoteButton=0x7f050007;
         public static final int noteActivityRoot=0x7f05000b;
-        public static final int noteText=0x7f05000c;
+        public static final int noteText=0x7f05000e;
         public static final int recyclerView=0x7f050005;
-        public static final int saveNoteButton=0x7f05000d;
+        public static final int saveNoteButton=0x7f05000f;
+        public static final int tagsField=0x7f05000c;
     }
     public static final class layout {
         public static final int loginpage=0x7f030000;
@@ -195,6 +197,7 @@ containing a value of this type.
         public static final int noteitemlayout=0x7f030002;
         public static final int notepage=0x7f030003;
         public static final int passwordpage=0x7f030004;
+        public static final int spinneritem=0x7f030005;
     }
     public static final class string {
         public static final int ApplicationName=0x7f080001;

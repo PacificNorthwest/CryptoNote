@@ -59,12 +59,7 @@ namespace CryptoTouch.Activities
 
         private void Animate()
         {
-            TransitionSet set = new TransitionSet();
-            set.AddTransition(new Fade());
-            set.AddTransition(new Explode());
-            set.ExcludeTarget(_notesGrid, true);
-            set.ExcludeTarget(_sceneRoot, true);
-            Window.EnterTransition = set;
+            Window.ExitTransition = new Fade();
         }
 
         public void SelectItem(View view)
@@ -114,7 +109,7 @@ namespace CryptoTouch.Activities
             foreach (View view in _selectedItems)
                 NoteStorage.Notes.Remove(NoteStorage.Notes.Find(note => note.GetHashCode() == (int)view.Tag));
             _selectedItems.Clear();
-            SecurityProvider.SaveNotes();
+            SecurityProvider.SaveNotesAsync();
             HideDeleteButton();
             PopulateGrid();
         }

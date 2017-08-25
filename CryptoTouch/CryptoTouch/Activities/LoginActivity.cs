@@ -3,6 +3,7 @@ using Android.Widget;
 using Android.OS;
 using Android.Hardware.Fingerprints;
 using Android.Content;
+using Android.Transitions;
 
 namespace CryptoTouch.Activities
 {
@@ -24,8 +25,9 @@ namespace CryptoTouch.Activities
             if (SecurityProvider.PasswordAuthenticate(FindViewById<EditText>(Resource.Id.AuthorizationPassword).Text))
             {
                 SecurityProvider.LoadNotes();
+                ActivityOptions options = ActivityOptions.MakeSceneTransitionAnimation(this);
                 Intent intent = new Intent(this, typeof(MainPageActivity));
-                StartActivity(intent);
+                StartActivity(intent, options.ToBundle());
             }
             else
             {

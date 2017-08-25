@@ -11,6 +11,7 @@ using Android.Views;
 using Android.Widget;
 using Android.Support.V7.Widget;
 using CryptoTouch.Activities;
+using Android.Views.Animations;
 
 namespace CryptoTouch
 {
@@ -34,11 +35,9 @@ namespace CryptoTouch
 
                 itemView.Click += (object sender, EventArgs e) =>
                                     {
-                                        (sender as View).TransitionName = "Note";
-                                        ActivityOptions options = ActivityOptions.MakeSceneTransitionAnimation(context, sender as View, "Note");
                                         Intent intent = new Intent(context, typeof(NoteActivity));
                                         intent.PutExtra("NoteHash", Note.GetHashCode());
-                                        context.StartActivity(intent, options.ToBundle());
+                                        context.StartActivity(intent);
                                     };
 
                 itemView.LongClick += (object sender, View.LongClickEventArgs e) => { itemView.Tag = Note.GetHashCode(); (context as MainPageActivity).SelectItem(itemView); };
@@ -55,6 +54,15 @@ namespace CryptoTouch
             (holder as ViewHolder).Note = _items[position];
             (holder as ViewHolder).NoteText.Text = _items[position].Text;
             (holder as ViewHolder).Date.Text = _items[position].Date.ToString();
+            SetAnimation(holder.ItemView);
+        }
+
+        private void SetAnimation(View view)
+        {
+            AlphaAnimation fade = new AlphaAnimation(0.0f, 1.0f) { Duration = 300 };
+            ScaleAnimation scale = new ScaleAnimation(0.0f, 1.0f, 0.0f, 1.0f, Dimension.RelativeToSelf, 0.5f, Dimension.RelativeToSelf, 0.5f) { Duration = 300 };
+            view.StartAnimation(fade);
+            view.StartAnimation(scale);
         }
     }
 }

@@ -2,7 +2,7 @@
 <xs:schema xmlns:app="http://schemas.android.com/apk/res-auto" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/apk/res-auto" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v23</xs:documentation>
-    <xs:documentation>24.08.2017 14:20:40</xs:documentation>
+    <xs:documentation>25.08.2017 14:30:03</xs:documentation>
   </xs:annotation>
   <xs:attribute name="cardBackgroundColor">
     <xs:annotation>
