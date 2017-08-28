@@ -53,7 +53,7 @@ namespace CryptoTouch.Activities
         {
             _notesGrid.HasFixedSize = true;
             _notesGrid.SetLayoutManager(new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.Vertical));
-            _notesGrid.AddItemDecoration(new RecyclerViewItemSpacing(20));
+            _notesGrid.AddItemDecoration(new RecyclerViewItemSpacing(30));
             _notesGrid.SetAdapter(new NotesListAdapter(this, NoteStorage.Notes));
         }
 

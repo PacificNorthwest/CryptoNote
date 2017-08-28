@@ -22,7 +22,7 @@ namespace CryptoTouch
 
         public override void GetItemOffsets(Rect outRect, View view, RecyclerView parent, RecyclerView.State state)
         {
-            outRect.Bottom = outRect.Top = outRect.Left = outRect.Right = _spacing;
+            outRect.Bottom = outRect.Right = _spacing;
         }
     }
 }
