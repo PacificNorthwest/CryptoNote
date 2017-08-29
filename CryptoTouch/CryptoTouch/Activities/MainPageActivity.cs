@@ -12,106 +12,25 @@ using Android.Widget;
 using Android.Graphics;
 using Android.Transitions;
 using Android.Support.V7.Widget;
+using Android.Support.V4.View;
+using Android.Support.V4.App;
+using Android.Support.V7.App;
 
 namespace CryptoTouch.Activities
 {
-    [Activity(Label = "MainPageActivity")]
-    public class MainPageActivity : Activity
+    [Activity(Label = "MainPageActivity", Theme = "@style/AppTheme")]
+    public class MainPageActivity : AppCompatActivity
     {
-        private List<View> _selectedItems = new List<View>();
-        private Button _newNoteButton;
-        private Button _deleteNoteButton;
-        private RelativeLayout _sceneRoot;
-        private RecyclerView _notesGrid;
+        public static ViewPager Navigation { get; set; }
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
-            Window.RequestFeature(WindowFeatures.ActivityTransitions);
-            Window.RequestFeature(WindowFeatures.ContentTransitions);
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.MainPage);
-            
-            InitializeUI();
-            Animate();
-            PopulateGrid();
+            Navigation = FindViewById<ViewPager>(Resource.Id.viewpager);
+            Navigation.Adapter = new ViewPagerAdapter(this.SupportFragmentManager, this);
+            FindViewById<Android.Support.Design.Widget.TabLayout>(Resource.Id.tabs).SetupWithViewPager(Navigation);
         }
-
-        private void InitializeUI()
-        {
-            _newNoteButton = FindViewById<Button>(Resource.Id.newNoteButton);
-            _deleteNoteButton = FindViewById<Button>(Resource.Id.deleteNoteButton);
-            _sceneRoot = FindViewById<RelativeLayout>(Resource.Id.layout);
-            _notesGrid = FindViewById<RecyclerView>(Resource.Id.recyclerView);
-            _deleteNoteButton.Click += (object sender, EventArgs e) => DeleteNotes();
-            _newNoteButton.Click += (object sender, EventArgs e) => {
-                Intent intent = new Intent(this, typeof(NoteActivity));
-                StartActivity(intent);
-            };            
-        }
-
-        private void PopulateGrid()
-        {
-            _notesGrid.HasFixedSize = true;
-            _notesGrid.SetLayoutManager(new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.Vertical));
-            _notesGrid.AddItemDecoration(new RecyclerViewItemSpacing(30));
-            _notesGrid.SetAdapter(new NotesListAdapter(this, NoteStorage.Notes));
-        }
-
-        private void Animate()
-        {
-            Window.ExitTransition = new Fade();
-        }
-
-        public void SelectItem(View view)
-        {
-            if (!_selectedItems.Contains(view))
-            {
-                _selectedItems.Add(view);
-                view.SetBackgroundResource(Resource.Drawable.CardSelectionBG);
-                if (_deleteNoteButton.Visibility == ViewStates.Invisible)
-                    ShowDeleteButton();
-            }
-            else
-            {
-                _selectedItems.Remove(view);
-                view.SetBackgroundResource(Resource.Color.cardview_light_background);
-                if (_selectedItems.Count == 0)
-                    HideDeleteButton();
-            }
-        }
-
-        private void ShowDeleteButton()
-        {
-            _deleteNoteButton.Visibility = ViewStates.Visible;
-            TransitionManager.BeginDelayedTransition(_sceneRoot);
-            RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(180, 180);
-            layoutParams.AddRule(LayoutRules.LeftOf, Resource.Id.newNoteButton);
-            layoutParams.AddRule(LayoutRules.AlignParentBottom);
-            layoutParams.BottomMargin = 30;
-            layoutParams.RightMargin = 30;
-            _deleteNoteButton.LayoutParameters = layoutParams;
-        }
-
-        private void HideDeleteButton()
-        {
-            _deleteNoteButton.Visibility = ViewStates.Invisible;
-            TransitionManager.BeginDelayedTransition(_sceneRoot);
-            RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(180, 180);
-            layoutParams.AddRule(LayoutRules.AlignParentRight);
-            layoutParams.AddRule(LayoutRules.AlignParentBottom);
-            layoutParams.BottomMargin = 30;
-            layoutParams.RightMargin = 30;
-            _deleteNoteButton.LayoutParameters = layoutParams;
-        }
-
-        private void DeleteNotes()
-        {
-            foreach (View view in _selectedItems)
-                NoteStorage.Notes.Remove(NoteStorage.Notes.Find(note => note.GetHashCode() == (int)view.Tag));
-            _selectedItems.Clear();
-            SecurityProvider.SaveNotesAsync();
-            HideDeleteButton();
-            PopulateGrid();
-        }
+        
     }
 }

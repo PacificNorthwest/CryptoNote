@@ -14,7 +14,7 @@
       </intent-filter>
     </activity>
     <activity android:label="CryptoTouch" android:name="md5d619d79349270a1d3e86c8aac97c2862.LoginActivity" />
-    <activity android:label="MainPageActivity" android:name="md5d619d79349270a1d3e86c8aac97c2862.MainPageActivity" />
+    <activity android:label="MainPageActivity" android:theme="@style/AppTheme" android:name="md5d619d79349270a1d3e86c8aac97c2862.MainPageActivity" />
     <activity android:label="NoteActivity" android:windowSoftInputMode="stateVisible|adjustResize" android:name="md5d619d79349270a1d3e86c8aac97c2862.NoteActivity" />
     <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="CryptoTouch.CryptoTouch.mono.MonoRuntimeProvider.__mono_init__" />
     <!--suppress ExportedReceiver-->

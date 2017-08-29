@@ -18,9 +18,10 @@ namespace CryptoTouch
     class NotesListAdapter : RecyclerView.Adapter
     {
         private List<Note> _items;
-        private Activity _context;
+        private Android.Support.V4.App.Fragment _fragment;
+        private Activity _activity;
 
-        public NotesListAdapter(Activity context, List<Note> items) { _items = items; _context = context; }
+        public NotesListAdapter(Activity activity, Android.Support.V4.App.Fragment context, List<Note> items) { _items = items; _fragment = context; _activity = activity; }
 
         public class ViewHolder : RecyclerView.ViewHolder
         {
@@ -28,26 +29,26 @@ namespace CryptoTouch
             public TextView NoteText { get; set; }
             public TextView Date { get; set; }
 
-            public ViewHolder(Activity context, View itemView) : base(itemView)
+            public ViewHolder(Android.Support.V4.App.Fragment fragment, Activity activity, View itemView) : base(itemView)
             {
                 NoteText = itemView.FindViewById<TextView>(Resource.Id.cardNoteTextPreview);
                 Date = itemView.FindViewById<TextView>(Resource.Id.cardNoteDate);
 
                 itemView.Click += (object sender, EventArgs e) =>
                                     {
-                                        Intent intent = new Intent(context, typeof(NoteActivity));
+                                        Intent intent = new Intent(activity, typeof(NoteActivity));
                                         intent.PutExtra("NoteHash", Note.GetHashCode());
-                                        context.StartActivity(intent);
+                                        activity.StartActivity(intent);
                                     };
 
-                itemView.LongClick += (object sender, View.LongClickEventArgs e) => { itemView.Tag = Note.GetHashCode(); (context as MainPageActivity).SelectItem(itemView); };
+                itemView.LongClick += (object sender, View.LongClickEventArgs e) => { itemView.Tag = Note.GetHashCode(); (fragment as NotesListFragment).SelectItem(itemView); };
             }
         }
 
         public override int ItemCount => _items.Count;
 
         public override RecyclerView.ViewHolder OnCreateViewHolder(ViewGroup parent, int viewType) =>
-            new ViewHolder(_context, LayoutInflater.From(parent.Context).Inflate(Resource.Layout.NoteItemLayout, null));
+            new ViewHolder(_fragment, _activity, LayoutInflater.From(parent.Context).Inflate(Resource.Layout.NoteItemLayout, null));
 
         public override void OnBindViewHolder(RecyclerView.ViewHolder holder, int position)
         {
