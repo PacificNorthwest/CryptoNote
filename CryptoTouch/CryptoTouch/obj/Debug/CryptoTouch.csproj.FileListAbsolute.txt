@@ -50,7 +50,9 @@ E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\bin\Debug\CryptoTouch.pdb
 E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\bin\Debug\CryptoTouch.CryptoTouch.apk
 E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\bin\Debug\CryptoTouch.CryptoTouch-Signed.apk
 E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\bin\Debug\Newtonsoft.Json.dll
+E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\bin\Debug\Xamarin.Android.Support.Design.dll
 E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\bin\Debug\Xamarin.Android.Support.v4.dll
+E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\bin\Debug\Xamarin.Android.Support.v7.AppCompat.dll
 E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\bin\Debug\Xamarin.Android.Support.v7.CardView.dll
 E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\bin\Debug\Xamarin.Android.Support.v7.RecyclerView.dll
 E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\bin\Debug\Newtonsoft.Json.xml
@@ -62,6 +64,10 @@ E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\res\layout\mainpage.xm
 E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\res\layout\notepage.xml
 E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\res\layout\passwordpage.xml
 E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\res\layout\noteitemlayout.xml
+E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\res\layout\spinneritem.xml
+E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\res\layout\noteslist.xml
+E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\res\layout\cathegorieslist.xml
+E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\res\layout\cathegorieslistitem.xml
 E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\res\layout\loginpage.xml
 E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\res\values\strings.xml
 E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\res\drawable\icon.png
@@ -75,9 +81,6 @@ E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\res\drawable\rcpannel.
 E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\res\drawable\error.png
 E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\res\drawable\edittextbg.xml
 E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\res\drawable\cardselectionbg.xml
+E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\res\values-v21\styles.xml
 E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\R.cs.flag
 E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\uploadflags.txt
-E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\bin\Debug\CryptoTouch.dll.mdb
-E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\android\assets\CryptoTouch.dll.mdb
-E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\CryptoTouch.csprojResolveAssemblyReference.cache
-E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\res\layout\spinneritem.xml

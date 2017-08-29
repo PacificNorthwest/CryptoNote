@@ -13,7 +13,7 @@ using Android.Widget;
 namespace CryptoTouch
 {
     [Serializable]
-    class Note
+    public class Note
     {
         public string Text { get; set; }
         public DateTime Date { get; set; }
