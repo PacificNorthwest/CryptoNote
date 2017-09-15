@@ -36,9 +36,17 @@ namespace CryptoTouch
 
                 itemView.Click += (object sender, EventArgs e) =>
                                     {
-                                        Intent intent = new Intent(activity, typeof(NoteActivity));
-                                        intent.PutExtra("NoteHash", Note.GetHashCode());
-                                        activity.StartActivity(intent);
+                                        if ((fragment as NotesListFragment).ContainsSelectedItems)
+                                        {
+                                            itemView.Tag = Note.GetHashCode();
+                                            (fragment as NotesListFragment).SelectItem(itemView);
+                                        }
+                                        else
+                                        {
+                                            Intent intent = new Intent(activity, typeof(NoteActivity));
+                                            intent.PutExtra("NoteHash", Note.GetHashCode());
+                                            activity.StartActivity(intent);
+                                        }
                                     };
 
                 itemView.LongClick += (object sender, View.LongClickEventArgs e) => { itemView.Tag = Note.GetHashCode(); (fragment as NotesListFragment).SelectItem(itemView); };

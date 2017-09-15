@@ -28,7 +28,7 @@ namespace CryptoTouch
             }
             else
             {
-                List<string> cathegories = new List<string> { "", "Work", "Family", "Friends", "Passwords", "Events" };
+                List<string> cathegories = new List<string> { "No cathegory", "Work", "Family", "Friends", "Passwords", "Events" };
                 SaveCathegories(cathegories);
                 return cathegories;
             }

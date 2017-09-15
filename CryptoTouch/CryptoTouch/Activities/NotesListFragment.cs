@@ -25,6 +25,8 @@ namespace CryptoTouch.Activities
         private Button _deleteNoteButton;
         private RelativeLayout _sceneRoot;
 
+        public bool ContainsSelectedItems => (_selectedItems.Count != 0) ? true : false;
+
         public NotesListFragment(Activity activity) { _rootActivity = activity; _instance = this; }
 
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
