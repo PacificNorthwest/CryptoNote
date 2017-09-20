@@ -27,7 +27,7 @@ namespace CryptoTouch
     {
         private const string STORE_NAME = "AndroidKeyStore";
         private const string ALIAS = "RSA_Keys";
-        private const string ASSYMETRIC_ALGORITHM = "RSA/ECB/PKCS1Padding";
+        private const string ASYMMETRIC_ALGORITHM = "RSA/ECB/PKCS1Padding";
         
         private static string _tDES_key_path;
         private static string _notes_path;
@@ -88,7 +88,7 @@ namespace CryptoTouch
             {
 
                 byte[] buffer = System.IO.File.ReadAllBytes(_tDES_key_path);
-                Cipher cipher = Cipher.GetInstance(ASSYMETRIC_ALGORITHM, "AndroidKeyStoreBCWorkaround");
+                Cipher cipher = Cipher.GetInstance(ASYMMETRIC_ALGORITHM, "AndroidKeyStoreBCWorkaround");
                 cipher.Init(Javax.Crypto.CipherMode.DecryptMode, _keyPair.Private);
                 return cipher.DoFinal(buffer);
             }
@@ -98,7 +98,7 @@ namespace CryptoTouch
 
         public static byte[] EncryptKey(byte[] key)
         {
-            Cipher cipher = Cipher.GetInstance(ASSYMETRIC_ALGORITHM, "AndroidKeyStoreBCWorkaround");
+            Cipher cipher = Cipher.GetInstance(ASYMMETRIC_ALGORITHM, "AndroidKeyStoreBCWorkaround");
             cipher.Init(Javax.Crypto.CipherMode.EncryptMode, _keyPair.Public);
             return cipher.DoFinal(key);
         }

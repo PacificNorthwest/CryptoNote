@@ -11,12 +11,14 @@ using Android.Views;
 using Android.Widget;
 using Android.Text;
 using Android.Text.Style;
+using Android.Views.InputMethods;
 
 namespace CryptoTouch.Activities
 {
     class CathegoriesListFragment : Android.Support.V4.App.Fragment
     {
         private Activity _rootActivity;
+        private LinearLayout _list;
         private string _selectedCathegory = "All";
 
         public CathegoriesListFragment(Activity activity) { _rootActivity = activity; }
@@ -24,9 +26,32 @@ namespace CryptoTouch.Activities
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
             View view = inflater.Inflate(Resource.Layout.CathegoriesList, container, false);
-            LinearLayout layout = view.FindViewById<LinearLayout>(Resource.Id.cathegoriesList);
-            PopulateList(layout);
+            PopulateList(_list = view.FindViewById<LinearLayout>(Resource.Id.cathegoriesList));
+            InitializeUI(view);
             return view;
+        }
+
+        private void InitializeUI(View root)
+        {
+            View frame = root.FindViewById<RelativeLayout>(Resource.Id.newCathegoryFrame);
+            View dialog = root.FindViewById<LinearLayout>(Resource.Id.newCathegoryDialog);
+            EditText title = root.FindViewById<EditText>(Resource.Id.newCathegoryName);
+            frame.Click += (object sender, EventArgs e) => frame.Visibility = ViewStates.Invisible;
+            root.FindViewById<Button>(Resource.Id.buttonAddCathegory).Click += (object sender, EventArgs e)
+                                                                            => { AddCathegory(title.Text);
+                                                                                 frame.Visibility = ViewStates.Invisible;
+                                                                                 title.Text = string.Empty;
+                                                                                (_rootActivity.GetSystemService(Context.InputMethodService) as InputMethodManager)
+                                                                                                                    .HideSoftInputFromWindow(title.WindowToken, 0); };
+
+            root.FindViewById<Button>(Resource.Id.newCathegoryButton).Click += (object sender, EventArgs e) => frame.Visibility = ViewStates.Visible;
+        }
+
+        private void AddCathegory(string cathegory)
+        {
+            NoteStorage.Cathegories.Add(cathegory);
+            XmlManager.SaveCathegories(NoteStorage.Cathegories);
+            PopulateList(_list);
         }
 
         private void PopulateList(LinearLayout layout)

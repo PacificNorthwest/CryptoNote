@@ -47,15 +47,13 @@ namespace CryptoTouch.Activities
             _cathegoriesSpinner = FindViewById<Spinner>(Resource.Id.cathegoriesSpinner);
             _saveButton.Click += (object sender, EventArgs e) => UpdateNotes();
             _noteText.RootActivity = this;
-            SaveButtonMargin = 800;
             _noteText.Click += (object sender, EventArgs e) => SaveButtonMargin = 800;
             _cathegoriesSpinner.Adapter = new ArrayAdapter(this, Resource.Layout.SpinnerItem, NoteStorage.Cathegories);
-
+           
             if (_originalNote != null)
             {
                 _noteText.Text = _originalNote.Text;
                 _cathegoriesSpinner.SetSelection(NoteStorage.Cathegories.IndexOf(_originalNote.Cathegory));
-
             }
         }
 

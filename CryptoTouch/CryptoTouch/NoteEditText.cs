@@ -24,7 +24,7 @@ namespace CryptoTouch
             if (e.Action == KeyEventActions.Up && keyCode == Keycode.Back)
             {
                 if (RootActivity.SaveButtonMargin > 10)
-                    RootActivity.SaveButtonMargin = 10;
+                    RootActivity.SaveButtonMargin = 30;
                 return base.OnKeyPreIme(keyCode, e);
             }
             return base.OnKeyPreIme(keyCode, e);
