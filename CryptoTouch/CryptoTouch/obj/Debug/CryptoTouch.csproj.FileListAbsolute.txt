@@ -68,6 +68,7 @@ E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\res\layout\spinneritem
 E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\res\layout\noteslist.xml
 E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\res\layout\cathegorieslist.xml
 E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\res\layout\cathegorieslistitem.xml
+E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\res\layout\buttoncover.xml
 E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\res\layout\loginpage.xml
 E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\res\values\strings.xml
 E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\res\drawable\icon.png
@@ -82,6 +83,7 @@ E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\res\drawable\error.png
 E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\res\drawable\edittextbg.xml
 E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\res\drawable\cardselectionbg.xml
 E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\res\values-v21\styles.xml
+E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\res\drawable\buttontransition.xml
 E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\R.cs.flag
 E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\uploadflags.txt
 E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\bin\Debug\CryptoTouch.dll.mdb

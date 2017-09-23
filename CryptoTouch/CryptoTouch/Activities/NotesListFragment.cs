@@ -12,6 +12,12 @@ using Android.Widget;
 using Android.Support.V4.App;
 using Android.Support.V7.Widget;
 using Android.Transitions;
+using Android.Graphics.Drawables;
+using Android.Views.Animations;
+using Android.Animation;
+using Android.Graphics;
+using System.Timers;
+using System.Threading;
 
 namespace CryptoTouch.Activities
 {
@@ -87,14 +93,55 @@ namespace CryptoTouch.Activities
         private void ShowDeleteButton()
         {
             _deleteNoteButton.Visibility = ViewStates.Visible;
-            TransitionManager.BeginDelayedTransition(_sceneRoot);
-            RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(180, 180);
-            layoutParams.AddRule(LayoutRules.LeftOf, Resource.Id.newNoteButton);
-            layoutParams.AddRule(LayoutRules.AlignParentBottom);
-            layoutParams.BottomMargin = 30;
-            layoutParams.RightMargin = 30;
-            _deleteNoteButton.LayoutParameters = layoutParams;
+            _deleteNoteButton.Background.Alpha = 0;
+            _deleteNoteButton.Rotation = -45F;
+
+            Animation animNewNoteButton = new RotateAnimation(0, 45, Dimension.RelativeToSelf, .5F, Dimension.RelativeToSelf, .5F) { Duration = 500 };
+            animNewNoteButton.AnimationStart += (object sender, Animation.AnimationStartEventArgs e) =>
+            {
+                ValueAnimator valueAnim = ValueAnimator.OfFloat(0F, 1F);
+                valueAnim.Update += (object anim_sender, ValueAnimator.AnimatorUpdateEventArgs arg) =>
+                {
+                    float mul = (float)valueAnim.AnimatedValue;
+                    _newNoteButton.Background.Alpha = 255 - Convert.ToInt32(255 * Convert.ToDouble(mul));
+                };
+                valueAnim.SetDuration(500);
+                valueAnim.RepeatCount = 1;
+                valueAnim.Start();
+            };
+            animNewNoteButton.AnimationEnd += (object sender, Animation.AnimationEndEventArgs e) => _newNoteButton.Visibility = ViewStates.Gone; 
+            animNewNoteButton.FillAfter = true;
+
+            Animation animDeleteNoteButton = new RotateAnimation(0, 45, Dimension.RelativeToSelf, .5F, Dimension.RelativeToSelf, .5F) { Duration = 500 };
+            animDeleteNoteButton.AnimationStart += (object sender, Animation.AnimationStartEventArgs e) =>
+            {
+                ValueAnimator valueAnim = ValueAnimator.OfFloat(0F, 1F);
+                valueAnim.Update += (object anim_sender, ValueAnimator.AnimatorUpdateEventArgs arg) =>
+                {
+                    float mul = (float)valueAnim.AnimatedValue;
+                    _deleteNoteButton.Background.Alpha = Convert.ToInt32(255 * Convert.ToDouble(mul));
+                };
+                valueAnim.SetDuration(500);
+                valueAnim.RepeatCount = 1;
+                valueAnim.Start();
+            };
+            animDeleteNoteButton.AnimationEnd += (object sender, Animation.AnimationEndEventArgs e)
+                                              =>
+                                                {
+                                                    View cover = View.Inflate(_rootActivity, Resource.Layout.ButtonCover, null);
+                                                    cover.LayoutParameters = _deleteNoteButton.LayoutParameters;
+                                                    _sceneRoot.AddView(cover);
+                                                    cover.BringToFront();
+                                                    _deleteNoteButton.BringToFront();
+                                                };
+            animDeleteNoteButton.FillAfter = true;
+
+             _newNoteButton.StartAnimation(animNewNoteButton);
+            _deleteNoteButton.StartAnimation(animDeleteNoteButton);
+           
         }
+
+
 
         private void HideDeleteButton()
         {
@@ -114,7 +161,7 @@ namespace CryptoTouch.Activities
                 NoteStorage.Notes.Remove(NoteStorage.Notes.Find(note => note.GetHashCode() == (int)view.Tag));
             _selectedItems.Clear();
             SecurityProvider.SaveNotesAsync();
-            HideDeleteButton();
+            //HideDeleteButton();
             PopulateGrid();
 
         }
