@@ -2,7 +2,7 @@
 <xs:schema xmlns:app="http://schemas.android.com/apk/res-auto" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/apk/res-auto" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v23</xs:documentation>
-    <xs:documentation>23.09.2017 15:21:27</xs:documentation>
+    <xs:documentation>26.09.2017 3:46:28</xs:documentation>
   </xs:annotation>
   <xs:attribute name="allowStacking">
     <xs:annotation>
@@ -1010,7 +1010,6 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
-            <xs:enumeration value="@drawable/buttontransition" />
             <xs:enumeration value="@drawable/cardselectionbg" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
@@ -1415,7 +1414,6 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
-            <xs:enumeration value="@drawable/buttontransition" />
             <xs:enumeration value="@drawable/cardselectionbg" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
@@ -1734,7 +1732,6 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
-            <xs:enumeration value="@drawable/buttontransition" />
             <xs:enumeration value="@drawable/cardselectionbg" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
@@ -2053,7 +2050,6 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
-            <xs:enumeration value="@drawable/buttontransition" />
             <xs:enumeration value="@drawable/cardselectionbg" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
@@ -3940,7 +3936,6 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
-            <xs:enumeration value="@drawable/buttontransition" />
             <xs:enumeration value="@drawable/cardselectionbg" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
@@ -4259,7 +4254,6 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
-            <xs:enumeration value="@drawable/buttontransition" />
             <xs:enumeration value="@drawable/cardselectionbg" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
@@ -4641,7 +4635,6 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
-            <xs:enumeration value="@drawable/buttontransition" />
             <xs:enumeration value="@drawable/cardselectionbg" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
@@ -5167,7 +5160,6 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
-            <xs:enumeration value="@drawable/buttontransition" />
             <xs:enumeration value="@drawable/cardselectionbg" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
@@ -5486,7 +5478,6 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
-            <xs:enumeration value="@drawable/buttontransition" />
             <xs:enumeration value="@drawable/cardselectionbg" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
@@ -6611,7 +6602,6 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
-            <xs:enumeration value="@drawable/buttontransition" />
             <xs:enumeration value="@drawable/cardselectionbg" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
@@ -6993,7 +6983,6 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
-            <xs:enumeration value="@drawable/buttontransition" />
             <xs:enumeration value="@drawable/cardselectionbg" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
@@ -7312,7 +7301,6 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
-            <xs:enumeration value="@drawable/buttontransition" />
             <xs:enumeration value="@drawable/cardselectionbg" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
@@ -7679,7 +7667,6 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
-            <xs:enumeration value="@drawable/buttontransition" />
             <xs:enumeration value="@drawable/cardselectionbg" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
@@ -8193,7 +8180,6 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
-            <xs:enumeration value="@drawable/buttontransition" />
             <xs:enumeration value="@drawable/cardselectionbg" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
@@ -8588,7 +8574,6 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
-            <xs:enumeration value="@drawable/buttontransition" />
             <xs:enumeration value="@drawable/cardselectionbg" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
@@ -9080,7 +9065,6 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
-            <xs:enumeration value="@drawable/buttontransition" />
             <xs:enumeration value="@drawable/cardselectionbg" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
@@ -9572,7 +9556,6 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
-            <xs:enumeration value="@drawable/buttontransition" />
             <xs:enumeration value="@drawable/cardselectionbg" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
@@ -9891,7 +9874,6 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
-            <xs:enumeration value="@drawable/buttontransition" />
             <xs:enumeration value="@drawable/cardselectionbg" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
@@ -10273,7 +10255,6 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
-            <xs:enumeration value="@drawable/buttontransition" />
             <xs:enumeration value="@drawable/cardselectionbg" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
@@ -10997,7 +10978,6 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
-            <xs:enumeration value="@drawable/buttontransition" />
             <xs:enumeration value="@drawable/cardselectionbg" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
@@ -11379,7 +11359,6 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
-            <xs:enumeration value="@drawable/buttontransition" />
             <xs:enumeration value="@drawable/cardselectionbg" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
@@ -11698,7 +11677,6 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
-            <xs:enumeration value="@drawable/buttontransition" />
             <xs:enumeration value="@drawable/cardselectionbg" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
@@ -12164,7 +12142,6 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
-            <xs:enumeration value="@drawable/buttontransition" />
             <xs:enumeration value="@drawable/cardselectionbg" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
@@ -12767,7 +12744,6 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
-            <xs:enumeration value="@drawable/buttontransition" />
             <xs:enumeration value="@drawable/cardselectionbg" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
@@ -13086,7 +13062,6 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
-            <xs:enumeration value="@drawable/buttontransition" />
             <xs:enumeration value="@drawable/cardselectionbg" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
@@ -13590,7 +13565,6 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
-            <xs:enumeration value="@drawable/buttontransition" />
             <xs:enumeration value="@drawable/cardselectionbg" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
@@ -14082,7 +14056,6 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
-            <xs:enumeration value="@drawable/buttontransition" />
             <xs:enumeration value="@drawable/cardselectionbg" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
@@ -14464,7 +14437,6 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
-            <xs:enumeration value="@drawable/buttontransition" />
             <xs:enumeration value="@drawable/cardselectionbg" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
@@ -14956,7 +14928,6 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
-            <xs:enumeration value="@drawable/buttontransition" />
             <xs:enumeration value="@drawable/cardselectionbg" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
@@ -15569,7 +15540,6 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
-            <xs:enumeration value="@drawable/buttontransition" />
             <xs:enumeration value="@drawable/cardselectionbg" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
@@ -15888,7 +15858,6 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
-            <xs:enumeration value="@drawable/buttontransition" />
             <xs:enumeration value="@drawable/cardselectionbg" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
@@ -17906,7 +17875,6 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
-            <xs:enumeration value="@drawable/buttontransition" />
             <xs:enumeration value="@drawable/cardselectionbg" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
@@ -19340,7 +19308,6 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
-            <xs:enumeration value="@drawable/buttontransition" />
             <xs:enumeration value="@drawable/cardselectionbg" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
@@ -19832,7 +19799,6 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
-            <xs:enumeration value="@drawable/buttontransition" />
             <xs:enumeration value="@drawable/cardselectionbg" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
@@ -20151,7 +20117,6 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
-            <xs:enumeration value="@drawable/buttontransition" />
             <xs:enumeration value="@drawable/cardselectionbg" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
@@ -20470,7 +20435,6 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
-            <xs:enumeration value="@drawable/buttontransition" />
             <xs:enumeration value="@drawable/cardselectionbg" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
