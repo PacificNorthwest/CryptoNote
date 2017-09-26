@@ -58,17 +58,6 @@ namespace CryptoTouch.Activities
             _deleteNoteButton.Click += (object sender, EventArgs e) => DeleteNotes();        
         }
 
-        private View CreateButton()
-        {
-            View button = new View(_rootActivity)
-            { LayoutParameters = new RelativeLayout.LayoutParams(180, 180) };
-            (button.LayoutParameters as RelativeLayout.LayoutParams).BottomMargin = 30;
-            (button.LayoutParameters as RelativeLayout.LayoutParams).RightMargin = 30;
-            (button.LayoutParameters as RelativeLayout.LayoutParams).AddRule(LayoutRules.AlignParentBottom);
-            (button.LayoutParameters as RelativeLayout.LayoutParams).AddRule(LayoutRules.AlignParentRight);
-            return button;
-        }
-
         private void PopulateGrid()
         {
             _notesGrid.HasFixedSize = true;
