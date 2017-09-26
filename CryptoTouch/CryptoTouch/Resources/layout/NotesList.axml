@@ -13,4 +13,31 @@
         android:scrollbars="vertical"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp" />
+    <Button 
+      android:id="@+id/deleteNoteButton"
+      android:background="@drawable/error"
+      android:visibility="invisible"
+      android:layout_height="60dp"
+      android:layout_width="60dp"
+      android:layout_alignParentBottom="true"
+      android:layout_alignParentRight="true"
+      android:layout_marginBottom="10dp"
+      android:layout_marginRight="10dp"/>
+    <View
+      android:id="@+id/cover"
+      android:layout_height="60dp"
+      android:layout_width="60dp"
+      android:layout_alignParentBottom="true"
+      android:layout_alignParentRight="true"
+      android:layout_marginBottom="10dp"
+      android:layout_marginRight="10dp"/>
+    <Button
+      android:id="@+id/newNoteButton"
+      android:background="@drawable/plus"
+      android:layout_height="60dp"
+      android:layout_width="60dp"
+      android:layout_alignParentBottom="true"
+      android:layout_alignParentRight="true"
+      android:layout_marginBottom="10dp"
+      android:layout_marginRight="10dp"/>
 </RelativeLayout>
