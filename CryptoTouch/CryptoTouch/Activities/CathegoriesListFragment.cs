@@ -61,7 +61,7 @@ namespace CryptoTouch.Activities
             View entry = View.Inflate(_rootActivity, Resource.Layout.CathegoriesListItem, null);
             entry.FindViewById<TextView>(Resource.Id.cathegoryName).Text = "All";
             entry.FindViewById<TextView>(Resource.Id.cathegoryName).SetTextColor(BuildColor("All"));
-            entry.FindViewById<TextView>(Resource.Id.notesCount).Text = NoteStorage.Notes.Count.ToString();
+            entry.FindViewById<TextView>(Resource.Id.notesCount).Text = $"({NoteStorage.Notes.Count.ToString()})";
             entry.Click += (object sender, EventArgs e) =>
                             {
                                 NotesListFragment.ChangeDataSet(NoteStorage.Notes);
@@ -76,7 +76,7 @@ namespace CryptoTouch.Activities
                 entry = View.Inflate(_rootActivity, Resource.Layout.CathegoriesListItem, null);
                 entry.FindViewById<TextView>(Resource.Id.cathegoryName).Text = cathegory;
                 entry.FindViewById<TextView>(Resource.Id.cathegoryName).SetTextColor(BuildColor(cathegory));
-                entry.FindViewById<TextView>(Resource.Id.notesCount).Text = NoteStorage.Notes.Where(n => n.Cathegory == cathegory).Count().ToString();
+                entry.FindViewById<TextView>(Resource.Id.notesCount).Text = $"({NoteStorage.Notes.Where(n => n.Cathegory == cathegory).Count().ToString()})";
                 entry.Click += (object sender, EventArgs e) =>
                                 {
                                     NotesListFragment.ChangeDataSet(NoteStorage.Notes.Where(n => n.Cathegory == cathegory).ToList());

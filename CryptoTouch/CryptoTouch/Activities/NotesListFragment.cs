@@ -27,8 +27,8 @@ namespace CryptoTouch.Activities
         private static RecyclerView _notesGrid;
         private static Android.Support.V4.App.Fragment _instance;
         private List<View> _selectedItems = new List<View>();
-        private View _newNoteButton;
-        private View _deleteNoteButton;
+        private Button _newNoteButton;
+        private Button _deleteNoteButton;
         private View _cover;
         private RelativeLayout _sceneRoot;
 
