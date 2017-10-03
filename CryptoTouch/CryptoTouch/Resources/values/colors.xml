@@ -1,4 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <resources>
   <color name="ButtonHighlight">#C0FFEA</color>
+  <color name="MainAppColor">#ff0c8270</color>
 </resources>
