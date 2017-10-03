@@ -111,7 +111,6 @@ namespace CryptoTouch.Activities
             SecurityProvider.SaveNotesAsync();
             HideDeleteButton();
             ChangeDataSet(NoteStorage.Notes);
-
         }
 
     }

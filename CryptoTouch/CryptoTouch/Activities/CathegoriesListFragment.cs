@@ -12,6 +12,7 @@ using Android.Widget;
 using Android.Text;
 using Android.Text.Style;
 using Android.Views.InputMethods;
+using Android.Support.V4.Content;
 
 namespace CryptoTouch.Activities
 {
@@ -97,6 +98,7 @@ namespace CryptoTouch.Activities
         }
 
         private Android.Graphics.Color BuildColor(string cathegory)
-            => (_selectedCathegory == cathegory) ? Android.Graphics.Color.Green : Android.Graphics.Color.Black;
+            => (_selectedCathegory == cathegory) ? new Android.Graphics.Color(ContextCompat.GetColor(_rootActivity, Resource.Color.MainAppColor)) 
+                                                 : Android.Graphics.Color.Black;
     }
 }
