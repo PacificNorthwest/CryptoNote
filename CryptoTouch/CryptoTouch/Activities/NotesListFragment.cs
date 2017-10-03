@@ -29,7 +29,6 @@ namespace CryptoTouch.Activities
         private List<View> _selectedItems = new List<View>();
         private Button _newNoteButton;
         private Button _deleteNoteButton;
-        private View _cover;
         private RelativeLayout _sceneRoot;
 
         public bool ContainsSelectedItems => (_selectedItems.Count != 0) ? true : false;
@@ -50,7 +49,6 @@ namespace CryptoTouch.Activities
         {
             _newNoteButton = view.FindViewById<Button>(Resource.Id.newNoteButton);
             _deleteNoteButton = view.FindViewById<Button>(Resource.Id.deleteNoteButton);
-            _cover = view.FindViewById<View>(Resource.Id.cover);
             _sceneRoot = view.FindViewById<RelativeLayout>(Resource.Id.layout);
             _notesGrid = view.FindViewById<RecyclerView>(Resource.Id.recyclerView);
 
@@ -62,7 +60,7 @@ namespace CryptoTouch.Activities
         {
             _notesGrid.HasFixedSize = true;
             _notesGrid.SetLayoutManager(new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.Vertical));
-            _notesGrid.AddItemDecoration(new RecyclerViewItemSpacing(30));
+            _notesGrid.AddItemDecoration(new RecyclerViewItemSpacing(15));
             _notesGrid.SetAdapter(new NotesListAdapter(_rootActivity, this, NoteStorage.Notes));
         }
 
@@ -77,12 +75,13 @@ namespace CryptoTouch.Activities
             {
                 _selectedItems.Add(view);
                 view.SetBackgroundResource(Resource.Drawable.CardSelectionBG);
-                ShowDeleteButton();
+                if (_selectedItems.Count == 1)
+                    ShowDeleteButton();
             }
             else
             {
                 _selectedItems.Remove(view);
-                view.SetBackgroundResource(Resource.Color.cardview_light_background);
+                view.SetBackgroundResource(Resource.Drawable.NoteItemBG);
                 if (_selectedItems.Count == 0)
                     HideDeleteButton();
             }
@@ -90,97 +89,17 @@ namespace CryptoTouch.Activities
 
         private void ShowDeleteButton()
         {
-            _deleteNoteButton.Visibility = ViewStates.Visible;
-            _deleteNoteButton.Alpha = 0;
-            _deleteNoteButton.Rotation = -45f;
-
-            Animation animNewNoteButton = new RotateAnimation(0, 45, Dimension.RelativeToSelf, .5f, Dimension.RelativeToSelf, .5f) { Duration = 500, FillAfter = true };
-            animNewNoteButton.AnimationStart += (object sender, Animation.AnimationStartEventArgs e) =>
-            {
-                ValueAnimator valueAnim = ValueAnimator.OfFloat(0F, 1F);
-                valueAnim.Update += (object anim_sender, ValueAnimator.AnimatorUpdateEventArgs arg) =>
-                {
-                    float mul = (float)valueAnim.AnimatedValue;
-                    _newNoteButton.Alpha = 255 - Convert.ToInt32(255 * Convert.ToDouble(mul));
-                };
-                valueAnim.SetDuration(500);
-                valueAnim.RepeatCount = 1;
-                valueAnim.Start();
-            };
-            animNewNoteButton.AnimationEnd += (object sender, Animation.AnimationEndEventArgs e) => _newNoteButton.Visibility = ViewStates.Invisible; 
-
-            Animation animDeleteNoteButton = new RotateAnimation(0, 45, Dimension.RelativeToSelf, .5F, Dimension.RelativeToSelf, .5F) { Duration = 500, FillAfter = true };
-            animDeleteNoteButton.AnimationStart += (object sender, Animation.AnimationStartEventArgs e) =>
-            {
-                ValueAnimator valueAnim = ValueAnimator.OfFloat(0F, 1F);
-                valueAnim.Update += (object anim_sender, ValueAnimator.AnimatorUpdateEventArgs arg) =>
-                {
-                    float mul = (float)valueAnim.AnimatedValue;
-                    _deleteNoteButton.Alpha = Convert.ToInt32(255 * Convert.ToDouble(mul));
-                };
-                valueAnim.SetDuration(500);
-                valueAnim.RepeatCount = 1;
-                valueAnim.Start();
-            };
-            animDeleteNoteButton.AnimationEnd += (object sender, Animation.AnimationEndEventArgs e)
-                                              =>
-                                                 { 
-                                                   _cover.SetBackgroundResource(Resource.Drawable.error);
-                                                   _cover.Alpha = 255;
-                                                   _cover.BringToFront();
-                                                   _deleteNoteButton.BringToFront(); };
-
+            Animation animNewNoteButton = new RotateAnimation(0, 45, Dimension.RelativeToSelf, .5f, Dimension.RelativeToSelf, .5f) { Duration = 500 };
+            animNewNoteButton.AnimationEnd += (object sender, Animation.AnimationEndEventArgs e) => _deleteNoteButton.BringToFront();
             _newNoteButton.StartAnimation(animNewNoteButton);
-            _deleteNoteButton.StartAnimation(animDeleteNoteButton);
         }
 
 
 
         private void HideDeleteButton()
         {
-            _newNoteButton.Visibility = ViewStates.Visible;
-            _newNoteButton.Alpha = 0;
-            _cover.Alpha = 0;
-
-            Animation animNewNoteButton = new RotateAnimation(45, 0, Dimension.RelativeToSelf, .5f, Dimension.RelativeToSelf, .5f) { Duration = 500, FillAfter = true };
-            animNewNoteButton.AnimationStart += (object sender, Animation.AnimationStartEventArgs e) =>
-            {
-                ValueAnimator valueAnim = ValueAnimator.OfFloat(0F, 1F);
-                valueAnim.Update += (object anim_sender, ValueAnimator.AnimatorUpdateEventArgs arg) =>
-                {
-                    float mul = (float)valueAnim.AnimatedValue;
-                    _newNoteButton.Alpha = Convert.ToInt32(255 * Convert.ToDouble(mul));
-                };
-                valueAnim.SetDuration(500);
-                valueAnim.RepeatCount = 1;
-                valueAnim.Start();
-            };
-            animNewNoteButton.AnimationEnd += (object sender, Animation.AnimationEndEventArgs e) 
-                                           => 
-                                              {
-                                                  _cover.SetBackgroundResource(Resource.Drawable.Add);
-                                                  _cover.Alpha = 255;
-                                                  _cover.BringToFront();
-                                                  _newNoteButton.BringToFront();
-                                              };
-
-            Animation animDeleteNoteButton = new RotateAnimation(45, 0, Dimension.RelativeToSelf, .5F, Dimension.RelativeToSelf, .5F) { Duration = 500, FillAfter = true };
-            animDeleteNoteButton.AnimationStart += (object sender, Animation.AnimationStartEventArgs e) =>
-            {
-                ValueAnimator valueAnim = ValueAnimator.OfFloat(0F, 1F);
-                valueAnim.Update += (object anim_sender, ValueAnimator.AnimatorUpdateEventArgs arg) =>
-                {
-                    float mul = (float)valueAnim.AnimatedValue;
-                    _deleteNoteButton.Alpha = 255 - Convert.ToInt32(255 * Convert.ToDouble(mul));
-                };
-                valueAnim.SetDuration(500);
-                valueAnim.RepeatCount = 1;
-                valueAnim.Start();
-            };
-            animDeleteNoteButton.AnimationEnd += (object sender, Animation.AnimationEndEventArgs e) => _deleteNoteButton.Visibility = ViewStates.Invisible;
-
-            
-            _newNoteButton.StartAnimation(animNewNoteButton);
+            Animation animDeleteNoteButton = new RotateAnimation(0, -45, Dimension.RelativeToSelf, .5F, Dimension.RelativeToSelf, .5F) { Duration = 500 };
+            animDeleteNoteButton.AnimationEnd += (object sender, Animation.AnimationEndEventArgs e) => _newNoteButton.BringToFront();
             _deleteNoteButton.StartAnimation(animDeleteNoteButton);
         }
 
@@ -191,7 +110,7 @@ namespace CryptoTouch.Activities
             _selectedItems.Clear();
             SecurityProvider.SaveNotesAsync();
             HideDeleteButton();
-            PopulateGrid();
+            ChangeDataSet(NoteStorage.Notes);
 
         }
 

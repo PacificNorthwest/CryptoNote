@@ -25,20 +25,22 @@ namespace CryptoTouch
 
         public class ViewHolder : RecyclerView.ViewHolder
         {
+            public View Item { get; set; }
             public Note Note { get; set; }
             public TextView NoteText { get; set; }
             public TextView Date { get; set; }
 
             public ViewHolder(Android.Support.V4.App.Fragment fragment, Activity activity, View itemView) : base(itemView)
             {
-                NoteText = itemView.FindViewById<TextView>(Resource.Id.cardNoteTextPreview);
-                Date = itemView.FindViewById<TextView>(Resource.Id.cardNoteDate);
+                Item = itemView;
+                NoteText = Item.FindViewById<TextView>(Resource.Id.cardNoteTextPreview);
+                Date = Item.FindViewById<TextView>(Resource.Id.cardNoteDate);
 
-                itemView.Click += (object sender, EventArgs e) =>
+                Item.Click += (object sender, EventArgs e) =>
                                     {
                                         if ((fragment as NotesListFragment).ContainsSelectedItems)
                                         {
-                                            itemView.Tag = Note.GetHashCode();
+                                            Item.Tag = Note.GetHashCode();
                                             (fragment as NotesListFragment).SelectItem(itemView);
                                         }
                                         else
@@ -49,7 +51,7 @@ namespace CryptoTouch
                                         }
                                     };
 
-                itemView.LongClick += (object sender, View.LongClickEventArgs e) => { itemView.Tag = Note.GetHashCode(); (fragment as NotesListFragment).SelectItem(itemView); };
+                Item.LongClick += (object sender, View.LongClickEventArgs e) => { itemView.Tag = Note.GetHashCode(); (fragment as NotesListFragment).SelectItem(itemView); };
             }
         }
 
@@ -62,7 +64,7 @@ namespace CryptoTouch
         {
             (holder as ViewHolder).Note = _items[position];
             (holder as ViewHolder).NoteText.Text = _items[position].Text;
-            (holder as ViewHolder).Date.Text = _items[position].Date.ToString();
+            (holder as ViewHolder).Date.Text = _items[position].Date.ToShortDateString();
             SetAnimation(holder.ItemView);
         }
 

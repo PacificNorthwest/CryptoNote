@@ -2,7 +2,7 @@
 <xs:schema xmlns:app="http://schemas.android.com/apk/res-auto" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/apk/res-auto" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v23</xs:documentation>
-    <xs:documentation>03.10.2017 12:14:36</xs:documentation>
+    <xs:documentation>03.10.2017 15:27:58</xs:documentation>
   </xs:annotation>
   <xs:attribute name="allowStacking">
     <xs:annotation>
@@ -1013,6 +1013,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/add" />
             <xs:enumeration value="@drawable/cardselectionbg" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
@@ -1022,6 +1023,7 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/loginpagebg" />
+            <xs:enumeration value="@drawable/noteitembg" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
             <xs:enumeration value="@drawable/plus" />
             <xs:enumeration value="@drawable/rcpannel" />
@@ -1415,6 +1417,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/add" />
             <xs:enumeration value="@drawable/cardselectionbg" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
@@ -1424,6 +1427,7 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/loginpagebg" />
+            <xs:enumeration value="@drawable/noteitembg" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
             <xs:enumeration value="@drawable/plus" />
             <xs:enumeration value="@drawable/rcpannel" />
@@ -1731,6 +1735,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/add" />
             <xs:enumeration value="@drawable/cardselectionbg" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
@@ -1740,6 +1745,7 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/loginpagebg" />
+            <xs:enumeration value="@drawable/noteitembg" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
             <xs:enumeration value="@drawable/plus" />
             <xs:enumeration value="@drawable/rcpannel" />
@@ -2047,6 +2053,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/add" />
             <xs:enumeration value="@drawable/cardselectionbg" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
@@ -2056,6 +2063,7 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/loginpagebg" />
+            <xs:enumeration value="@drawable/noteitembg" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
             <xs:enumeration value="@drawable/plus" />
             <xs:enumeration value="@drawable/rcpannel" />
@@ -3934,6 +3942,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/add" />
             <xs:enumeration value="@drawable/cardselectionbg" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
@@ -3943,6 +3952,7 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/loginpagebg" />
+            <xs:enumeration value="@drawable/noteitembg" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
             <xs:enumeration value="@drawable/plus" />
             <xs:enumeration value="@drawable/rcpannel" />
@@ -4250,6 +4260,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/add" />
             <xs:enumeration value="@drawable/cardselectionbg" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
@@ -4259,6 +4270,7 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/loginpagebg" />
+            <xs:enumeration value="@drawable/noteitembg" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
             <xs:enumeration value="@drawable/plus" />
             <xs:enumeration value="@drawable/rcpannel" />
@@ -4629,6 +4641,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/add" />
             <xs:enumeration value="@drawable/cardselectionbg" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
@@ -4638,6 +4651,7 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/loginpagebg" />
+            <xs:enumeration value="@drawable/noteitembg" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
             <xs:enumeration value="@drawable/plus" />
             <xs:enumeration value="@drawable/rcpannel" />
@@ -5152,6 +5166,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/add" />
             <xs:enumeration value="@drawable/cardselectionbg" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
@@ -5161,6 +5176,7 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/loginpagebg" />
+            <xs:enumeration value="@drawable/noteitembg" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
             <xs:enumeration value="@drawable/plus" />
             <xs:enumeration value="@drawable/rcpannel" />
@@ -5468,6 +5484,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/add" />
             <xs:enumeration value="@drawable/cardselectionbg" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
@@ -5477,6 +5494,7 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/loginpagebg" />
+            <xs:enumeration value="@drawable/noteitembg" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
             <xs:enumeration value="@drawable/plus" />
             <xs:enumeration value="@drawable/rcpannel" />
@@ -6590,6 +6608,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/add" />
             <xs:enumeration value="@drawable/cardselectionbg" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
@@ -6599,6 +6618,7 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/loginpagebg" />
+            <xs:enumeration value="@drawable/noteitembg" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
             <xs:enumeration value="@drawable/plus" />
             <xs:enumeration value="@drawable/rcpannel" />
@@ -6969,6 +6989,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/add" />
             <xs:enumeration value="@drawable/cardselectionbg" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
@@ -6978,6 +6999,7 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/loginpagebg" />
+            <xs:enumeration value="@drawable/noteitembg" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
             <xs:enumeration value="@drawable/plus" />
             <xs:enumeration value="@drawable/rcpannel" />
@@ -7285,6 +7307,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/add" />
             <xs:enumeration value="@drawable/cardselectionbg" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
@@ -7294,6 +7317,7 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/loginpagebg" />
+            <xs:enumeration value="@drawable/noteitembg" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
             <xs:enumeration value="@drawable/plus" />
             <xs:enumeration value="@drawable/rcpannel" />
@@ -7649,6 +7673,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/add" />
             <xs:enumeration value="@drawable/cardselectionbg" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
@@ -7658,6 +7683,7 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/loginpagebg" />
+            <xs:enumeration value="@drawable/noteitembg" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
             <xs:enumeration value="@drawable/plus" />
             <xs:enumeration value="@drawable/rcpannel" />
@@ -8161,6 +8187,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/add" />
             <xs:enumeration value="@drawable/cardselectionbg" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
@@ -8170,6 +8197,7 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/loginpagebg" />
+            <xs:enumeration value="@drawable/noteitembg" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
             <xs:enumeration value="@drawable/plus" />
             <xs:enumeration value="@drawable/rcpannel" />
@@ -8555,6 +8583,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/add" />
             <xs:enumeration value="@drawable/cardselectionbg" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
@@ -8564,6 +8593,7 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/loginpagebg" />
+            <xs:enumeration value="@drawable/noteitembg" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
             <xs:enumeration value="@drawable/plus" />
             <xs:enumeration value="@drawable/rcpannel" />
@@ -9047,6 +9077,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/add" />
             <xs:enumeration value="@drawable/cardselectionbg" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
@@ -9056,6 +9087,7 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/loginpagebg" />
+            <xs:enumeration value="@drawable/noteitembg" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
             <xs:enumeration value="@drawable/plus" />
             <xs:enumeration value="@drawable/rcpannel" />
@@ -9539,6 +9571,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/add" />
             <xs:enumeration value="@drawable/cardselectionbg" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
@@ -9548,6 +9581,7 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/loginpagebg" />
+            <xs:enumeration value="@drawable/noteitembg" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
             <xs:enumeration value="@drawable/plus" />
             <xs:enumeration value="@drawable/rcpannel" />
@@ -9855,6 +9889,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/add" />
             <xs:enumeration value="@drawable/cardselectionbg" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
@@ -9864,6 +9899,7 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/loginpagebg" />
+            <xs:enumeration value="@drawable/noteitembg" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
             <xs:enumeration value="@drawable/plus" />
             <xs:enumeration value="@drawable/rcpannel" />
@@ -10234,6 +10270,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/add" />
             <xs:enumeration value="@drawable/cardselectionbg" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
@@ -10243,6 +10280,7 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/loginpagebg" />
+            <xs:enumeration value="@drawable/noteitembg" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
             <xs:enumeration value="@drawable/plus" />
             <xs:enumeration value="@drawable/rcpannel" />
@@ -10955,6 +10993,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/add" />
             <xs:enumeration value="@drawable/cardselectionbg" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
@@ -10964,6 +11003,7 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/loginpagebg" />
+            <xs:enumeration value="@drawable/noteitembg" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
             <xs:enumeration value="@drawable/plus" />
             <xs:enumeration value="@drawable/rcpannel" />
@@ -11334,6 +11374,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/add" />
             <xs:enumeration value="@drawable/cardselectionbg" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
@@ -11343,6 +11384,7 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/loginpagebg" />
+            <xs:enumeration value="@drawable/noteitembg" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
             <xs:enumeration value="@drawable/plus" />
             <xs:enumeration value="@drawable/rcpannel" />
@@ -11650,6 +11692,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/add" />
             <xs:enumeration value="@drawable/cardselectionbg" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
@@ -11659,6 +11702,7 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/loginpagebg" />
+            <xs:enumeration value="@drawable/noteitembg" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
             <xs:enumeration value="@drawable/plus" />
             <xs:enumeration value="@drawable/rcpannel" />
@@ -12113,6 +12157,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/add" />
             <xs:enumeration value="@drawable/cardselectionbg" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
@@ -12122,6 +12167,7 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/loginpagebg" />
+            <xs:enumeration value="@drawable/noteitembg" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
             <xs:enumeration value="@drawable/plus" />
             <xs:enumeration value="@drawable/rcpannel" />
@@ -12716,6 +12762,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/add" />
             <xs:enumeration value="@drawable/cardselectionbg" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
@@ -12725,6 +12772,7 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/loginpagebg" />
+            <xs:enumeration value="@drawable/noteitembg" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
             <xs:enumeration value="@drawable/plus" />
             <xs:enumeration value="@drawable/rcpannel" />
@@ -13032,6 +13080,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/add" />
             <xs:enumeration value="@drawable/cardselectionbg" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
@@ -13041,6 +13090,7 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/loginpagebg" />
+            <xs:enumeration value="@drawable/noteitembg" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
             <xs:enumeration value="@drawable/plus" />
             <xs:enumeration value="@drawable/rcpannel" />
@@ -13533,6 +13583,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/add" />
             <xs:enumeration value="@drawable/cardselectionbg" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
@@ -13542,6 +13593,7 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/loginpagebg" />
+            <xs:enumeration value="@drawable/noteitembg" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
             <xs:enumeration value="@drawable/plus" />
             <xs:enumeration value="@drawable/rcpannel" />
@@ -14025,6 +14077,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/add" />
             <xs:enumeration value="@drawable/cardselectionbg" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
@@ -14034,6 +14087,7 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/loginpagebg" />
+            <xs:enumeration value="@drawable/noteitembg" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
             <xs:enumeration value="@drawable/plus" />
             <xs:enumeration value="@drawable/rcpannel" />
@@ -14404,6 +14458,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/add" />
             <xs:enumeration value="@drawable/cardselectionbg" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
@@ -14413,6 +14468,7 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/loginpagebg" />
+            <xs:enumeration value="@drawable/noteitembg" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
             <xs:enumeration value="@drawable/plus" />
             <xs:enumeration value="@drawable/rcpannel" />
@@ -14896,6 +14952,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/add" />
             <xs:enumeration value="@drawable/cardselectionbg" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
@@ -14905,6 +14962,7 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/loginpagebg" />
+            <xs:enumeration value="@drawable/noteitembg" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
             <xs:enumeration value="@drawable/plus" />
             <xs:enumeration value="@drawable/rcpannel" />
@@ -15506,6 +15564,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/add" />
             <xs:enumeration value="@drawable/cardselectionbg" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
@@ -15515,6 +15574,7 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/loginpagebg" />
+            <xs:enumeration value="@drawable/noteitembg" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
             <xs:enumeration value="@drawable/plus" />
             <xs:enumeration value="@drawable/rcpannel" />
@@ -15822,6 +15882,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/add" />
             <xs:enumeration value="@drawable/cardselectionbg" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
@@ -15831,6 +15892,7 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/loginpagebg" />
+            <xs:enumeration value="@drawable/noteitembg" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
             <xs:enumeration value="@drawable/plus" />
             <xs:enumeration value="@drawable/rcpannel" />
@@ -17843,6 +17905,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/add" />
             <xs:enumeration value="@drawable/cardselectionbg" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
@@ -17852,6 +17915,7 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/loginpagebg" />
+            <xs:enumeration value="@drawable/noteitembg" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
             <xs:enumeration value="@drawable/plus" />
             <xs:enumeration value="@drawable/rcpannel" />
@@ -19277,6 +19341,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/add" />
             <xs:enumeration value="@drawable/cardselectionbg" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
@@ -19286,6 +19351,7 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/loginpagebg" />
+            <xs:enumeration value="@drawable/noteitembg" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
             <xs:enumeration value="@drawable/plus" />
             <xs:enumeration value="@drawable/rcpannel" />
@@ -19769,6 +19835,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/add" />
             <xs:enumeration value="@drawable/cardselectionbg" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
@@ -19778,6 +19845,7 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/loginpagebg" />
+            <xs:enumeration value="@drawable/noteitembg" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
             <xs:enumeration value="@drawable/plus" />
             <xs:enumeration value="@drawable/rcpannel" />
@@ -20085,6 +20153,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/add" />
             <xs:enumeration value="@drawable/cardselectionbg" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
@@ -20094,6 +20163,7 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/loginpagebg" />
+            <xs:enumeration value="@drawable/noteitembg" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
             <xs:enumeration value="@drawable/plus" />
             <xs:enumeration value="@drawable/rcpannel" />
@@ -20401,6 +20471,7 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/add" />
             <xs:enumeration value="@drawable/cardselectionbg" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
@@ -20410,6 +20481,7 @@
             <xs:enumeration value="@drawable/fingerprint_icon" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/loginpagebg" />
+            <xs:enumeration value="@drawable/noteitembg" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
             <xs:enumeration value="@drawable/plus" />
             <xs:enumeration value="@drawable/rcpannel" />
