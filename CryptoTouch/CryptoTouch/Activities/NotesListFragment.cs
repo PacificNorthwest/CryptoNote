@@ -158,7 +158,7 @@ namespace CryptoTouch.Activities
             animNewNoteButton.AnimationEnd += (object sender, Animation.AnimationEndEventArgs e) 
                                            => 
                                               {
-                                                  _cover.SetBackgroundResource(Resource.Drawable.plus);
+                                                  _cover.SetBackgroundResource(Resource.Drawable.Add);
                                                   _cover.Alpha = 255;
                                                   _cover.BringToFront();
                                                   _newNoteButton.BringToFront();

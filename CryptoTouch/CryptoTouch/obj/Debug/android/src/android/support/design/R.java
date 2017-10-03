@@ -2302,20 +2302,21 @@ containing a value of this type.
         public static int abc_textfield_search_activated_mtrl_alpha=0x7f020042;
         public static int abc_textfield_search_default_mtrl_alpha=0x7f020043;
         public static int abc_textfield_search_material=0x7f020044;
-        public static int cardselectionbg=0x7f020045;
-        public static int design_fab_background=0x7f020046;
-        public static int design_snackbar_background=0x7f020047;
-        public static int edittextbg=0x7f020048;
-        public static int error=0x7f020049;
-        public static int fingerprint=0x7f02004a;
-        public static int fingerprint_icon=0x7f02004b;
-        public static int icon=0x7f02004c;
-        public static int loginpagebg=0x7f02004d;
-        public static int notification_template_icon_bg=0x7f020052;
-        public static int plus=0x7f02004e;
-        public static int rcpannel=0x7f02004f;
-        public static int roundcornersbg=0x7f020050;
-        public static int save=0x7f020051;
+        public static int add=0x7f020045;
+        public static int cardselectionbg=0x7f020046;
+        public static int design_fab_background=0x7f020047;
+        public static int design_snackbar_background=0x7f020048;
+        public static int edittextbg=0x7f020049;
+        public static int error=0x7f02004a;
+        public static int fingerprint=0x7f02004b;
+        public static int fingerprint_icon=0x7f02004c;
+        public static int icon=0x7f02004d;
+        public static int loginpagebg=0x7f02004e;
+        public static int notification_template_icon_bg=0x7f020053;
+        public static int plus=0x7f02004f;
+        public static int rcpannel=0x7f020050;
+        public static int roundcornersbg=0x7f020051;
+        public static int save=0x7f020052;
     }
     public static final class id {
         public static int AuthorizationPassword=0x7f06007a;

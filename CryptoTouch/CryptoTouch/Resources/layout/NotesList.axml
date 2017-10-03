@@ -27,6 +27,7 @@
       android:layout_marginRight="10dp"/>
     <View
       android:id="@+id/cover"
+      android:visibility="gone"
       android:layout_height="60dp"
       android:layout_width="60dp"
       android:layout_alignParentBottom="true"
@@ -35,7 +36,7 @@
       android:layout_marginRight="10dp"/>
     <Button
       android:id="@+id/newNoteButton"
-      android:background="@drawable/plus"
+      android:background="@drawable/Add"
       android:layout_height="60dp"
       android:layout_width="60dp"
       android:layout_alignParentBottom="true"

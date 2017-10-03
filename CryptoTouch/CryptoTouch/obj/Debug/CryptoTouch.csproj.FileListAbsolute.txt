@@ -85,5 +85,8 @@ E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\res\drawable\cardselec
 E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\res\values-v21\styles.xml
 E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\res\drawable\loginpagebg.png
 E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\res\drawable\roundcornersbg.xml
+E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\res\drawable\add.png
 E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\R.cs.flag
 E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\uploadflags.txt
+E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\bin\Debug\CryptoTouch.dll.mdb
+E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\android\assets\CryptoTouch.dll.mdb

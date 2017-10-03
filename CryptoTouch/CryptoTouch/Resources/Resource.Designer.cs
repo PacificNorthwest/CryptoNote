@@ -1795,46 +1795,49 @@ namespace CryptoTouch
 			public const int abc_textfield_search_material = 2130837572;
 			
 			// aapt resource value: 0x7f020045
-			public const int CardSelectionBG = 2130837573;
+			public const int Add = 2130837573;
 			
 			// aapt resource value: 0x7f020046
-			public const int design_fab_background = 2130837574;
+			public const int CardSelectionBG = 2130837574;
 			
 			// aapt resource value: 0x7f020047
-			public const int design_snackbar_background = 2130837575;
+			public const int design_fab_background = 2130837575;
 			
 			// aapt resource value: 0x7f020048
-			public const int EdittextBG = 2130837576;
+			public const int design_snackbar_background = 2130837576;
 			
 			// aapt resource value: 0x7f020049
-			public const int error = 2130837577;
+			public const int EdittextBG = 2130837577;
 			
 			// aapt resource value: 0x7f02004a
-			public const int fingerprint = 2130837578;
+			public const int error = 2130837578;
 			
 			// aapt resource value: 0x7f02004b
-			public const int fingerprint_icon = 2130837579;
+			public const int fingerprint = 2130837579;
 			
 			// aapt resource value: 0x7f02004c
-			public const int Icon = 2130837580;
+			public const int fingerprint_icon = 2130837580;
 			
 			// aapt resource value: 0x7f02004d
-			public const int LoginPageBG = 2130837581;
-			
-			// aapt resource value: 0x7f020052
-			public const int notification_template_icon_bg = 2130837586;
+			public const int Icon = 2130837581;
 			
 			// aapt resource value: 0x7f02004e
-			public const int plus = 2130837582;
+			public const int LoginPageBG = 2130837582;
+			
+			// aapt resource value: 0x7f020053
+			public const int notification_template_icon_bg = 2130837587;
 			
 			// aapt resource value: 0x7f02004f
-			public const int rcPannel = 2130837583;
+			public const int plus = 2130837583;
 			
 			// aapt resource value: 0x7f020050
-			public const int RoundCornersBG = 2130837584;
+			public const int rcPannel = 2130837584;
 			
 			// aapt resource value: 0x7f020051
-			public const int save = 2130837585;
+			public const int RoundCornersBG = 2130837585;
+			
+			// aapt resource value: 0x7f020052
+			public const int save = 2130837586;
 			
 			static Drawable()
 			{

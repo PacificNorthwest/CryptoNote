@@ -23,6 +23,7 @@ namespace CryptoTouch.Activities
             Window.RequestFeature(Android.Views.WindowFeatures.ContentTransitions);
             base.OnCreate(bundle);
             SetContentView (Resource.Layout.LoginPage);
+
             Typeface font = Typeface.CreateFromAsset(Assets, "fonts/BROADW.ttf");
             FindViewById<TextView>(Resource.Id.loginPageTitle).Typeface = font;
             FindViewById<Button>(Resource.Id.ButtonSubmitAuthorization).Click += (object sender, System.EventArgs e) => PasswordAuthorization();
