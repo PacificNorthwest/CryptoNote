@@ -31,6 +31,10 @@ namespace CryptoTouch.Activities
             Navigation.Adapter = new ViewPagerAdapter(this.SupportFragmentManager, this);
             FindViewById<Android.Support.Design.Widget.TabLayout>(Resource.Id.tabs).SetupWithViewPager(Navigation);
         }
-        
+
+        public override void OnBackPressed()
+        {
+            (Navigation.Adapter as ViewPagerAdapter).HandleOnBackPressed(() => base.OnBackPressed());
+        }
     }
 }

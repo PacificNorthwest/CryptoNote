@@ -12,8 +12,12 @@
             android:id="@+id/cardNoteTextPreview"
             android:layout_gravity="center"
             android:textColor="@android:color/black"
-            android:textSize="17sp"
-            android:layout_margin="7dp" />
+            android:textSize="16sp"
+            android:lineSpacingExtra="3dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="7dp"/>
         <TextView
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"

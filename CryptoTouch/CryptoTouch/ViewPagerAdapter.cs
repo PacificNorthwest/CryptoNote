@@ -16,8 +16,15 @@ namespace CryptoTouch
     class ViewPagerAdapter : FragmentPagerAdapter
     {
         private Activity _rootActivity;
+        private Activities.NotesListFragment _notesFragment;
+        private Activities.CathegoriesListFragment _cathegoriesFragment;
         
-        public ViewPagerAdapter(Android.Support.V4.App.FragmentManager fm, Activity activity) : base(fm) { _rootActivity = activity; }
+        public ViewPagerAdapter(Android.Support.V4.App.FragmentManager fm, Activity activity) : base(fm)
+        {
+            _rootActivity = activity;
+            _notesFragment = new Activities.NotesListFragment(_rootActivity);
+            _cathegoriesFragment = new Activities.CathegoriesListFragment(_rootActivity);
+        }
 
         public override int Count => 2;
 
@@ -25,8 +32,8 @@ namespace CryptoTouch
         {
             switch (position)
             {
-                case 0: return new Activities.NotesListFragment(_rootActivity);
-                case 1: return new Activities.CathegoriesListFragment(_rootActivity);
+                case 0: return _notesFragment;
+                case 1: return _cathegoriesFragment;
                 default: break;
             }
 
@@ -42,6 +49,14 @@ namespace CryptoTouch
                 default: break;
             }
             return null;
+        }
+
+        public void HandleOnBackPressed(Action baseHandler)
+        {
+            if (Activities.MainPageActivity.Navigation.CurrentItem == 1)
+                _cathegoriesFragment.HandleOnBackPressed();
+            else
+                baseHandler.Invoke();
         }
     }
 }

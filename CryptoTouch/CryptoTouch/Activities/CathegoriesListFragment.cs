@@ -13,6 +13,7 @@ using Android.Text;
 using Android.Text.Style;
 using Android.Views.InputMethods;
 using Android.Support.V4.Content;
+using Android.Animation;
 
 namespace CryptoTouch.Activities
 {
@@ -20,6 +21,9 @@ namespace CryptoTouch.Activities
     {
         private Activity _rootActivity;
         private LinearLayout _list;
+        private View _frame;
+        private Button _revealDialogButton;
+        private EditText _title;
         private string _selectedCathegory = "All";
 
         public CathegoriesListFragment(Activity activity) { _rootActivity = activity; }
@@ -34,18 +38,25 @@ namespace CryptoTouch.Activities
 
         private void InitializeUI(View root)
         {
-            View frame = root.FindViewById<RelativeLayout>(Resource.Id.newCathegoryFrame);
+            _frame = root.FindViewById<RelativeLayout>(Resource.Id.newCathegoryFrame);
             View dialog = root.FindViewById<LinearLayout>(Resource.Id.newCathegoryDialog);
-            EditText title = root.FindViewById<EditText>(Resource.Id.newCathegoryName);
-            frame.Click += (object sender, EventArgs e) => frame.Visibility = ViewStates.Invisible;
+            dialog.Click += (object sender, EventArgs e) => { };
+            _title = root.FindViewById<EditText>(Resource.Id.newCathegoryName);
+            _frame.Click += (object sender, EventArgs e) => HideDialog();
             root.FindViewById<Button>(Resource.Id.buttonAddCathegory).Click += (object sender, EventArgs e)
-                                                                            => { AddCathegory(title.Text);
-                                                                                 frame.Visibility = ViewStates.Invisible;
-                                                                                 title.Text = string.Empty;
-                                                                                (_rootActivity.GetSystemService(Context.InputMethodService) as InputMethodManager)
-                                                                                                                    .HideSoftInputFromWindow(title.WindowToken, 0); };
+                                                                            => {if (_title.Text != string.Empty)
+                                                                                {
+                                                                                    AddCathegory(_title.Text);
+                                                                                    _frame.Visibility = ViewStates.Invisible;
+                                                                                    _title.Text = string.Empty;
+                                                                                    (_rootActivity.GetSystemService(Context.InputMethodService) as InputMethodManager)
+                                                                                                                        .HideSoftInputFromWindow(_title.WindowToken, 0);
+                                                                                    HideDialog();
+                                                                                }
+                                                                            };
 
-            root.FindViewById<Button>(Resource.Id.newCathegoryButton).Click += (object sender, EventArgs e) => frame.Visibility = ViewStates.Visible;
+            _revealDialogButton = root.FindViewById<Button>(Resource.Id.newCathegoryButton);
+            _revealDialogButton.Click += (object sender, EventArgs e) => RevealDialog();
         }
 
         private void AddCathegory(string cathegory)
@@ -100,5 +111,42 @@ namespace CryptoTouch.Activities
         private Android.Graphics.Color BuildColor(string cathegory)
             => (_selectedCathegory == cathegory) ? new Android.Graphics.Color(ContextCompat.GetColor(_rootActivity, Resource.Color.MainAppColor)) 
                                                  : Android.Graphics.Color.Black;
+
+        private void RevealDialog()
+        {
+            if (_frame.Visibility == ViewStates.Invisible)
+            {
+                int centerX = _revealDialogButton.Left + (_revealDialogButton.Width / 2);
+                int centerY = _revealDialogButton.Top + (_revealDialogButton.Height / 2);
+                Animator reveal = ViewAnimationUtils.CreateCircularReveal(_frame, centerX, centerY, 0, _frame.Height + _frame.Width);
+                reveal.SetDuration(500);
+                _frame.Visibility = ViewStates.Visible;
+                _frame.BringToFront();
+                _title.RequestFocus();
+                reveal.Start();
+            }
+        }
+
+        private void HideDialog()
+        {
+            if (_frame.Visibility == ViewStates.Visible)
+            {
+                _title.Text = string.Empty;
+                int centerX = _revealDialogButton.Left + (_revealDialogButton.Width / 2);
+                int centerY = _revealDialogButton.Top + (_revealDialogButton.Height / 2);
+                Animator reveal = ViewAnimationUtils.CreateCircularReveal(_frame, centerX, centerY, _frame.Height + _frame.Width, 0);
+                reveal.SetDuration(500);
+                reveal.AnimationEnd += (object sender, EventArgs e) => _frame.Visibility = ViewStates.Invisible;
+                reveal.Start();
+            }
+        }
+
+        public void HandleOnBackPressed()
+        {
+            if (_frame.Visibility == ViewStates.Visible)
+                HideDialog();
+            else
+                MainPageActivity.Navigation.SetCurrentItem(0, true);
+        }
     }
 }

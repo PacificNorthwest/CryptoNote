@@ -30,42 +30,47 @@
         android:id="@+id/newCathegoryFrame"
         android:layout_height="match_parent"
         android:layout_width="match_parent"
+        android:gravity="center_horizontal"
         android:elevation="1dp"
         android:translationZ="1dp"
-        android:background="#AA000000"
+        android:background="#CC000000"
         android:visibility="invisible">
         <LinearLayout
             android:id="@+id/newCathegoryDialog"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
             android:orientation="vertical"
-            android:layout_marginLeft="50dp"
-            android:layout_marginRight="50dp"
+            android:layout_marginTop="140dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
             android:background="@android:color/white">
-            <TextView
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:layout_margin="15dp"
-                android:textSize="25sp"
-                android:textColor="@android:color/black"
-                android:text="New cathegory:" />
             <EditText
                 android:id="@+id/newCathegoryName"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:layout_marginTop="30dp"
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="15dp"
+                android:hint="Cathegory name"
+                android:paddingBottom="-5dp"
                 android:textSize="22sp"
-                android:background="@drawable/EdittextBG" />
+                android:inputType="textCapSentences"/>
             <Button
                 android:id="@+id/buttonAddCathegory"
                 android:layout_height="wrap_content"
-                android:layout_width="match_parent"
-                android:layout_margin="15dp"
-                android:background="@android:color/transparent"
-                android:textSize="25sp"
-                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:paddingTop="-35dp"
+                android:paddingBottom="-35dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/MainAppColor"
+                android:textSize="23sp"
+                android:textColor="@android:color/white"
                 android:text="Add" />
         </LinearLayout>
     </RelativeLayout>
