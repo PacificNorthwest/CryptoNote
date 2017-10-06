@@ -2,7 +2,7 @@
 <xs:schema xmlns:app="http://schemas.android.com/apk/res-auto" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/apk/res-auto" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v23</xs:documentation>
-    <xs:documentation>03.10.2017 15:27:58</xs:documentation>
+    <xs:documentation>06.10.2017 13:02:01</xs:documentation>
   </xs:annotation>
   <xs:attribute name="allowStacking">
     <xs:annotation>
@@ -1029,6 +1029,7 @@
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/roundcornersbg" />
             <xs:enumeration value="@drawable/save" />
+            <xs:enumeration value="@drawable/spinnerselector" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -1433,6 +1434,7 @@
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/roundcornersbg" />
             <xs:enumeration value="@drawable/save" />
+            <xs:enumeration value="@drawable/spinnerselector" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -1751,6 +1753,7 @@
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/roundcornersbg" />
             <xs:enumeration value="@drawable/save" />
+            <xs:enumeration value="@drawable/spinnerselector" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -2069,6 +2072,7 @@
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/roundcornersbg" />
             <xs:enumeration value="@drawable/save" />
+            <xs:enumeration value="@drawable/spinnerselector" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -3958,6 +3962,7 @@
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/roundcornersbg" />
             <xs:enumeration value="@drawable/save" />
+            <xs:enumeration value="@drawable/spinnerselector" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -4276,6 +4281,7 @@
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/roundcornersbg" />
             <xs:enumeration value="@drawable/save" />
+            <xs:enumeration value="@drawable/spinnerselector" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -4657,6 +4663,7 @@
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/roundcornersbg" />
             <xs:enumeration value="@drawable/save" />
+            <xs:enumeration value="@drawable/spinnerselector" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -5182,6 +5189,7 @@
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/roundcornersbg" />
             <xs:enumeration value="@drawable/save" />
+            <xs:enumeration value="@drawable/spinnerselector" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -5500,6 +5508,7 @@
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/roundcornersbg" />
             <xs:enumeration value="@drawable/save" />
+            <xs:enumeration value="@drawable/spinnerselector" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -6624,6 +6633,7 @@
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/roundcornersbg" />
             <xs:enumeration value="@drawable/save" />
+            <xs:enumeration value="@drawable/spinnerselector" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -7005,6 +7015,7 @@
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/roundcornersbg" />
             <xs:enumeration value="@drawable/save" />
+            <xs:enumeration value="@drawable/spinnerselector" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -7323,6 +7334,7 @@
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/roundcornersbg" />
             <xs:enumeration value="@drawable/save" />
+            <xs:enumeration value="@drawable/spinnerselector" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -7689,6 +7701,7 @@
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/roundcornersbg" />
             <xs:enumeration value="@drawable/save" />
+            <xs:enumeration value="@drawable/spinnerselector" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -8203,6 +8216,7 @@
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/roundcornersbg" />
             <xs:enumeration value="@drawable/save" />
+            <xs:enumeration value="@drawable/spinnerselector" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -8599,6 +8613,7 @@
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/roundcornersbg" />
             <xs:enumeration value="@drawable/save" />
+            <xs:enumeration value="@drawable/spinnerselector" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -9093,6 +9108,7 @@
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/roundcornersbg" />
             <xs:enumeration value="@drawable/save" />
+            <xs:enumeration value="@drawable/spinnerselector" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -9587,6 +9603,7 @@
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/roundcornersbg" />
             <xs:enumeration value="@drawable/save" />
+            <xs:enumeration value="@drawable/spinnerselector" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -9905,6 +9922,7 @@
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/roundcornersbg" />
             <xs:enumeration value="@drawable/save" />
+            <xs:enumeration value="@drawable/spinnerselector" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -10286,6 +10304,7 @@
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/roundcornersbg" />
             <xs:enumeration value="@drawable/save" />
+            <xs:enumeration value="@drawable/spinnerselector" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -11009,6 +11028,7 @@
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/roundcornersbg" />
             <xs:enumeration value="@drawable/save" />
+            <xs:enumeration value="@drawable/spinnerselector" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -11390,6 +11410,7 @@
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/roundcornersbg" />
             <xs:enumeration value="@drawable/save" />
+            <xs:enumeration value="@drawable/spinnerselector" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -11708,6 +11729,7 @@
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/roundcornersbg" />
             <xs:enumeration value="@drawable/save" />
+            <xs:enumeration value="@drawable/spinnerselector" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -12173,6 +12195,7 @@
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/roundcornersbg" />
             <xs:enumeration value="@drawable/save" />
+            <xs:enumeration value="@drawable/spinnerselector" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -12778,6 +12801,7 @@
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/roundcornersbg" />
             <xs:enumeration value="@drawable/save" />
+            <xs:enumeration value="@drawable/spinnerselector" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -13096,6 +13120,7 @@
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/roundcornersbg" />
             <xs:enumeration value="@drawable/save" />
+            <xs:enumeration value="@drawable/spinnerselector" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -13599,6 +13624,7 @@
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/roundcornersbg" />
             <xs:enumeration value="@drawable/save" />
+            <xs:enumeration value="@drawable/spinnerselector" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -14093,6 +14119,7 @@
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/roundcornersbg" />
             <xs:enumeration value="@drawable/save" />
+            <xs:enumeration value="@drawable/spinnerselector" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -14474,6 +14501,7 @@
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/roundcornersbg" />
             <xs:enumeration value="@drawable/save" />
+            <xs:enumeration value="@drawable/spinnerselector" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -14968,6 +14996,7 @@
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/roundcornersbg" />
             <xs:enumeration value="@drawable/save" />
+            <xs:enumeration value="@drawable/spinnerselector" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -15580,6 +15609,7 @@
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/roundcornersbg" />
             <xs:enumeration value="@drawable/save" />
+            <xs:enumeration value="@drawable/spinnerselector" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -15898,6 +15928,7 @@
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/roundcornersbg" />
             <xs:enumeration value="@drawable/save" />
+            <xs:enumeration value="@drawable/spinnerselector" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -17921,6 +17952,7 @@
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/roundcornersbg" />
             <xs:enumeration value="@drawable/save" />
+            <xs:enumeration value="@drawable/spinnerselector" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -19357,6 +19389,7 @@
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/roundcornersbg" />
             <xs:enumeration value="@drawable/save" />
+            <xs:enumeration value="@drawable/spinnerselector" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -19851,6 +19884,7 @@
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/roundcornersbg" />
             <xs:enumeration value="@drawable/save" />
+            <xs:enumeration value="@drawable/spinnerselector" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -20169,6 +20203,7 @@
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/roundcornersbg" />
             <xs:enumeration value="@drawable/save" />
+            <xs:enumeration value="@drawable/spinnerselector" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -20487,6 +20522,7 @@
             <xs:enumeration value="@drawable/rcpannel" />
             <xs:enumeration value="@drawable/roundcornersbg" />
             <xs:enumeration value="@drawable/save" />
+            <xs:enumeration value="@drawable/spinnerselector" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />

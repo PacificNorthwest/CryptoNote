@@ -16,9 +16,9 @@ namespace CryptoTouch
 {
     class XmlManager
     {
-        private static string path = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "cathegories.xml");
+        private static string path = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "categories.xml");
 
-        public static List<string> LoadCathegories()
+        public static List<string> LoadCategories()
         {
             if (File.Exists(path))
             {
@@ -28,13 +28,13 @@ namespace CryptoTouch
             }
             else
             {
-                List<string> cathegories = new List<string> { "No cathegory", "Work", "Family", "Friends", "Passwords", "Events" };
-                SaveCathegories(cathegories);
+                List<string> cathegories = new List<string> { "No category", "Work", "Family", "Friends", "Passwords", "Events" };
+                SaveCategories(cathegories);
                 return cathegories;
             }
         }
 
-        public static void SaveCathegories(List<string> cathegories)
+        public static void SaveCategories(List<string> cathegories)
         {
             XmlSerializer xml = new XmlSerializer(cathegories.GetType());
             using (FileStream file = new FileStream(path, FileMode.Create, FileAccess.Write, FileShare.Write))

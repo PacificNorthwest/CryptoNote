@@ -15,6 +15,6 @@ namespace CryptoTouch
     class NoteStorage
     {
         public static List<Note> Notes { get; set; } = new List<Note>();
-        public static List<String> Cathegories { get; set; } = XmlManager.LoadCathegories();
+        public static List<String> Categories { get; set; } = XmlManager.LoadCategories();
     }
 }

@@ -10,11 +10,13 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.Views.InputMethods;
+using Android.Support.V7;
+using Android.Support.V7.App;
 
 namespace CryptoTouch.Activities
 {
-    [Activity(Label = "NoteActivity", WindowSoftInputMode = SoftInput.StateVisible|SoftInput.AdjustResize)]
-    public class NoteActivity : Activity
+    [Activity(Label = "NoteActivity", Theme = "@style/AppTheme", WindowSoftInputMode = SoftInput.StateVisible|SoftInput.AdjustResize)]
+    public class NoteActivity : AppCompatActivity
     {
         private NoteEditText _noteText;
         private Button _saveButton;
@@ -48,23 +50,23 @@ namespace CryptoTouch.Activities
             _saveButton.Click += (object sender, EventArgs e) => UpdateNotes();
             _noteText.RootActivity = this;
             _noteText.Click += (object sender, EventArgs e) => SaveButtonMargin = 800;
-            _cathegoriesSpinner.Adapter = new ArrayAdapter(this, Resource.Layout.SpinnerItem, NoteStorage.Cathegories);
+            _cathegoriesSpinner.Adapter = new ArrayAdapter(this, Resource.Layout.SpinnerItem, NoteStorage.Categories);000020
            
             if (_originalNote != null)
             {
                 _noteText.Text = _originalNote.Text;
-                _cathegoriesSpinner.SetSelection(NoteStorage.Cathegories.IndexOf(_originalNote.Cathegory));
+                _cathegoriesSpinner.SetSelection(NoteStorage.Categories.IndexOf(_originalNote.Category));
             }
         }
 
         private void UpdateNotes()
         {
             if (_originalNote == null)
-                NoteStorage.Notes.Add(new Note(_noteText.Text) { Cathegory = (_cathegoriesSpinner.SelectedView as TextView).Text });
+                NoteStorage.Notes.Add(new Note(_noteText.Text) { Category = (_cathegoriesSpinner.SelectedView as TextView).Text });
             else
             {
                 NoteStorage.Notes.Find(note => note == _originalNote).Text = _noteText.Text;
-                NoteStorage.Notes.Find(note => note == _originalNote).Cathegory = (_cathegoriesSpinner.SelectedView as TextView).Text;
+                NoteStorage.Notes.Find(note => note == _originalNote).Category = (_cathegoriesSpinner.SelectedView as TextView).Text;
             }
             SecurityProvider.SaveNotesAsync();
 

@@ -17,7 +17,7 @@ namespace CryptoTouch
     {
         public string Text { get; set; }
         public DateTime Date { get; set; }
-        public string Cathegory { get; set; } = NoteStorage.Cathegories[0];
+        public string Category { get; set; } = NoteStorage.Categories[0];
 
         public Note(string text)
         {

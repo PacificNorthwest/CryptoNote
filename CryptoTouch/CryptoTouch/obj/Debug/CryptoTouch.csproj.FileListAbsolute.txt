@@ -66,8 +66,8 @@ E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\res\layout\passwordpag
 E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\res\layout\noteitemlayout.xml
 E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\res\layout\spinneritem.xml
 E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\res\layout\noteslist.xml
-E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\res\layout\cathegorieslist.xml
-E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\res\layout\cathegorieslistitem.xml
+E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\res\layout\categorieslist.xml
+E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\res\layout\categorieslistitem.xml
 E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\res\layout\buttonlayout.xml
 E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\res\layout\loginpage.xml
 E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\res\values\strings.xml

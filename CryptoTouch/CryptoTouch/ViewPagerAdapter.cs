@@ -17,13 +17,13 @@ namespace CryptoTouch
     {
         private Activity _rootActivity;
         private Activities.NotesListFragment _notesFragment;
-        private Activities.CathegoriesListFragment _cathegoriesFragment;
+        private Activities.CategoriesListFragment _cathegoriesFragment;
         
         public ViewPagerAdapter(Android.Support.V4.App.FragmentManager fm, Activity activity) : base(fm)
         {
             _rootActivity = activity;
             _notesFragment = new Activities.NotesListFragment(_rootActivity);
-            _cathegoriesFragment = new Activities.CathegoriesListFragment(_rootActivity);
+            _cathegoriesFragment = new Activities.CategoriesListFragment(_rootActivity);
         }
 
         public override int Count => 2;

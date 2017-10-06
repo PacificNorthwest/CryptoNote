@@ -116,10 +116,10 @@
     <AndroidResource Include="Resources\layout\NotesList.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\CathegoriesList.axml">
+    <AndroidResource Include="Resources\layout\CategoriesList.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\CathegoriesListItem.axml">
+    <AndroidResource Include="Resources\layout\CategoriesListItem.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\ButtonLayout.axml">
