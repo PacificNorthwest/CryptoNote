@@ -17,7 +17,7 @@
     </ScrollView>
   <Button
       android:id="@+id/deleteCategoryButton"
-      android:background="@drawable/error"
+      android:background="@drawable/DeleteElement"
       android:visibility="visible"
       android:layout_height="60dp"
       android:layout_width="60dp"
@@ -27,7 +27,7 @@
       android:layout_marginRight="10dp"/>
     <Button
         android:id="@+id/newCategoryButton"
-        android:background="@drawable/Add"
+        android:background="@drawable/AddElement"
         android:maxHeight="30dp"
         android:maxWidth="30dp"
         android:layout_height="60dp"

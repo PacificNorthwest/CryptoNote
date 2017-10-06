@@ -18,7 +18,7 @@ using Android.Support.V7.App;
 
 namespace CryptoTouch.Activities
 {
-    [Activity(Label = "MainPageActivity", Theme = "@style/AppTheme")]
+    [Activity(Label = "MainPageActivity", Theme = "@style/AppTheme", ScreenOrientation = Android.Content.PM.ScreenOrientation.Portrait)]
     public class MainPageActivity : AppCompatActivity
     {
         public static ViewPager Navigation { get; set; }
@@ -34,7 +34,7 @@ namespace CryptoTouch.Activities
 
         public override void OnBackPressed()
         {
-            (Navigation.Adapter as ViewPagerAdapter).HandleOnBackPressed(() => base.OnBackPressed());
+            (Navigation.Adapter as ViewPagerAdapter).HandleOnBackPressed(base.OnBackPressed);
         }
     }
 }

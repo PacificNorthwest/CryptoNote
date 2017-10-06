@@ -14,24 +14,24 @@
         android:layout_marginLeft="5dp"
         android:layout_marginTop="10dp"
         android:paddingBottom="80dp"
-        android:clipToPadding="false"/>
-    <Button 
-      android:id="@+id/deleteNoteButton"
-      android:background="@drawable/error"
-      android:visibility="visible"
-      android:layout_height="60dp"
-      android:layout_width="60dp"
-      android:layout_alignParentBottom="true"
-      android:layout_alignParentRight="true"
-      android:layout_marginBottom="10dp"
-      android:layout_marginRight="10dp"/>
+        android:clipToPadding="false" />
     <Button
-      android:id="@+id/newNoteButton"
-      android:background="@drawable/Add"
-      android:layout_height="60dp"
-      android:layout_width="60dp"
-      android:layout_alignParentBottom="true"
-      android:layout_alignParentRight="true"
-      android:layout_marginBottom="10dp"
-      android:layout_marginRight="10dp"/>
+        android:id="@+id/deleteNoteButton"
+        android:background="@drawable/DeleteElement"
+        android:visibility="visible"
+        android:layout_height="60dp"
+        android:layout_width="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp" />
+    <Button
+        android:id="@+id/newNoteButton"
+        android:background="@drawable/AddElement"
+        android:layout_height="60dp"
+        android:layout_width="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp" />
 </RelativeLayout>

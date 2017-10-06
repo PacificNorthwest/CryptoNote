@@ -13,7 +13,7 @@ using Android.Animation;
 
 namespace CryptoTouch.Activities
 {
-    [Activity(Label = "CryptoNote", Theme ="@style/AppTheme")]
+    [Activity(Label = "CryptoNote", Theme ="@style/AppTheme", ScreenOrientation = Android.Content.PM.ScreenOrientation.Portrait)]
     public class LoginActivity : AppCompatActivity
     {
         private View _progressBar;
@@ -26,7 +26,7 @@ namespace CryptoTouch.Activities
 
             Typeface font = Typeface.CreateFromAsset(Assets, "fonts/BROADW.ttf");
             FindViewById<TextView>(Resource.Id.loginPageTitle).Typeface = font;
-            FindViewById<Button>(Resource.Id.ButtonSubmitAuthorization).Click += (object sender, System.EventArgs e) => PasswordAuthorization();
+            FindViewById<Button>(Resource.Id.ButtonSubmitAuthorization).Click += (object sender, EventArgs e) => PasswordAuthorization();
             _progressBar = FindViewById<RelativeLayout>(Resource.Id.progressBar);
             SecurityProvider.FingerprintAuthenticate(this);
         }

@@ -93,9 +93,7 @@ namespace CryptoTouch.Activities
             animNewNoteButton.AnimationEnd += (object sender, Animation.AnimationEndEventArgs e) => _deleteNoteButton.BringToFront();
             _newNoteButton.StartAnimation(animNewNoteButton);
         }
-
-
-
+        
         private void HideDeleteButton()
         {
             Animation animDeleteNoteButton = new RotateAnimation(0, -45, Dimension.RelativeToSelf, .5F, Dimension.RelativeToSelf, .5F) { Duration = 500 };
@@ -111,6 +109,18 @@ namespace CryptoTouch.Activities
             SecurityProvider.SaveNotesAsync();
             HideDeleteButton();
             ChangeDataSet(NoteStorage.Notes);
+        }
+
+        public void HandleOnBackPressed(Action baseHandler)
+        {
+            if (_selectedItems.Count != 0)
+            {
+                int initialCount = _selectedItems.Count;
+                for (int i = 0; i < initialCount; i++)
+                    SelectItem(_selectedItems[0]);
+            }
+            else
+                baseHandler.Invoke();
         }
 
     }

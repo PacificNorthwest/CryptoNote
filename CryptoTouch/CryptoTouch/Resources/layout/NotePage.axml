@@ -7,7 +7,7 @@
     <RelativeLayout
         android:layout_alignParentTop="true"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="50dp"
         android:background="@color/MainAppColor"
         android:id="@+id/actionBar">
         <Spinner
@@ -15,20 +15,22 @@
             android:layout_width="wrap_content"
             android:minWidth="50dp"
             android:layout_marginLeft="20dp"
+            android:layout_marginTop="8dp"
             android:background="@android:color/transparent"
             android:layout_alignParentLeft="true"
             android:layout_centerHorizontal="true"
             android:id="@+id/cathegoriesSpinner" />
         <Button
             android:id="@+id/saveNoteButton"
-            android:background="@drawable/save"
+            android:background="@drawable/SaveNoteButton"
             android:layout_alignParentRight="true"
-            android:layout_marginRight="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="18dp"
             android:layout_centerHorizontal="true"
             android:layout_width="30dp"
             android:layout_height="30dp" />
     </RelativeLayout>
-    <cryptotouch.NoteEditText
+    <EditText
         android:inputType="textCapSentences|textMultiLine"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -36,6 +38,7 @@
         android:id="@+id/noteText"
         android:transitionName="Note"
         android:background="#fffafafa"
+        android:lineSpacingExtra="3dp"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp" />

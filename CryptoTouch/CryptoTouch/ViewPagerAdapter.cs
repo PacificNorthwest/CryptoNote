@@ -55,6 +55,8 @@ namespace CryptoTouch
         {
             if (Activities.MainPageActivity.Navigation.CurrentItem == 1)
                 _cathegoriesFragment.HandleOnBackPressed();
+            else if (Activities.MainPageActivity.Navigation.CurrentItem == 0)
+                _notesFragment.HandleOnBackPressed(baseHandler);
             else
                 baseHandler.Invoke();
         }

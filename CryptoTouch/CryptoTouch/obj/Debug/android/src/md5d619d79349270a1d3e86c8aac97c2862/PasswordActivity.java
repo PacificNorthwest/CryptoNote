@@ -2,7 +2,7 @@ package md5d619d79349270a1d3e86c8aac97c2862;
 
 
 public class PasswordActivity
-	extends android.app.Activity
+	extends android.support.v7.app.AppCompatActivity
 	implements
 		mono.android.IGCUserPeer
 {
