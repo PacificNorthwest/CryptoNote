@@ -51,7 +51,7 @@ namespace CryptoTouch.Activities
             else
             {
                 FindViewById<EditText>(Resource.Id.AuthorizationPassword).Text = string.Empty;
-                Toast.MakeText(this, "Incorrect password!", ToastLength.Long).Show();
+                Toast.MakeText(this, this.Resources.GetString(Resource.String.IncorrectPsswordError), ToastLength.Long).Show();
             }
         }
 
@@ -68,7 +68,7 @@ namespace CryptoTouch.Activities
 
         public void OnAuthenticationFailed()
         {
-            Toast.MakeText(this, "Fingerprint scan failed", ToastLength.Long).Show();
+            Toast.MakeText(this, this.Resources.GetString(Resource.String.FingerprintScanFailedError), ToastLength.Long).Show();
             SecurityProvider.FingerprintAuthenticate(this);
         }
 

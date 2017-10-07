@@ -2309,14 +2309,12 @@ containing a value of this type.
         public static final int design_snackbar_background=0x7f020049;
         public static final int edittextbg=0x7f02004a;
         public static final int fingerprint=0x7f02004b;
-        public static final int fingerprint_icon=0x7f02004c;
-        public static final int icon=0x7f02004d;
-        public static final int loginpagebg=0x7f02004e;
-        public static final int noteitembg=0x7f02004f;
-        public static final int notification_template_icon_bg=0x7f020053;
-        public static final int roundcornersbg=0x7f020050;
-        public static final int savenotebutton=0x7f020051;
-        public static final int settingsbutton=0x7f020052;
+        public static final int loginpagebg=0x7f02004c;
+        public static final int noteitembg=0x7f02004d;
+        public static final int notification_template_icon_bg=0x7f020051;
+        public static final int roundcornersbg=0x7f02004e;
+        public static final int savenotebutton=0x7f02004f;
+        public static final int settingsbutton=0x7f020050;
     }
     public static final class id {
         public static final int AuthorizationPassword=0x7f06007c;
@@ -2349,9 +2347,9 @@ containing a value of this type.
         public static final int cancel_action=0x7f06008f;
         public static final int cardNoteDate=0x7f060084;
         public static final int cardNoteTextPreview=0x7f060083;
+        public static final int categoriesListItem=0x7f060070;
         public static final int categoryName=0x7f060071;
         public static final int cathegoriesList=0x7f060069;
-        public static final int cathegoriesListItem=0x7f060070;
         public static final int cathegoriesSpinner=0x7f060087;
         public static final int center=0x7f06002b;
         public static final int center_horizontal=0x7f06002c;
@@ -2548,8 +2546,18 @@ containing a value of this type.
         public static final int support_simple_spinner_dropdown_item=0x7f030039;
     }
     public static final class string {
-        public static final int ApplicationName=0x7f090017;
-        public static final int Hello=0x7f090016;
+        public static final int AddButton=0x7f090020;
+        public static final int Categories=0x7f09001c;
+        public static final int EmptyPasswordError=0x7f090021;
+        public static final int FingerprintScanFailedError=0x7f09001e;
+        public static final int FingerprintScanHint=0x7f090018;
+        public static final int IncorrectPsswordError=0x7f09001d;
+        public static final int LoginButton=0x7f09001a;
+        public static final int NewCategoryNameHint=0x7f09001f;
+        public static final int Notes=0x7f09001b;
+        public static final int PasswordUsageHint=0x7f090019;
+        public static final int SubmitButton=0x7f090017;
+        public static final int WelcomePassword=0x7f090016;
         public static final int abc_action_bar_home_description=0x7f090000;
         public static final int abc_action_bar_home_description_format=0x7f090001;
         public static final int abc_action_bar_home_subtitle_description_format=0x7f090002;

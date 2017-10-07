@@ -63,7 +63,7 @@
                 android:layout_marginTop="30dp"
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="15dp"
-                android:hint="Cathegory name"
+                android:hint="@string/NewCategoryNameHint"
                 android:paddingBottom="-5dp"
                 android:textSize="22sp"
                 android:inputType="textCapSentences"/>
@@ -81,7 +81,7 @@
                 android:background="@color/MainAppColor"
                 android:textSize="23sp"
                 android:textColor="@android:color/white"
-                android:text="Add" />
+                android:text="@string/AddButton" />
         </LinearLayout>
     </RelativeLayout>
 </RelativeLayout>

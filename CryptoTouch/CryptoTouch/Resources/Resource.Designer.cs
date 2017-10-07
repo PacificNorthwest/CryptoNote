@@ -1816,28 +1816,22 @@ namespace CryptoTouch
 			public const int fingerprint = 2130837579;
 			
 			// aapt resource value: 0x7f02004c
-			public const int fingerprint_icon = 2130837580;
+			public const int LoginPageBG = 2130837580;
 			
 			// aapt resource value: 0x7f02004d
-			public const int Icon = 2130837581;
-			
-			// aapt resource value: 0x7f02004e
-			public const int LoginPageBG = 2130837582;
-			
-			// aapt resource value: 0x7f02004f
-			public const int NoteItemBG = 2130837583;
-			
-			// aapt resource value: 0x7f020053
-			public const int notification_template_icon_bg = 2130837587;
-			
-			// aapt resource value: 0x7f020050
-			public const int RoundCornersBG = 2130837584;
+			public const int NoteItemBG = 2130837581;
 			
 			// aapt resource value: 0x7f020051
-			public const int SaveNoteButton = 2130837585;
+			public const int notification_template_icon_bg = 2130837585;
 			
-			// aapt resource value: 0x7f020052
-			public const int SettingsButton = 2130837586;
+			// aapt resource value: 0x7f02004e
+			public const int RoundCornersBG = 2130837582;
+			
+			// aapt resource value: 0x7f02004f
+			public const int SaveNoteButton = 2130837583;
+			
+			// aapt resource value: 0x7f020050
+			public const int SettingsButton = 2130837584;
 			
 			static Drawable()
 			{
@@ -1942,14 +1936,14 @@ namespace CryptoTouch
 			// aapt resource value: 0x7f060083
 			public const int cardNoteTextPreview = 2131099779;
 			
+			// aapt resource value: 0x7f060070
+			public const int categoriesListItem = 2131099760;
+			
 			// aapt resource value: 0x7f060071
 			public const int categoryName = 2131099761;
 			
 			// aapt resource value: 0x7f060069
 			public const int cathegoriesList = 2131099753;
-			
-			// aapt resource value: 0x7f060070
-			public const int cathegoriesListItem = 2131099760;
 			
 			// aapt resource value: 0x7f060087
 			public const int cathegoriesSpinner = 2131099783;
@@ -2560,11 +2554,41 @@ namespace CryptoTouch
 		public partial class String
 		{
 			
+			// aapt resource value: 0x7f090020
+			public const int AddButton = 2131296288;
+			
+			// aapt resource value: 0x7f09001c
+			public const int Categories = 2131296284;
+			
+			// aapt resource value: 0x7f090021
+			public const int EmptyPasswordError = 2131296289;
+			
+			// aapt resource value: 0x7f09001e
+			public const int FingerprintScanFailedError = 2131296286;
+			
+			// aapt resource value: 0x7f090018
+			public const int FingerprintScanHint = 2131296280;
+			
+			// aapt resource value: 0x7f09001d
+			public const int IncorrectPsswordError = 2131296285;
+			
+			// aapt resource value: 0x7f09001a
+			public const int LoginButton = 2131296282;
+			
+			// aapt resource value: 0x7f09001f
+			public const int NewCategoryNameHint = 2131296287;
+			
+			// aapt resource value: 0x7f09001b
+			public const int Notes = 2131296283;
+			
+			// aapt resource value: 0x7f090019
+			public const int PasswordUsageHint = 2131296281;
+			
 			// aapt resource value: 0x7f090017
-			public const int ApplicationName = 2131296279;
+			public const int SubmitButton = 2131296279;
 			
 			// aapt resource value: 0x7f090016
-			public const int Hello = 2131296278;
+			public const int WelcomePassword = 2131296278;
 			
 			// aapt resource value: 0x7f090000
 			public const int abc_action_bar_home_description = 2131296256;

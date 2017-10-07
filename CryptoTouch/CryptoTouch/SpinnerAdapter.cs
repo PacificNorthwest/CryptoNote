@@ -38,6 +38,7 @@ namespace CryptoTouch
         {
             View entry = _inflater.Inflate(Resource.Layout.SpinnerItem, parent, false);
             entry.FindViewById<TextView>(Resource.Id.spinnerEntryText).SetTextColor(Android.Graphics.Color.Black);
+            entry.FindViewById<TextView>(Resource.Id.spinnerEntryText).Gravity = GravityFlags.Center;
             entry.FindViewById<TextView>(Resource.Id.spinnerEntryText).Text = _items[position];
             return entry;
         }

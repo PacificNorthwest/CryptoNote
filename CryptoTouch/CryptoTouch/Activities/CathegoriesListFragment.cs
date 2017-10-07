@@ -47,9 +47,10 @@ namespace CryptoTouch.Activities
             _title = root.FindViewById<EditText>(Resource.Id.newCategoryName);
             _frame.Click += (object sender, EventArgs e) => HideDialog();
             root.FindViewById<Button>(Resource.Id.buttonAddCategory).Click += (object sender, EventArgs e)
-                                                                            => {if (_title.Text != string.Empty)
+                                                                            => {
+                                                                                if (_title.Text != string.Empty)
                                                                                 {
-                                                                                    Addcategory(_title.Text);
+                                                                                    AddCategory(_title.Text);
                                                                                     _frame.Visibility = ViewStates.Invisible;
                                                                                     _title.Text = string.Empty;
                                                                                     (_rootActivity.GetSystemService(Context.InputMethodService) as InputMethodManager)
@@ -64,7 +65,7 @@ namespace CryptoTouch.Activities
             _deleteCategoriesButton.Click += (object sender, EventArgs e) => RemoveCategories();
         }
 
-        private void Addcategory(string category)
+        private void AddCategory(string category)
         {
             NoteStorage.Categories.Add(category);
             XmlManager.SaveCategories(NoteStorage.Categories);
@@ -141,20 +142,22 @@ namespace CryptoTouch.Activities
             if (!_selectedEntrys.Contains(entry))
             {
                 _selectedEntrys.Add(entry);
-                entry.FindViewById<View>(Resource.Id.underline).SetBackgroundColor(Android.Graphics.Color.Red);
-                entry.FindViewById<TextView>(Resource.Id.categoryName).SetTextColor(Android.Graphics.Color.Red);
-                entry.FindViewById<TextView>(Resource.Id.notesCount).SetTextColor(Android.Graphics.Color.Red);
+                entry.FindViewById<RelativeLayout>(Resource.Id.categoriesListItem).SetBackgroundColor(Android.Graphics.Color.Argb(100, 163, 163, 163));
+                //entry.FindViewById<View>(Resource.Id.underline).SetBackgroundColor(Android.Graphics.Color.Red);
+                //entry.FindViewById<TextView>(Resource.Id.categoryName).SetTextColor(Android.Graphics.Color.Red);
+                //entry.FindViewById<TextView>(Resource.Id.notesCount).SetTextColor(Android.Graphics.Color.Red);
                 if (_selectedEntrys.Count == 1)
                     ShowDeleteButton();
             }
             else
             {
                 _selectedEntrys.Remove(entry);
-                entry.FindViewById<View>(Resource.Id.underline).SetBackgroundColor(new Android.Graphics.Color(
-                                                                ContextCompat.GetColor(_rootActivity, Resource.Color.MainAppColor)));
-                entry.FindViewById<TextView>(Resource.Id.categoryName).SetTextColor(
-                                                                        BuildColor(entry.FindViewById<TextView>(Resource.Id.categoryName).Text));
-                entry.FindViewById<TextView>(Resource.Id.notesCount).SetTextColor(Android.Graphics.Color.Argb(255, 128, 128, 128));
+                entry.FindViewById<RelativeLayout>(Resource.Id.categoriesListItem).SetBackgroundColor(Android.Graphics.Color.Transparent);
+                //entry.FindViewById<View>(Resource.Id.underline).SetBackgroundColor(new Android.Graphics.Color(
+                //                                                ContextCompat.GetColor(_rootActivity, Resource.Color.MainAppColor)));
+                //entry.FindViewById<TextView>(Resource.Id.categoryName).SetTextColor(
+                //                                                        BuildColor(entry.FindViewById<TextView>(Resource.Id.categoryName).Text));
+                //entry.FindViewById<TextView>(Resource.Id.notesCount).SetTextColor(Android.Graphics.Color.Argb(255, 128, 128, 128));
                 if (_selectedEntrys.Count == 0)
                     HideDeleteButton();
             }

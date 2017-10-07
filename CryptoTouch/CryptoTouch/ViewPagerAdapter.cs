@@ -36,7 +36,6 @@ namespace CryptoTouch
                 case 1: return _cathegoriesFragment;
                 default: break;
             }
-
             return null;
         }
 
@@ -44,8 +43,8 @@ namespace CryptoTouch
         {
             switch (position)
             {
-                case 0: return new Java.Lang.String("Notes");
-                case 1: return new Java.Lang.String("Cathegories");
+                case 0: return new Java.Lang.String(_rootActivity.Resources.GetString(Resource.String.Notes));
+                case 1: return new Java.Lang.String(_rootActivity.Resources.GetString(Resource.String.Categories));
                 default: break;
             }
             return null;

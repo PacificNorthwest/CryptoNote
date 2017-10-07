@@ -32,7 +32,7 @@
       <TextView
           android:layout_height="wrap_content"
           android:layout_width="wrap_content"
-          android:text="Scan\nfingerprint"
+          android:text="@string/FingerprintScanHint"
           android:gravity="right"
           android:textColor="@color/MainAppColor"
           android:textSize="20sp"
@@ -42,7 +42,7 @@
       <TextView
           android:layout_height="wrap_content"
           android:layout_width="wrap_content"
-          android:text="Use \npassword"
+          android:text="@string/PasswordUsageHint"
           android:gravity="left"
           android:textColor="@color/MainAppColor"
           android:textSize="20sp"
@@ -69,7 +69,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginLeft="80dp"
         android:layout_marginRight="80dp"
-        android:text="Login"
+        android:text="@string/LoginButton"
         android:textColor="@color/MainAppColor"/>
   </LinearLayout>
   <RelativeLayout

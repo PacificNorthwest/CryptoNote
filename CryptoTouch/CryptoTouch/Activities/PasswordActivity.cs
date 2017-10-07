@@ -52,7 +52,7 @@ namespace CryptoTouch.Activities
                 StartActivity(intent);
             }
             else
-                Toast.MakeText(this, "Empty password field!", ToastLength.Long).Show();
+                Toast.MakeText(this, this.Resources.GetString(Resource.String.EmptyPasswordError), ToastLength.Long).Show();
         }
 
         private void OpenAuthorizationPage()

@@ -19,6 +19,7 @@
             android:background="@android:color/transparent"
             android:layout_alignParentLeft="true"
             android:layout_centerHorizontal="true"
+            android:spinnerMode="dialog"
             android:id="@+id/cathegoriesSpinner" />
         <Button
             android:id="@+id/saveNoteButton"

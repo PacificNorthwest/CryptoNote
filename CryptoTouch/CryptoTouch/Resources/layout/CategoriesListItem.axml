@@ -1,21 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<FrameLayout
   xmlns:android="http://schemas.android.com/apk/res/android"
   android:layout_width="match_parent"
-  android:layout_height="wrap_content"
-  android:orientation="vertical">
+  android:layout_height="wrap_content">
   <RelativeLayout 
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      android:id="@+id/cathegoriesListItem"
-      android:layout_marginTop="30dp">
+      android:id="@+id/categoriesListItem"
+      android:layout_marginTop="15dp"
+      android:paddingTop="10dp"
+      android:layout_marginLeft="16dp"
+      android:layout_marginRight="16dp"
+      android:paddingBottom="5dp">
     <TextView
         android:id="@+id/categoryName"
         android:layout_height="30dp"
         android:layout_width="wrap_content"
         android:gravity="bottom"
         android:layout_alignParentLeft="true"
-        android:layout_marginLeft="17dp"
+        android:layout_marginLeft="2dp"
         android:layout_marginBottom="1dp"
         android:textSize="22sp"
         android:textColor="@android:color/black" />
@@ -25,17 +28,16 @@
         android:layout_width="wrap_content"
         android:gravity="bottom"
         android:paddingBottom="3dp"
-        android:layout_marginRight="17dp"
+        android:layout_marginRight="2dp"
         android:textColor="#ff9b9b9b"
         android:layout_alignParentRight="true"
         android:textSize="17sp" />
-  </RelativeLayout>
-  <View
+    <View
     android:id="@+id/underline"
     android:layout_width="match_parent"
     android:layout_height="1dp"
-    android:layout_marginLeft="15dp"
-    android:layout_marginRight="15dp"
     android:layout_marginTop="3dp"
+    android:layout_alignParentBottom="true"
     android:background="@color/MainAppColor"/>
-</LinearLayout>
+  </RelativeLayout>
+</FrameLayout>
