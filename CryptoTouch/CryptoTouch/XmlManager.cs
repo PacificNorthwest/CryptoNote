@@ -16,29 +16,39 @@ namespace CryptoTouch
 {
     class XmlManager
     {
-        private static string path = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "categories.xml");
+        private static string path = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "categories");
 
-        public static List<string> LoadCategories()
+        public static (List<string>, List<string>) LoadCategories()
         {
-            if (File.Exists(path))
+            List<string> categories_en;
+            List<string> categories_ru;
+
+            if (File.Exists(path + "_en.xml") && File.Exists(path + "_ru.xml"))
             {
                 XmlSerializer xml = new XmlSerializer(typeof(List<string>));
-                using (FileStream file = new FileStream(path, FileMode.Open, FileAccess.Read, FileShare.Read))
-                    return xml.Deserialize(file) as List<string>;
+                using (FileStream file = new FileStream(path + "_en.xml", FileMode.Open, FileAccess.Read, FileShare.Read))
+                    categories_en = xml.Deserialize(file) as List<string>;
+                using (FileStream file = new FileStream(path + "_ru.xml", FileMode.Open, FileAccess.Read, FileShare.Read))
+                    categories_ru = xml.Deserialize(file) as List<string>;
             }
             else
             {
-                List<string> cathegories = new List<string> { "No category", "Work", "Family", "Friends", "Passwords", "Events" };
-                SaveCategories(cathegories);
-                return cathegories;
+                categories_en = new List<string> { "No category", "Work", "Family", "Friends", "Passwords", "Events" };
+                categories_ru = new List<string> { "Без категории", "Работа", "Семья", "Друзья", "Пароли", "События" };
+                SaveCategories(new string[] { "_en.xml", "_ru.xml" }, categories_en, categories_ru);
             }
+
+            return (categories_en, categories_ru);
         }
 
-        public static void SaveCategories(List<string> cathegories)
+        public static void SaveCategories(string[] postfixes, params List<string>[] lists)
         {
-            XmlSerializer xml = new XmlSerializer(cathegories.GetType());
-            using (FileStream file = new FileStream(path, FileMode.Create, FileAccess.Write, FileShare.Write))
-                xml.Serialize(file, cathegories);
+            for (int i = 0; i < lists.Length; i++)
+            {
+                XmlSerializer xml = new XmlSerializer(lists[i].GetType());
+                using (FileStream file = new FileStream(path+postfixes[i], FileMode.Create, FileAccess.Write, FileShare.Write))
+                    xml.Serialize(file, lists[i]);
+            }
         }
     }
 }

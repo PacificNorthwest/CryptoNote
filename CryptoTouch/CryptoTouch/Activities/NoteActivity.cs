@@ -40,22 +40,22 @@ namespace CryptoTouch.Activities
             _saveButton = FindViewById<Button>(Resource.Id.saveNoteButton);
             _cathegoriesSpinner = FindViewById<Spinner>(Resource.Id.cathegoriesSpinner);
             _saveButton.Click += (object sender, EventArgs e) => UpdateNotes();
-            _cathegoriesSpinner.Adapter = new SpinnerAdapter(this, Resource.Layout.SpinnerItem, NoteStorage.Categories);
+            _cathegoriesSpinner.Adapter = new SpinnerAdapter(this, Resource.Layout.SpinnerItem, NoteStorage.GetCurrentCategories());
             if (_originalNote != null)
             {
                 _noteText.Text = _originalNote.Text;
-                _cathegoriesSpinner.SetSelection(NoteStorage.Categories.IndexOf(_originalNote.Category));
+                _cathegoriesSpinner.SetSelection(_originalNote.CategoryId);
             }
         }
 
         private void UpdateNotes()
         {
             if (_originalNote == null)
-                NoteStorage.Notes.Add(new Note(_noteText.Text) { Category = (_cathegoriesSpinner.SelectedView as TextView).Text });
+                NoteStorage.Notes.Add(new Note(_noteText.Text) { CategoryId = (int)_cathegoriesSpinner.SelectedItemId });
             else
             {
                 NoteStorage.Notes.Find(note => note == _originalNote).Text = _noteText.Text;
-                NoteStorage.Notes.Find(note => note == _originalNote).Category = (_cathegoriesSpinner.SelectedView as TextView).Text;
+                NoteStorage.Notes.Find(note => note == _originalNote).CategoryId = (int)_cathegoriesSpinner.SelectedItemId;
             }
             SecurityProvider.SaveNotesAsync();
 

@@ -27,9 +27,9 @@ namespace CryptoTouch.Activities
         private Button _deleteCategoriesButton;
         private EditText _title;
         private List<View> _selectedEntrys = new List<View>();
-        private string _selectedCategory = "All";
+        private string _selectedCategory;
 
-        public CategoriesListFragment(Activity activity) { _rootActivity = activity; }
+        public CategoriesListFragment(Activity activity) { _rootActivity = activity; _selectedCategory = _rootActivity.Resources.GetString(Resource.String.All); }
 
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
@@ -67,8 +67,7 @@ namespace CryptoTouch.Activities
 
         private void AddCategory(string category)
         {
-            NoteStorage.Categories.Add(category);
-            XmlManager.SaveCategories(NoteStorage.Categories);
+            NoteStorage.AddCategory(category);
             PopulateList(_list);
         }
 
@@ -77,12 +76,10 @@ namespace CryptoTouch.Activities
             foreach (string category in _selectedEntrys
                                         .Select(view => view.FindViewById<TextView>(Resource.Id.categoryName).Text))
             {
-                NoteStorage.Categories.Remove(category);
-                foreach (Note note in NoteStorage.Notes.Where(note => note.Category == category))
-                    note.Category = "No category";
-                SecurityProvider.SaveNotesAsync();
-                XmlManager.SaveCategories(NoteStorage.Categories);
-                
+                NoteStorage.RemoveCategory(category);
+                foreach (Note note in NoteStorage.Notes.Where(note => note.CategoryId == NoteStorage.GetCurrentCategories().IndexOf(category)))
+                    note.CategoryId = 0;
+                SecurityProvider.SaveNotesAsync();                
             }
             _selectedEntrys.Clear();
             HideDeleteButton();
@@ -94,8 +91,8 @@ namespace CryptoTouch.Activities
             layout.RemoveAllViews();
 
             View entry = View.Inflate(_rootActivity, Resource.Layout.CategoriesListItem, null);
-            entry.FindViewById<TextView>(Resource.Id.categoryName).Text = "All";
-            entry.FindViewById<TextView>(Resource.Id.categoryName).SetTextColor(BuildColor("All"));
+            entry.FindViewById<TextView>(Resource.Id.categoryName).Text = _rootActivity.GetString(Resource.String.All);
+            entry.FindViewById<TextView>(Resource.Id.categoryName).SetTextColor(BuildColor(_rootActivity.GetString(Resource.String.All)));
             entry.FindViewById<TextView>(Resource.Id.notesCount).Text = $"({NoteStorage.Notes.Count.ToString()})";
             entry.Click += (object sender, EventArgs e) =>
                             {
@@ -103,30 +100,31 @@ namespace CryptoTouch.Activities
                                 {
                                     NotesListFragment.ChangeDataSet(NoteStorage.Notes);
                                     MainPageActivity.Navigation.SetCurrentItem(0, true);
-                                    _selectedCategory = "All";
+                                    _selectedCategory = _rootActivity.GetString(Resource.String.All);
                                     Refresh(layout);
                                 }
                             };
             entry.LongClick += (object sender, View.LongClickEventArgs e) => { };
             layout.AddView(entry);
 
-            foreach (string category in NoteStorage.Categories)
+            foreach (string category in NoteStorage.GetCurrentCategories())
             {
+                int id = NoteStorage.GetCurrentCategories().IndexOf(category);
                 entry = View.Inflate(_rootActivity, Resource.Layout.CategoriesListItem, null);
                 entry.FindViewById<TextView>(Resource.Id.categoryName).Text = category;
                 entry.FindViewById<TextView>(Resource.Id.categoryName).SetTextColor(BuildColor(category));
-                entry.FindViewById<TextView>(Resource.Id.notesCount).Text = $"({NoteStorage.Notes.Where(n => n.Category == category).Count().ToString()})";
+                entry.FindViewById<TextView>(Resource.Id.notesCount).Text = $"({NoteStorage.Notes.Where(n => n.CategoryId == id).Count().ToString()})";
                 entry.Click += (object sender, EventArgs e) =>
                                 {
                                     if (_selectedEntrys.Count == 0)
                                     {
-                                        NotesListFragment.ChangeDataSet(NoteStorage.Notes.Where(n => n.Category == category).ToList());
+                                        NotesListFragment.ChangeDataSet(NoteStorage.Notes.Where(n => n.CategoryId == id).ToList());
                                         MainPageActivity.Navigation.SetCurrentItem(0, true);
                                         _selectedCategory = category;
                                         Refresh(layout);
                                     }
                                 };
-                if (category != "No category")
+                if (category != NoteStorage.GetCurrentCategories()[0])
                 {
                     entry.Click += (object sender, EventArgs e) => { if (_selectedEntrys.Count > 0) LongClickSelectEntry(sender as View); };
                     entry.LongClick += (object sender, View.LongClickEventArgs e) => LongClickSelectEntry(sender as View);
@@ -179,9 +177,9 @@ namespace CryptoTouch.Activities
 
         private void Refresh(LinearLayout layout)
         {
-            layout.GetChildAt(0).FindViewById<TextView>(Resource.Id.categoryName).SetTextColor(BuildColor("All"));
+            layout.GetChildAt(0).FindViewById<TextView>(Resource.Id.categoryName).SetTextColor(BuildColor(_rootActivity.GetString(Resource.String.All)));
             for (int i = 1; i < layout.ChildCount; i++)
-                layout.GetChildAt(i).FindViewById<TextView>(Resource.Id.categoryName).SetTextColor(BuildColor(NoteStorage.Categories[i-1]));
+                layout.GetChildAt(i).FindViewById<TextView>(Resource.Id.categoryName).SetTextColor(BuildColor(NoteStorage.GetCurrentCategories()[i-1]));
         }
 
         private Android.Graphics.Color BuildColor(string category)

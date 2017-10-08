@@ -56,7 +56,6 @@ E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\bin\Debug\Xamarin.Android.Suppor
 E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\bin\Debug\Xamarin.Android.Support.v7.CardView.dll
 E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\bin\Debug\Xamarin.Android.Support.v7.RecyclerView.dll
 E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\bin\Debug\Newtonsoft.Json.xml
-E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\CryptoTouch.csprojResolveAssemblyReference.cache
 E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\CryptoTouch.csproj.CoreCompileInputs.cache
 E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\CryptoTouch.dll
 E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\CryptoTouch.pdb

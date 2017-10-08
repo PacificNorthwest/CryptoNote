@@ -2557,6 +2557,9 @@ namespace CryptoTouch
 			// aapt resource value: 0x7f090020
 			public const int AddButton = 2131296288;
 			
+			// aapt resource value: 0x7f090022
+			public const int All = 2131296290;
+			
 			// aapt resource value: 0x7f09001c
 			public const int Categories = 2131296284;
 			

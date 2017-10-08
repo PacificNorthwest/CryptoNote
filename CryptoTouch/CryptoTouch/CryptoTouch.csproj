@@ -72,7 +72,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Activities\CathegoriesListFragment.cs" />
+    <Compile Include="Activities\CategoriesListFragment.cs" />
     <Compile Include="Activities\NotesListFragment.cs" />
     <Compile Include="Activities\PasswordActivity.cs" />
     <Compile Include="AuthCallback.cs" />

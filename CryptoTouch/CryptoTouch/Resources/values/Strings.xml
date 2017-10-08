@@ -12,4 +12,5 @@
     <string name="NewCategoryNameHint">Category name</string>
     <string name="AddButton">Add</string>
     <string name="EmptyPasswordError">Empty password field</string>
+    <string name="All">All</string>
 </resources>

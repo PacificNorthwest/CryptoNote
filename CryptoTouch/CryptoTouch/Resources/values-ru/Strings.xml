@@ -12,4 +12,5 @@
     <string name="NewCategoryNameHint">Название категории</string>
     <string name="AddButton">Добавить</string>
     <string name="EmptyPasswordError">Введите пароль</string>
+    <string name="All">Все</string>
 </resources>

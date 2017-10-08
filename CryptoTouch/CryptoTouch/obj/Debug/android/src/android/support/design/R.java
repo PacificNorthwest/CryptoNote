@@ -2547,6 +2547,7 @@ containing a value of this type.
     }
     public static final class string {
         public static int AddButton=0x7f090020;
+        public static int All=0x7f090022;
         public static int Categories=0x7f09001c;
         public static int EmptyPasswordError=0x7f090021;
         public static int FingerprintScanFailedError=0x7f09001e;

@@ -2,7 +2,7 @@
 <xs:schema xmlns:tools="http://schemas.android.com/tools" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/tools" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v23</xs:documentation>
-    <xs:documentation>07.10.2017 13:20:37</xs:documentation>
+    <xs:documentation>08.10.2017 23:44:02</xs:documentation>
   </xs:annotation>
   <xs:attribute name="layout">
     <xs:annotation>
@@ -468,9 +468,18 @@
             <xs:enumeration value="@string/abc_shareactionprovider_share_with" />
             <xs:enumeration value="@string/abc_shareactionprovider_share_with_application" />
             <xs:enumeration value="@string/abc_toolbar_collapse_description" />
+            <xs:enumeration value="@string/AddButton" />
+            <xs:enumeration value="@string/All" />
             <xs:enumeration value="@string/appbar_scrolling_view_behavior" />
+            <xs:enumeration value="@string/Categories" />
             <xs:enumeration value="@string/character_counter_pattern" />
+            <xs:enumeration value="@string/EmptyPasswordError" />
+            <xs:enumeration value="@string/FingerprintScanFailedError" />
             <xs:enumeration value="@string/FingerprintScanHint" />
+            <xs:enumeration value="@string/IncorrectPsswordError" />
+            <xs:enumeration value="@string/LoginButton" />
+            <xs:enumeration value="@string/NewCategoryNameHint" />
+            <xs:enumeration value="@string/Notes" />
             <xs:enumeration value="@string/PasswordUsageHint" />
             <xs:enumeration value="@string/status_bar_notification_info_overflow" />
             <xs:enumeration value="@string/SubmitButton" />
