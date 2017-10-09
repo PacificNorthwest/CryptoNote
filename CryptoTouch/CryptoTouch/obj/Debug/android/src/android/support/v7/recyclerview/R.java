@@ -2553,6 +2553,7 @@ containing a value of this type.
         public static int FingerprintScanFailedError=0x7f09001e;
         public static int FingerprintScanHint=0x7f090018;
         public static int IncorrectPsswordError=0x7f09001d;
+        public static int Locale=0x7f090023;
         public static int LoginButton=0x7f09001a;
         public static int NewCategoryNameHint=0x7f09001f;
         public static int Notes=0x7f09001b;

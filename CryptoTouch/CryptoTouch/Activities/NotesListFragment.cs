@@ -109,6 +109,7 @@ namespace CryptoTouch.Activities
             SecurityProvider.SaveNotesAsync();
             HideDeleteButton();
             ChangeDataSet(NoteStorage.Notes);
+            (MainPageActivity.Navigation.Adapter as ViewPagerAdapter).UpdateCategoriesFragment();
         }
 
         public void HandleOnBackPressed(Action baseHandler)

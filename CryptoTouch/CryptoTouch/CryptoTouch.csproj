@@ -80,6 +80,7 @@
     <Compile Include="Activities\LoginActivity.cs" />
     <Compile Include="Activities\MainPageActivity.cs" />
     <Compile Include="Activities\NoteActivity.cs" />
+    <Compile Include="JsonManager.cs" />
     <Compile Include="Note.cs" />
     <Compile Include="NotesListAdapter.cs" />
     <Compile Include="NoteStorage.cs" />
@@ -89,7 +90,6 @@
     <Compile Include="SecurityProvider.cs" />
     <Compile Include="SpinnerAdapter.cs" />
     <Compile Include="ViewPagerAdapter.cs" />
-    <Compile Include="XmlManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <AndroidAsset Include="Assets\fonts\BROADW.ttf" />

@@ -2575,6 +2575,9 @@ namespace CryptoTouch
 			// aapt resource value: 0x7f09001d
 			public const int IncorrectPsswordError = 2131296285;
 			
+			// aapt resource value: 0x7f090023
+			public const int Locale = 2131296291;
+			
 			// aapt resource value: 0x7f09001a
 			public const int LoginButton = 2131296282;
 			

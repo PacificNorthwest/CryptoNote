@@ -13,4 +13,5 @@
     <string name="AddButton">Добавить</string>
     <string name="EmptyPasswordError">Введите пароль</string>
     <string name="All">Все</string>
+    <string name="Locale">RU</string>
 </resources>

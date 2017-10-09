@@ -39,6 +39,11 @@ namespace CryptoTouch.Activities
             return view;
         }
 
+        public void Update()
+        {
+            PopulateList(_list);
+        }
+
         private void InitializeUI(View root)
         {
             _frame = root.FindViewById<RelativeLayout>(Resource.Id.newCategoryFrame);
@@ -76,9 +81,9 @@ namespace CryptoTouch.Activities
             foreach (string category in _selectedEntrys
                                         .Select(view => view.FindViewById<TextView>(Resource.Id.categoryName).Text))
             {
-                NoteStorage.RemoveCategory(category);
-                foreach (Note note in NoteStorage.Notes.Where(note => note.CategoryId == NoteStorage.GetCurrentCategories().IndexOf(category)))
+                foreach (Note note in NoteStorage.Notes.Where(note => note.CategoryId == NoteStorage.GetCurrentCategories(_rootActivity).IndexOf(category)))
                     note.CategoryId = 0;
+                NoteStorage.RemoveCategory(_rootActivity, category);
                 SecurityProvider.SaveNotesAsync();                
             }
             _selectedEntrys.Clear();
@@ -107,9 +112,9 @@ namespace CryptoTouch.Activities
             entry.LongClick += (object sender, View.LongClickEventArgs e) => { };
             layout.AddView(entry);
 
-            foreach (string category in NoteStorage.GetCurrentCategories())
+            foreach (string category in NoteStorage.GetCurrentCategories(_rootActivity))
             {
-                int id = NoteStorage.GetCurrentCategories().IndexOf(category);
+                int id = NoteStorage.GetCurrentCategories(_rootActivity).IndexOf(category);
                 entry = View.Inflate(_rootActivity, Resource.Layout.CategoriesListItem, null);
                 entry.FindViewById<TextView>(Resource.Id.categoryName).Text = category;
                 entry.FindViewById<TextView>(Resource.Id.categoryName).SetTextColor(BuildColor(category));
@@ -124,7 +129,7 @@ namespace CryptoTouch.Activities
                                         Refresh(layout);
                                     }
                                 };
-                if (category != NoteStorage.GetCurrentCategories()[0])
+                if (category != NoteStorage.GetCurrentCategories(_rootActivity)[0])
                 {
                     entry.Click += (object sender, EventArgs e) => { if (_selectedEntrys.Count > 0) LongClickSelectEntry(sender as View); };
                     entry.LongClick += (object sender, View.LongClickEventArgs e) => LongClickSelectEntry(sender as View);
@@ -179,7 +184,7 @@ namespace CryptoTouch.Activities
         {
             layout.GetChildAt(0).FindViewById<TextView>(Resource.Id.categoryName).SetTextColor(BuildColor(_rootActivity.GetString(Resource.String.All)));
             for (int i = 1; i < layout.ChildCount; i++)
-                layout.GetChildAt(i).FindViewById<TextView>(Resource.Id.categoryName).SetTextColor(BuildColor(NoteStorage.GetCurrentCategories()[i-1]));
+                layout.GetChildAt(i).FindViewById<TextView>(Resource.Id.categoryName).SetTextColor(BuildColor(NoteStorage.GetCurrentCategories(_rootActivity)[i-1]));
         }
 
         private Android.Graphics.Color BuildColor(string category)

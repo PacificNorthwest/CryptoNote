@@ -13,4 +13,5 @@
     <string name="AddButton">Add</string>
     <string name="EmptyPasswordError">Empty password field</string>
     <string name="All">All</string>
+    <string name="Locale">EN</string>
 </resources>

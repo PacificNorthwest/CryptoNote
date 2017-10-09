@@ -15,35 +15,29 @@ namespace CryptoTouch
     class NoteStorage
     {
         public static List<Note> Notes { get; set; } = new List<Note>();
-        private static List<String> _categories_en;
-        private static List<String> _categories_ru;
+        private static Dictionary<string, List<string>> _categories = JsonManager.LoadCategories();
 
-        static NoteStorage() { (_categories_en, _categories_ru) = XmlManager.LoadCategories(); }
+        public static List<String> GetCurrentCategories(Activity activity)
+                   => _categories.GetValueOrDefault(activity.Resources.GetString(Resource.String.Locale));
 
-        public static List<String> GetCurrentCategories()
+        public static void RemoveCategory(Activity activity, string category)
         {
-            //for now
-            return _categories_ru;
-        }
-
-        public static void RemoveCategory(string category)
-        {
-            int id = GetCurrentCategories().IndexOf(category);
-            _categories_en.RemoveAt(id);
-            _categories_ru.RemoveAt(id);
+            int id = GetCurrentCategories(activity).IndexOf(category);
+            foreach (var list in _categories)
+                list.Value.RemoveAt(id);
             SaveCategories();
         }
 
         public static void AddCategory(string category)
         {
-            _categories_en.Add(category);
-            _categories_ru.Add(category);
+            foreach (var list in _categories)
+                list.Value.Add(category);
             SaveCategories();
         }
 
         public static void SaveCategories()
         {
-            XmlManager.SaveCategories(new string[] { "_en.xml", "_ru.xml" }, _categories_en, _categories_ru);
+            JsonManager.SaveCategories(_categories);
         }
     }
 }

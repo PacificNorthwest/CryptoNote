@@ -20,7 +20,7 @@ namespace CryptoTouch.Activities
     {
         private EditText _noteText;
         private Button _saveButton;
-        private Spinner _cathegoriesSpinner;
+        private Spinner _categoriesSpinner;
         private Note _originalNote;
 
         protected override void OnCreate(Bundle savedInstanceState)
@@ -38,24 +38,24 @@ namespace CryptoTouch.Activities
         {
             _noteText = FindViewById<EditText>(Resource.Id.noteText);
             _saveButton = FindViewById<Button>(Resource.Id.saveNoteButton);
-            _cathegoriesSpinner = FindViewById<Spinner>(Resource.Id.cathegoriesSpinner);
+            _categoriesSpinner = FindViewById<Spinner>(Resource.Id.cathegoriesSpinner);
             _saveButton.Click += (object sender, EventArgs e) => UpdateNotes();
-            _cathegoriesSpinner.Adapter = new SpinnerAdapter(this, Resource.Layout.SpinnerItem, NoteStorage.GetCurrentCategories());
+            _categoriesSpinner.Adapter = new SpinnerAdapter(this, Resource.Layout.SpinnerItem, NoteStorage.GetCurrentCategories(this));
             if (_originalNote != null)
             {
                 _noteText.Text = _originalNote.Text;
-                _cathegoriesSpinner.SetSelection(_originalNote.CategoryId);
+                _categoriesSpinner.SetSelection(_originalNote.CategoryId);
             }
         }
 
         private void UpdateNotes()
         {
             if (_originalNote == null)
-                NoteStorage.Notes.Add(new Note(_noteText.Text) { CategoryId = (int)_cathegoriesSpinner.SelectedItemId });
+                NoteStorage.Notes.Add(new Note(_noteText.Text) { CategoryId = (int)_categoriesSpinner.SelectedItemId });
             else
             {
                 NoteStorage.Notes.Find(note => note == _originalNote).Text = _noteText.Text;
-                NoteStorage.Notes.Find(note => note == _originalNote).CategoryId = (int)_cathegoriesSpinner.SelectedItemId;
+                NoteStorage.Notes.Find(note => note == _originalNote).CategoryId = (int)_categoriesSpinner.SelectedItemId;
             }
             SecurityProvider.SaveNotesAsync();
 
