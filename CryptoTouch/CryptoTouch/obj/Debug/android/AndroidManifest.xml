@@ -13,6 +13,7 @@
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
+    <activity android:label="SettingsActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme" android:name="md5d619d79349270a1d3e86c8aac97c2862.SettingsActivity" />
     <activity android:label="CryptoNote" android:screenOrientation="portrait" android:theme="@style/AppTheme" android:name="md5d619d79349270a1d3e86c8aac97c2862.LoginActivity" />
     <activity android:label="MainPageActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme" android:name="md5d619d79349270a1d3e86c8aac97c2862.MainPageActivity" />
     <activity android:label="NoteActivity" android:theme="@style/AppTheme" android:windowSoftInputMode="stateVisible|adjustResize" android:name="md5d619d79349270a1d3e86c8aac97c2862.NoteActivity" />

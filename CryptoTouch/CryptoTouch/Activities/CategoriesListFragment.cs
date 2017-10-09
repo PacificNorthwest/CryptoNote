@@ -23,6 +23,7 @@ namespace CryptoTouch.Activities
         private Activity _rootActivity;
         private LinearLayout _list;
         private View _frame;
+        private View _instance;
         private Button _revealDialogButton;
         private Button _deleteCategoriesButton;
         private EditText _title;
@@ -33,10 +34,10 @@ namespace CryptoTouch.Activities
 
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
-            View view = inflater.Inflate(Resource.Layout.CategoriesList, container, false);
-            PopulateList(_list = view.FindViewById<LinearLayout>(Resource.Id.cathegoriesList));
-            InitializeUI(view);
-            return view;
+            _instance = inflater.Inflate(Resource.Layout.CategoriesList, container, false);
+            PopulateList(_list = _instance.FindViewById<LinearLayout>(Resource.Id.cathegoriesList));
+            InitializeUI(_instance);
+            return _instance;
         }
 
         public void Update()
@@ -222,6 +223,7 @@ namespace CryptoTouch.Activities
 
         public void HandleOnBackPressed()
         {
+            
             if (_frame.Visibility == ViewStates.Visible)
                 HideDialog();
             else if (_selectedEntrys.Count != 0)

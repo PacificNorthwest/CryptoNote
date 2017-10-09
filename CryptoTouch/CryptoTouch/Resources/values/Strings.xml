@@ -13,5 +13,8 @@
     <string name="AddButton">Add</string>
     <string name="EmptyPasswordError">Empty password field</string>
     <string name="All">All</string>
+    <string name="Settings">Settings</string>
+    <string name="ColumnsNumber">Columns number:</string>
+    <string name="Language">Language:</string>
     <string name="Locale">EN</string>
 </resources>

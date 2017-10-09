@@ -45,6 +45,12 @@ namespace CryptoTouch.Activities
             return view;
         }
 
+        public override void OnResume()
+        {
+            base.OnResume();
+            PopulateGrid();
+        }
+
         private void InitializeUI(View view)
         {
             _newNoteButton = view.FindViewById<Button>(Resource.Id.newNoteButton);
@@ -52,15 +58,15 @@ namespace CryptoTouch.Activities
             _sceneRoot = view.FindViewById<RelativeLayout>(Resource.Id.layout);
             _notesGrid = view.FindViewById<RecyclerView>(Resource.Id.recyclerView);
 
+            _notesGrid.AddItemDecoration(new RecyclerViewItemSpacing(15));
             _newNoteButton.Click += (object sender, EventArgs e) => StartActivity(new Intent(_rootActivity, typeof(NoteActivity)));
             _deleteNoteButton.Click += (object sender, EventArgs e) => DeleteNotes();        
         }
 
         private void PopulateGrid()
-        {
+        { 
             _notesGrid.HasFixedSize = true;
-            _notesGrid.SetLayoutManager(new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.Vertical));
-            _notesGrid.AddItemDecoration(new RecyclerViewItemSpacing(15));
+            _notesGrid.SetLayoutManager(new StaggeredGridLayoutManager(Settings.ColumnsCount, StaggeredGridLayoutManager.Vertical));
             _notesGrid.SetAdapter(new NotesListAdapter(_rootActivity, this, NoteStorage.Notes));
         }
 

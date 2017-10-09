@@ -33,6 +33,13 @@ namespace CryptoTouch.Activities
             InitializeViews();
         }
 
+        protected override void OnStart()
+        {
+            base.OnStart();
+            FindViewById<TextView>(Resource.Id.passwordPageHintTextView).Text = Resources.GetString(Resource.String.WelcomePassword);
+            _submitButton.Text = Resources.GetString(Resource.String.SubmitButton);
+        }
+
         private void InitializeViews()
         {
             _submitButton = FindViewById<Button>(Resource.Id.ButtonSubmitPassword);

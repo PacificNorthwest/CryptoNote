@@ -31,10 +31,13 @@ namespace CryptoTouch.Activities
             SecurityProvider.FingerprintAuthenticate(this);
         }
 
-        protected override void OnRestart()
+        protected override void OnStart()
         {
-            base.OnRestart();
+            base.OnStart();
             SecurityProvider.FingerprintAuthenticate(this);
+            FindViewById<TextView>(Resource.Id.fingerprintScanHint).Text = Resources.GetString(Resource.String.FingerprintScanHint);
+            FindViewById<TextView>(Resource.Id.passwordUsageHint).Text = Resources.GetString(Resource.String.PasswordUsageHint);
+            FindViewById<Button>(Resource.Id.ButtonSubmitAuthorization).Text = Resources.GetString(Resource.String.LoginButton);
         }
 
         private async void PasswordAuthorization()

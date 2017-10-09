@@ -13,5 +13,8 @@
     <string name="AddButton">Добавить</string>
     <string name="EmptyPasswordError">Введите пароль</string>
     <string name="All">Все</string>
+    <string name="Settings">Настройки</string>
+    <string name="ColumnsNumber">Количество колонок:</string>
+    <string name="Language">Язык:</string>
     <string name="Locale">RU</string>
 </resources>

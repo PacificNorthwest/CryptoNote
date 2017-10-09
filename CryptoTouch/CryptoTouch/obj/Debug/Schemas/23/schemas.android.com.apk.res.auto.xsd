@@ -2,7 +2,7 @@
 <xs:schema xmlns:app="http://schemas.android.com/apk/res-auto" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/apk/res-auto" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v23</xs:documentation>
-    <xs:documentation>08.10.2017 23:44:02</xs:documentation>
+    <xs:documentation>09.10.2017 20:55:08</xs:documentation>
   </xs:annotation>
   <xs:attribute name="allowStacking">
     <xs:annotation>
@@ -1283,14 +1283,18 @@
             <xs:enumeration value="@string/appbar_scrolling_view_behavior" />
             <xs:enumeration value="@string/Categories" />
             <xs:enumeration value="@string/character_counter_pattern" />
+            <xs:enumeration value="@string/ColumnsNumber" />
             <xs:enumeration value="@string/EmptyPasswordError" />
             <xs:enumeration value="@string/FingerprintScanFailedError" />
             <xs:enumeration value="@string/FingerprintScanHint" />
             <xs:enumeration value="@string/IncorrectPsswordError" />
+            <xs:enumeration value="@string/Language" />
+            <xs:enumeration value="@string/Locale" />
             <xs:enumeration value="@string/LoginButton" />
             <xs:enumeration value="@string/NewCategoryNameHint" />
             <xs:enumeration value="@string/Notes" />
             <xs:enumeration value="@string/PasswordUsageHint" />
+            <xs:enumeration value="@string/Settings" />
             <xs:enumeration value="@string/status_bar_notification_info_overflow" />
             <xs:enumeration value="@string/SubmitButton" />
             <xs:enumeration value="@string/WelcomePassword" />
@@ -4526,14 +4530,18 @@
             <xs:enumeration value="@string/appbar_scrolling_view_behavior" />
             <xs:enumeration value="@string/Categories" />
             <xs:enumeration value="@string/character_counter_pattern" />
+            <xs:enumeration value="@string/ColumnsNumber" />
             <xs:enumeration value="@string/EmptyPasswordError" />
             <xs:enumeration value="@string/FingerprintScanFailedError" />
             <xs:enumeration value="@string/FingerprintScanHint" />
             <xs:enumeration value="@string/IncorrectPsswordError" />
+            <xs:enumeration value="@string/Language" />
+            <xs:enumeration value="@string/Locale" />
             <xs:enumeration value="@string/LoginButton" />
             <xs:enumeration value="@string/NewCategoryNameHint" />
             <xs:enumeration value="@string/Notes" />
             <xs:enumeration value="@string/PasswordUsageHint" />
+            <xs:enumeration value="@string/Settings" />
             <xs:enumeration value="@string/status_bar_notification_info_overflow" />
             <xs:enumeration value="@string/SubmitButton" />
             <xs:enumeration value="@string/WelcomePassword" />
@@ -7977,14 +7985,18 @@
             <xs:enumeration value="@string/appbar_scrolling_view_behavior" />
             <xs:enumeration value="@string/Categories" />
             <xs:enumeration value="@string/character_counter_pattern" />
+            <xs:enumeration value="@string/ColumnsNumber" />
             <xs:enumeration value="@string/EmptyPasswordError" />
             <xs:enumeration value="@string/FingerprintScanFailedError" />
             <xs:enumeration value="@string/FingerprintScanHint" />
             <xs:enumeration value="@string/IncorrectPsswordError" />
+            <xs:enumeration value="@string/Language" />
+            <xs:enumeration value="@string/Locale" />
             <xs:enumeration value="@string/LoginButton" />
             <xs:enumeration value="@string/NewCategoryNameHint" />
             <xs:enumeration value="@string/Notes" />
             <xs:enumeration value="@string/PasswordUsageHint" />
+            <xs:enumeration value="@string/Settings" />
             <xs:enumeration value="@string/status_bar_notification_info_overflow" />
             <xs:enumeration value="@string/SubmitButton" />
             <xs:enumeration value="@string/WelcomePassword" />
@@ -10141,14 +10153,18 @@
             <xs:enumeration value="@string/appbar_scrolling_view_behavior" />
             <xs:enumeration value="@string/Categories" />
             <xs:enumeration value="@string/character_counter_pattern" />
+            <xs:enumeration value="@string/ColumnsNumber" />
             <xs:enumeration value="@string/EmptyPasswordError" />
             <xs:enumeration value="@string/FingerprintScanFailedError" />
             <xs:enumeration value="@string/FingerprintScanHint" />
             <xs:enumeration value="@string/IncorrectPsswordError" />
+            <xs:enumeration value="@string/Language" />
+            <xs:enumeration value="@string/Locale" />
             <xs:enumeration value="@string/LoginButton" />
             <xs:enumeration value="@string/NewCategoryNameHint" />
             <xs:enumeration value="@string/Notes" />
             <xs:enumeration value="@string/PasswordUsageHint" />
+            <xs:enumeration value="@string/Settings" />
             <xs:enumeration value="@string/status_bar_notification_info_overflow" />
             <xs:enumeration value="@string/SubmitButton" />
             <xs:enumeration value="@string/WelcomePassword" />
@@ -10530,14 +10546,18 @@
             <xs:enumeration value="@string/appbar_scrolling_view_behavior" />
             <xs:enumeration value="@string/Categories" />
             <xs:enumeration value="@string/character_counter_pattern" />
+            <xs:enumeration value="@string/ColumnsNumber" />
             <xs:enumeration value="@string/EmptyPasswordError" />
             <xs:enumeration value="@string/FingerprintScanFailedError" />
             <xs:enumeration value="@string/FingerprintScanHint" />
             <xs:enumeration value="@string/IncorrectPsswordError" />
+            <xs:enumeration value="@string/Language" />
+            <xs:enumeration value="@string/Locale" />
             <xs:enumeration value="@string/LoginButton" />
             <xs:enumeration value="@string/NewCategoryNameHint" />
             <xs:enumeration value="@string/Notes" />
             <xs:enumeration value="@string/PasswordUsageHint" />
+            <xs:enumeration value="@string/Settings" />
             <xs:enumeration value="@string/status_bar_notification_info_overflow" />
             <xs:enumeration value="@string/SubmitButton" />
             <xs:enumeration value="@string/WelcomePassword" />
@@ -11261,14 +11281,18 @@
             <xs:enumeration value="@string/appbar_scrolling_view_behavior" />
             <xs:enumeration value="@string/Categories" />
             <xs:enumeration value="@string/character_counter_pattern" />
+            <xs:enumeration value="@string/ColumnsNumber" />
             <xs:enumeration value="@string/EmptyPasswordError" />
             <xs:enumeration value="@string/FingerprintScanFailedError" />
             <xs:enumeration value="@string/FingerprintScanHint" />
             <xs:enumeration value="@string/IncorrectPsswordError" />
+            <xs:enumeration value="@string/Language" />
+            <xs:enumeration value="@string/Locale" />
             <xs:enumeration value="@string/LoginButton" />
             <xs:enumeration value="@string/NewCategoryNameHint" />
             <xs:enumeration value="@string/Notes" />
             <xs:enumeration value="@string/PasswordUsageHint" />
+            <xs:enumeration value="@string/Settings" />
             <xs:enumeration value="@string/status_bar_notification_info_overflow" />
             <xs:enumeration value="@string/SubmitButton" />
             <xs:enumeration value="@string/WelcomePassword" />
@@ -12427,14 +12451,18 @@
             <xs:enumeration value="@string/appbar_scrolling_view_behavior" />
             <xs:enumeration value="@string/Categories" />
             <xs:enumeration value="@string/character_counter_pattern" />
+            <xs:enumeration value="@string/ColumnsNumber" />
             <xs:enumeration value="@string/EmptyPasswordError" />
             <xs:enumeration value="@string/FingerprintScanFailedError" />
             <xs:enumeration value="@string/FingerprintScanHint" />
             <xs:enumeration value="@string/IncorrectPsswordError" />
+            <xs:enumeration value="@string/Language" />
+            <xs:enumeration value="@string/Locale" />
             <xs:enumeration value="@string/LoginButton" />
             <xs:enumeration value="@string/NewCategoryNameHint" />
             <xs:enumeration value="@string/Notes" />
             <xs:enumeration value="@string/PasswordUsageHint" />
+            <xs:enumeration value="@string/Settings" />
             <xs:enumeration value="@string/status_bar_notification_info_overflow" />
             <xs:enumeration value="@string/SubmitButton" />
             <xs:enumeration value="@string/WelcomePassword" />
@@ -14346,14 +14374,18 @@
             <xs:enumeration value="@string/appbar_scrolling_view_behavior" />
             <xs:enumeration value="@string/Categories" />
             <xs:enumeration value="@string/character_counter_pattern" />
+            <xs:enumeration value="@string/ColumnsNumber" />
             <xs:enumeration value="@string/EmptyPasswordError" />
             <xs:enumeration value="@string/FingerprintScanFailedError" />
             <xs:enumeration value="@string/FingerprintScanHint" />
             <xs:enumeration value="@string/IncorrectPsswordError" />
+            <xs:enumeration value="@string/Language" />
+            <xs:enumeration value="@string/Locale" />
             <xs:enumeration value="@string/LoginButton" />
             <xs:enumeration value="@string/NewCategoryNameHint" />
             <xs:enumeration value="@string/Notes" />
             <xs:enumeration value="@string/PasswordUsageHint" />
+            <xs:enumeration value="@string/Settings" />
             <xs:enumeration value="@string/status_bar_notification_info_overflow" />
             <xs:enumeration value="@string/SubmitButton" />
             <xs:enumeration value="@string/WelcomePassword" />

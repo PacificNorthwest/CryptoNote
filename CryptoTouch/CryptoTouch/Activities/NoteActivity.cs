@@ -30,7 +30,13 @@ namespace CryptoTouch.Activities
             base.OnCreate(savedInstanceState);
             _originalNote = NoteStorage.Notes.Find(note => note.GetHashCode() == Intent.GetIntExtra("NoteHash", 0));
             SetContentView(Resource.Layout.NotePage);
+        }
 
+        protected override void OnStart()
+        {
+            base.OnStart();
+            _categoriesSpinner = FindViewById<Spinner>(Resource.Id.cathegoriesSpinner);
+            _categoriesSpinner.Adapter = new SpinnerAdapter(this, Resource.Layout.SpinnerItem, NoteStorage.GetCurrentCategories(this));
             InitializeUI();
         }
 
@@ -38,9 +44,8 @@ namespace CryptoTouch.Activities
         {
             _noteText = FindViewById<EditText>(Resource.Id.noteText);
             _saveButton = FindViewById<Button>(Resource.Id.saveNoteButton);
-            _categoriesSpinner = FindViewById<Spinner>(Resource.Id.cathegoriesSpinner);
             _saveButton.Click += (object sender, EventArgs e) => UpdateNotes();
-            _categoriesSpinner.Adapter = new SpinnerAdapter(this, Resource.Layout.SpinnerItem, NoteStorage.GetCurrentCategories(this));
+            
             if (_originalNote != null)
             {
                 _noteText.Text = _originalNote.Text;
