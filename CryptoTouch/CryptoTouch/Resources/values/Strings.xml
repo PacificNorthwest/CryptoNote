@@ -16,5 +16,7 @@
     <string name="Settings">Settings</string>
     <string name="ColumnsNumber">Columns number:</string>
     <string name="Language">Language:</string>
+    <string name="nullStateHintTop">No notes\nare created</string>
+    <string name="nullStateHintBottom">Click\nin order\nto create one</string>
     <string name="Locale">EN</string>
 </resources>

@@ -91,7 +91,7 @@ E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\res\values-ru\styles.x
 E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\res\values-uk\colors.xml
 E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\res\values-uk\strings.xml
 E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\res\values-uk\styles.xml
+E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\res\drawable\arrow.png
+E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\res\drawable\cloud.png
 E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\R.cs.flag
 E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\uploadflags.txt
-E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\bin\Debug\CryptoTouch.dll.mdb
-E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\android\assets\CryptoTouch.dll.mdb

@@ -158,7 +158,9 @@
     <AndroidResource Include="Resources\drawable\EdittextBG.xml" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\CardSelectionBG.xml" />
+    <AndroidResource Include="Resources\drawable\CardSelectionBG.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values-v21\styles.xml">
@@ -200,6 +202,12 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values-uk\styles.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Cloud.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

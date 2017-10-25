@@ -25,6 +25,7 @@ namespace CryptoTouch.Activities
     {
         private static Activity _rootActivity;
         private static RecyclerView _notesGrid;
+        private static RelativeLayout _nullStateTile;
         private static Android.Support.V4.App.Fragment _instance;
         private List<View> _selectedItems = new List<View>();
         private Button _newNoteButton;
@@ -56,6 +57,7 @@ namespace CryptoTouch.Activities
             _newNoteButton = view.FindViewById<Button>(Resource.Id.newNoteButton);
             _deleteNoteButton = view.FindViewById<Button>(Resource.Id.deleteNoteButton);
             _sceneRoot = view.FindViewById<RelativeLayout>(Resource.Id.layout);
+            _nullStateTile = view.FindViewById<RelativeLayout>(Resource.Id.nullStateTile);
             _notesGrid = view.FindViewById<RecyclerView>(Resource.Id.recyclerView);
 
             _notesGrid.AddItemDecoration(new RecyclerViewItemSpacing(15));
@@ -68,11 +70,20 @@ namespace CryptoTouch.Activities
             _notesGrid.HasFixedSize = true;
             _notesGrid.SetLayoutManager(new StaggeredGridLayoutManager(Settings.ColumnsCount, StaggeredGridLayoutManager.Vertical));
             _notesGrid.SetAdapter(new NotesListAdapter(_rootActivity, this, NoteStorage.Notes));
+            if (NoteStorage.Notes.Count == 0)
+                _nullStateTile.Visibility = ViewStates.Visible;
+            else
+                _nullStateTile.Visibility = ViewStates.Gone;
         }
 
         public static void ChangeDataSet(List<Note> notes)
         {
             _notesGrid.SwapAdapter(new NotesListAdapter(_rootActivity, _instance, notes), false);
+
+            if (notes.Count == 0)
+                _nullStateTile.Visibility = ViewStates.Visible;
+            else
+                _nullStateTile.Visibility = ViewStates.Gone;
         }
 
         public void SelectItem(View view)

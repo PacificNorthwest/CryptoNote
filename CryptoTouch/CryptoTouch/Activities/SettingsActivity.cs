@@ -27,13 +27,11 @@ namespace CryptoTouch.Activities
 
         private void InitializeUI()
         {
-            Typeface font = Typeface.CreateFromAsset(Assets, "fonts/BROADW.ttf");
-            FindViewById<TextView>(Resource.Id.settingsPageTitle).Typeface = font;
             Spinner columnSpinner = FindViewById<Spinner>(Resource.Id.columnsSpinner);
             columnSpinner.Adapter = new ArrayAdapter(this, Resource.Layout.SpinnerItem, new List<string>() { "1", "2" });
             columnSpinner.SetSelection(Settings.ColumnsCount - 1);
-            columnSpinner.ItemSelected += (object sender, AdapterView.ItemSelectedEventArgs e) 
-                                       => Settings.ColumnsCount = Convert.ToInt32((e.View as TextView).Text);
+            columnSpinner.ItemSelected += (object sender, AdapterView.ItemSelectedEventArgs e)
+                                       => { Settings.ColumnsCount = Convert.ToInt32((e.View as TextView).Text); Settings.Save(); };
 
             Spinner languageSpinner = FindViewById<Spinner>(Resource.Id.languageSpinner);
             languageSpinner.Adapter = new ArrayAdapter(this, Resource.Layout.SpinnerItem, Settings.LanguageOptions);
@@ -42,6 +40,7 @@ namespace CryptoTouch.Activities
                                        =>
                                         {
                                             Settings.Language = (e.View as TextView).Text;
+                                            Settings.Save();
                                             this.Resources.Configuration.SetLocale(new Java.Util.Locale(Settings.Language));
                                             this.Resources.UpdateConfiguration(this.Resources.Configuration, this.Resources.DisplayMetrics);
                                             OnConfigurationChanged(Resources.Configuration);

@@ -27,6 +27,10 @@ namespace CryptoTouch.Activities
         {
             base.OnCreate(savedInstanceState);
             SecurityProvider.InitializeSecuritySystem();
+            Settings.Load(this);
+            this.Resources.Configuration.SetLocale(new Java.Util.Locale(Settings.Language));
+            this.Resources.UpdateConfiguration(this.Resources.Configuration, this.Resources.DisplayMetrics);
+
             if (SecurityProvider.KeyExists())
                 OpenAuthorizationPage();
             this.SetContentView(Resource.Layout.PasswordPage);
