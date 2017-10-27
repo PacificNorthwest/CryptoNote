@@ -2275,8 +2275,20 @@ namespace CryptoTouch
 			// aapt resource value: 0x7f060081
 			public const int settingsButton = 2131099777;
 			
+			// aapt resource value: 0x7f0600ac
+			public const int settingsConfirmPasswordEditText = 2131099820;
+			
+			// aapt resource value: 0x7f0600ab
+			public const int settingsNewPasswordEditText = 2131099819;
+			
+			// aapt resource value: 0x7f0600aa
+			public const int settingsOldPasswordEditText = 2131099818;
+			
 			// aapt resource value: 0x7f0600a5
 			public const int settingsPageTitle = 2131099813;
+			
+			// aapt resource value: 0x7f0600ad
+			public const int settingsSave = 2131099821;
 			
 			// aapt resource value: 0x7f060053
 			public const int shortcut = 2131099731;
@@ -2302,8 +2314,8 @@ namespace CryptoTouch
 			// aapt resource value: 0x7f060045
 			public const int spacer = 2131099717;
 			
-			// aapt resource value: 0x7f0600aa
-			public const int spinnerEntryText = 2131099818;
+			// aapt resource value: 0x7f0600ae
+			public const int spinnerEntryText = 2131099822;
 			
 			// aapt resource value: 0x7f060008
 			public const int split_action_bar = 2131099656;

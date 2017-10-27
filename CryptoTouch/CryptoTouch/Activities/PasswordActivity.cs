@@ -14,7 +14,7 @@ using Android.Graphics;
 
 namespace CryptoTouch.Activities
 {
-    [Activity(Label = "CryptoTouch", MainLauncher = true, 
+    [Activity(Label = "CryptoNote", MainLauncher = true, 
               Icon = "@drawable/fingerprint",
               Theme = "@style/AppTheme",
               ScreenOrientation = Android.Content.PM.ScreenOrientation.Portrait)]

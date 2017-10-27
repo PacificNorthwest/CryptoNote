@@ -2460,7 +2460,11 @@ containing a value of this type.
         public static final int search_voice_btn=0x7f060067;
         public static final int select_dialog_listview=0x7f060068;
         public static final int settingsButton=0x7f060081;
+        public static final int settingsConfirmPasswordEditText=0x7f0600ac;
+        public static final int settingsNewPasswordEditText=0x7f0600ab;
+        public static final int settingsOldPasswordEditText=0x7f0600aa;
         public static final int settingsPageTitle=0x7f0600a5;
+        public static final int settingsSave=0x7f0600ad;
         public static final int shortcut=0x7f060053;
         public static final int showCustom=0x7f060011;
         public static final int showHome=0x7f060012;
@@ -2469,7 +2473,7 @@ containing a value of this type.
         public static final int snackbar_text=0x7f060074;
         public static final int snap=0x7f060027;
         public static final int spacer=0x7f060045;
-        public static final int spinnerEntryText=0x7f0600aa;
+        public static final int spinnerEntryText=0x7f0600ae;
         public static final int split_action_bar=0x7f060008;
         public static final int src_atop=0x7f060017;
         public static final int src_in=0x7f060018;

@@ -11,7 +11,6 @@ public class SettingsActivity
 	static {
 		__md_methods = 
 			"n_onCreate:(Landroid/os/Bundle;)V:GetOnCreate_Landroid_os_Bundle_Handler\n" +
-			"n_onConfigurationChanged:(Landroid/content/res/Configuration;)V:GetOnConfigurationChanged_Landroid_content_res_Configuration_Handler\n" +
 			"n_onBackPressed:()V:GetOnBackPressedHandler\n" +
 			"";
 		mono.android.Runtime.register ("CryptoTouch.Activities.SettingsActivity, CryptoTouch, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", SettingsActivity.class, __md_methods);
@@ -32,14 +31,6 @@ public class SettingsActivity
 	}
 
 	private native void n_onCreate (android.os.Bundle p0);
-
-
-	public void onConfigurationChanged (android.content.res.Configuration p0)
-	{
-		n_onConfigurationChanged (p0);
-	}
-
-	private native void n_onConfigurationChanged (android.content.res.Configuration p0);
 
 
 	public void onBackPressed ()

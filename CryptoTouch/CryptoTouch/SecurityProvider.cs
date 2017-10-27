@@ -111,7 +111,7 @@ namespace CryptoTouch
                 _tDES_key = ComputeHash(password);
                 return true;
             }
-            return false;
+             else return false;
         }
 
         public static void FingerprintAuthenticate(Activity activity)
@@ -153,6 +153,21 @@ namespace CryptoTouch
             _tDES_key = ComputeHash(password);
             if (CreateNewRSAKeyPair(ALIAS, context))
                 System.IO.File.WriteAllBytes(_tDES_key_path, EncryptKey(_tDES_key));
+        }
+
+        public static void EnrollNewPassword(string oldPassword, string newPassword, string confirmPassword)
+        {
+            if (ComputeHash(oldPassword).SequenceEqual(_tDES_key))
+            {
+                if (newPassword == confirmPassword)
+                {
+                    _tDES_key = ComputeHash(newPassword);
+                    SaveNotesAsync();
+                    System.IO.File.WriteAllBytes(_tDES_key_path, EncryptKey(_tDES_key));
+                }
+                else throw new Exception("Passwords missmatch!");
+            }
+            else throw new Exception("Wrong password!");
         }
 
         private static bool CreateNewRSAKeyPair(string alias, Context context)
