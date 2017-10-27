@@ -16,46 +16,128 @@
       android:textColor="@android:color/white"
       android:background="@color/MainAppColor"
       android:textSize="30sp"/>
-<LinearLayout
-  android:orientation="horizontal"
-  android:layout_height="wrap_content"
-  android:layout_width="match_parent">
   <TextView
-    android:id="@+id/settingsPageColumnsTextView"
-    android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_marginLeft="10dp"
-    android:layout_marginTop="10dp"
-    android:textSize="23sp"
+    android:layout_width="match_parent"
+    android:paddingLeft="30dp"
+    android:layout_marginTop="15dp"
+    android:layout_marginBottom="5dp"
     android:textColor="@android:color/black"
+    android:textSize="24sp"
     android:text="@string/ColumnsNumber"/>
-<Spinner
-  android:id="@+id/columnsSpinner"
-  android:layout_width="wrap_content"
-  android:layout_height="wrap_content"
-  android:layout_marginLeft="2dp"
-  android:layout_marginTop="10dp"
-  android:spinnerMode="dropdown"/>
-</LinearLayout>
-<LinearLayout
-  android:orientation="horizontal"
-  android:layout_height="wrap_content"
-  android:layout_width="match_parent">
-  <TextView
-    android:id="@+id/settingsPageLanguageTextView"
-    android:layout_width="wrap_content"
+  <LinearLayout
     android:layout_height="wrap_content"
-    android:layout_marginLeft="10dp"
-    android:layout_marginTop="10dp"
-    android:textSize="23sp"
-    android:textColor="@android:color/black"
-    android:text="@string/Language"/>
-<Spinner
-  android:id="@+id/languageSpinner"
-  android:layout_width="wrap_content"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_margin="15dp"
+    android:orientation="horizontal">
+    <Button
+      android:id="@+id/OneColumnOptionButton"
+      android:layout_height="30dp"
+      android:layout_width="40dp"
+      android:layout_marginRight="20dp"
+      android:background="@drawable/OneColumnIcon"/>
+    <Button
+      android:id="@+id/TwoColumnsOptionButton"
+      android:layout_height="30dp"
+      android:layout_width="60dp"
+      android:layout_marginLeft="20dp"
+      android:background="@drawable/TwoColumnsIcon"/>
+   </LinearLayout>
+   <View
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:layout_marginTop="3dp"
+      android:layout_marginLeft="20dp"
+      android:layout_marginRight="20dp"
+      android:background="@color/MainAppColor" />
+ 
+   <TextView
+      android:layout_height="wrap_content"
+      android:layout_width="match_parent"
+      android:paddingLeft="30dp"
+      android:layout_marginTop="15dp"
+      android:layout_marginBottom="5dp"
+      android:textColor="@android:color/black"
+      android:textSize="24sp"
+      android:text="@string/Language"/>
+
+<LinearLayout
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_margin="15dp"
+    android:orientation="horizontal">
+    <Button
+      android:id="@+id/LanguageRuButton"
+      android:layout_height="60dp"
+      android:layout_width="60dp"
+      android:layout_marginRight="20dp"
+      android:background="@drawable/RU"/>
+    <Button
+      android:id="@+id/LanguageEnButton"
+      android:layout_height="60dp"
+      android:layout_width="60dp"
+      android:layout_marginLeft="20dp"
+      android:background="@drawable/EN"/>
+   </LinearLayout>
+   <View
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:layout_marginTop="3dp"
+      android:layout_marginLeft="20dp"
+      android:layout_marginRight="20dp"
+      android:background="@color/MainAppColor" />
+
+    <TextView
+      android:layout_height="wrap_content"
+      android:layout_width="match_parent"
+      android:paddingLeft="30dp"
+      android:layout_marginTop="15dp"
+      android:layout_marginBottom="5dp"
+      android:textColor="@android:color/black"
+      android:textSize="24sp"
+      android:text="@string/Password"/>
+    <EditText
+      android:layout_height="wrap_content"
+      android:layout_width="match_parent"
+      android:layout_marginLeft="40dp"
+      android:layout_marginRight="40dp"
+      android:layout_marginTop="7dp"
+      android:textSize="19sp"
+      android:textColor="@android:color/black"
+      android:hint="@string/OldPasswordHint"
+      android:inputType="textPassword"/>
+    <EditText
+      android:layout_height="wrap_content"
+      android:layout_width="match_parent"
+      android:layout_marginLeft="40dp"
+      android:layout_marginRight="40dp"
+      android:layout_marginTop="7dp"
+      android:textSize="19sp"
+      android:textColor="@android:color/black"
+      android:hint="@string/NewPasswordHint"
+      android:inputType="textPassword"/>
+    <EditText
+      android:layout_height="wrap_content"
+      android:layout_width="match_parent"
+      android:layout_marginLeft="40dp"
+      android:layout_marginRight="40dp"
+      android:layout_marginTop="7dp"
+      android:textSize="19sp"
+      android:textColor="@android:color/black"
+      android:hint="@string/RepeatPasswordHint"
+      android:inputType="textPassword"/>
+
+<Button
   android:layout_height="wrap_content"
-  android:layout_marginLeft="2dp"
-  android:layout_marginTop="10dp"
-  android:spinnerMode="dropdown"/>
-</LinearLayout>
+  android:layout_width="wrap_content"
+  android:layout_gravity="center"
+  android:paddingLeft="20dp"
+  android:paddingRight="20dp"
+  android:background="@color/MainAppColor"
+  android:textColor="@android:color/white"
+  android:textSize="23sp"
+  android:layout_marginTop="20dp"
+  android:text="@string/Save"/>
 </LinearLayout>

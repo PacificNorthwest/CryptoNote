@@ -14,8 +14,13 @@
     <string name="EmptyPasswordError">Введите пароль</string>
     <string name="All">Все</string>
     <string name="Settings">Настройки</string>
-    <string name="ColumnsNumber">Количество колонок:</string>
-    <string name="Language">Язык:</string>
+    <string name="ColumnsNumber">Количество колонок</string>
+    <string name="Language">Язык</string>
+    <string name="Password">Пароль</string>
+    <string name="OldPasswordHint">Старый пароль</string>
+    <string name="NewPasswordHint">Новый пароль</string>
+    <string name="RepeatPasswordHint">Повторите пароль</string>
+    <string name="Save">Сохранить</string>
     <string name="nullStateHintTop">Не создано\nни одной заметки</string>
     <string name="nullStateHintBottom">Для создания\nзаметки\nнажмите</string>
     <string name="Locale">RU</string>

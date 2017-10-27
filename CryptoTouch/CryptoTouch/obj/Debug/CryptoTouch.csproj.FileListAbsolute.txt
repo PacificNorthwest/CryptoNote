@@ -93,5 +93,11 @@ E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\res\values-uk\strings.
 E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\res\values-uk\styles.xml
 E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\res\drawable\arrow.png
 E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\res\drawable\cloud.png
+E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\res\drawable\en.png
+E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\res\drawable\onecolumnicon.png
+E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\res\drawable\ru.png
+E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\res\drawable\twocolumnsicon.png
 E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\R.cs.flag
 E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\uploadflags.txt
+E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\bin\Debug\CryptoTouch.dll.mdb
+E:\Projects\CryptoTouch\CryptoTouch\CryptoTouch\obj\Debug\android\assets\CryptoTouch.dll.mdb

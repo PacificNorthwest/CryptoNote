@@ -1819,25 +1819,37 @@ namespace CryptoTouch
 			public const int EdittextBG = 2130837580;
 			
 			// aapt resource value: 0x7f02004d
-			public const int fingerprint = 2130837581;
+			public const int EN = 2130837581;
 			
 			// aapt resource value: 0x7f02004e
-			public const int LoginPageBG = 2130837582;
+			public const int fingerprint = 2130837582;
 			
 			// aapt resource value: 0x7f02004f
-			public const int NoteItemBG = 2130837583;
-			
-			// aapt resource value: 0x7f020053
-			public const int notification_template_icon_bg = 2130837587;
+			public const int LoginPageBG = 2130837583;
 			
 			// aapt resource value: 0x7f020050
-			public const int RoundCornersBG = 2130837584;
+			public const int NoteItemBG = 2130837584;
+			
+			// aapt resource value: 0x7f020057
+			public const int notification_template_icon_bg = 2130837591;
 			
 			// aapt resource value: 0x7f020051
-			public const int SaveNoteButton = 2130837585;
+			public const int OneColumnIcon = 2130837585;
 			
 			// aapt resource value: 0x7f020052
-			public const int SettingsButton = 2130837586;
+			public const int RoundCornersBG = 2130837586;
+			
+			// aapt resource value: 0x7f020053
+			public const int RU = 2130837587;
+			
+			// aapt resource value: 0x7f020054
+			public const int SaveNoteButton = 2130837588;
+			
+			// aapt resource value: 0x7f020055
+			public const int SettingsButton = 2130837589;
+			
+			// aapt resource value: 0x7f020056
+			public const int TwoColumnsIcon = 2130837590;
 			
 			static Drawable()
 			{
@@ -1861,8 +1873,20 @@ namespace CryptoTouch
 			// aapt resource value: 0x7f0600a4
 			public const int ButtonSubmitPassword = 2131099812;
 			
+			// aapt resource value: 0x7f0600a9
+			public const int LanguageEnButton = 2131099817;
+			
+			// aapt resource value: 0x7f0600a8
+			public const int LanguageRuButton = 2131099816;
+			
+			// aapt resource value: 0x7f0600a6
+			public const int OneColumnOptionButton = 2131099814;
+			
 			// aapt resource value: 0x7f0600a3
 			public const int RegisterPassword = 2131099811;
+			
+			// aapt resource value: 0x7f0600a7
+			public const int TwoColumnsOptionButton = 2131099815;
 			
 			// aapt resource value: 0x7f060094
 			public const int action0 = 2131099796;
@@ -1978,9 +2002,6 @@ namespace CryptoTouch
 			// aapt resource value: 0x7f06001e
 			public const int collapseActionView = 2131099678;
 			
-			// aapt resource value: 0x7f0600a7
-			public const int columnsSpinner = 2131099815;
-			
 			// aapt resource value: 0x7f06004a
 			public const int contentPanel = 2131099722;
 			
@@ -2076,9 +2097,6 @@ namespace CryptoTouch
 			
 			// aapt resource value: 0x7f060000
 			public const int item_touch_helper_previous_elevation = 2131099648;
-			
-			// aapt resource value: 0x7f0600a9
-			public const int languageSpinner = 2131099817;
 			
 			// aapt resource value: 0x7f06008c
 			public const int layout = 2131099788;
@@ -2256,12 +2274,6 @@ namespace CryptoTouch
 			
 			// aapt resource value: 0x7f060081
 			public const int settingsButton = 2131099777;
-			
-			// aapt resource value: 0x7f0600a6
-			public const int settingsPageColumnsTextView = 2131099814;
-			
-			// aapt resource value: 0x7f0600a8
-			public const int settingsPageLanguageTextView = 2131099816;
 			
 			// aapt resource value: 0x7f0600a5
 			public const int settingsPageTitle = 2131099813;
@@ -2626,8 +2638,8 @@ namespace CryptoTouch
 			// aapt resource value: 0x7f090025
 			public const int Language = 2131296293;
 			
-			// aapt resource value: 0x7f090028
-			public const int Locale = 2131296296;
+			// aapt resource value: 0x7f09002d
+			public const int Locale = 2131296301;
 			
 			// aapt resource value: 0x7f09001a
 			public const int LoginButton = 2131296282;
@@ -2635,11 +2647,26 @@ namespace CryptoTouch
 			// aapt resource value: 0x7f09001f
 			public const int NewCategoryNameHint = 2131296287;
 			
+			// aapt resource value: 0x7f090028
+			public const int NewPasswordHint = 2131296296;
+			
 			// aapt resource value: 0x7f09001b
 			public const int Notes = 2131296283;
 			
+			// aapt resource value: 0x7f090027
+			public const int OldPasswordHint = 2131296295;
+			
+			// aapt resource value: 0x7f090026
+			public const int Password = 2131296294;
+			
 			// aapt resource value: 0x7f090019
 			public const int PasswordUsageHint = 2131296281;
+			
+			// aapt resource value: 0x7f090029
+			public const int RepeatPasswordHint = 2131296297;
+			
+			// aapt resource value: 0x7f09002a
+			public const int Save = 2131296298;
 			
 			// aapt resource value: 0x7f090023
 			public const int Settings = 2131296291;
@@ -2713,11 +2740,11 @@ namespace CryptoTouch
 			// aapt resource value: 0x7f090015
 			public const int character_counter_pattern = 2131296277;
 			
-			// aapt resource value: 0x7f090027
-			public const int nullStateHintBottom = 2131296295;
+			// aapt resource value: 0x7f09002c
+			public const int nullStateHintBottom = 2131296300;
 			
-			// aapt resource value: 0x7f090026
-			public const int nullStateHintTop = 2131296294;
+			// aapt resource value: 0x7f09002b
+			public const int nullStateHintTop = 2131296299;
 			
 			// aapt resource value: 0x7f090013
 			public const int status_bar_notification_info_overflow = 2131296275;

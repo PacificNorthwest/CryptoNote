@@ -2,7 +2,7 @@
 <xs:schema xmlns:tools="http://schemas.android.com/tools" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/tools" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v23</xs:documentation>
-    <xs:documentation>09.10.2017 20:55:08</xs:documentation>
+    <xs:documentation>27.10.2017 14:46:12</xs:documentation>
   </xs:annotation>
   <xs:attribute name="layout">
     <xs:annotation>
@@ -486,8 +486,15 @@
             <xs:enumeration value="@string/Locale" />
             <xs:enumeration value="@string/LoginButton" />
             <xs:enumeration value="@string/NewCategoryNameHint" />
+            <xs:enumeration value="@string/NewPasswordHint" />
             <xs:enumeration value="@string/Notes" />
+            <xs:enumeration value="@string/nullStateHintBottom" />
+            <xs:enumeration value="@string/nullStateHintTop" />
+            <xs:enumeration value="@string/OldPasswordHint" />
+            <xs:enumeration value="@string/Password" />
             <xs:enumeration value="@string/PasswordUsageHint" />
+            <xs:enumeration value="@string/RepeatPasswordHint" />
+            <xs:enumeration value="@string/Save" />
             <xs:enumeration value="@string/Settings" />
             <xs:enumeration value="@string/status_bar_notification_info_overflow" />
             <xs:enumeration value="@string/SubmitButton" />

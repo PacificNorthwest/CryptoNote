@@ -2310,19 +2310,25 @@ containing a value of this type.
         public static int design_fab_background=0x7f02004a;
         public static int design_snackbar_background=0x7f02004b;
         public static int edittextbg=0x7f02004c;
-        public static int fingerprint=0x7f02004d;
-        public static int loginpagebg=0x7f02004e;
-        public static int noteitembg=0x7f02004f;
-        public static int notification_template_icon_bg=0x7f020053;
-        public static int roundcornersbg=0x7f020050;
-        public static int savenotebutton=0x7f020051;
-        public static int settingsbutton=0x7f020052;
+        public static int en=0x7f02004d;
+        public static int fingerprint=0x7f02004e;
+        public static int loginpagebg=0x7f02004f;
+        public static int noteitembg=0x7f020050;
+        public static int notification_template_icon_bg=0x7f020057;
+        public static int onecolumnicon=0x7f020051;
+        public static int roundcornersbg=0x7f020052;
+        public static int ru=0x7f020053;
+        public static int savenotebutton=0x7f020054;
+        public static int settingsbutton=0x7f020055;
+        public static int twocolumnsicon=0x7f020056;
     }
     public static final class id {
         public static int AuthorizationPassword=0x7f06007e;
         public static int ButtonSubmitAuthorization=0x7f06007f;
         public static int ButtonSubmitPassword=0x7f0600a4;
+        public static int OneColumnOptionButton=0x7f0600a6;
         public static int RegisterPassword=0x7f0600a3;
+        public static int TwoColumnsOptionButton=0x7f0600a7;
         public static int action0=0x7f060094;
         public static int actionBar=0x7f060088;
         public static int action_bar=0x7f06005a;
@@ -2361,7 +2367,6 @@ containing a value of this type.
         public static int clip_horizontal=0x7f060033;
         public static int clip_vertical=0x7f060034;
         public static int collapseActionView=0x7f06001e;
-        public static int columnsSpinner=0x7f0600a7;
         public static int contentPanel=0x7f06004a;
         public static int custom=0x7f060050;
         public static int customPanel=0x7f06004f;
@@ -2394,7 +2399,6 @@ containing a value of this type.
         public static int image=0x7f06003f;
         public static int info=0x7f06009f;
         public static int item_touch_helper_previous_elevation=0x7f060000;
-        public static int languageSpinner=0x7f0600a9;
         public static int layout=0x7f06008c;
         public static int left=0x7f06002f;
         public static int line1=0x7f060099;
@@ -2454,8 +2458,6 @@ containing a value of this type.
         public static int search_voice_btn=0x7f060067;
         public static int select_dialog_listview=0x7f060068;
         public static int settingsButton=0x7f060081;
-        public static int settingsPageColumnsTextView=0x7f0600a6;
-        public static int settingsPageLanguageTextView=0x7f0600a8;
         public static int settingsPageTitle=0x7f0600a5;
         public static int shortcut=0x7f060053;
         public static int showCustom=0x7f060011;
@@ -2465,7 +2467,7 @@ containing a value of this type.
         public static int snackbar_text=0x7f060074;
         public static int snap=0x7f060027;
         public static int spacer=0x7f060045;
-        public static int spinnerEntryText=0x7f0600aa;
+        public static int spinnerEntryText=0x7f0600a8;
         public static int split_action_bar=0x7f060008;
         public static int src_atop=0x7f060017;
         public static int src_in=0x7f060018;

@@ -14,9 +14,15 @@
     <string name="EmptyPasswordError">Empty password field</string>
     <string name="All">All</string>
     <string name="Settings">Settings</string>
-    <string name="ColumnsNumber">Columns number:</string>
-    <string name="Language">Language:</string>
+    <string name="ColumnsNumber">Columns number</string>
+    <string name="Language">Language</string>
+    <string name="Password">Password</string>
+    <string name="OldPasswordHint">Old password</string>
+    <string name="NewPasswordHint">New password</string>
+    <string name="RepeatPasswordHint">Repeat password</string>
+    <string name="Save">Save</string>
     <string name="nullStateHintTop">No notes\nare created</string>
     <string name="nullStateHintBottom">Click\nin order\nto create one</string>
+    
     <string name="Locale">EN</string>
 </resources>

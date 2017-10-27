@@ -27,31 +27,14 @@ namespace CryptoTouch.Activities
 
         private void InitializeUI()
         {
-            Spinner columnSpinner = FindViewById<Spinner>(Resource.Id.columnsSpinner);
-            columnSpinner.Adapter = new ArrayAdapter(this, Resource.Layout.SpinnerItem, new List<string>() { "1", "2" });
-            columnSpinner.SetSelection(Settings.ColumnsCount - 1);
-            columnSpinner.ItemSelected += (object sender, AdapterView.ItemSelectedEventArgs e)
-                                       => { Settings.ColumnsCount = Convert.ToInt32((e.View as TextView).Text); Settings.Save(); };
-
-            Spinner languageSpinner = FindViewById<Spinner>(Resource.Id.languageSpinner);
-            languageSpinner.Adapter = new ArrayAdapter(this, Resource.Layout.SpinnerItem, Settings.LanguageOptions);
-            languageSpinner.SetSelection(Settings.LanguageOptions.IndexOf(Settings.Language));
-            languageSpinner.ItemSelected += (object sender, AdapterView.ItemSelectedEventArgs e)
-                                       =>
-                                        {
-                                            Settings.Language = (e.View as TextView).Text;
-                                            Settings.Save();
-                                            this.Resources.Configuration.SetLocale(new Java.Util.Locale(Settings.Language));
-                                            this.Resources.UpdateConfiguration(this.Resources.Configuration, this.Resources.DisplayMetrics);
-                                            OnConfigurationChanged(Resources.Configuration);
-                                        };
+            
         }
 
         public override void OnConfigurationChanged(Configuration newConfig)
         {
             FindViewById<TextView>(Resource.Id.settingsPageTitle).Text = Resources.GetString(Resource.String.Settings);
-            FindViewById<TextView>(Resource.Id.settingsPageColumnsTextView).Text = Resources.GetString(Resource.String.ColumnsNumber);
-            FindViewById<TextView>(Resource.Id.settingsPageLanguageTextView).Text = Resources.GetString(Resource.String.Language);
+            //FindViewById<TextView>(Resource.Id.settingsPageColumnsTextView).Text = Resources.GetString(Resource.String.ColumnsNumber);
+            //FindViewById<TextView>(Resource.Id.settingsPageLanguageTextView).Text = Resources.GetString(Resource.String.Language);
             base.OnConfigurationChanged(newConfig);
         }
 

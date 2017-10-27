@@ -2310,19 +2310,27 @@ containing a value of this type.
         public static final int design_fab_background=0x7f02004a;
         public static final int design_snackbar_background=0x7f02004b;
         public static final int edittextbg=0x7f02004c;
-        public static final int fingerprint=0x7f02004d;
-        public static final int loginpagebg=0x7f02004e;
-        public static final int noteitembg=0x7f02004f;
-        public static final int notification_template_icon_bg=0x7f020053;
-        public static final int roundcornersbg=0x7f020050;
-        public static final int savenotebutton=0x7f020051;
-        public static final int settingsbutton=0x7f020052;
+        public static final int en=0x7f02004d;
+        public static final int fingerprint=0x7f02004e;
+        public static final int loginpagebg=0x7f02004f;
+        public static final int noteitembg=0x7f020050;
+        public static final int notification_template_icon_bg=0x7f020057;
+        public static final int onecolumnicon=0x7f020051;
+        public static final int roundcornersbg=0x7f020052;
+        public static final int ru=0x7f020053;
+        public static final int savenotebutton=0x7f020054;
+        public static final int settingsbutton=0x7f020055;
+        public static final int twocolumnsicon=0x7f020056;
     }
     public static final class id {
         public static final int AuthorizationPassword=0x7f06007e;
         public static final int ButtonSubmitAuthorization=0x7f06007f;
         public static final int ButtonSubmitPassword=0x7f0600a4;
+        public static final int LanguageEnButton=0x7f0600a9;
+        public static final int LanguageRuButton=0x7f0600a8;
+        public static final int OneColumnOptionButton=0x7f0600a6;
         public static final int RegisterPassword=0x7f0600a3;
+        public static final int TwoColumnsOptionButton=0x7f0600a7;
         public static final int action0=0x7f060094;
         public static final int actionBar=0x7f060088;
         public static final int action_bar=0x7f06005a;
@@ -2361,7 +2369,6 @@ containing a value of this type.
         public static final int clip_horizontal=0x7f060033;
         public static final int clip_vertical=0x7f060034;
         public static final int collapseActionView=0x7f06001e;
-        public static final int columnsSpinner=0x7f0600a7;
         public static final int contentPanel=0x7f06004a;
         public static final int custom=0x7f060050;
         public static final int customPanel=0x7f06004f;
@@ -2394,7 +2401,6 @@ containing a value of this type.
         public static final int image=0x7f06003f;
         public static final int info=0x7f06009f;
         public static final int item_touch_helper_previous_elevation=0x7f060000;
-        public static final int languageSpinner=0x7f0600a9;
         public static final int layout=0x7f06008c;
         public static final int left=0x7f06002f;
         public static final int line1=0x7f060099;
@@ -2454,8 +2460,6 @@ containing a value of this type.
         public static final int search_voice_btn=0x7f060067;
         public static final int select_dialog_listview=0x7f060068;
         public static final int settingsButton=0x7f060081;
-        public static final int settingsPageColumnsTextView=0x7f0600a6;
-        public static final int settingsPageLanguageTextView=0x7f0600a8;
         public static final int settingsPageTitle=0x7f0600a5;
         public static final int shortcut=0x7f060053;
         public static final int showCustom=0x7f060011;
@@ -2570,11 +2574,16 @@ containing a value of this type.
         public static final int FingerprintScanHint=0x7f090018;
         public static final int IncorrectPsswordError=0x7f09001d;
         public static final int Language=0x7f090025;
-        public static final int Locale=0x7f090028;
+        public static final int Locale=0x7f09002d;
         public static final int LoginButton=0x7f09001a;
         public static final int NewCategoryNameHint=0x7f09001f;
+        public static final int NewPasswordHint=0x7f090028;
         public static final int Notes=0x7f09001b;
+        public static final int OldPasswordHint=0x7f090027;
+        public static final int Password=0x7f090026;
         public static final int PasswordUsageHint=0x7f090019;
+        public static final int RepeatPasswordHint=0x7f090029;
+        public static final int Save=0x7f09002a;
         public static final int Settings=0x7f090023;
         public static final int SubmitButton=0x7f090017;
         public static final int WelcomePassword=0x7f090016;
@@ -2599,8 +2608,8 @@ containing a value of this type.
         public static final int abc_toolbar_collapse_description=0x7f090012;
         public static final int appbar_scrolling_view_behavior=0x7f090014;
         public static final int character_counter_pattern=0x7f090015;
-        public static final int nullStateHintBottom=0x7f090027;
-        public static final int nullStateHintTop=0x7f090026;
+        public static final int nullStateHintBottom=0x7f09002c;
+        public static final int nullStateHintTop=0x7f09002b;
         public static final int status_bar_notification_info_overflow=0x7f090013;
     }
     public static final class style {
