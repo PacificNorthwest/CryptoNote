@@ -1870,29 +1870,29 @@ namespace CryptoTouch
 			// aapt resource value: 0x7f06007f
 			public const int ButtonSubmitAuthorization = 2131099775;
 			
-			// aapt resource value: 0x7f0600a4
-			public const int ButtonSubmitPassword = 2131099812;
+			// aapt resource value: 0x7f0600a5
+			public const int ButtonSubmitPassword = 2131099813;
+			
+			// aapt resource value: 0x7f0600aa
+			public const int LanguageEnButton = 2131099818;
 			
 			// aapt resource value: 0x7f0600a9
-			public const int LanguageEnButton = 2131099817;
-			
-			// aapt resource value: 0x7f0600a8
-			public const int LanguageRuButton = 2131099816;
-			
-			// aapt resource value: 0x7f0600a6
-			public const int OneColumnOptionButton = 2131099814;
-			
-			// aapt resource value: 0x7f0600a3
-			public const int RegisterPassword = 2131099811;
+			public const int LanguageRuButton = 2131099817;
 			
 			// aapt resource value: 0x7f0600a7
-			public const int TwoColumnsOptionButton = 2131099815;
+			public const int OneColumnOptionButton = 2131099815;
 			
-			// aapt resource value: 0x7f060094
-			public const int action0 = 2131099796;
+			// aapt resource value: 0x7f0600a4
+			public const int RegisterPassword = 2131099812;
 			
-			// aapt resource value: 0x7f060088
-			public const int actionBar = 2131099784;
+			// aapt resource value: 0x7f0600a8
+			public const int TwoColumnsOptionButton = 2131099816;
+			
+			// aapt resource value: 0x7f060095
+			public const int action0 = 2131099797;
+			
+			// aapt resource value: 0x7f060089
+			public const int actionBar = 2131099785;
 			
 			// aapt resource value: 0x7f06005a
 			public const int action_bar = 2131099738;
@@ -1918,8 +1918,8 @@ namespace CryptoTouch
 			// aapt resource value: 0x7f06005b
 			public const int action_context_bar = 2131099739;
 			
-			// aapt resource value: 0x7f060098
-			public const int action_divider = 2131099800;
+			// aapt resource value: 0x7f060099
+			public const int action_divider = 2131099801;
 			
 			// aapt resource value: 0x7f060003
 			public const int action_menu_divider = 2131099651;
@@ -1957,8 +1957,8 @@ namespace CryptoTouch
 			// aapt resource value: 0x7f060044
 			public const int buttonPanel = 2131099716;
 			
-			// aapt resource value: 0x7f060095
-			public const int cancel_action = 2131099797;
+			// aapt resource value: 0x7f060096
+			public const int cancel_action = 2131099798;
 			
 			// aapt resource value: 0x7f060086
 			public const int cardNoteDate = 2131099782;
@@ -1975,8 +1975,8 @@ namespace CryptoTouch
 			// aapt resource value: 0x7f060069
 			public const int cathegoriesList = 2131099753;
 			
-			// aapt resource value: 0x7f060089
-			public const int cathegoriesSpinner = 2131099785;
+			// aapt resource value: 0x7f06008a
+			public const int cathegoriesSpinner = 2131099786;
 			
 			// aapt resource value: 0x7f06002b
 			public const int center = 2131099691;
@@ -1990,8 +1990,8 @@ namespace CryptoTouch
 			// aapt resource value: 0x7f060052
 			public const int checkbox = 2131099730;
 			
-			// aapt resource value: 0x7f06009b
-			public const int chronometer = 2131099803;
+			// aapt resource value: 0x7f06009c
+			public const int chronometer = 2131099804;
 			
 			// aapt resource value: 0x7f060033
 			public const int clip_horizontal = 2131099699;
@@ -2020,8 +2020,8 @@ namespace CryptoTouch
 			// aapt resource value: 0x7f06006a
 			public const int deleteCategoryButton = 2131099754;
 			
-			// aapt resource value: 0x7f060092
-			public const int deleteNoteButton = 2131099794;
+			// aapt resource value: 0x7f060093
+			public const int deleteNoteButton = 2131099795;
 			
 			// aapt resource value: 0x7f06007a
 			public const int design_menu_item_action_area = 2131099770;
@@ -2044,8 +2044,8 @@ namespace CryptoTouch
 			// aapt resource value: 0x7f06001b
 			public const int end = 2131099675;
 			
-			// aapt resource value: 0x7f0600a0
-			public const int end_padder = 2131099808;
+			// aapt resource value: 0x7f0600a1
+			public const int end_padder = 2131099809;
 			
 			// aapt resource value: 0x7f060023
 			public const int enterAlways = 2131099683;
@@ -2092,23 +2092,23 @@ namespace CryptoTouch
 			// aapt resource value: 0x7f06003f
 			public const int image = 2131099711;
 			
-			// aapt resource value: 0x7f06009f
-			public const int info = 2131099807;
+			// aapt resource value: 0x7f0600a0
+			public const int info = 2131099808;
 			
 			// aapt resource value: 0x7f060000
 			public const int item_touch_helper_previous_elevation = 2131099648;
 			
-			// aapt resource value: 0x7f06008c
-			public const int layout = 2131099788;
+			// aapt resource value: 0x7f06008d
+			public const int layout = 2131099789;
 			
 			// aapt resource value: 0x7f06002f
 			public const int left = 2131099695;
 			
-			// aapt resource value: 0x7f060099
-			public const int line1 = 2131099801;
+			// aapt resource value: 0x7f06009a
+			public const int line1 = 2131099802;
 			
-			// aapt resource value: 0x7f06009d
-			public const int line3 = 2131099805;
+			// aapt resource value: 0x7f06009e
+			public const int line3 = 2131099806;
 			
 			// aapt resource value: 0x7f06000b
 			public const int listMode = 2131099659;
@@ -2119,8 +2119,8 @@ namespace CryptoTouch
 			// aapt resource value: 0x7f06007b
 			public const int loginPageTitle = 2131099771;
 			
-			// aapt resource value: 0x7f060097
-			public const int media_actions = 2131099799;
+			// aapt resource value: 0x7f060098
+			public const int media_actions = 2131099800;
 			
 			// aapt resource value: 0x7f06001c
 			public const int middle = 2131099676;
@@ -2149,8 +2149,8 @@ namespace CryptoTouch
 			// aapt resource value: 0x7f06006e
 			public const int newCategoryName = 2131099758;
 			
-			// aapt resource value: 0x7f060093
-			public const int newNoteButton = 2131099795;
+			// aapt resource value: 0x7f060094
+			public const int newNoteButton = 2131099796;
 			
 			// aapt resource value: 0x7f060010
 			public const int none = 2131099664;
@@ -2158,29 +2158,29 @@ namespace CryptoTouch
 			// aapt resource value: 0x7f06000c
 			public const int normal = 2131099660;
 			
-			// aapt resource value: 0x7f060087
-			public const int noteActivityRoot = 2131099783;
+			// aapt resource value: 0x7f060088
+			public const int noteActivityRoot = 2131099784;
 			
 			// aapt resource value: 0x7f060084
 			public const int noteItem = 2131099780;
 			
-			// aapt resource value: 0x7f06008b
-			public const int noteText = 2131099787;
+			// aapt resource value: 0x7f06008c
+			public const int noteText = 2131099788;
 			
 			// aapt resource value: 0x7f060072
 			public const int notesCount = 2131099762;
 			
-			// aapt resource value: 0x7f060090
-			public const int nullStateCloud = 2131099792;
-			
 			// aapt resource value: 0x7f060091
-			public const int nullStateHintBottom = 2131099793;
+			public const int nullStateCloud = 2131099793;
+			
+			// aapt resource value: 0x7f060092
+			public const int nullStateHintBottom = 2131099794;
+			
+			// aapt resource value: 0x7f060090
+			public const int nullStateHintTop = 2131099792;
 			
 			// aapt resource value: 0x7f06008f
-			public const int nullStateHintTop = 2131099791;
-			
-			// aapt resource value: 0x7f06008e
-			public const int nullStateTile = 2131099790;
+			public const int nullStateTile = 2131099791;
 			
 			// aapt resource value: 0x7f060028
 			public const int parallax = 2131099688;
@@ -2188,11 +2188,11 @@ namespace CryptoTouch
 			// aapt resource value: 0x7f060046
 			public const int parentPanel = 2131099718;
 			
-			// aapt resource value: 0x7f0600a2
-			public const int passwordPageHintTextView = 2131099810;
+			// aapt resource value: 0x7f0600a3
+			public const int passwordPageHintTextView = 2131099811;
 			
-			// aapt resource value: 0x7f0600a1
-			public const int passwordPageTitle = 2131099809;
+			// aapt resource value: 0x7f0600a2
+			public const int passwordPageTitle = 2131099810;
 			
 			// aapt resource value: 0x7f06007d
 			public const int passwordUsageHint = 2131099773;
@@ -2212,14 +2212,14 @@ namespace CryptoTouch
 			// aapt resource value: 0x7f060054
 			public const int radio = 2131099732;
 			
-			// aapt resource value: 0x7f06008d
-			public const int recyclerView = 2131099789;
+			// aapt resource value: 0x7f06008e
+			public const int recyclerView = 2131099790;
 			
 			// aapt resource value: 0x7f060030
 			public const int right = 2131099696;
 			
-			// aapt resource value: 0x7f06008a
-			public const int saveNoteButton = 2131099786;
+			// aapt resource value: 0x7f06008b
+			public const int saveNoteButton = 2131099787;
 			
 			// aapt resource value: 0x7f060016
 			public const int screen = 2131099670;
@@ -2272,23 +2272,26 @@ namespace CryptoTouch
 			// aapt resource value: 0x7f060068
 			public const int select_dialog_listview = 2131099752;
 			
+			// aapt resource value: 0x7f060087
+			public const int selectionMask = 2131099783;
+			
 			// aapt resource value: 0x7f060081
 			public const int settingsButton = 2131099777;
 			
+			// aapt resource value: 0x7f0600ad
+			public const int settingsConfirmPasswordEditText = 2131099821;
+			
 			// aapt resource value: 0x7f0600ac
-			public const int settingsConfirmPasswordEditText = 2131099820;
+			public const int settingsNewPasswordEditText = 2131099820;
 			
 			// aapt resource value: 0x7f0600ab
-			public const int settingsNewPasswordEditText = 2131099819;
+			public const int settingsOldPasswordEditText = 2131099819;
 			
-			// aapt resource value: 0x7f0600aa
-			public const int settingsOldPasswordEditText = 2131099818;
+			// aapt resource value: 0x7f0600a6
+			public const int settingsPageTitle = 2131099814;
 			
-			// aapt resource value: 0x7f0600a5
-			public const int settingsPageTitle = 2131099813;
-			
-			// aapt resource value: 0x7f0600ad
-			public const int settingsSave = 2131099821;
+			// aapt resource value: 0x7f0600ae
+			public const int settingsSave = 2131099822;
 			
 			// aapt resource value: 0x7f060053
 			public const int shortcut = 2131099731;
@@ -2314,8 +2317,8 @@ namespace CryptoTouch
 			// aapt resource value: 0x7f060045
 			public const int spacer = 2131099717;
 			
-			// aapt resource value: 0x7f0600ae
-			public const int spinnerEntryText = 2131099822;
+			// aapt resource value: 0x7f0600af
+			public const int spinnerEntryText = 2131099823;
 			
 			// aapt resource value: 0x7f060008
 			public const int split_action_bar = 2131099656;
@@ -2332,8 +2335,8 @@ namespace CryptoTouch
 			// aapt resource value: 0x7f060031
 			public const int start = 2131099697;
 			
-			// aapt resource value: 0x7f060096
-			public const int status_bar_latest_event_content = 2131099798;
+			// aapt resource value: 0x7f060097
+			public const int status_bar_latest_event_content = 2131099799;
 			
 			// aapt resource value: 0x7f060065
 			public const int submit_area = 2131099749;
@@ -2344,17 +2347,17 @@ namespace CryptoTouch
 			// aapt resource value: 0x7f060082
 			public const int tabs = 2131099778;
 			
-			// aapt resource value: 0x7f06009e
-			public const int text = 2131099806;
+			// aapt resource value: 0x7f06009f
+			public const int text = 2131099807;
 			
-			// aapt resource value: 0x7f06009c
-			public const int text2 = 2131099804;
+			// aapt resource value: 0x7f06009d
+			public const int text2 = 2131099805;
 			
 			// aapt resource value: 0x7f06004d
 			public const int textSpacerNoButtons = 2131099725;
 			
-			// aapt resource value: 0x7f06009a
-			public const int time = 2131099802;
+			// aapt resource value: 0x7f06009b
+			public const int time = 2131099803;
 			
 			// aapt resource value: 0x7f060043
 			public const int title = 2131099715;

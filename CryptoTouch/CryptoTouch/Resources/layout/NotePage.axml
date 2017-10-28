@@ -21,15 +21,17 @@
             android:layout_centerHorizontal="true"
             android:spinnerMode="dialog"
             android:id="@+id/cathegoriesSpinner" />
-        <Button
+        <ImageButton
             android:id="@+id/saveNoteButton"
-            android:background="@drawable/SaveNoteButton"
+            android:src="@drawable/SaveNoteButton"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
             android:layout_alignParentRight="true"
-            android:layout_marginTop="8dp"
-            android:layout_marginRight="18dp"
+            android:paddingTop="8dp"
+            android:paddingRight="18dp"
             android:layout_centerHorizontal="true"
-            android:layout_width="30dp"
-            android:layout_height="30dp" />
+            android:layout_width="48dp"
+            android:layout_height="38dp" />
     </RelativeLayout>
     <EditText
         android:inputType="textCapSentences|textMultiLine"

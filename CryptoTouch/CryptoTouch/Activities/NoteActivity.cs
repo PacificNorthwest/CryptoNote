@@ -19,7 +19,7 @@ namespace CryptoTouch.Activities
     public class NoteActivity : AppCompatActivity
     {
         private EditText _noteText;
-        private Button _saveButton;
+        private ImageButton _saveButton;
         private Spinner _categoriesSpinner;
         private Note _originalNote;
 
@@ -43,7 +43,7 @@ namespace CryptoTouch.Activities
         private void InitializeUI()
         {
             _noteText = FindViewById<EditText>(Resource.Id.noteText);
-            _saveButton = FindViewById<Button>(Resource.Id.saveNoteButton);
+            _saveButton = FindViewById<ImageButton>(Resource.Id.saveNoteButton);
             _saveButton.Click += (object sender, EventArgs e) => UpdateNotes();
             
             if (_originalNote != null)

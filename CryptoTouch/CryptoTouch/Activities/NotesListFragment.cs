@@ -23,16 +23,16 @@ namespace CryptoTouch.Activities
 {
     public class NotesListFragment : Android.Support.V4.App.Fragment
     {
+        public List<View> SelectedItems { get; set; } = new List<View>();
         private static Activity _rootActivity;
         private static RecyclerView _notesGrid;
         private static RelativeLayout _nullStateTile;
         private static Android.Support.V4.App.Fragment _instance;
-        private List<View> _selectedItems = new List<View>();
         private Button _newNoteButton;
         private Button _deleteNoteButton;
         private RelativeLayout _sceneRoot;
 
-        public bool ContainsSelectedItems => (_selectedItems.Count != 0) ? true : false;
+        public bool ContainsSelectedItems => (SelectedItems.Count != 0) ? true : false;
 
         public NotesListFragment(Activity activity) { _rootActivity = activity; _instance = this; }
 
@@ -70,6 +70,7 @@ namespace CryptoTouch.Activities
             _notesGrid.HasFixedSize = true;
             _notesGrid.SetLayoutManager(new StaggeredGridLayoutManager(Settings.ColumnsCount, StaggeredGridLayoutManager.Vertical));
             _notesGrid.SetAdapter(new NotesListAdapter(_rootActivity, this, NoteStorage.Notes));
+            _notesGrid.GetRecycledViewPool().SetMaxRecycledViews(0, 0);
             if (NoteStorage.Notes.Count == 0)
                 _nullStateTile.Visibility = ViewStates.Visible;
             else
@@ -88,18 +89,20 @@ namespace CryptoTouch.Activities
 
         public void SelectItem(View view)
         {
-            if (!_selectedItems.Contains(view))
+            if (!SelectedItems.Contains(view))
             {
-                _selectedItems.Add(view);
-                view.SetBackgroundResource(Resource.Drawable.CardSelectionBG);
-                if (_selectedItems.Count == 1)
+                SelectedItems.Add(view);
+                (view.FindViewById<FrameLayout>(Resource.Id.selectionMask).LayoutParameters as RelativeLayout.LayoutParams).Height =
+                                                                    view.FindViewById<LinearLayout>(Resource.Id.noteItem).MeasuredHeight;
+                view.FindViewById<FrameLayout>(Resource.Id.selectionMask).SetBackgroundResource(Resource.Drawable.CardSelectionBG);
+                if (SelectedItems.Count == 1)
                     ShowDeleteButton();
             }
             else
             {
-                _selectedItems.Remove(view);
-                view.SetBackgroundResource(Resource.Drawable.NoteItemBG);
-                if (_selectedItems.Count == 0)
+                SelectedItems.Remove(view);
+                view.FindViewById<FrameLayout>(Resource.Id.selectionMask).SetBackgroundColor(Color.Transparent);
+                if (SelectedItems.Count == 0)
                     HideDeleteButton();
             }
         }
@@ -120,22 +123,23 @@ namespace CryptoTouch.Activities
 
         private void DeleteNotes()
         {
-            foreach (View view in _selectedItems)
+            foreach (View view in SelectedItems)
                 NoteStorage.Notes.Remove(NoteStorage.Notes.Find(note => note.GetHashCode() == (int)view.Tag));
-            _selectedItems.Clear();
+            int initialCount = SelectedItems.Count;
+            for (int i = 0; i < initialCount; i++)
+                SelectItem(SelectedItems[0]);
             SecurityProvider.SaveNotesAsync();
-            HideDeleteButton();
-            ChangeDataSet(NoteStorage.Notes);
+            PopulateGrid();
             (MainPageActivity.Navigation.Adapter as ViewPagerAdapter).UpdateCategoriesFragment();
         }
 
         public void HandleOnBackPressed(Action baseHandler)
         {
-            if (_selectedItems.Count != 0)
+            if (SelectedItems.Count != 0)
             {
-                int initialCount = _selectedItems.Count;
+                int initialCount = SelectedItems.Count;
                 for (int i = 0; i < initialCount; i++)
-                    SelectItem(_selectedItems[0]);
+                    SelectItem(SelectedItems[0]);
             }
             else
                 baseHandler.Invoke();

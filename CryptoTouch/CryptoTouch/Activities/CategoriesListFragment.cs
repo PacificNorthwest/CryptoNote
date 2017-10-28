@@ -147,9 +147,6 @@ namespace CryptoTouch.Activities
             {
                 _selectedEntrys.Add(entry);
                 entry.FindViewById<RelativeLayout>(Resource.Id.categoriesListItem).SetBackgroundColor(Android.Graphics.Color.Argb(100, 163, 163, 163));
-                //entry.FindViewById<View>(Resource.Id.underline).SetBackgroundColor(Android.Graphics.Color.Red);
-                //entry.FindViewById<TextView>(Resource.Id.categoryName).SetTextColor(Android.Graphics.Color.Red);
-                //entry.FindViewById<TextView>(Resource.Id.notesCount).SetTextColor(Android.Graphics.Color.Red);
                 if (_selectedEntrys.Count == 1)
                     ShowDeleteButton();
             }
@@ -157,11 +154,6 @@ namespace CryptoTouch.Activities
             {
                 _selectedEntrys.Remove(entry);
                 entry.FindViewById<RelativeLayout>(Resource.Id.categoriesListItem).SetBackgroundColor(Android.Graphics.Color.Transparent);
-                //entry.FindViewById<View>(Resource.Id.underline).SetBackgroundColor(new Android.Graphics.Color(
-                //                                                ContextCompat.GetColor(_rootActivity, Resource.Color.MainAppColor)));
-                //entry.FindViewById<TextView>(Resource.Id.categoryName).SetTextColor(
-                //                                                        BuildColor(entry.FindViewById<TextView>(Resource.Id.categoryName).Text));
-                //entry.FindViewById<TextView>(Resource.Id.notesCount).SetTextColor(Android.Graphics.Color.Argb(255, 128, 128, 128));
                 if (_selectedEntrys.Count == 0)
                     HideDeleteButton();
             }

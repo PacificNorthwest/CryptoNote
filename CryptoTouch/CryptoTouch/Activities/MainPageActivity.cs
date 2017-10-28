@@ -30,7 +30,7 @@ namespace CryptoTouch.Activities
             Navigation = FindViewById<ViewPager>(Resource.Id.viewpager);
             Navigation.Adapter = new ViewPagerAdapter(this.SupportFragmentManager, this);
             FindViewById<Android.Support.Design.Widget.TabLayout>(Resource.Id.tabs).SetupWithViewPager(Navigation);
-            FindViewById<Button>(Resource.Id.settingsButton).Click += (object sender, EventArgs e) 
+            FindViewById<ImageButton>(Resource.Id.settingsButton).Click += (object sender, EventArgs e) 
                                                                    => StartActivity(new Intent(this, typeof(SettingsActivity)));
         }
 

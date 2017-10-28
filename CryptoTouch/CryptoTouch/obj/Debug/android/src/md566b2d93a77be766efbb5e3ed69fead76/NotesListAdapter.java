@@ -11,6 +11,7 @@ public class NotesListAdapter
 	static {
 		__md_methods = 
 			"n_getItemCount:()I:GetGetItemCountHandler\n" +
+			"n_getItemViewType:(I)I:GetGetItemViewType_IHandler\n" +
 			"n_onCreateViewHolder:(Landroid/view/ViewGroup;I)Landroid/support/v7/widget/RecyclerView$ViewHolder;:GetOnCreateViewHolder_Landroid_view_ViewGroup_IHandler\n" +
 			"n_onBindViewHolder:(Landroid/support/v7/widget/RecyclerView$ViewHolder;I)V:GetOnBindViewHolder_Landroid_support_v7_widget_RecyclerView_ViewHolder_IHandler\n" +
 			"";
@@ -32,6 +33,14 @@ public class NotesListAdapter
 	}
 
 	private native int n_getItemCount ();
+
+
+	public int getItemViewType (int p0)
+	{
+		return n_getItemViewType (p0);
+	}
+
+	private native int n_getItemViewType (int p0);
 
 
 	public android.support.v7.widget.RecyclerView.ViewHolder onCreateViewHolder (android.view.ViewGroup p0, int p1)
