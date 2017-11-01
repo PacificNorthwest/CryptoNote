@@ -4,12 +4,20 @@ using Android.Support.V4.App;
 
 namespace CryptoNote.Adapters
 {
+    /// <summary>
+    /// ViewPager adapter
+    /// </summary>
     class ViewPagerAdapter : FragmentPagerAdapter
     {
         private Activity _rootActivity;
         private Activities.NotesListFragment _notesFragment;
         private Activities.CategoriesListFragment _categoriesFragment;
         
+        /// <summary>
+        /// ViewPager constructor
+        /// </summary>
+        /// <param name="fm"></param>
+        /// <param name="activity"></param>
         public ViewPagerAdapter(Android.Support.V4.App.FragmentManager fm, Activity activity) : base(fm)
         {
             _rootActivity = activity;
@@ -17,8 +25,16 @@ namespace CryptoNote.Adapters
             _categoriesFragment = new Activities.CategoriesListFragment(_rootActivity);
         }
 
+        /// <summary>
+        /// Pages amount
+        /// </summary>
         public override int Count => 2;
 
+        /// <summary>
+        /// Acquiring precreated page
+        /// </summary>
+        /// <param name="position"></param>
+        /// <returns></returns>
         public override Android.Support.V4.App.Fragment GetItem(int position)
         {
             switch (position)
@@ -30,6 +46,11 @@ namespace CryptoNote.Adapters
             return null;
         }
 
+        /// <summary>
+        /// Acquiring page name
+        /// </summary>
+        /// <param name="position"></param>
+        /// <returns></returns>
         public override Java.Lang.ICharSequence GetPageTitleFormatted(int position)
         {
             switch (position)
@@ -41,6 +62,10 @@ namespace CryptoNote.Adapters
             return null;
         }
 
+        /// <summary>
+        /// Back button handler
+        /// </summary>
+        /// <param name="baseHandler">Base back button handler</param>
         public void HandleOnBackPressed(Action baseHandler)
         {
             if (Activities.MainPageActivity.Navigation.CurrentItem == 1)
@@ -51,6 +76,9 @@ namespace CryptoNote.Adapters
                 baseHandler.Invoke();
         }
 
+        /// <summary>
+        /// Updating categories page in case something changed
+        /// </summary>
         public void UpdateCategoriesFragment()
         {
             _categoriesFragment.Update();

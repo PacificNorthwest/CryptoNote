@@ -13,6 +13,9 @@ using CryptoNote.Security;
 
 namespace CryptoNote.Activities
 {
+    /// <summary>
+    /// Note editor page activity
+    /// </summary>
     [Activity(Label = "NoteActivity", Theme = "@style/AppTheme", WindowSoftInputMode = SoftInput.StateVisible|SoftInput.AdjustResize)]
     public class NoteActivity : AppCompatActivity
     {
@@ -21,6 +24,10 @@ namespace CryptoNote.Activities
         private Spinner _categoriesSpinner;
         private Note _originalNote;
 
+        /// <summary>
+        /// Activity creation handler. 
+        /// </summary>
+        /// <param name="savedInstanceState"></param>
         protected override void OnCreate(Bundle savedInstanceState)
         {
             Window.RequestFeature(WindowFeatures.ActivityTransitions);
@@ -30,6 +37,9 @@ namespace CryptoNote.Activities
             SetContentView(Resource.Layout.NotePage);
         }
 
+        /// <summary>
+        /// Activity start handler
+        /// </summary>
         protected override void OnStart()
         {
             base.OnStart();
@@ -38,6 +48,9 @@ namespace CryptoNote.Activities
             InitializeUI();
         }
 
+        /// <summary>
+        /// UI views acquisition and initialization
+        /// </summary>
         private void InitializeUI()
         {
             _noteText = FindViewById<EditText>(Resource.Id.noteText);
@@ -51,6 +64,9 @@ namespace CryptoNote.Activities
             }
         }
 
+        /// <summary>
+        /// Note creation or update
+        /// </summary>
         private void UpdateNotes()
         {
             if (_originalNote == null)

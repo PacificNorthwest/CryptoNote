@@ -2,6 +2,9 @@
 
 namespace CryptoNote.Model
 {
+    /// <summary>
+    /// Note data model
+    /// </summary>
     [Serializable]
     public class Note
     {

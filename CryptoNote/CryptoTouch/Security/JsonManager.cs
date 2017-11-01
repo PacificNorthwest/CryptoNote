@@ -6,8 +6,8 @@ namespace CryptoNote.Security
 {
     class JsonManager
     {
-        private static string path_categories = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "categories");
-        private static string path_settings = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "settings");
+        private static readonly string path_categories = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "categories");
+        private static readonly string path_settings = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "settings");
 
         public static bool SettingsFileExists() => File.Exists(path_settings);
 

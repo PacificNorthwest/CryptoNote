@@ -13,6 +13,9 @@ using CryptoNote.Model;
 
 namespace CryptoNote.Adapters
 {
+    /// <summary>
+    /// RecyclerView adapter
+    /// </summary>
     class NotesListAdapter : RecyclerView.Adapter
     {
         private List<Note> _items;
@@ -20,6 +23,12 @@ namespace CryptoNote.Adapters
         private Android.Support.V4.App.Fragment _fragment;
         private Activity _activity;
 
+        /// <summary>
+        /// Class constructor
+        /// </summary>
+        /// <param name="activity">Root activity</param>
+        /// <param name="context">NotesList fragment</param>
+        /// <param name="items">Notes list</param>
         public NotesListAdapter(Activity activity, Android.Support.V4.App.Fragment context, List<Note> items)
         {
             _items = items;
@@ -28,6 +37,10 @@ namespace CryptoNote.Adapters
             UpdateDataSet(items);
         }
 
+        /// <summary>
+        /// Precreating viewholders pull for later usage
+        /// </summary>
+        /// <param name="items"></param>
         public void UpdateDataSet(List<Note> items)
         {
             _holdersPull.Clear();
@@ -42,6 +55,9 @@ namespace CryptoNote.Adapters
             }
         }
 
+        /// <summary>
+        /// ViewHolder nested class
+        /// </summary>
         public class ViewHolder : RecyclerView.ViewHolder
         {
             private Android.Support.V4.App.Fragment _fragment;
@@ -50,6 +66,12 @@ namespace CryptoNote.Adapters
             public TextView NoteText { get; set; }
             public TextView Date { get; set; }
 
+            /// <summary>
+            /// Creating a viewholder and initializing it with basic references and handlers
+            /// </summary>
+            /// <param name="fragment">NotesList fragment</param>
+            /// <param name="activity">Root activity</param>
+            /// <param name="itemView">Actual view</param>
             public ViewHolder(Android.Support.V4.App.Fragment fragment, Activity activity, View itemView) : base(itemView)
             {
                 _fragment = fragment;
@@ -76,17 +98,31 @@ namespace CryptoNote.Adapters
             }
         }
 
+        /// <summary>
+        /// Getting items count
+        /// </summary>
         public override int ItemCount => _items.Count;
-        public override int GetItemViewType(int position) => position;
-        public override RecyclerView.ViewHolder OnCreateViewHolder(ViewGroup parent, int position) => _holdersPull[position];
-        public override void OnBindViewHolder(RecyclerView.ViewHolder holder, int position) { SetAnimation(holder.ItemView); }
 
-        private void SetAnimation(View view)
-        {
-            //AlphaAnimation fade = new AlphaAnimation(0.0f, 1.0f) { Duration = 300 };
-            //ScaleAnimation scale = new ScaleAnimation(0.0f, 1.0f, 0.0f, 1.0f, Dimension.RelativeToSelf, 0.5f, Dimension.RelativeToSelf, 0.5f) { Duration = 150 };
-            //view.StartAnimation(fade);
-            //view.StartAnimation(scale);
-        }
+        /// <summary>
+        /// Returning actual viewholder position in precreated pull instead of a view id
+        /// </summary>
+        /// <param name="position">ViewHolder position</param>
+        /// <returns>ViewHolder position</returns>
+        public override int GetItemViewType(int position) => position;
+
+        /// <summary>
+        /// Acquiring ViewHolder instance from precreated pull instead of creating a new one
+        /// </summary>
+        /// <param name="parent">Parent ViewGroup</param>
+        /// <param name="position">Position in pull</param>
+        /// <returns>Precreated ViewHolder</returns>
+        public override RecyclerView.ViewHolder OnCreateViewHolder(ViewGroup parent, int position) => _holdersPull[position];
+
+        /// <summary>
+        /// Blank method in order to block ViewHolder binding
+        /// </summary>
+        /// <param name="holder">ViewHolder</param>
+        /// <param name="position">Item position in notes list</param>
+        public override void OnBindViewHolder(RecyclerView.ViewHolder holder, int position) { }
     }
 }

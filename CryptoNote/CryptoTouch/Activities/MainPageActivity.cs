@@ -11,11 +11,18 @@ using CryptoNote.Adapters;
 
 namespace CryptoNote.Activities
 {
+    /// <summary>
+    /// Main page activity, contains ViewPager for navigating between pages.
+    /// </summary>
     [Activity(Label = "MainPageActivity", Theme = "@style/AppTheme", ScreenOrientation = Android.Content.PM.ScreenOrientation.Portrait)]
     public class MainPageActivity : AppCompatActivity
     {
         public static ViewPager Navigation { get; set; }
 
+        /// <summary>
+        /// Activity creation event
+        /// </summary>
+        /// <param name="savedInstanceState"></param>
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -27,6 +34,9 @@ namespace CryptoNote.Activities
                                                                    => StartActivity(new Intent(this, typeof(SettingsActivity)));
         }
 
+        /// <summary>
+        /// Back button handler
+        /// </summary>
         public override void OnBackPressed()
         {
             (Navigation.Adapter as ViewPagerAdapter).HandleOnBackPressed(base.OnBackPressed);

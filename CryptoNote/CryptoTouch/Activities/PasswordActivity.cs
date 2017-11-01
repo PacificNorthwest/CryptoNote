@@ -12,6 +12,9 @@ using CryptoNote.Model;
 
 namespace CryptoNote.Activities
 {
+    /// <summary>
+    /// Startup activity
+    /// </summary>
     [Activity(Label = "CryptoNote", MainLauncher = true, 
               Icon = "@drawable/fingerprint",
               Theme = "@style/AppTheme",
@@ -22,6 +25,10 @@ namespace CryptoNote.Activities
         private EditText _passwordEditText;
         private EditText _passwordConfirmEditText;
 
+        /// <summary>
+        /// Activity creation event that transfers you to a next screen if it's not a first application start
+        /// </summary>
+        /// <param name="savedInstanceState"></param>
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -36,6 +43,9 @@ namespace CryptoNote.Activities
             InitializeViews();
         }
 
+        /// <summary>
+        /// Activity start event
+        /// </summary>
         protected override void OnStart()
         {
             base.OnStart();
@@ -43,6 +53,9 @@ namespace CryptoNote.Activities
             _submitButton.Text = Resources.GetString(Resource.String.SubmitButton);
         }
 
+        /// <summary>
+        /// Acquiring all views and initializing them
+        /// </summary>
         private void InitializeViews()
         {
             _submitButton = FindViewById<Button>(Resource.Id.ButtonSubmitPassword);
@@ -55,6 +68,9 @@ namespace CryptoNote.Activities
             FindViewById<TextView>(Resource.Id.passwordPageTitle).Typeface = font;
         }
 
+        /// <summary>
+        /// Submit button click event handler
+        /// </summary>
         private void SubmitPassword()
         {
             if (_passwordEditText.Text != string.Empty)
@@ -62,14 +78,16 @@ namespace CryptoNote.Activities
                 if (_passwordEditText.Text == _passwordConfirmEditText.Text)
                 {
                     SecurityProvider.InitializeUser(_passwordEditText.Text, this);
-                    Intent intent = new Intent(this, typeof(MainPageActivity));
-                    StartActivity(intent);
+                    StartActivity(new Intent(this, typeof(MainPageActivity)));
                 }
                 else Toast.MakeText(this, this.Resources.GetString(Resource.String.PasswordMissmatchError), ToastLength.Long).Show();
             }
             else Toast.MakeText(this, this.Resources.GetString(Resource.String.EmptyPasswordError), ToastLength.Long).Show();
         }
 
+        /// <summary>
+        /// Navigation to a login page
+        /// </summary>
         private void OpenAuthorizationPage()
         {
             Intent intent = new Intent(this, typeof(LoginActivity));

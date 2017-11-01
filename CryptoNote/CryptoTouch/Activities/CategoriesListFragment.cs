@@ -17,6 +17,9 @@ using CryptoNote.Security;
 
 namespace CryptoNote.Activities
 {
+    /// <summary>
+    /// ViewPager fragment that manages categories list. Yep, the name is pretty self-explanatory.
+    /// </summary>
     class CategoriesListFragment : Android.Support.V4.App.Fragment
     {
         private Activity _rootActivity;
@@ -29,8 +32,19 @@ namespace CryptoNote.Activities
         private List<View> _selectedEntrys = new List<View>();
         private string _selectedCategory;
 
+        /// <summary>
+        /// Class constructor
+        /// </summary>
+        /// <param name="activity">Root activity this fragment works with</param>
         public CategoriesListFragment(Activity activity) { _rootActivity = activity; _selectedCategory = _rootActivity.Resources.GetString(Resource.String.All); }
 
+        /// <summary>
+        /// Fragment creation event
+        /// </summary>
+        /// <param name="inflater">Layout inflater</param>
+        /// <param name="container">Fragment container</param>
+        /// <param name="savedInstanceState"></param>
+        /// <returns>Categories list fragment</returns>
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
             _instance = inflater.Inflate(Resource.Layout.CategoriesList, container, false);
@@ -39,11 +53,18 @@ namespace CryptoNote.Activities
             return _instance;
         }
 
+        /// <summary>
+        /// Public method for list updating
+        /// </summary>
         public void Update()
         {
             PopulateList(_list);
         }
 
+        /// <summary>
+        /// Acquiring all views and initializing them with event-handlers
+        /// </summary>
+        /// <param name="root">Root layout</param>
         private void InitializeUI(View root)
         {
             _frame = root.FindViewById<RelativeLayout>(Resource.Id.newCategoryFrame);
@@ -51,6 +72,7 @@ namespace CryptoNote.Activities
             dialog.Click += (object sender, EventArgs e) => { };
             _title = root.FindViewById<EditText>(Resource.Id.newCategoryName);
             _frame.Click += (object sender, EventArgs e) => HideDialog();
+            //Creating new category
             root.FindViewById<Button>(Resource.Id.buttonAddCategory).Click += (object sender, EventArgs e)
                                                                            => {
                                                                                 if (_title.Text != string.Empty)
@@ -70,12 +92,19 @@ namespace CryptoNote.Activities
             _deleteCategoriesButton.Click += (object sender, EventArgs e) => RemoveCategories();
         }
 
+        /// <summary>
+        /// Add new category
+        /// </summary>
+        /// <param name="category">Category name</param>
         private void AddCategory(string category)
         {
             NoteStorage.AddCategory(category);
             PopulateList(_list);
         }
 
+        /// <summary>
+        /// Remove selected categories
+        /// </summary>
         private void RemoveCategories()
         {
             foreach (string category in _selectedEntrys
@@ -91,6 +120,10 @@ namespace CryptoNote.Activities
             PopulateList(_list);
         }
 
+        /// <summary>
+        /// Populate list with categories
+        /// </summary>
+        /// <param name="layout">List layout</param>
         private void PopulateList(LinearLayout layout)
         {
             layout.RemoveAllViews();
@@ -140,6 +173,10 @@ namespace CryptoNote.Activities
             }
         }
         
+        /// <summary>
+        /// Handling entry selection
+        /// </summary>
+        /// <param name="entry">Entry we are selecting/unselecting</param>
         private void LongClickSelectEntry(View entry)
         {
             if (!_selectedEntrys.Contains(entry))
@@ -158,6 +195,9 @@ namespace CryptoNote.Activities
             }
         }
 
+        /// <summary>
+        /// Delete button revelation animation
+        /// </summary>
         private void ShowDeleteButton()
         {
             Animation animNewNoteButton = new RotateAnimation(0, 45, Dimension.RelativeToSelf, .5f, Dimension.RelativeToSelf, .5f) { Duration = 500 };
@@ -165,6 +205,9 @@ namespace CryptoNote.Activities
             _revealDialogButton.StartAnimation(animNewNoteButton);
         }
 
+        /// <summary>
+        /// Delete button hiding animation
+        /// </summary>
         private void HideDeleteButton()
         {
             Animation animDeleteNoteButton = new RotateAnimation(0, -45, Dimension.RelativeToSelf, .5F, Dimension.RelativeToSelf, .5F) { Duration = 500 };
@@ -172,6 +215,10 @@ namespace CryptoNote.Activities
             _deleteCategoriesButton.StartAnimation(animDeleteNoteButton);
         }
 
+        /// <summary>
+        /// Refreshing list method
+        /// </summary>
+        /// <param name="layout">List layout</param>
         private void Refresh(LinearLayout layout)
         {
             layout.GetChildAt(0).FindViewById<TextView>(Resource.Id.categoryName).SetTextColor(BuildColor(_rootActivity.GetString(Resource.String.All)));
@@ -179,10 +226,18 @@ namespace CryptoNote.Activities
                 layout.GetChildAt(i).FindViewById<TextView>(Resource.Id.categoryName).SetTextColor(BuildColor(NoteStorage.GetCurrentCategories(_rootActivity)[i-1]));
         }
 
+        /// <summary>
+        /// Selecting color for each entry depending on selected category
+        /// </summary>
+        /// <param name="category">Category name</param>
+        /// <returns>Category text color</returns>
         private Android.Graphics.Color BuildColor(string category)
             => (_selectedCategory == category) ? new Android.Graphics.Color(ContextCompat.GetColor(_rootActivity, Resource.Color.MainAppColor)) 
                                                    : Android.Graphics.Color.Black;
 
+        /// <summary>
+        /// Category creation dialog revelation animation
+        /// </summary>
         private void RevealDialog()
         {
             if (_frame.Visibility == ViewStates.Invisible)
@@ -198,6 +253,9 @@ namespace CryptoNote.Activities
             }
         }
 
+        /// <summary>
+        /// Category creation dialog hiding animation
+        /// </summary>
         private void HideDialog()
         {
             if (_frame.Visibility == ViewStates.Visible)
@@ -212,6 +270,9 @@ namespace CryptoNote.Activities
             }
         }
 
+        /// <summary>
+        /// Back button handling depending on various conditions
+        /// </summary>
         public void HandleOnBackPressed()
         { 
             if (_frame.Visibility == ViewStates.Visible)

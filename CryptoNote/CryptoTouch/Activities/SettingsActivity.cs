@@ -11,6 +11,9 @@ using CryptoNote.Model;
 
 namespace CryptoNote.Activities
 {
+    /// <summary>
+    /// Settings page activity
+    /// </summary>
     [Activity(Label = "SettingsActivity", Theme = "@style/AppTheme", ScreenOrientation = Android.Content.PM.ScreenOrientation.Portrait)]
     public class SettingsActivity : AppCompatActivity
     {
@@ -25,6 +28,10 @@ namespace CryptoNote.Activities
         private Button _langEnButton;
         private Button _langRuButton;
 
+        /// <summary>
+        /// Activity creation handler
+        /// </summary>
+        /// <param name="savedInstanceState"></param>
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -32,6 +39,9 @@ namespace CryptoNote.Activities
             InitializeUI();
         }
 
+        /// <summary>
+        /// UI views acquisition and initialization
+        /// </summary>
         private void InitializeUI()
         {
             _twoColumnsOptionButton = FindViewById<Button>(Resource.Id.TwoColumnsOptionButton);
@@ -76,6 +86,9 @@ namespace CryptoNote.Activities
             }
         }
 
+        /// <summary>
+        /// Settings saving
+        /// </summary>
         private void SaveSettings()
         {
             Settings.ColumnsCount = _selectedColumnsCount;
@@ -97,11 +110,17 @@ namespace CryptoNote.Activities
             }
         }
 
+        /// <summary>
+        /// Back button handler
+        /// </summary>
         public override void OnBackPressed()
         {
             Return();
         }
 
+        /// <summary>
+        /// Returning to a main activity
+        /// </summary>
         private void Return()
         {
             StartActivity(new Intent(this, typeof(MainPageActivity)));

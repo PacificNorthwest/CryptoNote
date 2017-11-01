@@ -8,16 +8,16 @@ namespace CryptoNote.Security
 {
     class CryptoObjectFactory
     {
-        static readonly string KEY_NAME = "com.xamarin.android.cryptotouch.fingerprint_authentication_key";
-        static readonly string KEYSTORE_NAME = "AndroidKeyStore";
+        private static readonly string KEY_NAME = "com.xamarin.android.cryptonote.fingerprint_authentication_key";
+        private static readonly string KEYSTORE_NAME = "AndroidKeyStore";
 
-        static readonly string KEY_ALGORITHM = KeyProperties.KeyAlgorithmAes;
-        static readonly string BLOCK_MODE = KeyProperties.BlockModeCbc;
-        static readonly string ENCRYPTION_PADDING = KeyProperties.EncryptionPaddingPkcs7;
-        static readonly string TRANSFORMATION = KEY_ALGORITHM + "/" +
+        private static readonly string KEY_ALGORITHM = KeyProperties.KeyAlgorithmAes;
+        private static readonly string BLOCK_MODE = KeyProperties.BlockModeCbc;
+        private static readonly string ENCRYPTION_PADDING = KeyProperties.EncryptionPaddingPkcs7;
+        private static readonly string TRANSFORMATION = KEY_ALGORITHM + "/" +
                                                 BLOCK_MODE + "/" +
                                                 ENCRYPTION_PADDING;
-        readonly KeyStore _keystore;
+        private readonly KeyStore _keystore;
 
         public CryptoObjectFactory()
         {
@@ -69,7 +69,7 @@ namespace CryptoNote.Security
 
         private void CreateKey()
         {
-            KeyGenerator keyGen = KeyGenerator.GetInstance(KeyProperties.KeyAlgorithmAes, KEYSTORE_NAME);
+            KeyGenerator keyGen = KeyGenerator.GetInstance(KEY_ALGORITHM, KEYSTORE_NAME);
             KeyGenParameterSpec keyGenSpec =
                 new KeyGenParameterSpec.Builder(KEY_NAME, KeyStorePurpose.Encrypt | KeyStorePurpose.Decrypt)
                     .SetBlockModes(BLOCK_MODE)

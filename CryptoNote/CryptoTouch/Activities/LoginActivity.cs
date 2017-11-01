@@ -15,10 +15,19 @@ using CryptoNote.Model;
 
 namespace CryptoNote.Activities
 {
+
+    /// <summary>
+    /// Login page activity
+    /// </summary>
     [Activity(Label = "CryptoNote", Theme ="@style/AppTheme", ScreenOrientation = Android.Content.PM.ScreenOrientation.Portrait)]
     public class LoginActivity : AppCompatActivity
     {
         private View _progressBar;
+
+        /// <summary>
+        /// Activity creation event
+        /// </summary>
+        /// <param name="bundle"></param>
         protected override void OnCreate(Bundle bundle)
         {
             Window.RequestFeature(Android.Views.WindowFeatures.ActivityTransitions);
@@ -33,6 +42,9 @@ namespace CryptoNote.Activities
             SecurityProvider.FingerprintAuthenticate(this);
         }
 
+        /// <summary>
+        /// Updating textviews and reinitializing authentication mechanism
+        /// </summary>
         protected override void OnStart()
         {
             base.OnStart();
@@ -42,6 +54,9 @@ namespace CryptoNote.Activities
             FindViewById<Button>(Resource.Id.ButtonSubmitAuthorization).Text = Resources.GetString(Resource.String.LoginButton);
         }
 
+        /// <summary>
+        /// Authorization with password
+        /// </summary>
         private async void PasswordAuthorization()
         {
             if (SecurityProvider.PasswordAuthenticate(FindViewById<EditText>(Resource.Id.AuthorizationPassword).Text))
@@ -60,6 +75,9 @@ namespace CryptoNote.Activities
             }
         }
 
+        /// <summary>
+        /// Fingerprint authorization succeeded event handler
+        /// </summary>
         public async void OnAuthenticationSucceeded()
         {
             RevealProgressBar();
@@ -71,12 +89,18 @@ namespace CryptoNote.Activities
             StartActivity(intent, options.ToBundle());
         }
 
+        /// <summary>
+        /// Fingerprint authorization failed event handler
+        /// </summary>
         public void OnAuthenticationFailed()
         {
             Toast.MakeText(this, this.Resources.GetString(Resource.String.FingerprintScanFailedError), ToastLength.Long).Show();
             SecurityProvider.FingerprintAuthenticate(this);
         }
 
+        /// <summary>
+        /// Progress bar revelation animation
+        /// </summary>
         private void RevealProgressBar()
         {
             if (_progressBar.Visibility == ViewStates.Invisible && NoteStorage.Notes != null)
@@ -92,6 +116,9 @@ namespace CryptoNote.Activities
             }
         }
 
+        /// <summary>
+        /// Progress bar hiding animation
+        /// </summary>
         private void HideProgressBar()
         {
             if (_progressBar.Visibility == ViewStates.Visible)
@@ -104,6 +131,11 @@ namespace CryptoNote.Activities
                 hide.AnimationEnd += (object sender, EventArgs e) => _progressBar.Visibility = ViewStates.Invisible;
                 hide.Start();
             }
+        }
+
+        public override void OnBackPressed()
+        {
+            this.FinishAffinity();
         }
     }
 }
