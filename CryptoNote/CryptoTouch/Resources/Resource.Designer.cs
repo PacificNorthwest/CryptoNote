@@ -1873,14 +1873,14 @@ namespace CryptoNote
 			// aapt resource value: 0x7f0600a6
 			public const int ButtonSubmitPassword = 2131099814;
 			
-			// aapt resource value: 0x7f0600ab
-			public const int LanguageEnButton = 2131099819;
+			// aapt resource value: 0x7f0600ad
+			public const int LanguageEnButton = 2131099821;
 			
-			// aapt resource value: 0x7f0600aa
-			public const int LanguageRuButton = 2131099818;
+			// aapt resource value: 0x7f0600ac
+			public const int LanguageRuButton = 2131099820;
 			
-			// aapt resource value: 0x7f0600a8
-			public const int OneColumnOptionButton = 2131099816;
+			// aapt resource value: 0x7f0600a9
+			public const int OneColumnOptionButton = 2131099817;
 			
 			// aapt resource value: 0x7f0600a4
 			public const int RegisterPassword = 2131099812;
@@ -1888,8 +1888,8 @@ namespace CryptoNote
 			// aapt resource value: 0x7f0600a5
 			public const int RegisterPasswordConfirm = 2131099813;
 			
-			// aapt resource value: 0x7f0600a9
-			public const int TwoColumnsOptionButton = 2131099817;
+			// aapt resource value: 0x7f0600aa
+			public const int TwoColumnsOptionButton = 2131099818;
 			
 			// aapt resource value: 0x7f060095
 			public const int action0 = 2131099797;
@@ -2281,20 +2281,29 @@ namespace CryptoNote
 			// aapt resource value: 0x7f060081
 			public const int settingsButton = 2131099777;
 			
+			// aapt resource value: 0x7f0600b1
+			public const int settingsConfirmPasswordEditText = 2131099825;
+			
+			// aapt resource value: 0x7f0600b0
+			public const int settingsNewPasswordEditText = 2131099824;
+			
+			// aapt resource value: 0x7f0600af
+			public const int settingsOldPasswordEditText = 2131099823;
+			
+			// aapt resource value: 0x7f0600a8
+			public const int settingsPageColumnCountSectionTitle = 2131099816;
+			
+			// aapt resource value: 0x7f0600ab
+			public const int settingsPageLanguageSectionTitle = 2131099819;
+			
 			// aapt resource value: 0x7f0600ae
-			public const int settingsConfirmPasswordEditText = 2131099822;
-			
-			// aapt resource value: 0x7f0600ad
-			public const int settingsNewPasswordEditText = 2131099821;
-			
-			// aapt resource value: 0x7f0600ac
-			public const int settingsOldPasswordEditText = 2131099820;
+			public const int settingsPagePasswordSectionTitle = 2131099822;
 			
 			// aapt resource value: 0x7f0600a7
 			public const int settingsPageTitle = 2131099815;
 			
-			// aapt resource value: 0x7f0600af
-			public const int settingsSave = 2131099823;
+			// aapt resource value: 0x7f0600b2
+			public const int settingsSave = 2131099826;
 			
 			// aapt resource value: 0x7f060053
 			public const int shortcut = 2131099731;
@@ -2320,8 +2329,8 @@ namespace CryptoNote
 			// aapt resource value: 0x7f060045
 			public const int spacer = 2131099717;
 			
-			// aapt resource value: 0x7f0600b0
-			public const int spinnerEntryText = 2131099824;
+			// aapt resource value: 0x7f0600b3
+			public const int spinnerEntryText = 2131099827;
 			
 			// aapt resource value: 0x7f060008
 			public const int split_action_bar = 2131099656;
@@ -2524,97 +2533,100 @@ namespace CryptoNote
 			public const int CategoriesListItem = 2130903067;
 			
 			// aapt resource value: 0x7f03001c
-			public const int design_layout_snackbar = 2130903068;
+			public const int CustomTab = 2130903068;
 			
 			// aapt resource value: 0x7f03001d
-			public const int design_layout_snackbar_include = 2130903069;
+			public const int design_layout_snackbar = 2130903069;
 			
 			// aapt resource value: 0x7f03001e
-			public const int design_layout_tab_icon = 2130903070;
+			public const int design_layout_snackbar_include = 2130903070;
 			
 			// aapt resource value: 0x7f03001f
-			public const int design_layout_tab_text = 2130903071;
+			public const int design_layout_tab_icon = 2130903071;
 			
 			// aapt resource value: 0x7f030020
-			public const int design_menu_item_action_area = 2130903072;
+			public const int design_layout_tab_text = 2130903072;
 			
 			// aapt resource value: 0x7f030021
-			public const int design_navigation_item = 2130903073;
+			public const int design_menu_item_action_area = 2130903073;
 			
 			// aapt resource value: 0x7f030022
-			public const int design_navigation_item_header = 2130903074;
+			public const int design_navigation_item = 2130903074;
 			
 			// aapt resource value: 0x7f030023
-			public const int design_navigation_item_separator = 2130903075;
+			public const int design_navigation_item_header = 2130903075;
 			
 			// aapt resource value: 0x7f030024
-			public const int design_navigation_item_subheader = 2130903076;
+			public const int design_navigation_item_separator = 2130903076;
 			
 			// aapt resource value: 0x7f030025
-			public const int design_navigation_menu = 2130903077;
+			public const int design_navigation_item_subheader = 2130903077;
 			
 			// aapt resource value: 0x7f030026
-			public const int design_navigation_menu_item = 2130903078;
+			public const int design_navigation_menu = 2130903078;
 			
 			// aapt resource value: 0x7f030027
-			public const int LoginPage = 2130903079;
+			public const int design_navigation_menu_item = 2130903079;
 			
 			// aapt resource value: 0x7f030028
-			public const int MainPage = 2130903080;
+			public const int LoginPage = 2130903080;
 			
 			// aapt resource value: 0x7f030029
-			public const int NoteItemLayout = 2130903081;
+			public const int MainPage = 2130903081;
 			
 			// aapt resource value: 0x7f03002a
-			public const int NotePage = 2130903082;
+			public const int NoteItemLayout = 2130903082;
 			
 			// aapt resource value: 0x7f03002b
-			public const int NotesList = 2130903083;
+			public const int NotePage = 2130903083;
 			
 			// aapt resource value: 0x7f03002c
-			public const int notification_media_action = 2130903084;
+			public const int NotesList = 2130903084;
 			
 			// aapt resource value: 0x7f03002d
-			public const int notification_media_cancel_action = 2130903085;
+			public const int notification_media_action = 2130903085;
 			
 			// aapt resource value: 0x7f03002e
-			public const int notification_template_big_media = 2130903086;
+			public const int notification_media_cancel_action = 2130903086;
 			
 			// aapt resource value: 0x7f03002f
-			public const int notification_template_big_media_narrow = 2130903087;
+			public const int notification_template_big_media = 2130903087;
 			
 			// aapt resource value: 0x7f030030
-			public const int notification_template_lines = 2130903088;
+			public const int notification_template_big_media_narrow = 2130903088;
 			
 			// aapt resource value: 0x7f030031
-			public const int notification_template_media = 2130903089;
+			public const int notification_template_lines = 2130903089;
 			
 			// aapt resource value: 0x7f030032
-			public const int notification_template_part_chronometer = 2130903090;
+			public const int notification_template_media = 2130903090;
 			
 			// aapt resource value: 0x7f030033
-			public const int notification_template_part_time = 2130903091;
+			public const int notification_template_part_chronometer = 2130903091;
 			
 			// aapt resource value: 0x7f030034
-			public const int PasswordPage = 2130903092;
+			public const int notification_template_part_time = 2130903092;
 			
 			// aapt resource value: 0x7f030035
-			public const int select_dialog_item_material = 2130903093;
+			public const int PasswordPage = 2130903093;
 			
 			// aapt resource value: 0x7f030036
-			public const int select_dialog_multichoice_material = 2130903094;
+			public const int select_dialog_item_material = 2130903094;
 			
 			// aapt resource value: 0x7f030037
-			public const int select_dialog_singlechoice_material = 2130903095;
+			public const int select_dialog_multichoice_material = 2130903095;
 			
 			// aapt resource value: 0x7f030038
-			public const int SettingsPage = 2130903096;
+			public const int select_dialog_singlechoice_material = 2130903096;
 			
 			// aapt resource value: 0x7f030039
-			public const int SpinnerItem = 2130903097;
+			public const int SettingsPage = 2130903097;
 			
 			// aapt resource value: 0x7f03003a
-			public const int support_simple_spinner_dropdown_item = 2130903098;
+			public const int SpinnerItem = 2130903098;
+			
+			// aapt resource value: 0x7f03003b
+			public const int support_simple_spinner_dropdown_item = 2130903099;
 			
 			static Layout()
 			{

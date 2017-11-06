@@ -6,6 +6,10 @@ using CryptoNote.Activities;
 
 namespace CryptoNote.Security
 {
+    /// <summary>
+    /// Fingerprint authentication result callback
+    /// No need to touch this class, it's complete and doesn't need to be reworked
+    /// </summary>
     class AuthCallback : FingerprintManager.AuthenticationCallback
     {
         private static readonly byte[] SECRET_BYTES = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
@@ -15,6 +19,10 @@ namespace CryptoNote.Security
         public AuthCallback() { }
         public AuthCallback(LoginActivity activity) { _currentActivity = activity; }
 
+        /// <summary>
+        /// Succeeded event handler
+        /// </summary>
+        /// <param name="result"></param>
         public override void OnAuthenticationSucceeded(FingerprintManager.AuthenticationResult result)
         {
             if (result.CryptoObject.Cipher != null)
@@ -27,17 +35,18 @@ namespace CryptoNote.Security
                 catch (BadPaddingException bpe)
                 {
                     _currentActivity.OnAuthenticationFailed();
-                    Log.Error(TAG, "Failed to encrypt the data with the generated key." + bpe);
                 }
                 catch (IllegalBlockSizeException ibse)
                 {
                     _currentActivity.OnAuthenticationFailed();
-                    Log.Error(TAG, "Failed to encrypt the data with the generated key." + ibse);
                 }
             }
             else { _currentActivity.OnAuthenticationSucceeded(); }
         }
 
+        /// <summary>
+        /// Failed event handler
+        /// </summary>
         public override void OnAuthenticationFailed() { _currentActivity.OnAuthenticationFailed(); }
     }
 }

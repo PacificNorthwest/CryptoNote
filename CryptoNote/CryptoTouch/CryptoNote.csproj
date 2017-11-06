@@ -95,6 +95,7 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidAsset Include="Assets\fonts\BROADW.ttf" />
+    <AndroidAsset Include="Assets\fonts\AlbertusNovaThin.otf" />
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>
@@ -128,6 +129,9 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\SettingsPage.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\CustomTab.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

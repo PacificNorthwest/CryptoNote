@@ -77,6 +77,9 @@ namespace CryptoNote.Activities
             _nullStateTile = root.FindViewById<RelativeLayout>(Resource.Id.nullStateTile);
             _notesGrid = root.FindViewById<RecyclerView>(Resource.Id.recyclerView);
 
+            root.FindViewById<TextView>(Resource.Id.nullStateHintTop).Typeface = Typeface.CreateFromAsset(_rootActivity.Assets, "fonts/AlbertusNovaThin.otf");
+            root.FindViewById<TextView>(Resource.Id.nullStateHintBottom).Typeface = Typeface.CreateFromAsset(_rootActivity.Assets, "fonts/AlbertusNovaThin.otf");
+
             _notesGrid.AddItemDecoration(new RecyclerViewItemSpacing(15));
             _newNoteButton.Click += (object sender, EventArgs e) => StartActivity(new Intent(_rootActivity, typeof(NoteActivity)));
             _deleteNoteButton.Click += (object sender, EventArgs e) => DeleteNotes();        

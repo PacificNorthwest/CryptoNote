@@ -22,6 +22,9 @@ using CryptoNote.Model;
 
 namespace CryptoNote.Security
 {
+    /// <summary>
+    /// Main security provider class
+    /// </summary>
     class SecurityProvider
     {
         private const string STORE_NAME = "AndroidKeyStore";
@@ -34,8 +37,15 @@ namespace CryptoNote.Security
         private static KeyStore _keyStore;
         private static KeyPair _keyPair;
 
+        /// <summary>
+        /// Check for existing TripleDES key saved in a system
+        /// </summary>
+        /// <returns>True/False = Exists or not</returns>
         public static bool KeyExists() => File.Exists(_tDES_key_path);
 
+        /// <summary>
+        /// Preinitialize fields
+        /// </summary>
         public static void InitializeSecuritySystem()
         {
             _keyStore = KeyStore.GetInstance(STORE_NAME);
@@ -45,6 +55,9 @@ namespace CryptoNote.Security
             _tDES_key_path = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "key.dat");
         }
 
+        /// <summary>
+        /// Encrypt and save notes
+        /// </summary>
         public static void SaveNotes()
         {
             string json = JsonConvert.SerializeObject(NoteStorage.Notes);
@@ -59,11 +72,17 @@ namespace CryptoNote.Security
             File.WriteAllBytes(_notes_path, crypt.TransformFinalBlock(Encoding.UTF8.GetBytes(json), 0, Encoding.UTF8.GetByteCount(json)));
         }
 
+        /// <summary>
+        /// Async save method
+        /// </summary>
         public static async void SaveNotesAsync()
         {
             await Task.Factory.StartNew(SaveNotes);
         }
 
+        /// <summary>
+        /// Load and decrypt notes
+        /// </summary>
         public static void LoadNotes()
         {
             if (_tDES_key != null && File.Exists(_notes_path))
@@ -81,6 +100,10 @@ namespace CryptoNote.Security
             }
         }
         
+        /// <summary>
+        /// Decrypt TripleDES key with RSA key  
+        /// </summary>
+        /// <returns>TripleDES key</returns>
         public static byte[] DecryptKey()
         {
             if (_keyPair != null && File.Exists(_tDES_key_path))
@@ -95,6 +118,11 @@ namespace CryptoNote.Security
 
         }
 
+        /// <summary>
+        /// Encrypt TripleDES key
+        /// </summary>
+        /// <param name="key">TripleDES key</param>
+        /// <returns>Encrypted key</returns>
         public static byte[] EncryptKey(byte[] key)
         {
             Cipher cipher = Cipher.GetInstance(ASYMMETRIC_ALGORITHM, "AndroidKeyStoreBCWorkaround");
@@ -102,6 +130,11 @@ namespace CryptoNote.Security
             return cipher.DoFinal(key);
         }
 
+        /// <summary>
+        /// Authenticate user with password
+        /// </summary>
+        /// <param name="password">Password</param>
+        /// <returns>Authentication result</returns>
         public static bool PasswordAuthenticate(string password)
         {
             AccessKeyStore();
@@ -113,6 +146,10 @@ namespace CryptoNote.Security
              else return false;
         }
 
+        /// <summary>
+        /// Initialize fingerprint authentication mechanism
+        /// </summary>
+        /// <param name="activity">Root activity</param>
         public static void FingerprintAuthenticate(Activity activity)
         {
             FingerprintManager fingerprint = activity.GetSystemService(Context.FingerprintService) as FingerprintManager;
@@ -131,12 +168,18 @@ namespace CryptoNote.Security
             }
         }
 
+        /// <summary>
+        /// Handle succeeded authentication
+        /// </summary>
         public static void FingerprintAuthenticationSucceeded()
         {
             AccessKeyStore();
             _tDES_key = DecryptKey();
         }
 
+        /// <summary>
+        /// Load RSA key pair from KeyStore
+        /// </summary>
         private static void AccessKeyStore()
         {
             if (_keyStore.ContainsAlias(ALIAS))
@@ -147,6 +190,11 @@ namespace CryptoNote.Security
             }
         }
 
+        /// <summary>
+        /// Initialize new user in system
+        /// </summary>
+        /// <param name="password">Password</param>
+        /// <param name="context">Root context</param>
         public static void InitializeUser(string password, Context context)
         {
             _tDES_key = ComputeHash(password);
@@ -154,6 +202,12 @@ namespace CryptoNote.Security
                 File.WriteAllBytes(_tDES_key_path, EncryptKey(_tDES_key));
         }
 
+        /// <summary>
+        /// Replace password
+        /// </summary>
+        /// <param name="oldPassword">Old password</param>
+        /// <param name="newPassword">New password</param>
+        /// <param name="confirmPassword">Confirm password</param>
         public static void EnrollNewPassword(string oldPassword, string newPassword, string confirmPassword)
         {
             if (ComputeHash(oldPassword).SequenceEqual(_tDES_key))
@@ -169,6 +223,12 @@ namespace CryptoNote.Security
             else throw new Exception("Wrong password!");
         }
 
+        /// <summary>
+        /// Create new RSA key pair for KeyStore instance
+        /// </summary>
+        /// <param name="alias">KeyStore instance alias</param>
+        /// <param name="context">Root context</param>
+        /// <returns>True/False = Created or not</returns>
         private static bool CreateNewRSAKeyPair(string alias, Context context)
         {
             try
@@ -189,10 +249,14 @@ namespace CryptoNote.Security
 
                 return true;
             }
-            catch (Exception ex)
-            { Toast.MakeText(context, ex.Message, ToastLength.Long).Show(); return false; }
+            catch (Exception ex) { Toast.MakeText(context, ex.Message, ToastLength.Long).Show(); return false; }
         }
 
+        /// <summary>
+        /// Get MD5 hash
+        /// </summary>
+        /// <param name="data"></param>
+        /// <returns>Hash</returns>
         public static byte[] ComputeHash(string data)
             => new MD5CryptoServiceProvider().ComputeHash(Encoding.UTF8.GetBytes(data));
     }

@@ -15,48 +15,48 @@
         android:layout_marginTop="10dp"
         android:paddingBottom="80dp"
         android:clipToPadding="false" />
-  <RelativeLayout
-    android:id="@+id/nullStateTile"
-    android:visibility="gone"
-    android:layout_height="match_parent"
-    android:layout_width="match_parent">
-    <TextView
-      android:id="@+id/nullStateHintTop"
-      android:layout_marginTop="30dp"
-      android:layout_height="wrap_content"
-      android:layout_width="match_parent"
-      android:gravity="right"
-      android:paddingRight="35dp"
-      android:textSize="22sp"
-      android:textColor="#ff5b9e92"
-      android:text="@string/nullStateHintTop"/>
-    <ImageView
-      android:id="@+id/nullStateCloud"
-      android:layout_height="190dp"
-      android:layout_width="match_parent"
-      android:gravity="center"
-      android:layout_marginTop="30dp"
-      android:layout_below="@id/nullStateHintTop"
-      android:src="@drawable/Cloud"/>
-    <TextView
-      android:id="@+id/nullStateHintBottom"
-      android:layout_height="wrap_content"
-      android:layout_width="match_parent"
-      android:gravity="left"
-      android:textSize="22sp"
-      android:layout_below="@id/nullStateCloud"
-      android:paddingLeft="35dp"
-      android:layout_marginTop="30dp"
-      android:textColor="#ff75aba1"
-      android:text="@string/nullStateHintBottom"/>
-    <ImageView
-      android:layout_height="80dp"
-      android:layout_width="match_parent"
-      android:layout_marginTop="30dp"
-      android:gravity="center"
-      android:layout_below="@id/nullStateHintBottom"
-      android:src="@drawable/Arrow"/>
-  </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/nullStateTile"
+        android:visibility="gone"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+        <TextView
+            android:id="@+id/nullStateHintTop"
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="right"
+            android:paddingRight="35dp"
+            android:textSize="22sp"
+            android:textColor="#ff5b9e92"
+            android:text="@string/nullStateHintTop" />
+        <ImageView
+            android:id="@+id/nullStateCloud"
+            android:layout_height="190dp"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/nullStateHintTop"
+            android:src="@drawable/Cloud" />
+        <TextView
+            android:id="@+id/nullStateHintBottom"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="left"
+            android:textSize="22sp"
+            android:layout_below="@id/nullStateCloud"
+            android:paddingLeft="35dp"
+            android:layout_marginTop="30dp"
+            android:textColor="#ff75aba1"
+            android:text="@string/nullStateHintBottom" />
+        <ImageView
+            android:layout_height="80dp"
+            android:layout_width="match_parent"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:layout_below="@id/nullStateHintBottom"
+            android:src="@drawable/Arrow" />
+    </RelativeLayout>
     <Button
         android:id="@+id/deleteNoteButton"
         android:background="@drawable/DeleteElement"

@@ -3,6 +3,7 @@ using Android.App;
 using Android.Content;
 using Android.Views;
 using Android.Widget;
+using Android.Graphics;
 
 namespace CryptoNote.Adapters
 {
@@ -41,6 +42,7 @@ namespace CryptoNote.Adapters
                 convertView = _inflater.Inflate(Resource.Layout.SpinnerItem, null);
             convertView.FindViewById<TextView>(Resource.Id.spinnerEntryText).SetTextColor(Android.Graphics.Color.White);
             convertView.FindViewById<TextView>(Resource.Id.spinnerEntryText).Text = _items[position];
+            convertView.FindViewById<TextView>(Resource.Id.spinnerEntryText).Typeface = Typeface.CreateFromAsset(_context.Assets, "fonts/AlbertusNovaThin.otf");
             return convertView;
         }
 
@@ -57,6 +59,8 @@ namespace CryptoNote.Adapters
             entry.FindViewById<TextView>(Resource.Id.spinnerEntryText).SetTextColor(Android.Graphics.Color.Black);
             entry.FindViewById<TextView>(Resource.Id.spinnerEntryText).Gravity = GravityFlags.Center;
             entry.FindViewById<TextView>(Resource.Id.spinnerEntryText).Text = _items[position];
+            entry.FindViewById<TextView>(Resource.Id.spinnerEntryText).Typeface = Typeface.CreateFromAsset(_context.Assets, "fonts/AlbertusNovaThin.otf");
+            entry.FindViewById<TextView>(Resource.Id.spinnerEntryText).SetPadding(0, 0, 0, 20);
             return entry;
         }
     }

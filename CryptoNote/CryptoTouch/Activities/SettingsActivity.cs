@@ -8,6 +8,7 @@ using Android.Support.V7.App;
 
 using CryptoNote.Security;
 using CryptoNote.Model;
+using Android.Graphics;
 
 namespace CryptoNote.Activities
 {
@@ -51,6 +52,15 @@ namespace CryptoNote.Activities
             _oldPassword = FindViewById<EditText>(Resource.Id.settingsOldPasswordEditText);
             _newPassword = FindViewById<EditText>(Resource.Id.settingsNewPasswordEditText);
             _confirmPassword = FindViewById<EditText>(Resource.Id.settingsConfirmPasswordEditText);
+
+            FindViewById<TextView>(Resource.Id.settingsPageTitle).Typeface = Typeface.CreateFromAsset(Assets, "fonts/AlbertusNovaThin.otf");
+            FindViewById<TextView>(Resource.Id.settingsPageColumnCountSectionTitle).Typeface = Typeface.CreateFromAsset(Assets, "fonts/AlbertusNovaThin.otf");
+            FindViewById<TextView>(Resource.Id.settingsPageLanguageSectionTitle).Typeface = Typeface.CreateFromAsset(Assets, "fonts/AlbertusNovaThin.otf");
+            FindViewById<TextView>(Resource.Id.settingsPagePasswordSectionTitle).Typeface = Typeface.CreateFromAsset(Assets, "fonts/AlbertusNovaThin.otf");
+            FindViewById<Button>(Resource.Id.settingsSave).Typeface = Typeface.CreateFromAsset(Assets, "fonts/AlbertusNovaThin.otf");
+            _oldPassword.Typeface = Typeface.CreateFromAsset(Assets, "fonts/AlbertusNovaThin.otf");
+            _newPassword.Typeface = Typeface.CreateFromAsset(Assets, "fonts/AlbertusNovaThin.otf");
+            _confirmPassword.Typeface = Typeface.CreateFromAsset(Assets, "fonts/AlbertusNovaThin.otf");
 
             FindViewById<Button>(Resource.Id.settingsSave).Click += (object sender, EventArgs e) => { SaveSettings(); Return(); };
 

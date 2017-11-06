@@ -6,6 +6,10 @@ using Javax.Crypto;
 
 namespace CryptoNote.Security
 {
+    /// <summary>
+    /// Fingerprint authentication object factory
+    /// No need to touch this class, it's complete and doesn't need to be reworked
+    /// </summary>
     class CryptoObjectFactory
     {
         private static readonly string KEY_NAME = "com.xamarin.android.cryptonote.fingerprint_authentication_key";

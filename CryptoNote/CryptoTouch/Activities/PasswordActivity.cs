@@ -64,8 +64,11 @@ namespace CryptoNote.Activities
 
             _submitButton.Click += (object sender, EventArgs e) => SubmitPassword();
             _passwordEditText.RequestFocus();
-            Typeface font = Typeface.CreateFromAsset(Assets, "fonts/BROADW.ttf");
-            FindViewById<TextView>(Resource.Id.passwordPageTitle).Typeface = font;
+            FindViewById<TextView>(Resource.Id.passwordPageTitle).Typeface = Typeface.CreateFromAsset(Assets, "fonts/BROADW.ttf");
+            FindViewById<TextView>(Resource.Id.passwordPageHintTextView).Typeface = Typeface.CreateFromAsset(Assets, "fonts/AlbertusNovaThin.otf");
+            FindViewById<EditText>(Resource.Id.RegisterPassword).Typeface = Typeface.CreateFromAsset(Assets, "fonts/AlbertusNovaThin.otf");
+            FindViewById<EditText>(Resource.Id.RegisterPasswordConfirm).Typeface = Typeface.CreateFromAsset(Assets, "fonts/AlbertusNovaThin.otf");
+            FindViewById<Button>(Resource.Id.ButtonSubmitPassword).Typeface = Typeface.CreateFromAsset(Assets, "fonts/AlbertusNovaThin.otf");
         }
 
         /// <summary>
