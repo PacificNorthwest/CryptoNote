@@ -16,7 +16,7 @@
         android:background="@color/MainAppColor"
         android:textSize="30sp" />
     <TextView
-      android:id="@+id/settingsPageColumnCountSectionTitle"
+        android:id="@+id/settingsPageColumnCountSectionTitle"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:paddingLeft="30dp"
@@ -53,12 +53,11 @@
         android:layout_marginRight="20dp"
         android:background="@color/MainAppColor" />
     <TextView
-      android:id="@+id/settingsPageLanguageSectionTitle"
+        android:id="@+id/settingsPageLanguageSectionTitle"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:paddingLeft="30dp"
         android:layout_marginTop="15dp"
-        android:layout_marginBottom="5dp"
         android:textColor="@android:color/black"
         android:textSize="24sp"
         android:text="@string/Language" />
@@ -66,7 +65,10 @@
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:gravity="center"
-        android:layout_margin="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
         android:orientation="horizontal">
         <Button
             android:id="@+id/LanguageRuButton"
@@ -84,12 +86,10 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:layout_marginTop="3dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:background="@color/MainAppColor" />
     <TextView
-      
         android:id="@+id/settingsPagePasswordSectionTitle"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
