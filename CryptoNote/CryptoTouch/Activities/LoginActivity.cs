@@ -12,6 +12,7 @@ using Android.Animation;
 
 using CryptoNote.Security;
 using CryptoNote.Model;
+using System.Threading;
 
 namespace CryptoNote.Activities
 {
@@ -19,7 +20,7 @@ namespace CryptoNote.Activities
     /// <summary>
     /// Login page activity
     /// </summary>
-    [Activity(Label = "CryptoNote", Theme ="@style/AppTheme", ScreenOrientation = Android.Content.PM.ScreenOrientation.Portrait)]
+    [Activity(Label = "CryptoNote", Theme ="@style/AppTheme", ScreenOrientation = Android.Content.PM.ScreenOrientation.Portrait, NoHistory = true)]
     public class LoginActivity : AppCompatActivity
     {
         private View _progressBar;
@@ -51,6 +52,7 @@ namespace CryptoNote.Activities
         {
             base.OnStart();
             SecurityProvider.FingerprintAuthenticate(this);
+            _progressBar.Visibility = ViewStates.Invisible;
             FindViewById<TextView>(Resource.Id.fingerprintScanHint).Text = Resources.GetString(Resource.String.FingerprintScanHint);
             FindViewById<TextView>(Resource.Id.passwordUsageHint).Text = Resources.GetString(Resource.String.PasswordUsageHint);
             FindViewById<Button>(Resource.Id.ButtonSubmitAuthorization).Text = Resources.GetString(Resource.String.LoginButton);
@@ -67,7 +69,7 @@ namespace CryptoNote.Activities
                 await Task.Run(() => SecurityProvider.LoadNotes());
                 ActivityOptions options = ActivityOptions.MakeSceneTransitionAnimation(this);
                 Intent intent = new Intent(this, typeof(MainPageActivity));
-                HideProgressBar();
+                //intent.AddFlags(ActivityFlags.NewTask);
                 StartActivity(intent, options.ToBundle());
             }
             else
@@ -87,7 +89,7 @@ namespace CryptoNote.Activities
             await Task.Run(() => SecurityProvider.LoadNotes());
             ActivityOptions options = ActivityOptions.MakeSceneTransitionAnimation(this);
             Intent intent = new Intent(this, typeof(MainPageActivity));
-            HideProgressBar();
+            
             StartActivity(intent, options.ToBundle());
         }
 
@@ -119,7 +121,7 @@ namespace CryptoNote.Activities
         }
 
         /// <summary>
-        /// Progress bar hiding animation
+        /// Progress bar hiding animation. Not used currently
         /// </summary>
         private void HideProgressBar()
         {
@@ -135,6 +137,9 @@ namespace CryptoNote.Activities
             }
         }
 
+        /// <summary>
+        /// Close the app
+        /// </summary>
         public override void OnBackPressed()
         {
             this.FinishAffinity();

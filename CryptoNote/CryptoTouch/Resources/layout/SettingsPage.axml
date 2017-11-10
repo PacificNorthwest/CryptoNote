@@ -142,6 +142,6 @@
         android:background="@color/MainAppColor"
         android:textColor="@android:color/white"
         android:textSize="23sp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="22dp"
         android:text="@string/Save" />
 </LinearLayout>

@@ -21,13 +21,13 @@ namespace CryptoNote.Activities
     /// </summary>
     public class NotesListFragment : Android.Support.V4.App.Fragment
     {
-        private List<View> _selectedItems = new List<View>();
+        private static List<View> _selectedItems = new List<View>();
         private static Activity _rootActivity;
         private static RecyclerView _notesGrid;
         private static RelativeLayout _nullStateTile;
         private static Android.Support.V4.App.Fragment _instance;
-        private Button _newNoteButton;
-        private Button _deleteNoteButton;
+        private static Button _newNoteButton;
+        private static Button _deleteNoteButton;
         private RelativeLayout _sceneRoot;
 
         /// <summary>
@@ -52,7 +52,7 @@ namespace CryptoNote.Activities
         {
             View view = inflater.Inflate(Resource.Layout.NotesList, container, false);
             InitializeUI(view);
-            PopulateGrid(); //Not sure if it's needed here
+            //PopulateGrid(); //Not sure if it's needed here. Do not remember
             return view;
         }
 
@@ -107,6 +107,8 @@ namespace CryptoNote.Activities
         public static void ChangeDataSet(List<Note> notes)
         {
             _notesGrid.SwapAdapter(new NotesListAdapter(_rootActivity, _instance, notes), false);
+            _selectedItems.Clear();
+            HideDeleteButton();
 
             if (notes.Count == 0)
                 _nullStateTile.Visibility = ViewStates.Visible;
@@ -141,7 +143,7 @@ namespace CryptoNote.Activities
         /// <summary>
         /// Delete button revelation animation
         /// </summary>
-        private void ShowDeleteButton()
+        private static void ShowDeleteButton()
         {
             Animation animNewNoteButton = new RotateAnimation(0, 45, Dimension.RelativeToSelf, .5f, Dimension.RelativeToSelf, .5f) { Duration = 500 };
             animNewNoteButton.AnimationEnd += (object sender, Animation.AnimationEndEventArgs e) => _deleteNoteButton.BringToFront();
@@ -151,7 +153,7 @@ namespace CryptoNote.Activities
         /// <summary>
         /// Delete button hiding animation
         /// </summary>
-        private void HideDeleteButton()
+        private static void HideDeleteButton()
         {
             Animation animDeleteNoteButton = new RotateAnimation(0, -45, Dimension.RelativeToSelf, .5F, Dimension.RelativeToSelf, .5F) { Duration = 500 };
             animDeleteNoteButton.AnimationEnd += (object sender, Animation.AnimationEndEventArgs e) => _newNoteButton.BringToFront();

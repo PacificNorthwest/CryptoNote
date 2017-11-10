@@ -9,13 +9,15 @@ using Android.Graphics;
 
 using CryptoNote.Security;
 using CryptoNote.Model;
+using Android.Support.V4.View;
+using CryptoNote.Adapters;
 
 namespace CryptoNote.Activities
 {
     /// <summary>
     /// Startup activity
     /// </summary>
-    [Activity(Label = "CryptoNote", MainLauncher = true, 
+    [Activity(Label = "CryptoNote", MainLauncher = true, NoHistory = true,
               Icon = "@drawable/fingerprint",
               Theme = "@style/AppTheme",
               ScreenOrientation = Android.Content.PM.ScreenOrientation.Portrait)]
