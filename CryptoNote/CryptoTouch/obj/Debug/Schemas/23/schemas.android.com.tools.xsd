@@ -2,7 +2,7 @@
 <xs:schema xmlns:tools="http://schemas.android.com/tools" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/tools" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v23</xs:documentation>
-    <xs:documentation>09.11.2017 22:20:32</xs:documentation>
+    <xs:documentation>13.11.2017 1:06:10</xs:documentation>
   </xs:annotation>
   <xs:attribute name="layout">
     <xs:annotation>
@@ -482,6 +482,7 @@
             <xs:enumeration value="@string/Categories" />
             <xs:enumeration value="@string/character_counter_pattern" />
             <xs:enumeration value="@string/ColumnsNumber" />
+            <xs:enumeration value="@string/Credits" />
             <xs:enumeration value="@string/EmptyPasswordError" />
             <xs:enumeration value="@string/FingerprintScanFailedError" />
             <xs:enumeration value="@string/FingerprintScanHint" />

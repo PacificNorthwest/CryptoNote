@@ -69,7 +69,6 @@ namespace CryptoNote.Activities
                 await Task.Run(() => SecurityProvider.LoadNotes());
                 ActivityOptions options = ActivityOptions.MakeSceneTransitionAnimation(this);
                 Intent intent = new Intent(this, typeof(MainPageActivity));
-                //intent.AddFlags(ActivityFlags.NewTask);
                 StartActivity(intent, options.ToBundle());
             }
             else

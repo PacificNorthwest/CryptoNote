@@ -18,7 +18,7 @@ namespace CryptoNote.Activities
     /// Startup activity
     /// </summary>
     [Activity(Label = "CryptoNote", MainLauncher = true, NoHistory = true,
-              Icon = "@drawable/fingerprint",
+              Icon = "@drawable/padlock",
               Theme = "@style/AppTheme",
               ScreenOrientation = Android.Content.PM.ScreenOrientation.Portrait)]
     public class PasswordActivity : AppCompatActivity

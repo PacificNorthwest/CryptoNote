@@ -2,7 +2,7 @@
 <xs:schema xmlns:app="http://schemas.android.com/apk/res-auto" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/apk/res-auto" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v23</xs:documentation>
-    <xs:documentation>09.11.2017 22:20:32</xs:documentation>
+    <xs:documentation>13.11.2017 1:06:10</xs:documentation>
   </xs:annotation>
   <xs:attribute name="allowStacking">
     <xs:annotation>
@@ -1027,6 +1027,7 @@
             <xs:enumeration value="@drawable/noteitembg" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
             <xs:enumeration value="@drawable/onecolumnicon" />
+            <xs:enumeration value="@drawable/padlock" />
             <xs:enumeration value="@drawable/roundcornersbg" />
             <xs:enumeration value="@drawable/ru" />
             <xs:enumeration value="@drawable/savenotebutton" />
@@ -1290,6 +1291,7 @@
             <xs:enumeration value="@string/Categories" />
             <xs:enumeration value="@string/character_counter_pattern" />
             <xs:enumeration value="@string/ColumnsNumber" />
+            <xs:enumeration value="@string/Credits" />
             <xs:enumeration value="@string/EmptyPasswordError" />
             <xs:enumeration value="@string/FingerprintScanFailedError" />
             <xs:enumeration value="@string/FingerprintScanHint" />
@@ -1458,6 +1460,7 @@
             <xs:enumeration value="@drawable/noteitembg" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
             <xs:enumeration value="@drawable/onecolumnicon" />
+            <xs:enumeration value="@drawable/padlock" />
             <xs:enumeration value="@drawable/roundcornersbg" />
             <xs:enumeration value="@drawable/ru" />
             <xs:enumeration value="@drawable/savenotebutton" />
@@ -1779,6 +1782,7 @@
             <xs:enumeration value="@drawable/noteitembg" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
             <xs:enumeration value="@drawable/onecolumnicon" />
+            <xs:enumeration value="@drawable/padlock" />
             <xs:enumeration value="@drawable/roundcornersbg" />
             <xs:enumeration value="@drawable/ru" />
             <xs:enumeration value="@drawable/savenotebutton" />
@@ -2100,6 +2104,7 @@
             <xs:enumeration value="@drawable/noteitembg" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
             <xs:enumeration value="@drawable/onecolumnicon" />
+            <xs:enumeration value="@drawable/padlock" />
             <xs:enumeration value="@drawable/roundcornersbg" />
             <xs:enumeration value="@drawable/ru" />
             <xs:enumeration value="@drawable/savenotebutton" />
@@ -3992,6 +3997,7 @@
             <xs:enumeration value="@drawable/noteitembg" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
             <xs:enumeration value="@drawable/onecolumnicon" />
+            <xs:enumeration value="@drawable/padlock" />
             <xs:enumeration value="@drawable/roundcornersbg" />
             <xs:enumeration value="@drawable/ru" />
             <xs:enumeration value="@drawable/savenotebutton" />
@@ -4313,6 +4319,7 @@
             <xs:enumeration value="@drawable/noteitembg" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
             <xs:enumeration value="@drawable/onecolumnicon" />
+            <xs:enumeration value="@drawable/padlock" />
             <xs:enumeration value="@drawable/roundcornersbg" />
             <xs:enumeration value="@drawable/ru" />
             <xs:enumeration value="@drawable/savenotebutton" />
@@ -4576,6 +4583,7 @@
             <xs:enumeration value="@string/Categories" />
             <xs:enumeration value="@string/character_counter_pattern" />
             <xs:enumeration value="@string/ColumnsNumber" />
+            <xs:enumeration value="@string/Credits" />
             <xs:enumeration value="@string/EmptyPasswordError" />
             <xs:enumeration value="@string/FingerprintScanFailedError" />
             <xs:enumeration value="@string/FingerprintScanHint" />
@@ -4721,6 +4729,7 @@
             <xs:enumeration value="@drawable/noteitembg" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
             <xs:enumeration value="@drawable/onecolumnicon" />
+            <xs:enumeration value="@drawable/padlock" />
             <xs:enumeration value="@drawable/roundcornersbg" />
             <xs:enumeration value="@drawable/ru" />
             <xs:enumeration value="@drawable/savenotebutton" />
@@ -5249,6 +5258,7 @@
             <xs:enumeration value="@drawable/noteitembg" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
             <xs:enumeration value="@drawable/onecolumnicon" />
+            <xs:enumeration value="@drawable/padlock" />
             <xs:enumeration value="@drawable/roundcornersbg" />
             <xs:enumeration value="@drawable/ru" />
             <xs:enumeration value="@drawable/savenotebutton" />
@@ -5570,6 +5580,7 @@
             <xs:enumeration value="@drawable/noteitembg" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
             <xs:enumeration value="@drawable/onecolumnicon" />
+            <xs:enumeration value="@drawable/padlock" />
             <xs:enumeration value="@drawable/roundcornersbg" />
             <xs:enumeration value="@drawable/ru" />
             <xs:enumeration value="@drawable/savenotebutton" />
@@ -6697,6 +6708,7 @@
             <xs:enumeration value="@drawable/noteitembg" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
             <xs:enumeration value="@drawable/onecolumnicon" />
+            <xs:enumeration value="@drawable/padlock" />
             <xs:enumeration value="@drawable/roundcornersbg" />
             <xs:enumeration value="@drawable/ru" />
             <xs:enumeration value="@drawable/savenotebutton" />
@@ -7081,6 +7093,7 @@
             <xs:enumeration value="@drawable/noteitembg" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
             <xs:enumeration value="@drawable/onecolumnicon" />
+            <xs:enumeration value="@drawable/padlock" />
             <xs:enumeration value="@drawable/roundcornersbg" />
             <xs:enumeration value="@drawable/ru" />
             <xs:enumeration value="@drawable/savenotebutton" />
@@ -7402,6 +7415,7 @@
             <xs:enumeration value="@drawable/noteitembg" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
             <xs:enumeration value="@drawable/onecolumnicon" />
+            <xs:enumeration value="@drawable/padlock" />
             <xs:enumeration value="@drawable/roundcornersbg" />
             <xs:enumeration value="@drawable/ru" />
             <xs:enumeration value="@drawable/savenotebutton" />
@@ -7771,6 +7785,7 @@
             <xs:enumeration value="@drawable/noteitembg" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
             <xs:enumeration value="@drawable/onecolumnicon" />
+            <xs:enumeration value="@drawable/padlock" />
             <xs:enumeration value="@drawable/roundcornersbg" />
             <xs:enumeration value="@drawable/ru" />
             <xs:enumeration value="@drawable/savenotebutton" />
@@ -8082,6 +8097,7 @@
             <xs:enumeration value="@string/Categories" />
             <xs:enumeration value="@string/character_counter_pattern" />
             <xs:enumeration value="@string/ColumnsNumber" />
+            <xs:enumeration value="@string/Credits" />
             <xs:enumeration value="@string/EmptyPasswordError" />
             <xs:enumeration value="@string/FingerprintScanFailedError" />
             <xs:enumeration value="@string/FingerprintScanHint" />
@@ -8312,6 +8328,7 @@
             <xs:enumeration value="@drawable/noteitembg" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
             <xs:enumeration value="@drawable/onecolumnicon" />
+            <xs:enumeration value="@drawable/padlock" />
             <xs:enumeration value="@drawable/roundcornersbg" />
             <xs:enumeration value="@drawable/ru" />
             <xs:enumeration value="@drawable/savenotebutton" />
@@ -8711,6 +8728,7 @@
             <xs:enumeration value="@drawable/noteitembg" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
             <xs:enumeration value="@drawable/onecolumnicon" />
+            <xs:enumeration value="@drawable/padlock" />
             <xs:enumeration value="@drawable/roundcornersbg" />
             <xs:enumeration value="@drawable/ru" />
             <xs:enumeration value="@drawable/savenotebutton" />
@@ -9208,6 +9226,7 @@
             <xs:enumeration value="@drawable/noteitembg" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
             <xs:enumeration value="@drawable/onecolumnicon" />
+            <xs:enumeration value="@drawable/padlock" />
             <xs:enumeration value="@drawable/roundcornersbg" />
             <xs:enumeration value="@drawable/ru" />
             <xs:enumeration value="@drawable/savenotebutton" />
@@ -9705,6 +9724,7 @@
             <xs:enumeration value="@drawable/noteitembg" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
             <xs:enumeration value="@drawable/onecolumnicon" />
+            <xs:enumeration value="@drawable/padlock" />
             <xs:enumeration value="@drawable/roundcornersbg" />
             <xs:enumeration value="@drawable/ru" />
             <xs:enumeration value="@drawable/savenotebutton" />
@@ -10026,6 +10046,7 @@
             <xs:enumeration value="@drawable/noteitembg" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
             <xs:enumeration value="@drawable/onecolumnicon" />
+            <xs:enumeration value="@drawable/padlock" />
             <xs:enumeration value="@drawable/roundcornersbg" />
             <xs:enumeration value="@drawable/ru" />
             <xs:enumeration value="@drawable/savenotebutton" />
@@ -10289,6 +10310,7 @@
             <xs:enumeration value="@string/Categories" />
             <xs:enumeration value="@string/character_counter_pattern" />
             <xs:enumeration value="@string/ColumnsNumber" />
+            <xs:enumeration value="@string/Credits" />
             <xs:enumeration value="@string/EmptyPasswordError" />
             <xs:enumeration value="@string/FingerprintScanFailedError" />
             <xs:enumeration value="@string/FingerprintScanHint" />
@@ -10434,6 +10456,7 @@
             <xs:enumeration value="@drawable/noteitembg" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
             <xs:enumeration value="@drawable/onecolumnicon" />
+            <xs:enumeration value="@drawable/padlock" />
             <xs:enumeration value="@drawable/roundcornersbg" />
             <xs:enumeration value="@drawable/ru" />
             <xs:enumeration value="@drawable/savenotebutton" />
@@ -10697,6 +10720,7 @@
             <xs:enumeration value="@string/Categories" />
             <xs:enumeration value="@string/character_counter_pattern" />
             <xs:enumeration value="@string/ColumnsNumber" />
+            <xs:enumeration value="@string/Credits" />
             <xs:enumeration value="@string/EmptyPasswordError" />
             <xs:enumeration value="@string/FingerprintScanFailedError" />
             <xs:enumeration value="@string/FingerprintScanHint" />
@@ -11184,6 +11208,7 @@
             <xs:enumeration value="@drawable/noteitembg" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
             <xs:enumeration value="@drawable/onecolumnicon" />
+            <xs:enumeration value="@drawable/padlock" />
             <xs:enumeration value="@drawable/roundcornersbg" />
             <xs:enumeration value="@drawable/ru" />
             <xs:enumeration value="@drawable/savenotebutton" />
@@ -11447,6 +11472,7 @@
             <xs:enumeration value="@string/Categories" />
             <xs:enumeration value="@string/character_counter_pattern" />
             <xs:enumeration value="@string/ColumnsNumber" />
+            <xs:enumeration value="@string/Credits" />
             <xs:enumeration value="@string/EmptyPasswordError" />
             <xs:enumeration value="@string/FingerprintScanFailedError" />
             <xs:enumeration value="@string/FingerprintScanHint" />
@@ -11592,6 +11618,7 @@
             <xs:enumeration value="@drawable/noteitembg" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
             <xs:enumeration value="@drawable/onecolumnicon" />
+            <xs:enumeration value="@drawable/padlock" />
             <xs:enumeration value="@drawable/roundcornersbg" />
             <xs:enumeration value="@drawable/ru" />
             <xs:enumeration value="@drawable/savenotebutton" />
@@ -11913,6 +11940,7 @@
             <xs:enumeration value="@drawable/noteitembg" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
             <xs:enumeration value="@drawable/onecolumnicon" />
+            <xs:enumeration value="@drawable/padlock" />
             <xs:enumeration value="@drawable/roundcornersbg" />
             <xs:enumeration value="@drawable/ru" />
             <xs:enumeration value="@drawable/savenotebutton" />
@@ -12381,6 +12409,7 @@
             <xs:enumeration value="@drawable/noteitembg" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
             <xs:enumeration value="@drawable/onecolumnicon" />
+            <xs:enumeration value="@drawable/padlock" />
             <xs:enumeration value="@drawable/roundcornersbg" />
             <xs:enumeration value="@drawable/ru" />
             <xs:enumeration value="@drawable/savenotebutton" />
@@ -12644,6 +12673,7 @@
             <xs:enumeration value="@string/Categories" />
             <xs:enumeration value="@string/character_counter_pattern" />
             <xs:enumeration value="@string/ColumnsNumber" />
+            <xs:enumeration value="@string/Credits" />
             <xs:enumeration value="@string/EmptyPasswordError" />
             <xs:enumeration value="@string/FingerprintScanFailedError" />
             <xs:enumeration value="@string/FingerprintScanHint" />
@@ -13013,6 +13043,7 @@
             <xs:enumeration value="@drawable/noteitembg" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
             <xs:enumeration value="@drawable/onecolumnicon" />
+            <xs:enumeration value="@drawable/padlock" />
             <xs:enumeration value="@drawable/roundcornersbg" />
             <xs:enumeration value="@drawable/ru" />
             <xs:enumeration value="@drawable/savenotebutton" />
@@ -13334,6 +13365,7 @@
             <xs:enumeration value="@drawable/noteitembg" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
             <xs:enumeration value="@drawable/onecolumnicon" />
+            <xs:enumeration value="@drawable/padlock" />
             <xs:enumeration value="@drawable/roundcornersbg" />
             <xs:enumeration value="@drawable/ru" />
             <xs:enumeration value="@drawable/savenotebutton" />
@@ -13840,6 +13872,7 @@
             <xs:enumeration value="@drawable/noteitembg" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
             <xs:enumeration value="@drawable/onecolumnicon" />
+            <xs:enumeration value="@drawable/padlock" />
             <xs:enumeration value="@drawable/roundcornersbg" />
             <xs:enumeration value="@drawable/ru" />
             <xs:enumeration value="@drawable/savenotebutton" />
@@ -14337,6 +14370,7 @@
             <xs:enumeration value="@drawable/noteitembg" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
             <xs:enumeration value="@drawable/onecolumnicon" />
+            <xs:enumeration value="@drawable/padlock" />
             <xs:enumeration value="@drawable/roundcornersbg" />
             <xs:enumeration value="@drawable/ru" />
             <xs:enumeration value="@drawable/savenotebutton" />
@@ -14600,6 +14634,7 @@
             <xs:enumeration value="@string/Categories" />
             <xs:enumeration value="@string/character_counter_pattern" />
             <xs:enumeration value="@string/ColumnsNumber" />
+            <xs:enumeration value="@string/Credits" />
             <xs:enumeration value="@string/EmptyPasswordError" />
             <xs:enumeration value="@string/FingerprintScanFailedError" />
             <xs:enumeration value="@string/FingerprintScanHint" />
@@ -14745,6 +14780,7 @@
             <xs:enumeration value="@drawable/noteitembg" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
             <xs:enumeration value="@drawable/onecolumnicon" />
+            <xs:enumeration value="@drawable/padlock" />
             <xs:enumeration value="@drawable/roundcornersbg" />
             <xs:enumeration value="@drawable/ru" />
             <xs:enumeration value="@drawable/savenotebutton" />
@@ -15242,6 +15278,7 @@
             <xs:enumeration value="@drawable/noteitembg" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
             <xs:enumeration value="@drawable/onecolumnicon" />
+            <xs:enumeration value="@drawable/padlock" />
             <xs:enumeration value="@drawable/roundcornersbg" />
             <xs:enumeration value="@drawable/ru" />
             <xs:enumeration value="@drawable/savenotebutton" />
@@ -15857,6 +15894,7 @@
             <xs:enumeration value="@drawable/noteitembg" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
             <xs:enumeration value="@drawable/onecolumnicon" />
+            <xs:enumeration value="@drawable/padlock" />
             <xs:enumeration value="@drawable/roundcornersbg" />
             <xs:enumeration value="@drawable/ru" />
             <xs:enumeration value="@drawable/savenotebutton" />
@@ -16178,6 +16216,7 @@
             <xs:enumeration value="@drawable/noteitembg" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
             <xs:enumeration value="@drawable/onecolumnicon" />
+            <xs:enumeration value="@drawable/padlock" />
             <xs:enumeration value="@drawable/roundcornersbg" />
             <xs:enumeration value="@drawable/ru" />
             <xs:enumeration value="@drawable/savenotebutton" />
@@ -18204,6 +18243,7 @@
             <xs:enumeration value="@drawable/noteitembg" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
             <xs:enumeration value="@drawable/onecolumnicon" />
+            <xs:enumeration value="@drawable/padlock" />
             <xs:enumeration value="@drawable/roundcornersbg" />
             <xs:enumeration value="@drawable/ru" />
             <xs:enumeration value="@drawable/savenotebutton" />
@@ -18790,6 +18830,7 @@
             <xs:enumeration value="@string/Categories" />
             <xs:enumeration value="@string/character_counter_pattern" />
             <xs:enumeration value="@string/ColumnsNumber" />
+            <xs:enumeration value="@string/Credits" />
             <xs:enumeration value="@string/EmptyPasswordError" />
             <xs:enumeration value="@string/FingerprintScanFailedError" />
             <xs:enumeration value="@string/FingerprintScanHint" />
@@ -19718,6 +19759,7 @@
             <xs:enumeration value="@drawable/noteitembg" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
             <xs:enumeration value="@drawable/onecolumnicon" />
+            <xs:enumeration value="@drawable/padlock" />
             <xs:enumeration value="@drawable/roundcornersbg" />
             <xs:enumeration value="@drawable/ru" />
             <xs:enumeration value="@drawable/savenotebutton" />
@@ -20215,6 +20257,7 @@
             <xs:enumeration value="@drawable/noteitembg" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
             <xs:enumeration value="@drawable/onecolumnicon" />
+            <xs:enumeration value="@drawable/padlock" />
             <xs:enumeration value="@drawable/roundcornersbg" />
             <xs:enumeration value="@drawable/ru" />
             <xs:enumeration value="@drawable/savenotebutton" />
@@ -20536,6 +20579,7 @@
             <xs:enumeration value="@drawable/noteitembg" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
             <xs:enumeration value="@drawable/onecolumnicon" />
+            <xs:enumeration value="@drawable/padlock" />
             <xs:enumeration value="@drawable/roundcornersbg" />
             <xs:enumeration value="@drawable/ru" />
             <xs:enumeration value="@drawable/savenotebutton" />
@@ -20857,6 +20901,7 @@
             <xs:enumeration value="@drawable/noteitembg" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
             <xs:enumeration value="@drawable/onecolumnicon" />
+            <xs:enumeration value="@drawable/padlock" />
             <xs:enumeration value="@drawable/roundcornersbg" />
             <xs:enumeration value="@drawable/ru" />
             <xs:enumeration value="@drawable/savenotebutton" />

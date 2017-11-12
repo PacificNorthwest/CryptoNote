@@ -4,5 +4,5 @@
 	<uses-permission android:name="android.permission.USE_FINGERPRINT" />
 	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-	<application android:label="CryptoNote" android:theme="@style/AppTheme" android:icon="@drawable/fingerprint"></application>
+	<application android:label="CryptoNote" android:theme="@style/AppTheme" android:icon="@drawable/padlock"></application>
 </manifest>

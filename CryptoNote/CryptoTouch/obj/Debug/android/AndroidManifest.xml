@@ -6,8 +6,8 @@
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
   <uses-permission android:name="android.permission.INTERNET" />
-  <application android:label="CryptoNote" android:theme="@style/CryptoTouch.NoOrange" android:icon="@drawable/fingerprint" android:name="android.app.Application" android:allowBackup="true" android:debuggable="true">
-    <activity android:icon="@drawable/fingerprint" android:label="CryptoNote" android:noHistory="true" android:screenOrientation="portrait" android:theme="@style/AppTheme" android:name="md502d6e4510324cbd3241d51deea888945.PasswordActivity">
+  <application android:label="CryptoNote" android:theme="@style/CryptoTouch.NoOrange" android:icon="@drawable/padlock" android:name="android.app.Application" android:allowBackup="true" android:debuggable="true">
+    <activity android:icon="@drawable/padlock" android:label="CryptoNote" android:noHistory="true" android:screenOrientation="portrait" android:theme="@style/AppTheme" android:name="md502d6e4510324cbd3241d51deea888945.PasswordActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />

@@ -57,6 +57,7 @@ namespace CryptoNote.Activities
             FindViewById<TextView>(Resource.Id.settingsPageColumnCountSectionTitle).Typeface = Typeface.CreateFromAsset(Assets, "fonts/AlbertusNovaThin.otf");
             FindViewById<TextView>(Resource.Id.settingsPageLanguageSectionTitle).Typeface = Typeface.CreateFromAsset(Assets, "fonts/AlbertusNovaThin.otf");
             FindViewById<TextView>(Resource.Id.settingsPagePasswordSectionTitle).Typeface = Typeface.CreateFromAsset(Assets, "fonts/AlbertusNovaThin.otf");
+            FindViewById<TextView>(Resource.Id.credits_textview).Typeface = Typeface.CreateFromAsset(Assets, "fonts/AlbertusNovaThin.otf");
             FindViewById<Button>(Resource.Id.settingsSave).Typeface = Typeface.CreateFromAsset(Assets, "fonts/AlbertusNovaThin.otf");
             _oldPassword.Typeface = Typeface.CreateFromAsset(Assets, "fonts/AlbertusNovaThin.otf");
             _newPassword.Typeface = Typeface.CreateFromAsset(Assets, "fonts/AlbertusNovaThin.otf");

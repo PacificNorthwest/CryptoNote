@@ -1830,26 +1830,29 @@ namespace CryptoNote
 			// aapt resource value: 0x7f020050
 			public const int NoteItemBG = 2130837584;
 			
-			// aapt resource value: 0x7f020057
-			public const int notification_template_icon_bg = 2130837591;
+			// aapt resource value: 0x7f020058
+			public const int notification_template_icon_bg = 2130837592;
 			
 			// aapt resource value: 0x7f020051
 			public const int OneColumnIcon = 2130837585;
 			
 			// aapt resource value: 0x7f020052
-			public const int RoundCornersBG = 2130837586;
+			public const int padlock = 2130837586;
 			
 			// aapt resource value: 0x7f020053
-			public const int RU = 2130837587;
+			public const int RoundCornersBG = 2130837587;
 			
 			// aapt resource value: 0x7f020054
-			public const int SaveNoteButton = 2130837588;
+			public const int RU = 2130837588;
 			
 			// aapt resource value: 0x7f020055
-			public const int SettingsButton = 2130837589;
+			public const int SaveNoteButton = 2130837589;
 			
 			// aapt resource value: 0x7f020056
-			public const int TwoColumnsIcon = 2130837590;
+			public const int SettingsButton = 2130837590;
+			
+			// aapt resource value: 0x7f020057
+			public const int TwoColumnsIcon = 2130837591;
 			
 			static Drawable()
 			{
@@ -2007,6 +2010,9 @@ namespace CryptoNote
 			
 			// aapt resource value: 0x7f06004a
 			public const int contentPanel = 2131099722;
+			
+			// aapt resource value: 0x7f0600b3
+			public const int credits_textview = 2131099827;
 			
 			// aapt resource value: 0x7f060050
 			public const int custom = 2131099728;
@@ -2329,8 +2335,8 @@ namespace CryptoNote
 			// aapt resource value: 0x7f060045
 			public const int spacer = 2131099717;
 			
-			// aapt resource value: 0x7f0600b3
-			public const int spinnerEntryText = 2131099827;
+			// aapt resource value: 0x7f0600b4
+			public const int spinnerEntryText = 2131099828;
 			
 			// aapt resource value: 0x7f060008
 			public const int split_action_bar = 2131099656;
@@ -2653,6 +2659,9 @@ namespace CryptoNote
 			// aapt resource value: 0x7f090026
 			public const int ColumnsNumber = 2131296294;
 			
+			// aapt resource value: 0x7f09002f
+			public const int Credits = 2131296303;
+			
 			// aapt resource value: 0x7f090022
 			public const int EmptyPasswordError = 2131296290;
 			
@@ -2668,8 +2677,8 @@ namespace CryptoNote
 			// aapt resource value: 0x7f090027
 			public const int Language = 2131296295;
 			
-			// aapt resource value: 0x7f09002f
-			public const int Locale = 2131296303;
+			// aapt resource value: 0x7f090030
+			public const int Locale = 2131296304;
 			
 			// aapt resource value: 0x7f09001b
 			public const int LoginButton = 2131296283;

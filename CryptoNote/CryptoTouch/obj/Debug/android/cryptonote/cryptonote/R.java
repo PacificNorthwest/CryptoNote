@@ -2314,13 +2314,14 @@ containing a value of this type.
         public static final int fingerprint=0x7f02004e;
         public static final int loginpagebg=0x7f02004f;
         public static final int noteitembg=0x7f020050;
-        public static final int notification_template_icon_bg=0x7f020057;
+        public static final int notification_template_icon_bg=0x7f020058;
         public static final int onecolumnicon=0x7f020051;
-        public static final int roundcornersbg=0x7f020052;
-        public static final int ru=0x7f020053;
-        public static final int savenotebutton=0x7f020054;
-        public static final int settingsbutton=0x7f020055;
-        public static final int twocolumnsicon=0x7f020056;
+        public static final int padlock=0x7f020052;
+        public static final int roundcornersbg=0x7f020053;
+        public static final int ru=0x7f020054;
+        public static final int savenotebutton=0x7f020055;
+        public static final int settingsbutton=0x7f020056;
+        public static final int twocolumnsicon=0x7f020057;
     }
     public static final class id {
         public static final int AuthorizationPassword=0x7f06007e;
@@ -2371,6 +2372,7 @@ containing a value of this type.
         public static final int clip_vertical=0x7f060034;
         public static final int collapseActionView=0x7f06001e;
         public static final int contentPanel=0x7f06004a;
+        public static final int credits_textview=0x7f0600b3;
         public static final int custom=0x7f060050;
         public static final int customPanel=0x7f06004f;
         public static final int decor_content_parent=0x7f060058;
@@ -2478,7 +2480,7 @@ containing a value of this type.
         public static final int snackbar_text=0x7f060074;
         public static final int snap=0x7f060027;
         public static final int spacer=0x7f060045;
-        public static final int spinnerEntryText=0x7f0600b3;
+        public static final int spinnerEntryText=0x7f0600b4;
         public static final int split_action_bar=0x7f060008;
         public static final int src_atop=0x7f060017;
         public static final int src_in=0x7f060018;
@@ -2579,12 +2581,13 @@ containing a value of this type.
         public static final int All=0x7f090024;
         public static final int Categories=0x7f09001d;
         public static final int ColumnsNumber=0x7f090026;
+        public static final int Credits=0x7f09002f;
         public static final int EmptyPasswordError=0x7f090022;
         public static final int FingerprintScanFailedError=0x7f09001f;
         public static final int FingerprintScanHint=0x7f090019;
         public static final int IncorrectPsswordError=0x7f09001e;
         public static final int Language=0x7f090027;
-        public static final int Locale=0x7f09002f;
+        public static final int Locale=0x7f090030;
         public static final int LoginButton=0x7f09001b;
         public static final int NewCategoryNameHint=0x7f090020;
         public static final int NewPasswordHint=0x7f09002a;
