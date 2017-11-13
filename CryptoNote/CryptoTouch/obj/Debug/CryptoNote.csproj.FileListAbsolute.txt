@@ -80,7 +80,6 @@ E:\Projects\CryptoNote\CryptoNote\CryptoTouch\obj\Debug\res\layout\settingspage.
 E:\Projects\CryptoNote\CryptoNote\CryptoTouch\obj\Debug\res\layout\customtab.xml
 E:\Projects\CryptoNote\CryptoNote\CryptoTouch\obj\Debug\res\layout\loginpage.xml
 E:\Projects\CryptoNote\CryptoNote\CryptoTouch\obj\Debug\res\values\strings.xml
-E:\Projects\CryptoNote\CryptoNote\CryptoTouch\obj\Debug\res\drawable\fingerprint.png
 E:\Projects\CryptoNote\CryptoNote\CryptoTouch\obj\Debug\res\values\styles.xml
 E:\Projects\CryptoNote\CryptoNote\CryptoTouch\obj\Debug\res\values\colors.xml
 E:\Projects\CryptoNote\CryptoNote\CryptoTouch\obj\Debug\res\drawable\deleteelement.png

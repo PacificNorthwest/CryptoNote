@@ -6,16 +6,20 @@ using Android.App;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("CryptoTouch")]
+[assembly: AssemblyTitle("CryptoNote")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("CryptoTouch")]
+[assembly: AssemblyProduct("CryptoNote")]
 [assembly: AssemblyCopyright("Copyright ©  2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 [assembly: ComVisible(false)]
-[assembly: Application(Theme = "@style/CryptoTouch.NoOrange")]
+#if DEBUG
+[assembly: Application(Debuggable = true)]
+#else
+[assembly: Application(Debuggable=false)]
+#endif
 
 // Version information for an assembly consists of the following four values:
 //

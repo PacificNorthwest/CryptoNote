@@ -2311,17 +2311,16 @@ containing a value of this type.
         public static final int design_snackbar_background=0x7f02004b;
         public static final int edittextbg=0x7f02004c;
         public static final int en=0x7f02004d;
-        public static final int fingerprint=0x7f02004e;
-        public static final int loginpagebg=0x7f02004f;
-        public static final int noteitembg=0x7f020050;
-        public static final int notification_template_icon_bg=0x7f020058;
-        public static final int onecolumnicon=0x7f020051;
-        public static final int padlock=0x7f020052;
-        public static final int roundcornersbg=0x7f020053;
-        public static final int ru=0x7f020054;
-        public static final int savenotebutton=0x7f020055;
-        public static final int settingsbutton=0x7f020056;
-        public static final int twocolumnsicon=0x7f020057;
+        public static final int loginpagebg=0x7f02004e;
+        public static final int noteitembg=0x7f02004f;
+        public static final int notification_template_icon_bg=0x7f020057;
+        public static final int onecolumnicon=0x7f020050;
+        public static final int padlock=0x7f020051;
+        public static final int roundcornersbg=0x7f020052;
+        public static final int ru=0x7f020053;
+        public static final int savenotebutton=0x7f020054;
+        public static final int settingsbutton=0x7f020055;
+        public static final int twocolumnsicon=0x7f020056;
     }
     public static final class id {
         public static final int AuthorizationPassword=0x7f06007e;

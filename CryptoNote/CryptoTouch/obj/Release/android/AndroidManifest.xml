@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="CryptoNote.CryptoNote" android:versionCode="1" android:versionName="1.0" android:installLocation="auto">
+  <!--suppress UsesMinSdkAttributes-->
+  <uses-sdk android:minSdkVersion="21" />
+  <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <application android:label="CryptoNote" android:theme="@style/AppTheme" android:icon="@drawable/padlock" android:debuggable="false" android:name="android.app.Application" android:allowBackup="true">
+    <activity android:icon="@drawable/padlock" android:label="CryptoNote" android:noHistory="true" android:screenOrientation="portrait" android:theme="@style/AppTheme" android:name="md502d6e4510324cbd3241d51deea888945.PasswordActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <activity android:label="SettingsActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme" android:name="md502d6e4510324cbd3241d51deea888945.SettingsActivity" />
+    <activity android:label="CryptoNote" android:noHistory="true" android:screenOrientation="portrait" android:theme="@style/AppTheme" android:name="md502d6e4510324cbd3241d51deea888945.LoginActivity" />
+    <activity android:label="MainPageActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme" android:name="md502d6e4510324cbd3241d51deea888945.MainPageActivity" />
+    <activity android:label="NoteActivity" android:theme="@style/AppTheme" android:windowSoftInputMode="stateVisible|adjustResize" android:name="md502d6e4510324cbd3241d51deea888945.NoteActivity" />
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="CryptoNote.CryptoNote.mono.MonoRuntimeProvider.__mono_init__" />
+  </application>
+</manifest>
