@@ -1,8 +1,9 @@
 using System;
-using Android.Hardware.Fingerprints;
 using Android.Security.Keystore;
+using Android.Support.V4.Hardware.Fingerprint;
 using Java.Security;
 using Javax.Crypto;
+
 
 namespace CryptoNote.Security
 {
@@ -29,10 +30,10 @@ namespace CryptoNote.Security
             _keystore.Load(null);
         }
 
-        public FingerprintManager.CryptoObject BuildCryptoObject()
+        public FingerprintManagerCompat.CryptoObject BuildCryptoObject()
         {
             Cipher cipher = CreateCipher();
-            return new FingerprintManager.CryptoObject(cipher);
+            return new FingerprintManagerCompat.CryptoObject(cipher);
         }
 
         private Cipher CreateCipher(bool retry = true)

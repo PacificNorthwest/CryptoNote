@@ -106,5 +106,8 @@ E:\Projects\CryptoNote\CryptoNote\CryptoTouch\obj\Debug\res\drawable\twocolumnsi
 E:\Projects\CryptoNote\CryptoNote\CryptoTouch\obj\Debug\res\drawable\onecolumnicon.png
 E:\Projects\CryptoNote\CryptoNote\CryptoTouch\obj\Debug\res\values-uk\strings.xml
 E:\Projects\CryptoNote\CryptoNote\CryptoTouch\obj\Debug\res\drawable\padlock.png
+E:\Projects\CryptoNote\CryptoNote\CryptoTouch\obj\Debug\res\values-be\colors.xml
+E:\Projects\CryptoNote\CryptoNote\CryptoTouch\obj\Debug\res\values-be\strings.xml
+E:\Projects\CryptoNote\CryptoNote\CryptoTouch\obj\Debug\res\values-be\styles.xml
 E:\Projects\CryptoNote\CryptoNote\CryptoTouch\obj\Debug\R.cs.flag
 E:\Projects\CryptoNote\CryptoNote\CryptoTouch\obj\Debug\uploadflags.txt

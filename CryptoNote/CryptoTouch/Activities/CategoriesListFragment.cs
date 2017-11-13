@@ -116,7 +116,7 @@ namespace CryptoNote.Activities
                 foreach (Note note in NoteStorage.Notes.Where(note => note.CategoryId == NoteStorage.GetCurrentCategories(_rootActivity).IndexOf(category)))
                     note.CategoryId = 0;
                 NoteStorage.RemoveCategory(_rootActivity, category);
-                SecurityProvider.SaveNotesAsync();                
+                SecurityProvider.SaveNotes();                
             }
             _selectedEntrys.Clear();
             HideDeleteButton();

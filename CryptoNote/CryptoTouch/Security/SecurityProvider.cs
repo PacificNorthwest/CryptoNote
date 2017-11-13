@@ -8,10 +8,9 @@ using System.IO;
 
 using Android.App;
 using Android.Content;
-using Android.OS;
 using Android.Widget;
 using Android.Security;
-using Android.Hardware.Fingerprints;
+using Android.Support.V4.Hardware.Fingerprint;
 
 using Java.Security;
 using Java.Util;
@@ -19,6 +18,7 @@ using Javax.Crypto;
 
 using Newtonsoft.Json;
 using CryptoNote.Model;
+
 
 namespace CryptoNote.Security
 {
@@ -152,7 +152,7 @@ namespace CryptoNote.Security
         /// <param name="activity">Root activity</param>
         public static void FingerprintAuthenticate(Activity activity)
         {
-            FingerprintManager fingerprint = activity.GetSystemService(Context.FingerprintService) as FingerprintManager;
+            FingerprintManagerCompat fingerprint = FingerprintManagerCompat.From(activity);
             KeyguardManager keyGuard = activity.GetSystemService(Context.KeyguardService) as KeyguardManager;
             Android.Content.PM.Permission permission = activity.CheckSelfPermission(Android.Manifest.Permission.UseFingerprint);
             if (fingerprint.IsHardwareDetected
@@ -162,9 +162,8 @@ namespace CryptoNote.Security
             {
                 const int flags = 0;
                 CryptoObjectFactory cryptoHelper = new CryptoObjectFactory();
-                CancellationSignal cancellationSignal = new CancellationSignal();
-                FingerprintManager.AuthenticationCallback authCallback = new AuthCallback(activity as Activities.LoginActivity);
-                fingerprint.Authenticate(cryptoHelper.BuildCryptoObject(), cancellationSignal, flags, authCallback, null);
+                FingerprintManagerCompat.AuthenticationCallback authCallback = new AuthCallback(activity as Activities.LoginActivity);
+                fingerprint.Authenticate(cryptoHelper.BuildCryptoObject(), flags, new Android.Support.V4.OS.CancellationSignal(), authCallback, null);
             }
         }
 

@@ -1,8 +1,8 @@
-using Android.Hardware.Fingerprints;
+using Android.Support.V4.Hardware.Fingerprint;
 using Javax.Crypto;
-using Android.Util;
 
 using CryptoNote.Activities;
+
 
 namespace CryptoNote.Security
 {
@@ -10,7 +10,7 @@ namespace CryptoNote.Security
     /// Fingerprint authentication result callback
     /// No need to touch this class, it's complete and doesn't need to be reworked
     /// </summary>
-    class AuthCallback : FingerprintManager.AuthenticationCallback
+    class AuthCallback : FingerprintManagerCompat.AuthenticationCallback
     {
         private static readonly byte[] SECRET_BYTES = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
         private static readonly string TAG = "CryptoNote";
@@ -23,7 +23,7 @@ namespace CryptoNote.Security
         /// Succeeded event handler
         /// </summary>
         /// <param name="result"></param>
-        public override void OnAuthenticationSucceeded(FingerprintManager.AuthenticationResult result)
+        public override void OnAuthenticationSucceeded(FingerprintManagerCompat.AuthenticationResult result)
         {
             if (result.CryptoObject.Cipher != null)
             {

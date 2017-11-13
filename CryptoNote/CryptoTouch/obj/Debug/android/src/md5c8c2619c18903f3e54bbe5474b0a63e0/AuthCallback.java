@@ -2,7 +2,7 @@ package md5c8c2619c18903f3e54bbe5474b0a63e0;
 
 
 public class AuthCallback
-	extends android.hardware.fingerprint.FingerprintManager.AuthenticationCallback
+	extends android.support.v4.hardware.fingerprint.FingerprintManagerCompat.AuthenticationCallback
 	implements
 		mono.android.IGCUserPeer
 {
@@ -10,7 +10,7 @@ public class AuthCallback
 	public static final String __md_methods;
 	static {
 		__md_methods = 
-			"n_onAuthenticationSucceeded:(Landroid/hardware/fingerprint/FingerprintManager$AuthenticationResult;)V:GetOnAuthenticationSucceeded_Landroid_hardware_fingerprint_FingerprintManager_AuthenticationResult_Handler\n" +
+			"n_onAuthenticationSucceeded:(Landroid/support/v4/hardware/fingerprint/FingerprintManagerCompat$AuthenticationResult;)V:GetOnAuthenticationSucceeded_Landroid_support_v4_hardware_fingerprint_FingerprintManagerCompat_AuthenticationResult_Handler\n" +
 			"n_onAuthenticationFailed:()V:GetOnAuthenticationFailedHandler\n" +
 			"";
 		mono.android.Runtime.register ("CryptoNote.Security.AuthCallback, CryptoTouch, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", AuthCallback.class, __md_methods);
@@ -32,12 +32,12 @@ public class AuthCallback
 	}
 
 
-	public void onAuthenticationSucceeded (android.hardware.fingerprint.FingerprintManager.AuthenticationResult p0)
+	public void onAuthenticationSucceeded (android.support.v4.hardware.fingerprint.FingerprintManagerCompat.AuthenticationResult p0)
 	{
 		n_onAuthenticationSucceeded (p0);
 	}
 
-	private native void n_onAuthenticationSucceeded (android.hardware.fingerprint.FingerprintManager.AuthenticationResult p0);
+	private native void n_onAuthenticationSucceeded (android.support.v4.hardware.fingerprint.FingerprintManagerCompat.AuthenticationResult p0);
 
 
 	public void onAuthenticationFailed ()
