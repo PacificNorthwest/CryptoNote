@@ -71,7 +71,7 @@ E:\Projects\CryptoNote\CryptoNote\CryptoTouch\obj\Debug\res\layout\mainpage.xml
 E:\Projects\CryptoNote\CryptoNote\CryptoTouch\obj\Debug\res\layout\notepage.xml
 E:\Projects\CryptoNote\CryptoNote\CryptoTouch\obj\Debug\res\layout\passwordpage.xml
 E:\Projects\CryptoNote\CryptoNote\CryptoTouch\obj\Debug\res\layout\noteitemlayout.xml
-E:\Projects\CryptoNote\CryptoNote\CryptoTouch\obj\Debug\res\layout\spinneritem.xml
+E:\Projects\CryptoNote\CryptoNote\CryptoTouch\obj\Debug\res\layout\categoriesdialogitem.xml
 E:\Projects\CryptoNote\CryptoNote\CryptoTouch\obj\Debug\res\layout\noteslist.xml
 E:\Projects\CryptoNote\CryptoNote\CryptoTouch\obj\Debug\res\layout\categorieslist.xml
 E:\Projects\CryptoNote\CryptoNote\CryptoTouch\obj\Debug\res\layout\categorieslistitem.xml
@@ -108,5 +108,7 @@ E:\Projects\CryptoNote\CryptoNote\CryptoTouch\obj\Debug\res\drawable\padlock.png
 E:\Projects\CryptoNote\CryptoNote\CryptoTouch\obj\Debug\res\values-be\colors.xml
 E:\Projects\CryptoNote\CryptoNote\CryptoTouch\obj\Debug\res\values-be\strings.xml
 E:\Projects\CryptoNote\CryptoNote\CryptoTouch\obj\Debug\res\values-be\styles.xml
+E:\Projects\CryptoNote\CryptoNote\CryptoTouch\obj\Debug\res\drawable\lock_gray.png
+E:\Projects\CryptoNote\CryptoNote\CryptoTouch\obj\Debug\res\drawable\lock_green.png
 E:\Projects\CryptoNote\CryptoNote\CryptoTouch\obj\Debug\R.cs.flag
 E:\Projects\CryptoNote\CryptoNote\CryptoTouch\obj\Debug\uploadflags.txt

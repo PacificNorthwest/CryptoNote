@@ -73,13 +73,13 @@
                 android:layout_width="wrap_content"
                 android:layout_marginTop="30dp"
                 android:layout_marginBottom="30dp"
-                android:paddingLeft="50dp"
-                android:paddingRight="50dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
                 android:paddingTop="-35dp"
                 android:paddingBottom="-35dp"
                 android:layout_gravity="center_horizontal"
                 android:background="@color/MainAppColor"
-                android:textSize="23sp"
+                android:textSize="20sp"
                 android:textColor="@android:color/white"
                 android:text="@string/AddButton" />
         </LinearLayout>

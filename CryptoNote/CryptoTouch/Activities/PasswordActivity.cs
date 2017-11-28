@@ -67,10 +67,10 @@ namespace CryptoNote.Activities
             _submitButton.Click += (object sender, EventArgs e) => SubmitPassword();
             _passwordEditText.RequestFocus();
             FindViewById<TextView>(Resource.Id.passwordPageTitle).Typeface = Typeface.CreateFromAsset(Assets, "fonts/BROADW.ttf");
-            FindViewById<TextView>(Resource.Id.passwordPageHintTextView).Typeface = Typeface.CreateFromAsset(Assets, "fonts/AlbertusNovaThin.otf");
-            FindViewById<EditText>(Resource.Id.RegisterPassword).Typeface = Typeface.CreateFromAsset(Assets, "fonts/AlbertusNovaThin.otf");
-            FindViewById<EditText>(Resource.Id.RegisterPasswordConfirm).Typeface = Typeface.CreateFromAsset(Assets, "fonts/AlbertusNovaThin.otf");
-            FindViewById<Button>(Resource.Id.ButtonSubmitPassword).Typeface = Typeface.CreateFromAsset(Assets, "fonts/AlbertusNovaThin.otf");
+            FindViewById<TextView>(Resource.Id.passwordPageHintTextView).Typeface = Typeface.CreateFromAsset(Assets, "fonts/MINIONPRO-REGULAR.OTF");
+            FindViewById<EditText>(Resource.Id.RegisterPassword).Typeface = Typeface.CreateFromAsset(Assets, "fonts/MINIONPRO-REGULAR.OTF");
+            FindViewById<EditText>(Resource.Id.RegisterPasswordConfirm).Typeface = Typeface.CreateFromAsset(Assets, "fonts/MINIONPRO-REGULAR.OTF");
+            FindViewById<Button>(Resource.Id.ButtonSubmitPassword).Typeface = Typeface.CreateFromAsset(Assets, "fonts/MINIONPRO-REGULAR.OTF");
         }
 
         /// <summary>

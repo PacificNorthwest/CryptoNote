@@ -57,3 +57,5 @@ E:\Projects\CryptoNote\CryptoNote\CryptoTouch\obj\Release\res\values-be\strings.
 E:\Projects\CryptoNote\CryptoNote\CryptoTouch\obj\Release\res\values-be\styles.xml
 E:\Projects\CryptoNote\CryptoNote\CryptoTouch\obj\Release\R.cs.flag
 E:\Projects\CryptoNote\CryptoNote\CryptoTouch\obj\Release\uploadflags.txt
+E:\Projects\CryptoNote\CryptoNote\CryptoTouch\bin\Release\CryptoTouch.dll.mdb
+E:\Projects\CryptoNote\CryptoNote\CryptoTouch\obj\Release\android\assets\CryptoTouch.dll.mdb

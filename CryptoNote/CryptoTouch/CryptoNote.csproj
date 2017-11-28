@@ -49,6 +49,7 @@
     <AotAssemblies>false</AotAssemblies>
     <EnableLLVM>false</EnableLLVM>
     <BundleAssemblies>false</BundleAssemblies>
+    <EnableProguard>true</EnableProguard>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
@@ -98,12 +99,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Security\SecurityProvider.cs" />
     <Compile Include="Model\Settings.cs" />
-    <Compile Include="Adapters\SpinnerAdapter.cs" />
     <Compile Include="Adapters\ViewPagerAdapter.cs" />
   </ItemGroup>
   <ItemGroup>
     <AndroidAsset Include="Assets\fonts\BROADW.ttf" />
     <AndroidAsset Include="Assets\fonts\AlbertusNovaThin.otf" />
+    <AndroidAsset Include="Assets\fonts\MINIONPRO-REGULAR.OTF" />
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>
@@ -121,7 +122,7 @@
     <AndroidResource Include="Resources\layout\NoteItemLayout.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\SpinnerItem.axml">
+    <AndroidResource Include="Resources\layout\CategoriesDialogItem.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\NotesList.axml">
@@ -231,7 +232,9 @@
     <AndroidResource Include="Resources\values-uk\Strings.xml" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\padlock.png" />
+    <AndroidResource Include="C:\Users\crime\Downloads\padlock.png">
+      <Link>Resources\drawable\padlock.png</Link>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values-be\colors.xml" />
@@ -241,6 +244,12 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values-be\styles.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\lock_gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\lock_green.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

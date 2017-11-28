@@ -53,15 +53,15 @@ namespace CryptoNote.Activities
             _newPassword = FindViewById<EditText>(Resource.Id.settingsNewPasswordEditText);
             _confirmPassword = FindViewById<EditText>(Resource.Id.settingsConfirmPasswordEditText);
 
-            FindViewById<TextView>(Resource.Id.settingsPageTitle).Typeface = Typeface.CreateFromAsset(Assets, "fonts/AlbertusNovaThin.otf");
-            FindViewById<TextView>(Resource.Id.settingsPageColumnCountSectionTitle).Typeface = Typeface.CreateFromAsset(Assets, "fonts/AlbertusNovaThin.otf");
-            FindViewById<TextView>(Resource.Id.settingsPageLanguageSectionTitle).Typeface = Typeface.CreateFromAsset(Assets, "fonts/AlbertusNovaThin.otf");
-            FindViewById<TextView>(Resource.Id.settingsPagePasswordSectionTitle).Typeface = Typeface.CreateFromAsset(Assets, "fonts/AlbertusNovaThin.otf");
-            FindViewById<TextView>(Resource.Id.credits_textview).Typeface = Typeface.CreateFromAsset(Assets, "fonts/AlbertusNovaThin.otf");
-            FindViewById<Button>(Resource.Id.settingsSave).Typeface = Typeface.CreateFromAsset(Assets, "fonts/AlbertusNovaThin.otf");
-            _oldPassword.Typeface = Typeface.CreateFromAsset(Assets, "fonts/AlbertusNovaThin.otf");
-            _newPassword.Typeface = Typeface.CreateFromAsset(Assets, "fonts/AlbertusNovaThin.otf");
-            _confirmPassword.Typeface = Typeface.CreateFromAsset(Assets, "fonts/AlbertusNovaThin.otf");
+            FindViewById<TextView>(Resource.Id.settingsPageTitle).Typeface = Typeface.CreateFromAsset(Assets, "fonts/MINIONPRO-REGULAR.OTF");
+            FindViewById<TextView>(Resource.Id.settingsPageColumnCountSectionTitle).Typeface = Typeface.CreateFromAsset(Assets, "fonts/MINIONPRO-REGULAR.OTF");
+            FindViewById<TextView>(Resource.Id.settingsPageLanguageSectionTitle).Typeface = Typeface.CreateFromAsset(Assets, "fonts/MINIONPRO-REGULAR.OTF");
+            FindViewById<TextView>(Resource.Id.settingsPagePasswordSectionTitle).Typeface = Typeface.CreateFromAsset(Assets, "fonts/MINIONPRO-REGULAR.OTF");
+            FindViewById<TextView>(Resource.Id.credits_textview).Typeface = Typeface.CreateFromAsset(Assets, "fonts/MINIONPRO-REGULAR.OTF");
+            FindViewById<Button>(Resource.Id.settingsSave).Typeface = Typeface.CreateFromAsset(Assets, "fonts/MINIONPRO-REGULAR.OTF");
+            _oldPassword.Typeface = Typeface.CreateFromAsset(Assets, "fonts/MINIONPRO-REGULAR.OTF");
+            _newPassword.Typeface = Typeface.CreateFromAsset(Assets, "fonts/MINIONPRO-REGULAR.OTF");
+            _confirmPassword.Typeface = Typeface.CreateFromAsset(Assets, "fonts/MINIONPRO-REGULAR.OTF");
 
             FindViewById<Button>(Resource.Id.settingsSave).Click += (object sender, EventArgs e) => { SaveSettings(); Return(); };
 

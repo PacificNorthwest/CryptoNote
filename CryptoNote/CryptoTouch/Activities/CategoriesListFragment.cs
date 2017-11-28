@@ -72,8 +72,8 @@ namespace CryptoNote.Activities
             View dialog = root.FindViewById<LinearLayout>(Resource.Id.newCategoryDialog);
             dialog.Click += (object sender, EventArgs e) => { };
             _title = root.FindViewById<EditText>(Resource.Id.newCategoryName);
-            _title.Typeface = Typeface.CreateFromAsset(_rootActivity.Assets, "fonts/AlbertusNovaThin.otf"); ;
-            root.FindViewById<Button>(Resource.Id.buttonAddCategory).Typeface = Typeface.CreateFromAsset(_rootActivity.Assets, "fonts/AlbertusNovaThin.otf");
+            _title.Typeface = Typeface.CreateFromAsset(_rootActivity.Assets, "fonts/MINIONPRO-REGULAR.OTF"); ;
+            root.FindViewById<Button>(Resource.Id.buttonAddCategory).Typeface = Typeface.CreateFromAsset(_rootActivity.Assets, "fonts/MINIONPRO-REGULAR.OTF");
             _frame.Click += (object sender, EventArgs e) => HideDialog();
             //Creating new category
             root.FindViewById<Button>(Resource.Id.buttonAddCategory).Click += (object sender, EventArgs e)
@@ -134,7 +134,7 @@ namespace CryptoNote.Activities
             View entry = View.Inflate(_rootActivity, Resource.Layout.CategoriesListItem, null);
             entry.FindViewById<TextView>(Resource.Id.categoryName).Text = _rootActivity.GetString(Resource.String.All);
             entry.FindViewById<TextView>(Resource.Id.categoryName).SetTextColor(BuildColor(_rootActivity.GetString(Resource.String.All)));
-            entry.FindViewById<TextView>(Resource.Id.categoryName).Typeface = Typeface.CreateFromAsset(_rootActivity.Assets, "fonts/AlbertusNovaThin.otf");
+            entry.FindViewById<TextView>(Resource.Id.categoryName).Typeface = Typeface.CreateFromAsset(_rootActivity.Assets, "fonts/MINIONPRO-REGULAR.OTF");
             entry.FindViewById<TextView>(Resource.Id.notesCount).Text = $"({NoteStorage.Notes.Count.ToString()})";
             
             entry.Click += (object sender, EventArgs e) =>
@@ -156,7 +156,7 @@ namespace CryptoNote.Activities
                 entry = View.Inflate(_rootActivity, Resource.Layout.CategoriesListItem, null);
                 entry.FindViewById<TextView>(Resource.Id.categoryName).Text = category;
                 entry.FindViewById<TextView>(Resource.Id.categoryName).SetTextColor(BuildColor(category));
-                entry.FindViewById<TextView>(Resource.Id.categoryName).Typeface = Typeface.CreateFromAsset(_rootActivity.Assets, "fonts/AlbertusNovaThin.otf");
+                entry.FindViewById<TextView>(Resource.Id.categoryName).Typeface = Typeface.CreateFromAsset(_rootActivity.Assets, "fonts/MINIONPRO-REGULAR.OTF");
                 entry.FindViewById<TextView>(Resource.Id.notesCount).Text = $"({NoteStorage.Notes.Where(n => n.CategoryId == id).Count().ToString()})";
                 entry.Click += (object sender, EventArgs e) =>
                                 {

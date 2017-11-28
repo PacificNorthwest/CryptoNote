@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="WelcomePassword">Введите свой будущий пароль</string>
+    <string name="WelcomePassword">Для начала\nработы необходимо\nсоздать пароль</string>
   <string name="WelcomePasswordConfirmHint">Подтвердите пароль</string>
     <string name="SubmitButton">Продолжить</string>
     <string name="FingerprintScanHint">Отсканируйте\nотпечаток</string>

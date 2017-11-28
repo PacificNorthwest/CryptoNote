@@ -37,9 +37,9 @@ namespace CryptoNote.Activities
             SetContentView (Resource.Layout.LoginPage);
             
             FindViewById<TextView>(Resource.Id.loginPageTitle).Typeface = Typeface.CreateFromAsset(Assets, "fonts/BROADW.ttf");
-            FindViewById<TextView>(Resource.Id.fingerprintScanHint).Typeface = Typeface.CreateFromAsset(Assets, "fonts/AlbertusNovaThin.otf");
-            FindViewById<TextView>(Resource.Id.passwordUsageHint).Typeface = Typeface.CreateFromAsset(Assets, "fonts/AlbertusNovaThin.otf");
-            FindViewById<Button>(Resource.Id.ButtonSubmitAuthorization).Typeface = Typeface.CreateFromAsset(Assets, "fonts/AlbertusNovaThin.otf");
+            FindViewById<TextView>(Resource.Id.fingerprintScanHint).Typeface = Typeface.CreateFromAsset(Assets, "fonts/MINIONPRO-REGULAR.OTF");
+            FindViewById<TextView>(Resource.Id.passwordUsageHint).Typeface = Typeface.CreateFromAsset(Assets, "fonts/MINIONPRO-REGULAR.OTF");
+            FindViewById<Button>(Resource.Id.ButtonSubmitAuthorization).Typeface = Typeface.CreateFromAsset(Assets, "fonts/MINIONPRO-REGULAR.OTF");
             FindViewById<Button>(Resource.Id.ButtonSubmitAuthorization).Click += (object sender, EventArgs e) => PasswordAuthorization();
             _progressBar = FindViewById<RelativeLayout>(Resource.Id.progressBar);
             SecurityProvider.FingerprintAuthenticate(this);

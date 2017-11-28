@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/categoriesDialogEntryText"
+    android:textColor="@android:color/white"
+    android:textSize="24sp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textAllCaps="false"
+    android:gravity="left"
+    android:background="@color/MainAppColor" />

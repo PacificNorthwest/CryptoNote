@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="WelcomePassword">Enter your further password</string>
+    <string name="WelcomePassword">Create a password\nin order to\nstart working</string>
     <string name="WelcomePasswordConfirmHint">Confirm password</string>
     <string name="SubmitButton">Submit</string>
     <string name="FingerprintScanHint">Scan\nfingerprint</string>
