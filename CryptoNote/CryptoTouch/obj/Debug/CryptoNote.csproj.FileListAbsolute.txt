@@ -63,6 +63,7 @@ E:\Projects\CryptoNote\CryptoNote\CryptoTouch\bin\Debug\Xamarin.Android.Support.
 E:\Projects\CryptoNote\CryptoNote\CryptoTouch\bin\Debug\Xamarin.Android.Support.v7.CardView.dll
 E:\Projects\CryptoNote\CryptoNote\CryptoTouch\bin\Debug\Xamarin.Android.Support.v7.RecyclerView.dll
 E:\Projects\CryptoNote\CryptoNote\CryptoTouch\bin\Debug\Newtonsoft.Json.xml
+E:\Projects\CryptoNote\CryptoNote\CryptoTouch\obj\Debug\CryptoNote.csprojResolveAssemblyReference.cache
 E:\Projects\CryptoNote\CryptoNote\CryptoTouch\obj\Debug\CryptoNote.csproj.CoreCompileInputs.cache
 E:\Projects\CryptoNote\CryptoNote\CryptoTouch\obj\Debug\CryptoTouch.dll
 E:\Projects\CryptoNote\CryptoNote\CryptoTouch\obj\Debug\CryptoTouch.pdb
@@ -112,3 +113,5 @@ E:\Projects\CryptoNote\CryptoNote\CryptoTouch\obj\Debug\res\drawable\lock_gray.p
 E:\Projects\CryptoNote\CryptoNote\CryptoTouch\obj\Debug\res\drawable\lock_green.png
 E:\Projects\CryptoNote\CryptoNote\CryptoTouch\obj\Debug\R.cs.flag
 E:\Projects\CryptoNote\CryptoNote\CryptoTouch\obj\Debug\uploadflags.txt
+E:\Projects\CryptoNote\CryptoNote\CryptoTouch\bin\Debug\CryptoTouch.dll.mdb
+E:\Projects\CryptoNote\CryptoNote\CryptoTouch\obj\Debug\android\assets\CryptoTouch.dll.mdb

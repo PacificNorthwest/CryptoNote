@@ -106,18 +106,21 @@ namespace CryptoNote.Activities
         /// </summary>
         private void UpdateNotes()
         {
-            if (_originalNote == null)
-                NoteStorage.Notes.Add(new Note(_noteText.Text) { CategoryId = (int)_categoriesListButton.Tag });
-            else
+            if (_noteText.Text != string.Empty)
             {
-                NoteStorage.Notes.Find(note => note == _originalNote).Text = _noteText.Text;
-                NoteStorage.Notes.Find(note => note == _originalNote).CategoryId = (int)_categoriesListButton.Tag;
-            }
-            SecurityProvider.SaveNotesAsync();
+                if (_originalNote == null)
+                    NoteStorage.Notes.Add(new Note(_noteText.Text) { CategoryId = (int)_categoriesListButton.Tag });
+                else
+                {
+                    NoteStorage.Notes.Find(note => note == _originalNote).Text = _noteText.Text;
+                    NoteStorage.Notes.Find(note => note == _originalNote).CategoryId = (int)_categoriesListButton.Tag;
+                }
+                SecurityProvider.SaveNotesAsync();
 
-            ActivityOptions options = ActivityOptions.MakeSceneTransitionAnimation(this);
-            Intent intent = new Intent(this, typeof(MainPageActivity));
-            StartActivity(intent, options.ToBundle());
+                ActivityOptions options = ActivityOptions.MakeSceneTransitionAnimation(this);
+                Intent intent = new Intent(this, typeof(MainPageActivity));
+                StartActivity(intent, options.ToBundle());
+            }
         }
     }
 }

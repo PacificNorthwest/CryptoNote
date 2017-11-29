@@ -25,7 +25,7 @@
     <string name="Save">Save</string>
     <string name="nullStateHintTop">No notes\nwere created</string>
     <string name="nullStateHintBottom">Click\nin order\nto create one</string>
-    <string name="Credits">Design made by\nAnastasia Nguyen\n\nIcons made by Freepik and Smashicons\nfrom www.flaticon.com </string>  
+    <string name="Credits">Developed by Yan Sidorov\nDesign made by\nAnastasia Nguyen\n\nIcons made by Freepik and Smashicons\nfrom www.flaticon.com </string>  
   
     <string name="Locale">EN</string>
 </resources>
